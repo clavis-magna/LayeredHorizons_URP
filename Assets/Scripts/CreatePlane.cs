@@ -25,8 +25,8 @@ public class CreatePlane : MonoBehaviour
 
     private void createWorld()
     {
-
-        GameObject worldPlane = Instantiate(Plane, new Vector3(0f, 0f, 0f), Quaternion.Euler(0, 0, 0));
-        worldPlane.transform.localScale = new Vector3(scaleX, 1, scaleY);
+        //because of plane importing from blender the scaling and sides are a bit messed up so this is adjusted to account for that.
+        GameObject worldPlane = Instantiate(Plane, new Vector3(0f, 0f, 0f), Quaternion.Euler(-90, 0, 0));
+        worldPlane.transform.localScale = new Vector3(scaleY, scaleX, 1);
     }
 }
