@@ -40,6 +40,9 @@ public class CreateOutlines : MonoBehaviour
     // wait a fraction of a second on play before loading data
     void Start()
     {
+        //Initialize plugin to allow for the streamingAssets folder to be read by android.
+        BetterStreamingAssets.Initialize();
+
         // grab world scale from the commonData script
         // set in the inspector
         scaleX = (int)InitiateWorldScale.mapScale.x;
@@ -54,13 +57,14 @@ public class CreateOutlines : MonoBehaviour
         //file path
         string dataFilePath = Path.Combine(Application.streamingAssetsPath, filename);
 
+
         int count = 0;
 
-        if (File.Exists(dataFilePath))
+        if (BetterStreamingAssets.FileExists(filename))
         {
-            string dataAsJson = File.ReadAllText(dataFilePath);
+            string dataAsJson = BetterStreamingAssets.ReadAllText(filename);
             theOutlineData = JsonHelper.FromJson<outlineData>(dataAsJson);
-            print("data length: " + theOutlineData.Length);
+            //print("data length: " + theOutlineData.Length);
 
             linePoints = new Vector3[theOutlineData.Length];
             bool drawThisOne = false;
@@ -97,7 +101,7 @@ public class CreateOutlines : MonoBehaviour
                 float y = ((radius) * Mathf.Cos(phi));
                 */
 
-                float y = 0.01f;
+                float y = 1f;
                 float[] thisXY = helpers.getXYPos(thisLat, thisLon, scaleX, scaleY);
                 float x = thisXY[0];
                 float z = thisXY[1];
@@ -121,7 +125,7 @@ public class CreateOutlines : MonoBehaviour
 
             }
 
-            print("done"); 
+            print("outlines done"); 
 
         }
     }

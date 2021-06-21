@@ -264,6 +264,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &51681410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+  m_PrefabInstance: {fileID: 1485714955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &51681413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51681410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &170171480
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,7 +750,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626722281}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a33ce3de76c106f4f84d2ece0747cada, type: 3}
   m_Name: 
@@ -1698,6 +1735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1462491416}
   - component: {fileID: 1462491415}
+  - component: {fileID: 1462491417}
   m_Layer: 0
   m_Name: 01Code
   m_TagString: Untagged
@@ -1712,20 +1750,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462491414}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0896db9efc57c1e44a32bfc5e847c254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   filename: locationData.json
   PPLC: {fileID: 4141477412687671931, guid: 97967a8db91af1749b5ec1e91cd74e22, type: 3}
-  YPosPPLC: 0
+  YPosPPLC: 1
   PPLA: {fileID: 6505806416197264883, guid: f177f1211f6ee7843b5db25fb58db101, type: 3}
-  YPosPPLA: 0
+  YPosPPLA: 1
   PPL: {fileID: 9029758491245684662, guid: 28622dc8002fdf3478231a3f4abafcfe, type: 3}
-  YPosPPL: 0
+  YPosPPL: 1
   PPLQ: {fileID: 1185099398563717711, guid: a62b9b488bb240d4ab33ebb2b7ea323d, type: 3}
-  YPosPPLQ: 0
+  YPosPPLQ: 1
   MissingDSGCode: {fileID: 1429926124814906, guid: b98cc3bfe6c5b5c499a418ec295f10cb, type: 3}
 --- !u!4 &1462491416
 Transform:
@@ -1741,6 +1779,59 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1462491417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462491414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d612bf77b33ed1d449d8910aeda7de02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSVFileName: dog.csv
+  dataType: 0
+  dataHeader: name
+  textMarker: {fileID: 6284984724541022092, guid: 7ff6c185f8653ef4db1ad9ac5b3da071, type: 3}
+--- !u!1 &1484966888 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+  m_PrefabInstance: {fileID: 1485714955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1484966892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484966888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1001 &1485714955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3049,7 +3140,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 4.5905e-41, w: 4e-45}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
