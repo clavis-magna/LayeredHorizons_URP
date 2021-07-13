@@ -130,7 +130,7 @@ public class readLocationData : MonoBehaviour
                 }
                 else
                 {
-                    GameObject MissingDSGCodeMarker = Instantiate(MissingDSGCode, new Vector3(thisXY[0], 0, thisXY[1]), Quaternion.Euler(0, 0, 0));
+                    GameObject MissingDSGCodeMarker = Instantiate(MissingDSGCode, new Vector3(thisXY[0], 2.0f, thisXY[1]), Quaternion.Euler(0, 0, 0));
                 }
             }
         }
