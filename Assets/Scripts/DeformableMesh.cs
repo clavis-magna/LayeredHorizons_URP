@@ -68,28 +68,50 @@ public class DeformableMesh : MonoBehaviour
         {
           //newVert is by how much do these vertices change
           var newVert = modifiedVertices[i] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression;
-
-          //vertices to the side of the depression point are also shifted but less. The position number is +1 -1 +MeshSize+1 -MeshSize-1
-          var newVertLeft = modifiedVertices[i-1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
-          var newVertRight = modifiedVertices[i+1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
-          var newVertTop = modifiedVertices[i-plane.gridSize-1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
-          var newVertBot = modifiedVertices[i+plane.gridSize+1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
-
-          //remove the old and bring in the newVert coord
-          modifiedVertices.RemoveAt(i+1);
-          modifiedVertices.Insert(i+1, newVertRight);
-
-          modifiedVertices.RemoveAt(i-1);
-          modifiedVertices.Insert(i-1, newVertLeft);
-
-          modifiedVertices.RemoveAt(i-11);
-          modifiedVertices.Insert(i-11, newVertTop);
-
-          modifiedVertices.RemoveAt(i+plane.gridSize+1);
-          modifiedVertices.Insert(i+plane.gridSize+1, newVertBot);
-
           modifiedVertices.RemoveAt(i);
           modifiedVertices.Insert(i, newVert);
+
+          //vertices to the side of the depression point are also shifted but less. The position number is +1 -1 +MeshSize+1 -MeshSize-1
+          //remove the old and bring in the newVert coord
+          //numbered in a clockwise direction 1 being the top
+
+          var newVert1 = modifiedVertices[i-1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
+          modifiedVertices.RemoveAt(i-1);
+          modifiedVertices.Insert(i-1, newVert1);
+
+          var newVert2 = modifiedVertices[i-plane.gridSize-2] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
+          modifiedVertices.RemoveAt(i-plane.gridSize-2);
+          modifiedVertices.Insert(i-plane.gridSize-2, newVert2);
+
+          var newVert3 = modifiedVertices[i-plane.gridSize-1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
+          modifiedVertices.RemoveAt(i-plane.gridSize-1);
+          modifiedVertices.Insert(i-plane.gridSize-1, newVert3);
+
+          var newVert4 = modifiedVertices[i-plane.gridSize] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
+          modifiedVertices.RemoveAt(i-plane.gridSize);
+          modifiedVertices.Insert(i-plane.gridSize, newVert4);
+
+          var newVert5 = modifiedVertices[i+1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
+          modifiedVertices.RemoveAt(i+1);
+          modifiedVertices.Insert(i+1, newVert5);
+
+          var newVert6 = modifiedVertices[i+plane.gridSize+2] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
+          modifiedVertices.RemoveAt(i+plane.gridSize+2);
+          modifiedVertices.Insert(i+plane.gridSize+2, newVert6);
+
+          var newVert7 = modifiedVertices[i+plane.gridSize+1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
+          modifiedVertices.RemoveAt(i+plane.gridSize+1);
+          modifiedVertices.Insert(i+plane.gridSize+1, newVert7);
+
+          var newVert8 = modifiedVertices[i+plane.gridSize] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
+          modifiedVertices.RemoveAt(i+plane.gridSize);
+          modifiedVertices.Insert(i+plane.gridSize, newVert8);
+
+
+
+
+
+
         }
 
 
