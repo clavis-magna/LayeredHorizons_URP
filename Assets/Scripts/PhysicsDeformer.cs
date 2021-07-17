@@ -6,7 +6,7 @@ public class PhysicsDeformer : MonoBehaviour
 {
 
     //Radius of which the collision appears
-    public float collisionRadius = 0.1f;
+    public float collisionRadius = 0.3f;
     public DeformableMesh deformableMesh;
 
     // void Update()
@@ -26,7 +26,9 @@ public class PhysicsDeformer : MonoBehaviour
       foreach(var contact in collision.contacts)
       {
         deformableMesh.AddDepression(contact.point, collisionRadius);
-            Destroy(gameObject);
+
+        //remove the gameobject when collision occurs
+        Destroy(gameObject);
 
       }
     }

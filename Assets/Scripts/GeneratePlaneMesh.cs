@@ -22,15 +22,13 @@ public class GeneratePlaneMesh : MonoBehaviour
     {
         filter = GetComponent<MeshFilter>();
         filter.mesh = GenerateMesh();
+
+
+
         //send a message to call the deformableMesh script
         SendMessage("MeshRegenerated");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     Mesh GenerateMesh()
     {
