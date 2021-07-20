@@ -43,9 +43,6 @@ public class DeformableMesh : MonoBehaviour
     //It then references this add depression which refreshes the values in the mesh.
     public void AddDepression(Vector3 depressionPoint, float radius)
     {
-      Debug.Log("Depression Added");
-
-
       //translate the depression relative to the worldspace and to the point of contact
       //creating a vector3 out of vec4
       var worldPos4 = this.transform.InverseTransformPoint(depressionPoint);

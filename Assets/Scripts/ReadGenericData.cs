@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityEngine.Networking;
+using TMPro;
+using System;
 
 public class readGenericData : MonoBehaviour
 {
@@ -10,12 +12,23 @@ public class readGenericData : MonoBehaviour
 
   // csv filename
   // in streaming assets (include .csv extension)
+  [Header("Name of data file here")]
   public string CSVFileName = "dog.csv";
-  public bool displayWord;
+  [Header("Header column of the data that you want to show")]
+  public string headerColumn = "dog";
+
+  public enum DataType
+  {
+    Word,
+    Sound,
+    Image
+  };
+
+  public DataType dataType;
+
   public GameObject textMarker;
 
   List<Dictionary<string, object>> data;
-
 
 
 
@@ -45,11 +58,10 @@ public class readGenericData : MonoBehaviour
 
         //send the csv string to the csv reader.
         data = CSVReader.Read(csvContents);
-        Debug.Log(data.Count);
 
         for (var i = 0; i < data.Count; i++)
         {
-          if (displayWord)
+          if (dataType == DataType.Word)
           {
               // convert from lat/long to world units
               // using the helper method in the 'helpers' script
@@ -58,8 +70,8 @@ public class readGenericData : MonoBehaviour
               // instantiate the marker game object
               // it should be a parent object with a textmesh on a child object
               GameObject thisMarker = Instantiate(textMarker, new Vector3(thisXY[0], 1.0f, thisXY[1]), Quaternion.Euler(0, 0, 0));
-              TextMesh nameText = thisMarker.GetComponentInChildren<TextMesh>();
-              nameText.text = (string)data[i]["dog"];
+              TextMeshPro nameText = thisMarker.GetComponentInChildren<TMPro.TextMeshPro>();
+              nameText.text = (string)data[i][headerColumn];
           }
 
         }
