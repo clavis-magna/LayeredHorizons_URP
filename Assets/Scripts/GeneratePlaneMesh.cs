@@ -7,8 +7,8 @@ using UnityEngine;
 public class GeneratePlaneMesh : MonoBehaviour
 {
 
-  public float size = 4;
-  public int gridSize = 16;
+  public float size = 100;
+  public int gridSize = 256;
 
   private MeshFilter filter;
 

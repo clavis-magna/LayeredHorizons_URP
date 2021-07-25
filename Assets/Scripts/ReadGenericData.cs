@@ -14,8 +14,6 @@ public class readGenericData : MonoBehaviour
   // in streaming assets (include .csv extension)
   [Header("Name of data file here")]
   public string CSVFileName = "dog.csv";
-  [Header("Header column of the data that you want to show")]
-  public string headerColumn = "dog";
 
   public enum DataType
   {
@@ -26,10 +24,28 @@ public class readGenericData : MonoBehaviour
 
   public DataType dataType;
 
+
+  [Header("Header column of the data that you want to show")]
+  public string headerColumn = "dog";
+
   public GameObject textMarker;
 
-  List<Dictionary<string, object>> data;
 
+  [Header("Deform Mesh Settings")]
+  public bool deformMesh;
+
+  [Header("Attach Deformer Object and Mesh")]
+  public GameObject meshDeformer;
+  public GameObject meshObject;
+
+  [Header("Decrease depression height if using edge smoothing")]
+  public bool edgeSmoothing = true;
+
+  [Header("Set the radius and height of collisions")]
+  public float depressionHeight = 1.0f;
+  public float depressionRadius = 1.0f;
+
+  List<Dictionary<string, object>> data;
 
 
   private int scaleX;
@@ -70,6 +86,35 @@ public class readGenericData : MonoBehaviour
               // instantiate the marker game object
               // it should be a parent object with a textmesh on a child object
               GameObject thisMarker = Instantiate(textMarker, new Vector3(thisXY[0], 1.0f, thisXY[1]), Quaternion.Euler(0, 0, 0));
+
+              //if the bool is switched to drop deformers
+              if (deformMesh)
+              {
+                //create the gameobjects
+                GameObject thisDeformer = Instantiate(meshDeformer, new Vector3(thisXY[0], 5.0f, thisXY[1]), Quaternion.Euler(0, 0, 0));
+
+                //get the physics deformer script from the marker
+                PhysicsDeformer script = thisDeformer.GetComponent<PhysicsDeformer>();
+
+                // assign the deformableMesh to the script
+                DeformableMesh parentMesh = meshObject.GetComponent<DeformableMesh>();
+                if (parentMesh != null)
+                {
+                  parentMesh.edgeSmoothing = edgeSmoothing;
+                  script.deformableMesh = parentMesh;
+                } else {
+                  Debug.Log("No DeformableMesh found on parent GameObject!");
+                }
+                //height and radius of the deformed mesh collision point controlled here
+                script.maximumDepression = depressionHeight;
+
+                script.collisionRadius = depressionRadius;
+
+
+
+              }
+
+
               TextMeshPro nameText = thisMarker.GetComponentInChildren<TMPro.TextMeshPro>();
               nameText.text = (string)data[i][headerColumn];
           }

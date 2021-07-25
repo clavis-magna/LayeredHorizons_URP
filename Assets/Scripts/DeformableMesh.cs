@@ -6,14 +6,21 @@ using UnityEngine;
 [RequireComponent(typeof(GeneratePlaneMesh))]
 public class DeformableMesh : MonoBehaviour
 {
+    //moving this variable to be controlled by the deformer script
+    //eventually to be controlled by the data script
+    // public float maximumDepression;
 
-    public float maximumDepression;
+
     // public List<Vector3> originalVertices;
     public List<Vector3> modifiedVertices;
 
     public List<Vector2> convertedVectors;
 
+    public bool edgeSmoothing = true;
+
+
     private GeneratePlaneMesh plane;
+
 
 
     //called by GeneratePlaneMesh
@@ -41,7 +48,7 @@ public class DeformableMesh : MonoBehaviour
 
     //This is called in the physics deformer which detects collision from the Collider
     //It then references this add depression which refreshes the values in the mesh.
-    public void AddDepression(Vector3 depressionPoint, float radius)
+    public void AddDepression(Vector3 depressionPoint, float radius, float maximumDepression)
     {
       //translate the depression relative to the worldspace and to the point of contact
       //creating a vector3 out of vec4
@@ -69,40 +76,49 @@ public class DeformableMesh : MonoBehaviour
           modifiedVertices.Insert(i, newVert);
 
           //vertices to the side of the depression point are also shifted but less. The position number is +1 -1 +MeshSize+1 -MeshSize-1
-          //remove the old and bring in the newVert coord
-          //numbered in a clockwise direction 1 being the top
+          //helps to remove particularly spiky vertices to make smoother terrain.
+          //edge smoothing creates shorter vertices around the collision points for "softer edges".
+          //the result is smoother terrain
+          //must adjust the depression height to be shorter if on.
+          if (edgeSmoothing)
+          {
+            //remove the old and bring in the newVert coord
+            //numbered in a clockwise direction 1 being the top
 
-          var newVert1 = modifiedVertices[i-1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
-          modifiedVertices.RemoveAt(i-1);
-          modifiedVertices.Insert(i-1, newVert1);
+            var newVert1 = modifiedVertices[i-1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
+            modifiedVertices.RemoveAt(i-1);
+            modifiedVertices.Insert(i-1, newVert1);
 
-          var newVert2 = modifiedVertices[i-plane.gridSize-2] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
-          modifiedVertices.RemoveAt(i-plane.gridSize-2);
-          modifiedVertices.Insert(i-plane.gridSize-2, newVert2);
+            var newVert2 = modifiedVertices[i-plane.gridSize-2] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
+            modifiedVertices.RemoveAt(i-plane.gridSize-2);
+            modifiedVertices.Insert(i-plane.gridSize-2, newVert2);
 
-          var newVert3 = modifiedVertices[i-plane.gridSize-1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
-          modifiedVertices.RemoveAt(i-plane.gridSize-1);
-          modifiedVertices.Insert(i-plane.gridSize-1, newVert3);
+            var newVert3 = modifiedVertices[i-plane.gridSize-1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
+            modifiedVertices.RemoveAt(i-plane.gridSize-1);
+            modifiedVertices.Insert(i-plane.gridSize-1, newVert3);
 
-          var newVert4 = modifiedVertices[i-plane.gridSize] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
-          modifiedVertices.RemoveAt(i-plane.gridSize);
-          modifiedVertices.Insert(i-plane.gridSize, newVert4);
+            var newVert4 = modifiedVertices[i-plane.gridSize] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
+            modifiedVertices.RemoveAt(i-plane.gridSize);
+            modifiedVertices.Insert(i-plane.gridSize, newVert4);
 
-          var newVert5 = modifiedVertices[i+1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
-          modifiedVertices.RemoveAt(i+1);
-          modifiedVertices.Insert(i+1, newVert5);
+            var newVert5 = modifiedVertices[i+1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
+            modifiedVertices.RemoveAt(i+1);
+            modifiedVertices.Insert(i+1, newVert5);
 
-          var newVert6 = modifiedVertices[i+plane.gridSize+2] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
-          modifiedVertices.RemoveAt(i+plane.gridSize+2);
-          modifiedVertices.Insert(i+plane.gridSize+2, newVert6);
+            var newVert6 = modifiedVertices[i+plane.gridSize+2] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
+            modifiedVertices.RemoveAt(i+plane.gridSize+2);
+            modifiedVertices.Insert(i+plane.gridSize+2, newVert6);
 
-          var newVert7 = modifiedVertices[i+plane.gridSize+1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
-          modifiedVertices.RemoveAt(i+plane.gridSize+1);
-          modifiedVertices.Insert(i+plane.gridSize+1, newVert7);
+            var newVert7 = modifiedVertices[i+plane.gridSize+1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
+            modifiedVertices.RemoveAt(i+plane.gridSize+1);
+            modifiedVertices.Insert(i+plane.gridSize+1, newVert7);
 
-          var newVert8 = modifiedVertices[i+plane.gridSize] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
-          modifiedVertices.RemoveAt(i+plane.gridSize);
-          modifiedVertices.Insert(i+plane.gridSize, newVert8);
+            var newVert8 = modifiedVertices[i+plane.gridSize] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
+            modifiedVertices.RemoveAt(i+plane.gridSize);
+            modifiedVertices.Insert(i+plane.gridSize, newVert8);
+          }
+
+
 
 
 
