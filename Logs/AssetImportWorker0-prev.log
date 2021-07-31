@@ -1,0 +1,312 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.12f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/jakemu/Documents/Developer/UnitySoftGOs/LayeredHorizons_URP
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56858
+Successfully changed project path to: /Users/jakemu/Documents/Developer/UnitySoftGOs/LayeredHorizons_URP
+/Users/jakemu/Documents/Developer/UnitySoftGOs/LayeredHorizons_URP
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 96.22 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 20.49 ms.
+Initialize engine version: 2020.3.12f1 (b3b2c6512326)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.12f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/jakemu/Documents/Developer/UnitySoftGOs/LayeredHorizons_URP/Assets
+GfxDevice: creating device client; threaded=0
+2021-07-30 19:17:38.892 Unity[15895:1639044] Color LCD preferred device: AMD Radeon Pro 5300M (high power)
+2021-07-30 19:17:38.892 Unity[15895:1639044] Metal devices available: 2
+2021-07-30 19:17:38.892 Unity[15895:1639044] 0: AMD Radeon Pro 5300M (high power)
+2021-07-30 19:17:38.892 Unity[15895:1639044] 1: Intel(R) UHD Graphics 630 (low power)
+2021-07-30 19:17:38.893 Unity[15895:1639044] Using device AMD Radeon Pro 5300M (high power)
+Initializing Metal device caps: AMD Radeon Pro 5300M
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.12f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.12f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56895
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.12f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000637 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 67.67 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.48 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.281 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007747 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 76.52 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.54 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.414 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.12f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.47 ms.
+Unloading 3801 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 278.8 MB.
+System memory in use after: 278.7 MB.
+
+Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 4221.
+Total: 3.290613 ms (FindLiveObjects: 0.396989 ms CreateObjectMapping: 0.180036 ms MarkObjects: 2.344726 ms  DeleteObjects: 0.367844 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/TextParent.prefab
+  artifactKey: Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TextParent.prefab using Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b1083e938bae6982a2445a8094b26af') in 1.241347 seconds 
+  Import took 1.248868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.392456 seconds.
+  path: Assets/Prefabs/TextParent.prefab
+  artifactKey: Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TextParent.prefab using Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1429c28974acd40e8b8ac0db032bec37') in 0.026509 seconds 
+  Import took 0.035960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.396213 seconds.
+  path: Assets/Prefabs/TextParent.prefab
+  artifactKey: Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TextParent.prefab using Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8c983788c3077025d7eb7af6f9a2a6b') in 0.024137 seconds 
+  Import took 0.031984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.816055 seconds.
+  path: Assets/Prefabs/TextParent.prefab
+  artifactKey: Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TextParent.prefab using Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e429d3677f71a1070db82d13db389a') in 0.023941 seconds 
+  Import took 0.033089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.534484 seconds.
+  path: Assets/Prefabs/TextParent.prefab
+  artifactKey: Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TextParent.prefab using Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a359a6a0d7b90d243bfb05259a61f448') in 0.025479 seconds 
+  Import took 0.032244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.667000 seconds.
+  path: Assets/Prefabs/TextParent.prefab
+  artifactKey: Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TextParent.prefab using Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ddcecc4754d287951241d06cbebeb32') in 0.021458 seconds 
+  Import took 0.027995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.106480 seconds.
+  path: Assets/Prefabs/TextParent.prefab
+  artifactKey: Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TextParent.prefab using Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cee1f8b010507b9262de9de132b55020') in 0.022715 seconds 
+  Import took 0.028967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.003504 seconds.
+  path: Assets/Prefabs/TextParent.prefab
+  artifactKey: Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TextParent.prefab using Guid(53359c84e175a474f852130a574fcf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5420bdeb4cd5188ad4946cd373f7a76c') in 0.025944 seconds 
+  Import took 0.034326 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006036 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.50 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.247 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.48 ms.
+Unloading 3615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 269.8 MB.
+System memory in use after: 269.7 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4225.
+Total: 3.092507 ms (FindLiveObjects: 0.344265 ms CreateObjectMapping: 0.163977 ms MarkObjects: 2.264330 ms  DeleteObjects: 0.318832 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011872 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.51 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.252 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.47 ms.
+Unloading 3615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 270.4 MB.
+System memory in use after: 270.3 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4229.
+Total: 3.075062 ms (FindLiveObjects: 0.344127 ms CreateObjectMapping: 0.174373 ms MarkObjects: 2.209897 ms  DeleteObjects: 0.345874 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 56802.373410 seconds.
+  path: Assets/Materials/TerrainShader 1.shadergraph
+  artifactKey: Guid(184a6dee280824dac92143db08e8c676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/TerrainShader 1.shadergraph using Guid(184a6dee280824dac92143db08e8c676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202e13a01aeb341c087058f92b443992') in 0.355991 seconds 
+  Import took 0.363199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.659229 seconds.
+  path: Assets/Materials/TerrainShader.shadergraph
+  artifactKey: Guid(683b97e7bfc3d452f84a4ccbd1c61cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/TerrainShader.shadergraph using Guid(683b97e7bfc3d452f84a4ccbd1c61cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd702c270befba1fb2d72dbee4884f35') in 0.002277 seconds 
+  Import took 0.010141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.500766 seconds.
+  path: Assets/Materials/TerrainShader.shadergraph
+  artifactKey: Guid(683b97e7bfc3d452f84a4ccbd1c61cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/TerrainShader.shadergraph using Guid(683b97e7bfc3d452f84a4ccbd1c61cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd702c270befba1fb2d72dbee4884f35') in 0.002501 seconds 
+  Import took 0.009700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.512751 seconds.
+  path: Assets/Materials/TerrainShader.shadergraph
+  artifactKey: Guid(683b97e7bfc3d452f84a4ccbd1c61cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/TerrainShader.shadergraph using Guid(683b97e7bfc3d452f84a4ccbd1c61cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '814db7f65c442e28edddb736e349fb92') in 0.002397 seconds 
+  Import took 0.010139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 398.750513 seconds.
+  path: Assets/Materials/TerrainShader.shadergraph
+  artifactKey: Guid(683b97e7bfc3d452f84a4ccbd1c61cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/TerrainShader.shadergraph using Guid(683b97e7bfc3d452f84a4ccbd1c61cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70573e70f190bee155a314be164f73d7') in 0.002706 seconds 
+  Import took 0.009732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.056062 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(d0234ba368eeec9418390da711bfdad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(d0234ba368eeec9418390da711bfdad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd1fccef896d48891410691dfde716e5') in 0.001015 seconds 
+  Import took 0.008188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2731.378570 seconds.
+  path: Assets/Materials/TerrainShader.shadergraph
+  artifactKey: Guid(683b97e7bfc3d452f84a4ccbd1c61cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/TerrainShader.shadergraph using Guid(683b97e7bfc3d452f84a4ccbd1c61cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7767ec85705fe80fcd832c1c4f331be4') in 0.003102 seconds 
+  Import took 0.010232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.563670 seconds.
+  path: Assets/Materials/TerrainShader.shadergraph
+  artifactKey: Guid(683b97e7bfc3d452f84a4ccbd1c61cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/TerrainShader.shadergraph using Guid(683b97e7bfc3d452f84a4ccbd1c61cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7767ec85705fe80fcd832c1c4f331be4') in 0.002077 seconds 
+  Import took 0.009265 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010787 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.56 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.317 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.51 ms.
+Unloading 3615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 275.2 MB.
+System memory in use after: 275.1 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4233.
+Total: 3.213199 ms (FindLiveObjects: 0.344952 ms CreateObjectMapping: 0.179182 ms MarkObjects: 2.315594 ms  DeleteObjects: 0.372627 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 63.737825 seconds.
+  path: Assets/Materials/TerrainMaterial.mat
+  artifactKey: Guid(9c1a09cddf1dd41b0833e19a5e38619c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/TerrainMaterial.mat using Guid(9c1a09cddf1dd41b0833e19a5e38619c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16bb1400112d12767da092c7ed59e70c') in 0.400234 seconds 
+  Import took 0.410837 seconds .
+

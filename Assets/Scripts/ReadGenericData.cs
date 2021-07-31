@@ -83,15 +83,13 @@ public class readGenericData : MonoBehaviour
               // using the helper method in the 'helpers' script
               float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
 
-              // instantiate the marker game object
-              // it should be a parent object with a textmesh on a child object
-              GameObject thisMarker = Instantiate(textMarker, new Vector3(thisXY[0], 1.0f, thisXY[1]), Quaternion.Euler(0, 0, 0));
+
 
               //if the bool is switched to drop deformers
               if (deformMesh)
               {
                 //create the gameobjects
-                GameObject thisDeformer = Instantiate(meshDeformer, new Vector3(thisXY[0], 5.0f, thisXY[1]), Quaternion.Euler(0, 0, 0));
+                GameObject thisDeformer = Instantiate(meshDeformer, new Vector3(thisXY[0], 0.01f * i, thisXY[1]), Quaternion.Euler(0, 0, 0));
 
                 //get the physics deformer script from the marker
                 PhysicsDeformer script = thisDeformer.GetComponent<PhysicsDeformer>();
@@ -114,7 +112,11 @@ public class readGenericData : MonoBehaviour
 
               }
 
+              // instantiate the marker game object
+              // it should be a parent object with a textmesh on a child object
+              GameObject thisMarker = Instantiate(textMarker, new Vector3(thisXY[0], 10.0f, thisXY[1]), Quaternion.Euler(0, 0, 0));
 
+              //Get the created textmeshpro and change the work it is displaying to match the data.
               TextMeshPro nameText = thisMarker.GetComponentInChildren<TMPro.TextMeshPro>();
               nameText.text = (string)data[i][headerColumn];
           }
