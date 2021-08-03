@@ -386,11 +386,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CSVFileName: dog.csv
   dataType: 0
+  meshObject: {fileID: 1683223509}
   headerColumn: dog
-  textMarker: {fileID: 6702471200078413792, guid: 53359c84e175a474f852130a574fcf84, type: 3}
+  textCreator: {fileID: 976392300949424911, guid: 9bd96b72a0bbb4699ba9da7c0a020036, type: 3}
   deformMesh: 1
   meshDeformer: {fileID: 976392300949424911, guid: 24c925c0a00df4791a6f6a1894112a90, type: 3}
-  meshObject: {fileID: 1683223509}
   edgeSmoothing: 1
   depressionHeight: 0.1
   depressionRadius: 2
@@ -660,7 +660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1255225490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,11 +675,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CSVFileName: languageData.csv
   dataType: 0
+  meshObject: {fileID: 1683223509}
   headerColumn: name
-  textMarker: {fileID: 6702471200078413792, guid: 53359c84e175a474f852130a574fcf84, type: 3}
+  textCreator: {fileID: 0}
   deformMesh: 1
   meshDeformer: {fileID: 976392300949424911, guid: 24c925c0a00df4791a6f6a1894112a90, type: 3}
-  meshObject: {fileID: 1683223509}
   edgeSmoothing: 1
   depressionHeight: 0.3
   depressionRadius: 2
@@ -1166,6 +1166,7 @@ MonoBehaviour:
   modifiedVertices: []
   convertedVectors: []
   edgeSmoothing: 1
+  textMarker: {fileID: 6702471200078413792, guid: 53359c84e175a474f852130a574fcf84, type: 3}
 --- !u!114 &1683223511
 MonoBehaviour:
   m_ObjectHideFlags: 0

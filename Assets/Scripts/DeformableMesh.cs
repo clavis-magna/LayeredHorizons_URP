@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using TMPro;
+
 
 [RequireComponent(typeof(GeneratePlaneMesh))]
 public class DeformableMesh : MonoBehaviour
@@ -14,6 +16,7 @@ public class DeformableMesh : MonoBehaviour
     // public List<Vector3> originalVertices;
     public List<Vector3> modifiedVertices;
 
+    //converted vertices is just the XZ modified vertices, used to get distance without regards to the y pos.
     public List<Vector2> convertedVectors;
 
     public bool edgeSmoothing = true;
@@ -21,7 +24,7 @@ public class DeformableMesh : MonoBehaviour
 
     private GeneratePlaneMesh plane;
 
-
+    public GameObject textMarker;
 
     //called by GeneratePlaneMesh
     //anytime the mesh needs to be regenerated this is called.
@@ -51,21 +54,19 @@ public class DeformableMesh : MonoBehaviour
     public void AddDepression(Vector3 depressionPoint, float radius, float maximumDepression)
     {
       //translate the depression relative to the worldspace and to the point of contact
-      //creating a vector3 out of vec4
-      var worldPos4 = this.transform.InverseTransformPoint(depressionPoint);
-
-      //not needed anymore
-      //worldPos is where the depressionPoint is
-      // var worldPos = new Vector3(worldPos4.x, worldPos4.y, worldPos4.z);
+      //creating a vector3 out of contact point that is relative to worldspace
+      var worldPos3 = this.transform.InverseTransformPoint(depressionPoint);
 
       //removal of the y position of impact
-      var worldPos2 = new Vector2(worldPos4.x, worldPos4.z);
+      var worldPos2 = new Vector2(worldPos3.x, worldPos3.z);
+
+
 
       for (int i = 0; i < modifiedVertices.Count; ++i)
       {
 
         //distance is detecting which pixels in the x and z and y that need to be impacted
-        var distance = (worldPos2 - (convertedVectors[i])).magnitude;
+        var distance = (worldPos2 - (convertedVectors[i])).sqrMagnitude;
 
         //Detecting the impact radius in which the vertices of the mesh in that radius will be remade.
         if (distance < radius)
@@ -117,24 +118,37 @@ public class DeformableMesh : MonoBehaviour
             modifiedVertices.RemoveAt(i+plane.gridSize);
             modifiedVertices.Insert(i+plane.gridSize, newVert8);
           }
-
-
-
-
-
-
-
-
         }
-
-
-
       }
-
-
       plane.mesh.SetVertices(modifiedVertices);
 
-      // originalVertices = modifiedVertices;
     }
 
+    //Creates a text label at the point of impact above the mesh instead of a mesh deformation
+    public void AddTextLabel(Vector3 pointOfContact, string text)
+    {
+      //translate the depression relative to the worldspace and to the point of contact
+      //creating a vector3 out of contact point that is relative to worldspace
+      var worldPos3 = this.transform.InverseTransformPoint(pointOfContact);
+      //removal of the y position of impact
+      var worldPos2 = new Vector2(worldPos3.x, worldPos3.z);
+
+      var meshHeight = 5.0f;
+
+
+      for (int i = 0; i < modifiedVertices.Count; ++i)
+      {
+        var distance = (worldPos2 - (convertedVectors[i])).sqrMagnitude;
+        if (distance < 0.5)
+        {
+          meshHeight = modifiedVertices[i].y;
+        }
+      }
+
+      GameObject thisMarker = Instantiate(textMarker, new Vector3(pointOfContact.x, meshHeight, pointOfContact.z), Quaternion.Euler(0, 0, 0));
+      //Get the created textmeshpro and change the work it is displaying to match the data.
+      TextMeshPro nameText = thisMarker.GetComponentInChildren<TMPro.TextMeshPro>();
+      nameText.text = text;
+
+    }
 }
