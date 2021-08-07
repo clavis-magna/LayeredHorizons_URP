@@ -28,9 +28,11 @@ public class PhysicsDeformer : MonoBehaviour
       foreach(var contact in collision.contacts)
       {
         deformableMesh.AddDepression(contact.point, collisionRadius, maximumDepression);
-
         //remove the gameobject when collision occurs
-        Destroy(gameObject);
+        // Destroy(gameObject);
+
+        // pooled version of destroy Object
+        MeshPool.Instance.ReturnToPool(this);
 
       }
     }

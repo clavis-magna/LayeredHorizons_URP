@@ -101,7 +101,7 @@ public class CreateOutlines : MonoBehaviour
                 float y = ((radius) * Mathf.Cos(phi));
                 */
 
-                float y = 1f;
+                float y = 0.5f;
                 float[] thisXY = helpers.getXYPos(thisLat, thisLon, scaleX, scaleY);
                 float x = thisXY[0];
                 float z = thisXY[1];
@@ -125,7 +125,7 @@ public class CreateOutlines : MonoBehaviour
 
             }
 
-            print("outlines done"); 
+            print("outlines done");
 
         }
     }

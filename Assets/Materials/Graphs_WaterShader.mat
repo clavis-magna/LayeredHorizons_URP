@@ -40,12 +40,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Depth: -0.28
+    - _Depth: -11.78
     - _Displacement: 0.5
     - _NormalStrength: 1
-    - _Smoothness: 0.983
-    - _Strength: 1.378
+    - _Smoothness: 1
+    - _Strength: 2
     m_Colors:
-    - _DeepCol: {r: 0, g: 0.58793974, b: 1, a: 1}
-    - _ShallowCol: {r: 0, g: 0.45169854, b: 0.7830188, a: 0.105882354}
+    - _DeepCol: {r: 0, g: 0, b: 1, a: 1}
+    - _ShallowCol: {r: 1, g: 1, b: 1, a: 0.105882354}
   m_BuildTextureStacks: []

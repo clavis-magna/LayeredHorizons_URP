@@ -72,17 +72,18 @@ public class readGenericData : MonoBehaviour
 
         for (var i = 0; i < data.Count; i++)
         {
-
           // convert from lat/long to world units
           // using the helper method in the 'helpers' script
           float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
 
+          DeformableMesh parentMesh = meshObject.GetComponent<DeformableMesh>();
+
+
           //Creates a ball that will eventually create the text.
           if (dataType == DataType.Word)
           {
-            GameObject thisTextCreator = Instantiate(textCreator, new Vector3(thisXY[0], 15.0f + 0.01f * i, thisXY[1]), Quaternion.Euler(0, 0, 0));
+            GameObject thisTextCreator = Instantiate(textCreator, new Vector3(thisXY[0], 200.0f + 1.0f * i, thisXY[1]), Quaternion.Euler(0, 0, 0));
             createText textScript = thisTextCreator.GetComponent<createText>();
-            DeformableMesh parentMesh = meshObject.GetComponent<DeformableMesh>();
             if (parentMesh != null)
             {
               textScript.deformableMesh = parentMesh;
@@ -97,17 +98,38 @@ public class readGenericData : MonoBehaviour
           }
 
 
-          //if the bool is switched to drop deformers
+          // //if the bool is switched to drop deformers
+          // //NO POOL
+          // if (deformMesh)
+          // {
+          //   //create the gameobjects
+          //   GameObject thisDeformer = Instantiate(meshDeformer, new Vector3(thisXY[0], 5.0f + 1f * i, thisXY[1]), Quaternion.Euler(0, 0, 0));
+          //
+          //   //get the physics deformer script from the marker
+          //   PhysicsDeformer script = thisDeformer.GetComponent<PhysicsDeformer>();
+          //   //
+          //   // // assign the deformableMesh to the script
+          //   // DeformableMesh parentMesh = meshObject.GetComponent<DeformableMesh>();
+          //   if (parentMesh != null)
+          //   {
+          //     parentMesh.edgeSmoothing = edgeSmoothing;
+          //     script.deformableMesh = parentMesh;
+          //   } else {
+          //     Debug.Log("No DeformableMesh found on parent GameObject!");
+          //   }
+          //   //height and radius of the deformed mesh collision point controlled here
+          //   script.maximumDepression = depressionHeight;
+          //   script.collisionRadius = depressionRadius;
+          // }
+
+          //WITH POOL
           if (deformMesh)
           {
-            //create the gameobjects
-            GameObject thisDeformer = Instantiate(meshDeformer, new Vector3(thisXY[0], 5.0f + 0.01f * i, thisXY[1]), Quaternion.Euler(0, 0, 0));
+            var thisDeformer = MeshPool.Instance.Get();
+            thisDeformer.transform.rotation = Quaternion.Euler(0, 0, 0);
+            thisDeformer.transform.position = new Vector3(thisXY[0], 5.0f + 1f * i, thisXY[1]);
 
-            //get the physics deformer script from the marker
             PhysicsDeformer script = thisDeformer.GetComponent<PhysicsDeformer>();
-
-            // assign the deformableMesh to the script
-            DeformableMesh parentMesh = meshObject.GetComponent<DeformableMesh>();
             if (parentMesh != null)
             {
               parentMesh.edgeSmoothing = edgeSmoothing;
@@ -118,8 +140,9 @@ public class readGenericData : MonoBehaviour
             //height and radius of the deformed mesh collision point controlled here
             script.maximumDepression = depressionHeight;
             script.collisionRadius = depressionRadius;
-          }
 
+            thisDeformer.gameObject.SetActive(true);
+          }
 
 
         }

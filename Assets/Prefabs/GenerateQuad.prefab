@@ -137,11 +137,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5846034889349709664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eee7573db9534edaa0c66bfb32d35e9, type: 3}
+  m_Script: {fileID: 11500000, guid: a292e3bc8a78342fdab6bd276781e9fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 6
-  gridSize: 64
+  size: 100
+  gridSize: 256
 --- !u!114 &5846034889349709671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,9 +151,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5846034889349709664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b5a0327bf8014fae89e5fbd3ff227c3, type: 3}
+  m_Script: {fileID: 11500000, guid: b163a406d9fc64f1eb592db193d2f461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumDepression: 0.01
-  originalVertices: []
   modifiedVertices: []
+  convertedVectors: []
+  edgeSmoothing: 1
+  textMarker: {fileID: 0}

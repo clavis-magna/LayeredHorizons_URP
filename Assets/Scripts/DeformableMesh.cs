@@ -60,8 +60,6 @@ public class DeformableMesh : MonoBehaviour
       //removal of the y position of impact
       var worldPos2 = new Vector2(worldPos3.x, worldPos3.z);
 
-
-
       for (int i = 0; i < modifiedVertices.Count; ++i)
       {
 
@@ -121,7 +119,6 @@ public class DeformableMesh : MonoBehaviour
         }
       }
       plane.mesh.SetVertices(modifiedVertices);
-
     }
 
     //Creates a text label at the point of impact above the mesh instead of a mesh deformation
