@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.IO;
+using UnityEngine;
 using UnityEngine.Networking;
 using System;
+using UnityAsync;
+
 
 public class readGenericData : MonoBehaviour
 {
@@ -55,11 +57,11 @@ public class readGenericData : MonoBehaviour
       // set in the inspector
       scaleX = (int)InitiateWorldScale.mapScale.x;
       scaleY = (int)InitiateWorldScale.mapScale.y;
-      StartCoroutine(loadData());
+      loadData();
     }
 
     //needs to be IEnumerator to allow for a delay
-    IEnumerator loadData()
+    async void loadData()
     {
 
       //check if the file exists in the streaming assets folder
@@ -125,7 +127,8 @@ public class readGenericData : MonoBehaviour
           }
 
           //creates a delay after each loop through to give the performance room to breath
-          yield return new WaitForSeconds(1);
+          // yield return new WaitForSeconds(1);
+          await new WaitForFrames(1);
         }
       } else {
         Debug.LogErrorFormat("Streaming asset not found: {0}", CSVFileName);
