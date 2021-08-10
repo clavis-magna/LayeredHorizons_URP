@@ -18,24 +18,42 @@ public abstract class GenericObjectPool<T> : MonoBehaviour where T : Component
     Instance = this;
   }
 
+  //Precreates a pool of instantiated objects which can be accessed through the get.
+  private void OnEnable()
+  {
+    AddObjects(5);
+  }
+
+  //This function is used instead of instantiate.
+  //Needs to be put into a coroutine, limiting the number of objects to be created.
+  //Need the coroutine to creates a stop in the queue, waiting for objects to be added into the queue first
+  //essentially throttling ram usage.
   public T Get()
   {
+    // startCoroutine(waitForQueue());
     if (objects.Count == 0)
       AddObjects(1);
     return objects.Dequeue();
   }
 
+
+
+  //function for destroy, deactivates and returns an object to the queue.
   public void ReturnToPool(T objectToReturn)
   {
     objectToReturn.gameObject.SetActive(false);
     objects.Enqueue(objectToReturn);
   }
 
+  //Function to create objects
   private void AddObjects(int count)
   {
-    var newObject = GameObject.Instantiate(prefab);
-    newObject.gameObject.SetActive(false);
-    objects.Enqueue(newObject);
+    for (var i = 0; i < count; i++)
+    {
+      var newObject = GameObject.Instantiate(prefab);
+      newObject.gameObject.SetActive(false);
+      objects.Enqueue(newObject);
+    }
   }
 
 }

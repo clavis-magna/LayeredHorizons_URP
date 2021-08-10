@@ -391,8 +391,8 @@ MonoBehaviour:
   textCreator: {fileID: 976392300949424911, guid: 9bd96b72a0bbb4699ba9da7c0a020036, type: 3}
   deformMesh: 1
   meshDeformer: {fileID: 976392300949424911, guid: 24c925c0a00df4791a6f6a1894112a90, type: 3}
-  edgeSmoothing: 0
-  depressionHeight: 1
+  edgeSmoothing: 1
+  depressionHeight: 0.3
   depressionRadius: 2
 --- !u!4 &690883560
 Transform:
