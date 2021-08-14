@@ -1,4 +1,4 @@
-using System.Collections;
+  using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -82,8 +82,8 @@ public class readGenericData : MonoBehaviour
           DeformableMesh parentMesh = meshObject.GetComponent<DeformableMesh>();
 
 
-          //needs a wait until the deformMesh = true before this is executed.
-          // //Creates a ball that will eventually create the text.
+          // //needs a wait until the deformMesh = true before this is executed.
+          // // //Creates a ball that will eventually create the text.
           // if (dataType == DataType.Word)
           // {
           //   GameObject thisTextCreator = Instantiate(textCreator, new Vector3(thisXY[0], 200.0f + 1.0f * i, thisXY[1]), Quaternion.Euler(0, 0, 0));
@@ -109,7 +109,7 @@ public class readGenericData : MonoBehaviour
           {
             var thisDeformer = MeshPool.Instance.Get();
             thisDeformer.transform.rotation = Quaternion.Euler(0, 0, 0);
-            thisDeformer.transform.position = new Vector3(thisXY[0], 1.0f, thisXY[1]);
+            thisDeformer.transform.position = new Vector3(thisXY[0], -1.0f, thisXY[1]);
 
             PhysicsDeformer script = thisDeformer.GetComponent<PhysicsDeformer>();
             if (parentMesh != null)
