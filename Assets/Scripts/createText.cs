@@ -14,7 +14,8 @@ public class createText : MonoBehaviour
         deformableMesh.AddTextLabel(contact.point, textData);
 
         //remove the gameobject when collision occurs
-        Destroy(gameObject);
+        // Destroy(gameObject);
+        TextPool.Instance.ReturnToPool(this);
 
       }
     }
