@@ -4,6 +4,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.Networking;
 using System;
+using System.Linq;
 using UnityAsync;
 
 
@@ -24,10 +25,12 @@ public class readGenericData : MonoBehaviour
   };
 
   public DataType dataType;
-  public GameObject meshObject;
+
+  public GameObject generateMeshPrefab;
 
 
-  [Header("Header column needs to match the DataType (string for word, link for audio, etc)")]
+
+    [Header("Header column needs to match the DataType (string for word, link for audio, etc)")]
   public string headerColumn = "dog";
 
   [Header("If Data Type == Word")]
@@ -48,7 +51,7 @@ public class readGenericData : MonoBehaviour
   private int scaleX;
   private int scaleY;
 
-  private bool deformMeshFinished = false;
+  private GameObject meshObject;
 
 
     // Start is called before the first frame update
@@ -63,7 +66,49 @@ public class readGenericData : MonoBehaviour
     }
 
     //needs to be IEnumerator to allow for a delay
-  
+
+    void generateMesh()
+    {
+        //Lists to store positions of where the lat lon data sits.
+        List<float> XList = new List<float>();
+        List<float> ZList = new List<float>();
+
+        for (var i = 0; i < data.Count; i++)
+        {
+            //add the positions to this list to then find where the max min point is
+            float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
+            XList.Add(thisXY[0]);
+            ZList.Add(thisXY[1]);
+        }
+        float xMin = XList.Min();
+        float xMax = XList.Max();
+
+        float zMin = ZList.Min();
+        float zMax = ZList.Max();
+
+        //calculate the point at which this data centrepoint is to get position.
+        Vector2 centrePoint = new Vector2((xMin + xMax) / 2f , (zMin + zMax) / 2f);
+
+        meshObject = Instantiate(Resources.Load("GenerateQuad"), new Vector3(centrePoint.x, -0.5f, centrePoint.y), Quaternion.identity) as GameObject;
+        if (meshObject != null)
+        {
+            Debug.Log("We ahve a meshplane");
+
+
+        }
+        else
+        {
+            Debug.Log("Error: A Mesh Plane Object was not instantiated");
+        }
+
+    Debug.Log(xMin);
+        Debug.Log(xMax);
+        Debug.Log(zMin);
+        Debug.Log(zMax);
+
+    }
+
+
     async void loadData()
     {
 
@@ -76,10 +121,12 @@ public class readGenericData : MonoBehaviour
                 //send the csv string to the csv reader.
                 data = CSVReader.Read(csvContents);
 
+                generateMesh();
+
+
                 //Get the deformableMesh GO ready to place in the prefabs further down
                 DeformableMesh parentMesh = meshObject.GetComponent<DeformableMesh>();
 
-                
 
                 for (var i = 0; i < data.Count; i++)
                 {
@@ -115,7 +162,6 @@ public class readGenericData : MonoBehaviour
                       }
 
                       //creates a delay after each loop through to prevent lag spikes
-                      // yield return new WaitForSeconds(1);
                       await new WaitForFrames(5);
                 }
 
@@ -136,7 +182,6 @@ public class readGenericData : MonoBehaviour
                         thisTextCreator.transform.rotation = Quaternion.Euler(0, 0, 0);
                         thisTextCreator.transform.position = new Vector3(thisXY[0], -1.0f, thisXY[1]);
 
-                        //GameObject thisTextCreator = Instantiate(textCreator, new Vector3(thisXY[0], 200.0f + 1.0f * i, thisXY[1]), Quaternion.Euler(0, 0, 0));
                         createText textScript = thisTextCreator.GetComponent<createText>();
                         if (parentMesh != null)
                         {
@@ -149,10 +194,9 @@ public class readGenericData : MonoBehaviour
                             Debug.Log("No DeformableMesh found on parent GameObject!");
                         }
                         thisTextCreator.gameObject.SetActive(true);
-                }
+                    }
 
                     //creates a delay after each loop through to prevent lag spikes
-                    // yield return new WaitForSeconds(1);
                     await new WaitForFrames(5);
                 }
         }
