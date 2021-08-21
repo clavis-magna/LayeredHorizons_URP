@@ -506,6 +506,7 @@ MonoBehaviour:
   CSVFileName: dog.csv
   dataType: 0
   headerColumn: dog
+  meshColor: {r: 0.3, g: 0.4, b: 0.6, a: 0.3}
   deformMesh: 1
   edgeSmoothing: 1
   depressionHeight: 0.3
@@ -778,7 +779,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1255225490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -794,6 +795,7 @@ MonoBehaviour:
   CSVFileName: languageData.csv
   dataType: 0
   headerColumn: name
+  meshColor: {r: 0.9716981, g: 0.06463611, b: 0.0045834924, a: 0.3}
   deformMesh: 1
   edgeSmoothing: 1
   depressionHeight: 0.3
@@ -942,6 +944,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xSize: 100
   zSize: 100
+  xGridlines: 0
+  zGridlines: 0
 --- !u!114 &1427133729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -957,7 +961,6 @@ MonoBehaviour:
   modifiedVertices: []
   convertedVectors: []
   edgeSmoothing: 1
-  textMarker: {fileID: 6702471200078413792, guid: 53359c84e175a474f852130a574fcf84, type: 3}
 --- !u!1 &1462491414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,7 +1377,6 @@ MonoBehaviour:
   modifiedVertices: []
   convertedVectors: []
   edgeSmoothing: 1
-  textMarker: {fileID: 6702471200078413792, guid: 53359c84e175a474f852130a574fcf84, type: 3}
 --- !u!114 &1683223511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1389,6 +1391,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xSize: 100
   zSize: 100
+  xGridlines: 0
+  zGridlines: 0
 --- !u!1 &1954262336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,7 +1462,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983529489}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f056201150a8b545a029f3b8cc39baa, type: 3}
   m_Name: 

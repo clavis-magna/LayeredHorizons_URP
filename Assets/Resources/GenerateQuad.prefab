@@ -142,6 +142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xSize: 100
   zSize: 100
+  xGridlines: 0
+  zGridlines: 0
 --- !u!114 &5846034889349709671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,4 +159,4 @@ MonoBehaviour:
   modifiedVertices: []
   convertedVectors: []
   edgeSmoothing: 1
-  textMarker: {fileID: 6702471200078413792, guid: 53359c84e175a474f852130a574fcf84, type: 3}
+  textMarker: {fileID: 0}

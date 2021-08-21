@@ -29,8 +29,10 @@ public class readGenericData : MonoBehaviour
     [Header("Header column needs to match the DataType (string for word, link for audio, etc)")]
   public string headerColumn = "dog";
 
-  [Header("Deform Mesh Settings (Important if bool is true)")]
-  public bool deformMesh;
+    [Header("Deform Mesh Settings (Important if bool is true)")]
+   public Color meshColor = new Color(0.3f, 0.4f, 0.6f, 0.3f);
+
+    public bool deformMesh;
   //public GameObject meshDeformer;
   public bool edgeSmoothing = true;
   public float depressionHeight = 1.0f;
@@ -91,11 +93,20 @@ public class readGenericData : MonoBehaviour
         {
             Debug.Log("Mesh Plane Generated");
 
+            //Set the size of the mesh leaving a buffer space for the mesh.
+            GeneratePlaneMesh meshGenerationScript = meshObject.GetComponent<GeneratePlaneMesh>();
+            meshGenerationScript.xSize = xMax - xMin + 10;
+            meshGenerationScript.zSize = zMax - zMin + 10;
+
+            //Change the size of the collider too.
+            BoxCollider colliderChild = meshObject.transform.GetChild(0).gameObject.GetComponent<BoxCollider>();
+            colliderChild.size = new Vector3(xMax - xMin + 10, 10, zMax - zMin + 10);
+
             //TODO: Make these changable from the inspector
             //Colour of the mesh
             Renderer meshRenderer = meshObject.GetComponent<Renderer>();
-            meshRenderer.material.SetColor("_AlbedoColor", Color.red);
-            meshRenderer.material.SetColor("_Emission", Color.red);
+            meshRenderer.material.SetColor("_AlbedoColor", meshColor);
+            meshRenderer.material.SetColor("_Emission", meshColor);
 
         }
         else

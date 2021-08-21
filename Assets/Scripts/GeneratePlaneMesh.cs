@@ -7,10 +7,14 @@ using UnityEngine;
 public class GeneratePlaneMesh : MonoBehaviour
 {
 
-  //public float size = 100;
+  [HideInInspector] // Hides var below
   public float xSize = 100;
+  [HideInInspector] // Hides var below
   public float zSize = 100;
-  //public int gridSize = 256;
+  [HideInInspector] // Hides var below
+  public int xGridlines;
+  [HideInInspector] // Hides var below
+  public int zGridlines;
 
   private MeshFilter filter;
 
@@ -40,13 +44,13 @@ public class GeneratePlaneMesh : MonoBehaviour
       var normals = new List<Vector3>();
       var uvs = new List<Vector2>();
 
-        int xGridlines = (int)(xSize / 0.3906);
-        //returns 4
-        int zGridlines = (int)(zSize / 0.3906);
-        //returns 2
+        //0.3906 comes from the ratio sizing of 100x100 size grid with 256x256 squares.
 
-        //int xGridlines = 2;
-        //int zGridlines = 2;
+         xGridlines = (int)(xSize / 0.3906);
+
+        //the grid runs down from the x axis, the z axis is calculated by row.
+        //this means to access a particular value on the zAxis you need to count a whole row.
+         zGridlines = (int)(zSize / 0.3906);
 
 
         //for loops to detect overlapping vertices

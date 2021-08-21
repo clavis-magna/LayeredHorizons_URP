@@ -24,7 +24,6 @@ public class DeformableMesh : MonoBehaviour
 
     private GeneratePlaneMesh plane;
 
-    public GameObject textMarker;
 
     //called by GeneratePlaneMesh
     //anytime the mesh needs to be regenerated this is called.
@@ -83,41 +82,41 @@ public class DeformableMesh : MonoBehaviour
           //must adjust the depression height to be shorter if on.
           if (edgeSmoothing)
           {
-            //remove the old and bring in the newVert coord
-            //numbered in a clockwise direction 1 being the top
+                //remove the old and bring in the newVert coord
+                //numbered in a clockwise direction 1 being the top
 
-            //var newVert1 = modifiedVertices[i-1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
-            //modifiedVertices.RemoveAt(i-1);
-            //modifiedVertices.Insert(i-1, newVert1);
+                var newVert1 = modifiedVertices[i - 1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 2;
+                modifiedVertices.RemoveAt(i - 1);
+                modifiedVertices.Insert(i - 1, newVert1);
 
-            //var newVert2 = modifiedVertices[i-plane.gridSize-2] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
-            //modifiedVertices.RemoveAt(i-plane.gridSize-2);
-            //modifiedVertices.Insert(i-plane.gridSize-2, newVert2);
+                var newVert2 = modifiedVertices[i - plane.zGridlines - 2] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 3;
+                modifiedVertices.RemoveAt(i - plane.zGridlines - 2);
+                modifiedVertices.Insert(i - plane.zGridlines - 2, newVert2);
 
-            //var newVert3 = modifiedVertices[i-plane.gridSize-1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
-            //modifiedVertices.RemoveAt(i-plane.gridSize-1);
-            //modifiedVertices.Insert(i-plane.gridSize-1, newVert3);
+                var newVert3 = modifiedVertices[i - plane.zGridlines - 1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 2;
+                modifiedVertices.RemoveAt(i - plane.zGridlines - 1);
+                modifiedVertices.Insert(i - plane.zGridlines - 1, newVert3);
 
-            //var newVert4 = modifiedVertices[i-plane.gridSize] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
-            //modifiedVertices.RemoveAt(i-plane.gridSize);
-            //modifiedVertices.Insert(i-plane.gridSize, newVert4);
+                var newVert4 = modifiedVertices[i - plane.zGridlines] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 3;
+                modifiedVertices.RemoveAt(i - plane.zGridlines);
+                modifiedVertices.Insert(i - plane.zGridlines, newVert4);
 
-            //var newVert5 = modifiedVertices[i+1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
-            //modifiedVertices.RemoveAt(i+1);
-            //modifiedVertices.Insert(i+1, newVert5);
+                var newVert5 = modifiedVertices[i + 1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 2;
+                modifiedVertices.RemoveAt(i + 1);
+                modifiedVertices.Insert(i + 1, newVert5);
 
-            //var newVert6 = modifiedVertices[i+plane.gridSize+2] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
-            //modifiedVertices.RemoveAt(i+plane.gridSize+2);
-            //modifiedVertices.Insert(i+plane.gridSize+2, newVert6);
+                var newVert6 = modifiedVertices[i + plane.zGridlines + 2] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 3;
+                modifiedVertices.RemoveAt(i + plane.zGridlines + 2);
+                modifiedVertices.Insert(i + plane.zGridlines + 2, newVert6);
 
-            //var newVert7 = modifiedVertices[i+plane.gridSize+1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/2;
-            //modifiedVertices.RemoveAt(i+plane.gridSize+1);
-            //modifiedVertices.Insert(i+plane.gridSize+1, newVert7);
+                var newVert7 = modifiedVertices[i + plane.zGridlines + 1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 2;
+                modifiedVertices.RemoveAt(i + plane.zGridlines + 1);
+                modifiedVertices.Insert(i + plane.zGridlines + 1, newVert7);
 
-            //var newVert8 = modifiedVertices[i+plane.gridSize] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression/3;
-            //modifiedVertices.RemoveAt(i+plane.gridSize);
-            //modifiedVertices.Insert(i+plane.gridSize, newVert8);
-          }
+                var newVert8 = modifiedVertices[i + plane.zGridlines] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 3;
+                modifiedVertices.RemoveAt(i + plane.zGridlines);
+                modifiedVertices.Insert(i + plane.zGridlines, newVert8);
+            }
         }
       }
       plane.mesh.SetVertices(modifiedVertices);
@@ -144,7 +143,7 @@ public class DeformableMesh : MonoBehaviour
         }
       }
 
-      GameObject thisMarker = Instantiate(textMarker, new Vector3(pointOfContact.x, meshHeight, pointOfContact.z), Quaternion.Euler(0, 0, 0));
+      GameObject thisMarker = Instantiate(Resources.Load("TextParent"), new Vector3(pointOfContact.x, meshHeight, pointOfContact.z), Quaternion.Euler(0, 0, 0)) as GameObject;
       //Get the created textmeshpro and change the work it is displaying to match the data.
       TextMeshPro nameText = thisMarker.GetComponentInChildren<TMPro.TextMeshPro>();
       nameText.text = text;
