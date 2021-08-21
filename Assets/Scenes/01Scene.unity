@@ -505,14 +505,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CSVFileName: dog.csv
   dataType: 0
-  generateMeshPrefab: {fileID: 5846034889349709664, guid: e23adda8b880c44ab82b85c12d96eb95, type: 3}
   headerColumn: dog
-  textCreator: {fileID: 976392300949424911, guid: 9bd96b72a0bbb4699ba9da7c0a020036, type: 3}
   deformMesh: 1
-  meshDeformer: {fileID: 976392300949424911, guid: 24c925c0a00df4791a6f6a1894112a90, type: 3}
   edgeSmoothing: 1
   depressionHeight: 0.3
   depressionRadius: 2
+  meshObject: {fileID: 0}
+  meshRenderer: {fileID: 0}
 --- !u!4 &690883560
 Transform:
   m_ObjectHideFlags: 0
@@ -794,14 +793,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CSVFileName: languageData.csv
   dataType: 0
-  generateMeshPrefab: {fileID: 0}
   headerColumn: name
-  textCreator: {fileID: 976392300949424911, guid: 9bd96b72a0bbb4699ba9da7c0a020036, type: 3}
   deformMesh: 1
-  meshDeformer: {fileID: 976392300949424911, guid: 24c925c0a00df4791a6f6a1894112a90, type: 3}
   edgeSmoothing: 1
   depressionHeight: 0.3
   depressionRadius: 2
+  meshObject: {fileID: 0}
+  meshRenderer: {fileID: 0}
 --- !u!4 &1255225491
 Transform:
   m_ObjectHideFlags: 0
@@ -942,8 +940,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a292e3bc8a78342fdab6bd276781e9fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 100
-  gridSize: 256
+  xSize: 100
+  zSize: 100
 --- !u!114 &1427133729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1389,8 +1387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a292e3bc8a78342fdab6bd276781e9fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 100
-  gridSize: 256
+  xSize: 100
+  zSize: 100
 --- !u!1 &1954262336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,7 +1458,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983529489}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f056201150a8b545a029f3b8cc39baa, type: 3}
   m_Name: 
