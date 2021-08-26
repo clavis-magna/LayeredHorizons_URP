@@ -8,7 +8,7 @@ using System.Linq;
 using UnityAsync;
 
 
-public class readGenericData : MonoBehaviour
+public class ReadGenericData : MonoBehaviour
 {
 
 
