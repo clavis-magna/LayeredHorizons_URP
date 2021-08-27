@@ -8,7 +8,7 @@ using System.Linq;
 using UnityAsync;
 
 
-public class ReadGenericData : MonoBehaviour
+public class ReadGenericData_v1 : MonoBehaviour
 {
 
 
@@ -26,14 +26,21 @@ public class ReadGenericData : MonoBehaviour
 
   public DataType dataType;
 
+  public GameObject generateMeshPrefab;
+
+
+
     [Header("Header column needs to match the DataType (string for word, link for audio, etc)")]
   public string headerColumn = "dog";
 
-    [Header("Deform Mesh Settings (Important if bool is true)")]
-   public Color meshColor = new Color(0.3f, 0.4f, 0.6f, 0.3f);
+  [Header("If Data Type == Word")]
+  //a textcreator ball goes here MeshInteractionObjects only
+  public GameObject textCreator;
 
-    public bool deformMesh;
-  //public GameObject meshDeformer;
+
+  [Header("Deform Mesh Settings (Important if bool is true)")]
+  public bool deformMesh;
+  public GameObject meshDeformer;
   public bool edgeSmoothing = true;
   public float depressionHeight = 1.0f;
   public float depressionRadius = 1.0f;
@@ -44,10 +51,7 @@ public class ReadGenericData : MonoBehaviour
   private int scaleX;
   private int scaleY;
 
-  [HideInInspector] // Hides var below
-  public GameObject meshObject;
-  [HideInInspector] // Hides var below
-  public Renderer meshRenderer;
+  private GameObject meshObject;
 
 
     // Start is called before the first frame update
@@ -85,28 +89,11 @@ public class ReadGenericData : MonoBehaviour
         //calculate the point at which this data centrepoint is to get position.
         Vector2 centrePoint = new Vector2((xMin + xMax) / 2f , (zMin + zMax) / 2f);
 
-
-        //Create the GenerateQuad Object which creates the mesh at centrepoint.
         meshObject = Instantiate(Resources.Load("GenerateQuad"), new Vector3(centrePoint.x, -0.5f, centrePoint.y), Quaternion.identity) as GameObject;
-
         if (meshObject != null)
         {
-            Debug.Log("Mesh Plane Generated");
+            Debug.Log("We ahve a meshplane");
 
-            //Set the size of the mesh leaving a buffer space for the mesh.
-            GeneratePlaneMesh meshGenerationScript = meshObject.GetComponent<GeneratePlaneMesh>();
-            meshGenerationScript.xSize = xMax - xMin + 10;
-            meshGenerationScript.zSize = zMax - zMin + 10;
-
-            //Change the size of the collider too.
-            BoxCollider colliderChild = meshObject.transform.GetChild(0).gameObject.GetComponent<BoxCollider>();
-            colliderChild.size = new Vector3(xMax - xMin + 10, 10, zMax - zMin + 10);
-
-            //TODO: Make these changable from the inspector
-            //Colour of the mesh
-            Renderer meshRenderer = meshObject.GetComponent<Renderer>();
-            meshRenderer.material.SetColor("_AlbedoColor", meshColor);
-            meshRenderer.material.SetColor("_Emission", meshColor);
 
         }
         else
@@ -114,7 +101,7 @@ public class ReadGenericData : MonoBehaviour
             Debug.Log("Error: A Mesh Plane Object was not instantiated");
         }
 
-        Debug.Log(xMin);
+    Debug.Log(xMin);
         Debug.Log(xMax);
         Debug.Log(zMin);
         Debug.Log(zMax);

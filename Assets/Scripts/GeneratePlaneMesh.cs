@@ -7,8 +7,14 @@ using UnityEngine;
 public class GeneratePlaneMesh : MonoBehaviour
 {
 
-  public float size = 100;
-  public int gridSize = 256;
+  [HideInInspector] // Hides var below
+  public float xSize = 100;
+  [HideInInspector] // Hides var below
+  public float zSize = 100;
+  [HideInInspector] // Hides var below
+  public int xGridlines;
+  [HideInInspector] // Hides var below
+  public int zGridlines;
 
   private MeshFilter filter;
 
@@ -37,35 +43,52 @@ public class GeneratePlaneMesh : MonoBehaviour
       var vertices = new List<Vector3>();
       var normals = new List<Vector3>();
       var uvs = new List<Vector2>();
-      //for loops to detect overlapping vertices
-      for(int x = 0; x < gridSize + 1; ++x)
+
+        //0.3906 comes from the ratio sizing of 100x100 size grid with 256x256 squares.
+
+         xGridlines = (int)(xSize / 0.3906);
+
+        //the grid runs down from the x axis, the z axis is calculated by row.
+        //this means to access a particular value on the zAxis you need to count a whole row.
+         zGridlines = (int)(zSize / 0.3906);
+
+
+        //for loops to detect overlapping vertices
+        for (int x = 0; x < xGridlines + 1; ++x)
       {
-        for(int y = 0; y < gridSize + 1; ++y)
+        for(int y = 0; y < zGridlines + 1; ++y)
         {
           //sets the four sides of the mesh not the triangles inside.
           //setting how big the mesh is from the size variable.
-            vertices.Add(new Vector3(-size * 0.5f + size * (x / ((float)gridSize)), 0, -size * 0.5f + size * (y / ((float)gridSize))));
+            vertices.Add(new Vector3(
+                -xSize * 0.5f + xSize * (x / ((float)xGridlines)),
+                0,
+                -zSize * 0.5f + zSize * (y / ((float)zGridlines))));
+
+
             //setting the vector 3 to be up.
             normals.Add(Vector3.up);
             //Setting positioning of the material to the corners
-            uvs.Add(new Vector2(x / (float)gridSize, y / (float)gridSize));
+            uvs.Add(new Vector2(x / (float)xGridlines, y / (float)zGridlines));
         }
       }
 
       //setting the gridsize to create a grid inside the size, facing upwards
       //loops to the next xy position without creating overlapping vertices.
       var triangles = new List<int>();
-      var vertCount = gridSize + 1;
-      for (int i = 0; i < vertCount * vertCount - vertCount; ++i)
+      var zVertCount = zGridlines + 1;
+      var xVertCount = xGridlines + 1;
+
+        for (int i = 0; i < zVertCount * xVertCount - zVertCount; ++i)
       {
-        if ((i + 1)%vertCount == 0)
+        if ((i + 1)% zVertCount == 0)
         {
           continue;
         }
         triangles.AddRange(new List<int>()
         {
-          i + 1 + vertCount, i + vertCount, i,
-          i, i + 1, i + vertCount +1
+          i + 1 + zVertCount, i + zVertCount, i,
+          i, i + 1, i + zVertCount +1
           });
       }
 
