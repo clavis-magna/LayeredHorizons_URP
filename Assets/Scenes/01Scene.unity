@@ -1156,7 +1156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1255225490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1164,21 +1164,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255225489}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ec0f5d311604cde9230fb0954f34cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 30dac14398087f34f91efb232b4fcf28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CSVFileName: dog.csv
+  CSVFileName: languageData.csv
   dataType: 0
-  generateMeshPrefab: {fileID: 1683223509}
-  headerColumn: dog
-  textCreator: {fileID: 0}
+  headerColumn: name
+  meshColor: {r: 1, g: 0, b: 0.1875372, a: 0.3}
   deformMesh: 1
-  meshDeformer: {fileID: 976392300949424911, guid: 24c925c0a00df4791a6f6a1894112a90, type: 3}
   edgeSmoothing: 1
-  depressionHeight: 1
-  depressionRadius: 1
+  depressionHeight: 0.3
+  depressionRadius: 2
+  meshObject: {fileID: 0}
+  meshRenderer: {fileID: 0}
 --- !u!4 &1255225491
 Transform:
   m_ObjectHideFlags: 0
