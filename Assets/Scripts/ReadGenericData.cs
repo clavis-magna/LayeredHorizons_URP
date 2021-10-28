@@ -175,7 +175,7 @@ public class ReadGenericData : MonoBehaviour
                       }
 
                       //creates a delay after each loop through to prevent lag spikes
-                      await new WaitForFrames(5);
+                      await new WaitForFrames(100);
                 }
 
 
@@ -210,7 +210,7 @@ public class ReadGenericData : MonoBehaviour
                     }
 
                     //creates a delay after each loop through to prevent lag spikes
-                    await new WaitForFrames(5);
+                    await new WaitForFrames(100);
                 }
         }
         else
