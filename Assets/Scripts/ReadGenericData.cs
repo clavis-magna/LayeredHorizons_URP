@@ -12,42 +12,46 @@ public class ReadGenericData : MonoBehaviour
 {
 
 
-  // csv filename
-  // in streaming assets (include .csv extension)
-  [Header("Name of data file here")]
-  public string CSVFileName = "dog.csv";
+    // csv filename
+    // in streaming assets (include .csv extension)
+    [Header("Name of data file here")]
+    public string CSVFileName = "dog.csv";
 
-  public enum DataType
-  {
-    Word,
-    Sound,
-    Image
-  };
+    public enum DataType
+    {
+        Word,
+        Sound,
+        Image
+    };
 
-  public DataType dataType;
+    public DataType dataType;
 
     [Header("Header column needs to match the DataType (string for word, link for audio, etc)")]
-  public string headerColumn = "dog";
+    public string headerColumn = "dog";
+
+    [Header("Increase delay period to reduce lag spike")]
+    public int delayPeriod = 10;
 
     [Header("Deform Mesh Settings (Important if bool is true)")]
-   public Color meshColor = new Color(0.3f, 0.4f, 0.6f, 0.3f);
+    public Color meshColor = new Color(0.3f, 0.4f, 0.6f, 0.3f);
+
+
 
     public bool deformMesh;
-  //public GameObject meshDeformer;
-  public bool edgeSmoothing = true;
-  public float depressionHeight = 1.0f;
-  public float depressionRadius = 1.0f;
+    public bool edgeSmoothing = true;
+    public float depressionHeight = 1.0f;
+    public float depressionRadius = 1.0f;
 
-  List<Dictionary<string, object>> data;
+    List<Dictionary<string, object>> data;
 
 
-  private int scaleX;
-  private int scaleY;
+    private int scaleX;
+    private int scaleY;
 
-  [HideInInspector] // Hides var below
-  public GameObject meshObject;
-  [HideInInspector] // Hides var below
-  public Renderer meshRenderer;
+    [HideInInspector] // Hides var below
+    public GameObject meshObject;
+    [HideInInspector] // Hides var below
+    public Renderer meshRenderer;
 
 
     // Start is called before the first frame update
@@ -105,8 +109,8 @@ public class ReadGenericData : MonoBehaviour
             //TODO: Make these changable from the inspector
             //Colour of the mesh
             Renderer meshRenderer = meshObject.GetComponent<Renderer>();
-            meshRenderer.material.SetColor("_AlbedoColor", meshColor);
-            meshRenderer.material.SetColor("_Emission", meshColor);
+            meshRenderer.material.SetColor("_BaseColor", meshColor);
+            //meshRenderer.material.SetColor("_Emission", meshColor);
 
         }
         else
@@ -114,10 +118,10 @@ public class ReadGenericData : MonoBehaviour
             Debug.Log("Error: A Mesh Plane Object was not instantiated");
         }
 
-        Debug.Log(xMin);
-        Debug.Log(xMax);
-        Debug.Log(zMin);
-        Debug.Log(zMax);
+        //Debug.Log(xMin);
+        //Debug.Log(xMax);
+        //Debug.Log(zMin);
+        //Debug.Log(zMax);
 
     }
 
@@ -175,7 +179,7 @@ public class ReadGenericData : MonoBehaviour
                       }
 
                       //creates a delay after each loop through to prevent lag spikes
-                      await new WaitForFrames(100);
+                      await new WaitForFrames(delayPeriod);
                 }
 
 
@@ -210,7 +214,7 @@ public class ReadGenericData : MonoBehaviour
                     }
 
                     //creates a delay after each loop through to prevent lag spikes
-                    await new WaitForFrames(100);
+                    await new WaitForFrames(delayPeriod);
                 }
         }
         else

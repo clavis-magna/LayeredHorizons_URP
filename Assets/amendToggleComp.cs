@@ -88,11 +88,12 @@ public class amendToggleComp : MonoBehaviour
             displayedValue = sliderValue - movementAmount;
 
             //Determine whether the displayed value is positive or negative
-            if (displayedValue > 0.1)
+            //add a slight amount so you can see the changing value
+            if (displayedValue > 0.05)
             {
                 toggleText = true;
             }
-            if (displayedValue < -0.1)
+            if (displayedValue < -0.05)
             {
                 toggleText = false;
             }
@@ -100,10 +101,10 @@ public class amendToggleComp : MonoBehaviour
 
         if (toggleText)
         {
-            textDisplay.text = GetComponent<ToggleComponent>().toggleOnString;
+            textDisplay.text = (GetComponent<ToggleComponent>().toggleName + ": " + GetComponent<ToggleComponent>().toggleOnString);
         } else
         {
-            textDisplay.text = GetComponent<ToggleComponent>().toggleOffString;
+            textDisplay.text = (GetComponent<ToggleComponent>().toggleName + ": " + GetComponent<ToggleComponent>().toggleOffString);
 
         }
 

@@ -106,7 +106,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 532f0869b6edf42c8af3784fd4c8b9f9, type: 2}
+  - {fileID: 2100000, guid: 631a876c50e0f4ad1a8b4327d7f3a9d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -159,4 +159,3 @@ MonoBehaviour:
   modifiedVertices: []
   convertedVectors: []
   edgeSmoothing: 1
-  textMarker: {fileID: 0}

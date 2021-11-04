@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Graphs_WaterShader
-  m_Shader: {fileID: -6465566751694194690, guid: e9aeee60bf90448c38f3f5a937401ad8, type: 3}
+  m_Shader: {fileID: 10755, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -46,6 +46,7 @@ Material:
     - _Smoothness: 0.54
     - _Strength: 2
     m_Colors:
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _DeepCol: {r: 0.3984514, g: 0.42558733, b: 0.6981132, a: 1}
     - _ShallowCol: {r: 0.9669811, g: 0.98018867, b: 1, a: 0.105882354}
   m_BuildTextureStacks: []

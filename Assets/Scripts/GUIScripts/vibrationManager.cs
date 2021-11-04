@@ -20,7 +20,7 @@ public class vibrationManager : MonoBehaviour
     public void Rumble(InputDevice device)
     {
         // Setting channel to 1 will work in 1.1.1 but will be fixed in future versions such that 0 would be the correct channel.
-        var channel = 1;
+        var channel = 0;
         var command = UnityEngine.InputSystem.XR.Haptics.SendHapticImpulseCommand.Create(channel, _amplitude, _duration);
         device.ExecuteCommand(ref command);
     }

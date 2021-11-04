@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/XR Interaction Input Samples/XR Interaction Toolkit/1.0.0-pre.5/Default Input Actions/XRI Default Input Actions.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/XR Interaction Input Samples/XR Interaction Toolkit/1.0.0-pre.5/Default Input Actions 2/XRI Default Input Actions.inputactions'
 
 using System;
 using System.Collections;
@@ -530,7 +530,7 @@ public class @XRIDefaultInputActions : IInputActionCollection, IDisposable
                     ""path"": ""<XRController>{LeftHand}/secondaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Generic XR Controller"",
+                    ""groups"": """",
                     ""action"": ""Dpad Y"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -541,7 +541,7 @@ public class @XRIDefaultInputActions : IInputActionCollection, IDisposable
                     ""path"": ""<XRController>{LeftHand}/primaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Generic XR Controller"",
+                    ""groups"": """",
                     ""action"": ""Dpad X"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false

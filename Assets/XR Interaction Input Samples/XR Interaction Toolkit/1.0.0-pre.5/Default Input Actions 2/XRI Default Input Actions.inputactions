@@ -517,7 +517,7 @@
                     "path": "<XRController>{LeftHand}/secondaryButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "",
                     "action": "Dpad Y",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -528,7 +528,7 @@
                     "path": "<XRController>{LeftHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "",
                     "action": "Dpad X",
                     "isComposite": false,
                     "isPartOfComposite": false

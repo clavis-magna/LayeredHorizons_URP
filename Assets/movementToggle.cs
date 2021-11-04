@@ -115,8 +115,7 @@ public class movementToggle : MonoBehaviour
             Haptic1 = true;
             Haptic2 = false;
 
-            //gameObject.GetComponent<vibrationManager>().Rumble(rightHand);
-            //gameObject.GetComponent<vibrationManager>().Rumble(leftHand);
+
         }
         else
         {

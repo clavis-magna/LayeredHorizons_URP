@@ -15,16 +15,11 @@ public class selectGUIChild : MonoBehaviour
     private InputActionMap rightControllerMap;
     private InputActionMap leftControllerMap;
 
-    //get the thumbsticks
-    private InputAction getRightThumbstick;
-    private InputAction getLeftThumbstick;
-
-    private Vector2 ThumbPosition;
+    private InputAction getPrimaryButton;
+    private InputAction getSecondaryButton;
 
     private int activeToggle;
 
-    private float buttonHitAgainTime = 0.5f;
-    private float canHitAgain;
 
 
     void Start()
@@ -40,28 +35,35 @@ public class selectGUIChild : MonoBehaviour
         leftControllerMap.Enable();
         switch (activeHand)
         {
-            case handSelect.Right:
-
-                //get the thumbstick action
-                getRightThumbstick = rightControllerMap.FindAction("Thumbstick");
-                getRightThumbstick.performed += context => getRightControllerThumb(context);
-                break;
 
             case handSelect.Left:
+                getPrimaryButton = leftControllerMap.FindAction("Dpad X");
+                getPrimaryButton.performed += context => primaryPressed(context);
 
-                getLeftThumbstick = leftControllerMap.FindAction("Thumbstick");
-                getLeftThumbstick.performed += context => getLeftControllerThumb(context);
+                getSecondaryButton = leftControllerMap.FindAction("Dpad Y");
+                getSecondaryButton.performed += context => secondaryPressed(context);
+
+                break;
+
+            case handSelect.Right:
+
+                getPrimaryButton = rightControllerMap.FindAction("Dpad A");
+                getPrimaryButton.performed += context => primaryPressed(context);
+
+                getSecondaryButton = rightControllerMap.FindAction("Dpad B");
+                getSecondaryButton.performed += context => secondaryPressed(context);
+
                 break;
         }
     }
 
     void Update()
     {
+        //print("active Toggle: " + activeToggle);
 
         //loop through each of the toggles to tell it to turn off if it isn't the active toggle
         for (int i = 0; i < transform.childCount; i++)
         {
-            //print("value of i : " + i);
             GameObject child = transform.GetChild(i).gameObject;
             if (activeToggle == i)
             {
@@ -70,49 +72,40 @@ public class selectGUIChild : MonoBehaviour
             else
             {
                 child.SetActive(false);
-
             }
 
         }
 
-        if (ThumbPosition.y > 0.8 && canHitAgain < Time.time)
-        {
-            canHitAgain = Time.time + buttonHitAgainTime;
-            activeToggle -= 1;
-        }
-
-        if (ThumbPosition.y < -0.8 && canHitAgain < Time.time)
-        {
-            canHitAgain = Time.time + buttonHitAgainTime;
-            activeToggle += 1;
-        }
-
-
         //loop through so you can only select from the 4 toggles. Add more here if there are more toggles
-        if (activeToggle > transform.childCount)
+        if (activeToggle > transform.childCount-1)
         {
             activeToggle = 0;
         }
         if (activeToggle < 0)
         {
-            activeToggle = transform.childCount;
+            activeToggle = transform.childCount-1;
         }
 
     }
 
     private void onDestroy()
     {
-        getRightThumbstick.performed -= context => getRightControllerThumb(context);
-        getLeftThumbstick.performed -= context => getLeftControllerThumb(context);
+        getPrimaryButton.performed -= context => primaryPressed(context);
+        getSecondaryButton.performed -= context => secondaryPressed(context);
     }
 
-    private void getRightControllerThumb(InputAction.CallbackContext context)
+    private void primaryPressed(InputAction.CallbackContext context)
     {
-        ThumbPosition = context.ReadValue<Vector2>();
+        //print("Primary pressed");
+
+        activeToggle--;
     }
 
-    private void getLeftControllerThumb(InputAction.CallbackContext context)
+    private void secondaryPressed(InputAction.CallbackContext context)
     {
-        ThumbPosition = context.ReadValue<Vector2>();
+        //print("Secondary pressed");
+
+        activeToggle++;
     }
+
 }

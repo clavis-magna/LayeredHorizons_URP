@@ -125,28 +125,36 @@ public class DeformableMesh : MonoBehaviour
     //Creates a text label at the point of impact above the mesh instead of a mesh deformation
     public void AddTextLabel(Vector3 pointOfContact, string text)
     {
-      //translate the depression relative to the worldspace and to the point of contact
-      //creating a vector3 out of contact point that is relative to worldspace
-      var worldPos3 = this.transform.InverseTransformPoint(pointOfContact);
-      //removal of the y position of impact
-      var worldPos2 = new Vector2(worldPos3.x, worldPos3.z);
+        //translate the depression relative to the worldspace and to the point of contact
+        //creating a vector3 out of contact point that is relative to worldspace
+        var worldPos3 = this.transform.InverseTransformPoint(pointOfContact);
+        //removal of the y position of impact
+        var worldPos2 = new Vector2(worldPos3.x, worldPos3.z);
 
-      var meshHeight = 5.0f;
+        var meshHeight = 5.0f;
 
-
-      for (int i = 0; i < modifiedVertices.Count; ++i)
-      {
+        //get the y position of where the contact was. This sets the height of text label
+        for (int i = 0; i < modifiedVertices.Count; ++i)
+        {
         var distance = (worldPos2 - (convertedVectors[i])).sqrMagnitude;
         if (distance < 0.5)
         {
-          meshHeight = modifiedVertices[i].y;
+            meshHeight = modifiedVertices[i].y;
         }
-      }
+        }
 
-      GameObject thisMarker = Instantiate(Resources.Load("TextParent"), new Vector3(pointOfContact.x, meshHeight, pointOfContact.z), Quaternion.Euler(0, 0, 0)) as GameObject;
-      //Get the created textmeshpro and change the work it is displaying to match the data.
-      TextMeshPro nameText = thisMarker.GetComponentInChildren<TMPro.TextMeshPro>();
-      nameText.text = text;
+        GameObject thisMarker = Instantiate(Resources.Load("TextParent"), new Vector3(pointOfContact.x, meshHeight - 0.5f, pointOfContact.z), Quaternion.Euler(0, 0, 0)) as GameObject;
+        //Get the created textmeshpro and change the work it is displaying to match the data.
+        TextMeshPro nameText = thisMarker.GetComponentInChildren<TMPro.TextMeshPro>();
+        nameText.text = text;
+
+        //put the textMarker as a child of the quad mesh
+        thisMarker.transform.parent = gameObject.transform;
+
+        //get the material colour of the deformable mesh
+        Color thisColor = GetComponent<Renderer>().material.GetColor("_BaseColor");
+
+        thisMarker.GetComponent<getColourFromParent>().parentColor = thisColor;
 
     }
 }
