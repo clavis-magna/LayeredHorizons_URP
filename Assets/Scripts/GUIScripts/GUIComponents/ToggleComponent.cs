@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ToggleComponent : MonoBehaviour
 {
-    public bool active;
+    public bool active = true;
     public string toggleName;
 
     //Leave current string blank, changes on toggle

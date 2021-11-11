@@ -53,16 +53,17 @@ public class ReadGenericData : MonoBehaviour
     [HideInInspector] // Hides var below
     public Renderer meshRenderer;
 
+    createToggleGUI createToggleScript;
 
     // Start is called before the first frame update
     void Start()
     {
-      BetterStreamingAssets.Initialize();
-      // grab world scale
-      // set in the inspector
-      scaleX = (int)InitiateWorldScale.mapScale.x;
-      scaleY = (int)InitiateWorldScale.mapScale.y;
-      loadData();
+        BetterStreamingAssets.Initialize();
+        // grab world scale
+        // set in the inspector
+        scaleX = (int)InitiateWorldScale.mapScale.x;
+        scaleY = (int)InitiateWorldScale.mapScale.y;
+        loadData();
     }
 
     //needs to be IEnumerator to allow for a delay
@@ -106,7 +107,6 @@ public class ReadGenericData : MonoBehaviour
             BoxCollider colliderChild = meshObject.transform.GetChild(0).gameObject.GetComponent<BoxCollider>();
             colliderChild.size = new Vector3(xMax - xMin + 10, 10, zMax - zMin + 10);
 
-            //TODO: Make these changable from the inspector
             //Colour of the mesh
             Renderer meshRenderer = meshObject.GetComponent<Renderer>();
             meshRenderer.material.SetColor("_BaseColor", meshColor);
@@ -141,8 +141,11 @@ public class ReadGenericData : MonoBehaviour
                 generateMesh();
 
 
+
                 //Get the deformableMesh GO ready to place in the prefabs further down
                 DeformableMesh parentMesh = meshObject.GetComponent<DeformableMesh>();
+
+                meshObject.name = "Mesh-" + name;    
 
 
                 for (var i = 0; i < data.Count; i++)
@@ -216,6 +219,13 @@ public class ReadGenericData : MonoBehaviour
                     //creates a delay after each loop through to prevent lag spikes
                     await new WaitForFrames(delayPeriod);
                 }
+
+
+                //tell the left hand GUI to create some toggles when a mesh is fully loaded.
+                GameObject leftHand = GameObject.FindGameObjectWithTag("LeftGUI");
+                createToggleScript = leftHand.GetComponent<createToggleGUI>();
+                createToggleScript.createToggleObject(meshObject, name);
+
         }
         else
         {

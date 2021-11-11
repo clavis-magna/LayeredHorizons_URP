@@ -40,6 +40,8 @@ public class amendToggleComp : MonoBehaviour
 
     private bool toggleText;
 
+    ToggleComponent thisToggle;
+
     void Start()
     {
         textDisplay = GetComponentInChildren<TextMeshProUGUI>();
@@ -72,6 +74,8 @@ public class amendToggleComp : MonoBehaviour
         //checking if the grip has been pressed
         activateDragInputRef.action.performed += activateChangeValue;
         activateDragInputRef.action.canceled += deactivateChangeValue;
+
+        thisToggle = GetComponent<ToggleComponent>();
     }
 
     void Update()
@@ -101,14 +105,16 @@ public class amendToggleComp : MonoBehaviour
 
         if (toggleText)
         {
-            textDisplay.text = (GetComponent<ToggleComponent>().toggleName + ": " + GetComponent<ToggleComponent>().toggleOnString);
+            textDisplay.text = (thisToggle.toggleName + ": " + thisToggle.toggleOnString);
+            thisToggle.ToggleOn();
         } else
         {
-            textDisplay.text = (GetComponent<ToggleComponent>().toggleName + ": " + GetComponent<ToggleComponent>().toggleOffString);
+            textDisplay.text = (thisToggle.toggleName + ": " + thisToggle.toggleOffString);
+            thisToggle.ToggleOff();
 
         }
 
-        
+
     }
 
     private void onDestroy()
