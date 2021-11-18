@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class assignMeshObject : MonoBehaviour
 {
+    [HideInInspector]
     public GameObject mesh;
 
     ToggleComponent thisToggle;
@@ -15,7 +16,8 @@ public class assignMeshObject : MonoBehaviour
 
     void Update()
     {
-        thisToggle.toggleName = mesh.name;
+        //thisToggle.toggleName = mesh.name;
+        //name = mesh.name;
 
         if (thisToggle.active)
         {

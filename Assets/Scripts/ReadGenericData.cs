@@ -33,14 +33,21 @@ public class ReadGenericData : MonoBehaviour
     public int delayPeriod = 10;
 
     [Header("Deform Mesh Settings (Important if bool is true)")]
+    public bool deformMesh;
+
     public Color meshColor = new Color(0.3f, 0.4f, 0.6f, 0.3f);
 
-
-
-    public bool deformMesh;
+    [HideInInspector]
     public bool edgeSmoothing = true;
-    public float depressionHeight = 1.0f;
-    public float depressionRadius = 1.0f;
+
+    public bool customiseColour = true;
+    public bool customiseOpacity = true;
+    public bool highlighter = true;
+
+
+
+    public float depressionHeight = 0.3f;
+    public float depressionRadius = 2.0f;
 
     List<Dictionary<string, object>> data;
 
@@ -54,6 +61,8 @@ public class ReadGenericData : MonoBehaviour
     public Renderer meshRenderer;
 
     createToggleGUI createToggleScript;
+    createAdjustmentGUI createAdjustmentScript;
+
 
     // Start is called before the first frame update
     void Start()
@@ -98,6 +107,8 @@ public class ReadGenericData : MonoBehaviour
         {
             Debug.Log("Mesh Plane Generated");
 
+
+
             //Set the size of the mesh leaving a buffer space for the mesh.
             GeneratePlaneMesh meshGenerationScript = meshObject.GetComponent<GeneratePlaneMesh>();
             meshGenerationScript.xSize = xMax - xMin + 10;
@@ -107,10 +118,13 @@ public class ReadGenericData : MonoBehaviour
             BoxCollider colliderChild = meshObject.transform.GetChild(0).gameObject.GetComponent<BoxCollider>();
             colliderChild.size = new Vector3(xMax - xMin + 10, 10, zMax - zMin + 10);
 
+
             //Colour of the mesh
             Renderer meshRenderer = meshObject.GetComponent<Renderer>();
             meshRenderer.material.SetColor("_BaseColor", meshColor);
             //meshRenderer.material.SetColor("_Emission", meshColor);
+
+
 
         }
         else
@@ -225,6 +239,12 @@ public class ReadGenericData : MonoBehaviour
                 GameObject leftHand = GameObject.FindGameObjectWithTag("LeftGUI");
                 createToggleScript = leftHand.GetComponent<createToggleGUI>();
                 createToggleScript.createToggleObject(meshObject, name);
+
+                GameObject rightHand = GameObject.FindGameObjectWithTag("RightGUI");
+                createAdjustmentScript = rightHand.GetComponent<createAdjustmentGUI>();
+                //create the layer first and then within the script create the valid adjusters.
+                createAdjustmentScript.createAdjustmentLayer(meshObject, name, customiseColour, customiseOpacity, highlighter);
+
 
         }
         else

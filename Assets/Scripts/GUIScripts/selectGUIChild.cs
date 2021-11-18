@@ -18,7 +18,7 @@ public class selectGUIChild : MonoBehaviour
     private InputAction getPrimaryButton;
     private InputAction getSecondaryButton;
 
-    private int activeToggle;
+    public int activeToggle;
 
 
 

@@ -19,6 +19,8 @@ public class createToggleGUI : MonoBehaviour
         assignMeshObject toggleMeshScript = newToggle.GetComponent<assignMeshObject>();
         ToggleComponent toggleCompScript = newToggle.GetComponent<ToggleComponent>();
         toggleMeshScript.mesh = meshObject;
+
         toggleCompScript.toggleName = meshName;
+        newToggle.name = meshName;
     }
 }

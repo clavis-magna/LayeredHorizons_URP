@@ -42,12 +42,12 @@ public class attachGUIToHands : MonoBehaviour
 
 
     //Input actions for activating hand GUI
-    private InputAction rightGUIActivationInput;
-    private InputAction leftGUIActivationInput;
+    //private InputAction rightGUIActivationInput;
+    //private InputAction leftGUIActivationInput;
 
 
-    private bool LeftGUIActive;
-    private bool RightGUIActive;
+    //private bool LeftGUIActive;
+    //private bool RightGUIActive;
 
     //Attach GUI objects to these
     [Header("Attach GUI Here")]
@@ -95,44 +95,44 @@ public class attachGUIToHands : MonoBehaviour
         getLeftRotation.performed += context => getLeftControllerRotation(context);
 
         //activate the GUI for each button
-        rightGUIActivationInput = rightControllerMap.FindAction("Select");
-        leftGUIActivationInput = leftControllerMap.FindAction("Select");
+        //rightGUIActivationInput = rightControllerMap.FindAction("Select");
+        //leftGUIActivationInput = leftControllerMap.FindAction("Select");
 
-        leftGUIActivationInput.performed += context => LeftHandGripped(context);
-        leftGUIActivationInput.canceled += context => LeftHandReleased(context);
+        //leftGUIActivationInput.performed += context => LeftHandGripped(context);
+        //leftGUIActivationInput.canceled += context => LeftHandReleased(context);
 
-        rightGUIActivationInput.performed += context => RightHandGripped(context);
-        rightGUIActivationInput.canceled += context => RightHandReleased(context);
+        //rightGUIActivationInput.performed += context => RightHandGripped(context);
+        //rightGUIActivationInput.canceled += context => RightHandReleased(context);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (LeftGUIActive)
-        {
+        //if (LeftGUIActive)
+        //{
             LeftHandGUI.transform.position = new Vector3(leftPositionXYZ.x, leftPositionXYZ.y + yPositionOffset, leftPositionXYZ.z) + transform.position;
             LeftHandGUI.transform.LookAt(m_CameraGameObject.transform.position);
-        }
-        else
-        {
-            //send this to some random place off the map
-            LeftHandGUI.transform.position = new Vector3(0, 0, 0);
-        }
+        //}
+        //else
+        //{
+        //    //send this to some random place off the map
+        //    LeftHandGUI.transform.position = new Vector3(0, 0, 0);
+        //}
 
 
 
-        if (RightGUIActive)
-        {
+        //if (RightGUIActive)
+        //{
             //print("rightHandPos : " + RightHandGUI.transform.position);
             RightHandGUI.transform.position = new Vector3(rightPositionXYZ.x, rightPositionXYZ.y + yPositionOffset, rightPositionXYZ.z) + transform.position;
             RightHandGUI.transform.LookAt(m_CameraGameObject.transform.position);
-        }
-        else
-        {
-            //send this to some random place off the map
-            RightHandGUI.transform.position = new Vector3(0, 0, 0);
-        }
+        //}
+        //else
+        //{
+        //    //send this to some random place off the map
+        //    RightHandGUI.transform.position = new Vector3(0, 0, 0);
+        //}
         
     }
 
@@ -144,11 +144,11 @@ public class attachGUIToHands : MonoBehaviour
         getRightRotation.performed -= context => getRightControllerRotation(context);
         getLeftRotation.performed -= context => getLeftControllerRotation(context);
 
-        rightGUIActivationInput.performed -= context => LeftHandGripped(context);
-        rightGUIActivationInput.canceled -= context => LeftHandReleased(context);
+        //rightGUIActivationInput.performed -= context => LeftHandGripped(context);
+        //rightGUIActivationInput.canceled -= context => LeftHandReleased(context);
 
-        leftGUIActivationInput.performed -= context => RightHandGripped(context);
-        leftGUIActivationInput.canceled -= context => RightHandReleased(context);
+        //leftGUIActivationInput.performed -= context => RightHandGripped(context);
+        //leftGUIActivationInput.canceled -= context => RightHandReleased(context);
     }
 
     private void getLeftControllerPosition(InputAction.CallbackContext context)
@@ -171,23 +171,23 @@ public class attachGUIToHands : MonoBehaviour
         rightRotation = context.ReadValue<Quaternion>();
     }
 
-    private void LeftHandGripped(InputAction.CallbackContext context)
-    {
-        LeftGUIActive = true;
-    }
+    //private void LeftHandGripped(InputAction.CallbackContext context)
+    //{
+    //    LeftGUIActive = true;
+    //}
 
-    private void LeftHandReleased(InputAction.CallbackContext context)
-    {
-        LeftGUIActive = false;
-    }
+    //private void LeftHandReleased(InputAction.CallbackContext context)
+    //{
+    //    LeftGUIActive = false;
+    //}
 
-    private void RightHandGripped(InputAction.CallbackContext context)
-    {
-        RightGUIActive = true;
-    }
+    //private void RightHandGripped(InputAction.CallbackContext context)
+    //{
+    //    RightGUIActive = true;
+    //}
 
-    private void RightHandReleased(InputAction.CallbackContext context)
-    {
-        RightGUIActive = false;
-    }
+    //private void RightHandReleased(InputAction.CallbackContext context)
+    //{
+    //    RightGUIActive = false;
+    //}
 }
