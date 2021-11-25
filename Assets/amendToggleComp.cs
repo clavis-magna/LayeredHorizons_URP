@@ -6,14 +6,14 @@ using TMPro;
 
 public class amendToggleComp : MonoBehaviour
 {
-
+    public bool selectedToggle;
 
     public InputActionAsset actionAsset;
 
-
     //get the text that displays.
     //Would put this in another script but I think it can help indicate things for different interaction types.
-    TextMeshProUGUI textDisplay;
+    TextMeshProUGUI toggleNameText;
+    TextMeshProUGUI toggleStatusText;
 
 
     //using an actionmap to reduce the number of references on this page
@@ -44,7 +44,9 @@ public class amendToggleComp : MonoBehaviour
 
     void Start()
     {
-        textDisplay = GetComponentInChildren<TextMeshProUGUI>();
+        toggleNameText = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        toggleStatusText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+
 
         //Find the action map so that we can reference each of the references inside
         //this one is for right controller only.
@@ -55,7 +57,7 @@ public class amendToggleComp : MonoBehaviour
         leftControllerMap.Enable();
 
         //this should read the toggle name instead of instructions
-        textDisplay.text = "Grip and drag to change the slider";
+        toggleNameText.text = "Grip and drag to change the slider";
 
         //tracking hand position depending on which hand you're on
         switch (activeHand)
@@ -80,41 +82,53 @@ public class amendToggleComp : MonoBehaviour
 
     void Update()
     {
+        toggleNameText.text = (thisToggle.toggleName);
 
-        if (clickDragActive)
+        //If selected toggle allow visually show and allow amendment to toggle too.
+        if (selectedToggle)
         {
-            endControllerPosition = controllerPositionXYZ.y;
+            toggleNameText.fontStyle = FontStyles.Underline;
+            toggleStatusText.fontStyle = FontStyles.Underline;
 
-            //get the distance that controller moved from press to release.
-            movementAmount = startControllerPosition - endControllerPosition;
-
-            //this value becomes the checker for if true or false.
-            displayedValue = sliderValue - movementAmount;
-
-            //Determine whether the displayed value is positive or negative
-            //add a slight amount so you can see the changing value
-            if (displayedValue > 0.05)
+            if (clickDragActive)
             {
-                toggleText = true;
-            }
-            if (displayedValue < -0.05)
-            {
-                toggleText = false;
-            }
-        }
+                endControllerPosition = controllerPositionXYZ.y;
 
-        if (toggleText)
-        {
-            textDisplay.text = (thisToggle.toggleName + ": " + thisToggle.toggleOnString);
-            thisToggle.ToggleOn();
+                //get the distance that controller moved from press to release.
+                movementAmount = startControllerPosition - endControllerPosition;
+
+                //this value becomes the checker for if true or false.
+                displayedValue = sliderValue - movementAmount;
+
+                //Determine whether the displayed value is positive or negative
+                //add a slight amount so you can see the changing value
+                if (displayedValue > 0.05)
+                {
+                    toggleText = true;
+                }
+                if (displayedValue < -0.05)
+                {
+                    toggleText = false;
+                }
+            }
+
+            if (toggleText)
+            {
+                toggleStatusText.text = (thisToggle.toggleOnString);
+                thisToggle.ToggleOn();
+            }
+            else
+            {
+                toggleStatusText.text = (thisToggle.toggleOffString);
+                thisToggle.ToggleOff();
+
+            }
         } else
         {
-            textDisplay.text = (thisToggle.toggleName + ": " + thisToggle.toggleOffString);
-            thisToggle.ToggleOff();
+            toggleNameText.fontStyle ^= FontStyles.Underline;
+            toggleStatusText.fontStyle ^= FontStyles.Underline;
 
         }
-
-
     }
 
     private void onDestroy()

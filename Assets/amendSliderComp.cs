@@ -6,10 +6,13 @@ using TMPro;
 
 public class amendSliderComp : MonoBehaviour
 {
+    public bool selectedSlider;
+
     public InputActionAsset actionAsset;
     //get the text that displays.
     //Would put this in another script but I think it can help indicate things for different interaction types.
-    TextMeshProUGUI textDisplay;
+    TextMeshProUGUI sliderNameText;
+    TextMeshProUGUI sliderStatusText;
 
     //using an actionmap to reduce the number of references on this page
     private InputActionMap rightControllerMap;
@@ -39,7 +42,8 @@ public class amendSliderComp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        textDisplay = GetComponentInChildren<TextMeshProUGUI>();
+        sliderNameText = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        sliderStatusText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
 
         //Find the action map so that we can reference each of the references inside
         //this one is for right controller only.
@@ -50,7 +54,7 @@ public class amendSliderComp : MonoBehaviour
         leftControllerMap.Enable();
 
         //this should read the toggle name instead of instructions
-        textDisplay.text = "Grip and drag to change the slider";
+        sliderNameText.text = "Grip and drag to change the slider";
 
         //tracking hand position depending on which hand you're on
         switch (activeHand)
@@ -77,34 +81,47 @@ public class amendSliderComp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        sliderNameText.text = (thisSlider.sliderName);
 
-        if (clickDragActive)
+        if (selectedSlider)
         {
-            endControllerPosition = controllerPositionXYZ.y;
+            sliderNameText.fontStyle = FontStyles.Underline;
+            sliderStatusText.fontStyle = FontStyles.Underline;
 
-            //get the distance that controller moved from press to release.
-            movementAmount = startControllerPosition - endControllerPosition;
-
-            //this value gets placed on the text
-            displayedValue = sliderValue - movementAmount;
-
-            //make sure it can't get below or above 1
-            if (displayedValue > 1)
+            if (clickDragActive)
             {
-                displayedValue = 1;
-            }
-            if (displayedValue < 0)
-            {
-                displayedValue = 0;
+                endControllerPosition = controllerPositionXYZ.y;
+
+                //get the distance that controller moved from press to release.
+                movementAmount = startControllerPosition - endControllerPosition;
+
+                //this value gets placed on the text
+                displayedValue = sliderValue - movementAmount;
+
+                //make sure it can't get below or above 1
+                if (displayedValue > 1)
+                {
+                    displayedValue = 1;
+                }
+                if (displayedValue < 0)
+                {
+                    displayedValue = 0;
+                }
+
+                //as the text changes, the changes are live.
+                GetComponent<SliderComponent>().DefineValue(displayedValue);
             }
 
-            //as the text changes, the changes are live.
-            GetComponent<SliderComponent>().DefineValue(displayedValue);
+            //text is indicated by what is on displayedValue
+            //convert it to a string and move to 2 decible places
+            sliderStatusText.text = displayedValue.ToString("F2");
+        } else
+        {
+            sliderNameText.fontStyle ^= FontStyles.Underline;
+            sliderStatusText.fontStyle ^= FontStyles.Underline;
         }
 
-        //text is indicated by what is on displayedValue
-        //convert it to a string and move to 2 decible places
-        textDisplay.text = displayedValue.ToString("F2");
+
     }
 
 

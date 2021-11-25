@@ -112,7 +112,8 @@ public class attachGUIToHands : MonoBehaviour
         //if (LeftGUIActive)
         //{
             LeftHandGUI.transform.position = new Vector3(leftPositionXYZ.x, leftPositionXYZ.y + yPositionOffset, leftPositionXYZ.z) + transform.position;
-            LeftHandGUI.transform.LookAt(m_CameraGameObject.transform.position);
+            LeftHandGUI.transform.rotation = leftRotation;
+            //LeftHandGUI.transform.LookAt(m_CameraGameObject.transform.position);
         //}
         //else
         //{
@@ -126,14 +127,16 @@ public class attachGUIToHands : MonoBehaviour
         //{
             //print("rightHandPos : " + RightHandGUI.transform.position);
             RightHandGUI.transform.position = new Vector3(rightPositionXYZ.x, rightPositionXYZ.y + yPositionOffset, rightPositionXYZ.z) + transform.position;
-            RightHandGUI.transform.LookAt(m_CameraGameObject.transform.position);
+        RightHandGUI.transform.rotation = rightRotation;
+
+        //RightHandGUI.transform.LookAt(m_CameraGameObject.transform.position);
         //}
         //else
         //{
         //    //send this to some random place off the map
         //    RightHandGUI.transform.position = new Vector3(0, 0, 0);
         //}
-        
+
     }
 
     private void onDestroy()

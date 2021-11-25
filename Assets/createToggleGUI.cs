@@ -11,16 +11,25 @@ public class createToggleGUI : MonoBehaviour
 {
 
     public GameObject toggleObject;
+    public Camera mainCam;
+
+    //count how many toggles get made 
+    public int counter = 0;
 
     public void createToggleObject(GameObject meshObject, string meshName)
     {
-        Debug.Log("called to create Toggle");
-        var newToggle = Instantiate(toggleObject, transform);
+        //Debug.Log("called to create Toggle");
+        var newToggle = Instantiate(toggleObject, new Vector3(transform.position.x, transform.position.y + (float)counter/10.0f, transform.position.z), transform.rotation, transform);
         assignMeshObject toggleMeshScript = newToggle.GetComponent<assignMeshObject>();
         ToggleComponent toggleCompScript = newToggle.GetComponent<ToggleComponent>();
-        toggleMeshScript.mesh = meshObject;
+        Canvas textCanvas = newToggle.GetComponent<Canvas>();
+        textCanvas.renderMode = RenderMode.WorldSpace;
+        textCanvas.worldCamera = mainCam;
 
+        toggleMeshScript.mesh = meshObject;
         toggleCompScript.toggleName = meshName;
         newToggle.name = meshName;
+
+        counter++;
     }
 }

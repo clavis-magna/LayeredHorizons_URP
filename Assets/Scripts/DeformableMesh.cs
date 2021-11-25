@@ -152,9 +152,11 @@ public class DeformableMesh : MonoBehaviour
         thisMarker.transform.parent = gameObject.transform;
 
         //get the material colour of the deformable mesh
-        Color thisColor = GetComponent<Renderer>().material.GetColor("_BaseColor");
+        //Color   = GetComponent<Renderer>().material.GetColor("_BaseColor");
 
-        thisMarker.GetComponent<getColourFromParent>().parentColor = thisColor;
+        //sends the colour to the text labels so that they're the same colour.
+        //should be nullified because in the getColourFromParent script it should do this automatically.
+        //thisMarker.GetComponent<getColourFromParent>().parentColor = thisColor;
 
     }
 }

@@ -25,6 +25,7 @@ public class selectGUIChild : MonoBehaviour
     void Start()
     {
         //beginning with the first toggle
+        //active toggle should always remain as the first one. Sibling order will change instead so that the position changes too
         activeToggle = 0;
 
         //Find the action map so that we can reference each of the references inside
@@ -67,16 +68,33 @@ public class selectGUIChild : MonoBehaviour
             GameObject child = transform.GetChild(i).gameObject;
             if (activeToggle == i)
             {
-                child.SetActive(true);
+                //check if it has an amendToggleComp script inside first
+                if ((child.GetComponent("amendToggleComp") as amendToggleComp) != null)
+                {
+                    child.GetComponent<amendToggleComp>().selectedToggle = true;
+                }
+
+                //check if it has an amendSliderComp script inside first
+                if ((child.GetComponent("amendSliderComp") as amendSliderComp) != null)
+                {
+                    child.GetComponent<amendSliderComp>().selectedSlider = true;
+                }
             }
             else
             {
-                child.SetActive(false);
-            }
+                if ((child.GetComponent("amendToggleComp") as amendToggleComp) != null)
+                {
+                    child.GetComponent<amendToggleComp>().selectedToggle = false;
+                }
 
+                if ((child.GetComponent("amendSliderComp") as amendSliderComp) != null)
+                {
+                    child.GetComponent<amendSliderComp>().selectedSlider = false;
+                }
+            }
         }
 
-        //loop through so you can only select from the 4 toggles. Add more here if there are more toggles
+        //loop through so you can only select from the toggles.
         if (activeToggle > transform.childCount-1)
         {
             activeToggle = 0;
@@ -99,6 +117,19 @@ public class selectGUIChild : MonoBehaviour
         //print("Primary pressed");
 
         activeToggle--;
+
+        ////get the first child and send it to the back.
+        //GameObject child = transform.GetChild(0).gameObject;
+        //child.transform.SetSiblingIndex(transform.childCount-1);
+
+        ////reposition anytime that the order is changed
+        //for (int i = 0; i < transform.childCount; i++)
+        //{
+        //    GameObject thisChild = transform.GetChild(i).gameObject;
+        //    thisChild.GetComponent<positionFromChildCount>().RepositionChildren(i);
+        //    print("child" + i + "position: " + thisChild.transform.position);
+
+        //}
     }
 
     private void secondaryPressed(InputAction.CallbackContext context)
@@ -106,6 +137,17 @@ public class selectGUIChild : MonoBehaviour
         //print("Secondary pressed");
 
         activeToggle++;
+        //GameObject child = transform.GetChild(transform.childCount-1).gameObject;
+        //child.transform.SetSiblingIndex(0);
+
+        ////reposition anytime that the order is changed
+        //for (int i = 0; i < transform.childCount; i++)
+        //{
+        //    GameObject thisChild = transform.GetChild(i).gameObject;
+        //    thisChild.GetComponent<positionFromChildCount>().RepositionChildren(i);
+        //    print("child" + i + "position: " + thisChild.transform.position);
+
+        //}
     }
 
 }

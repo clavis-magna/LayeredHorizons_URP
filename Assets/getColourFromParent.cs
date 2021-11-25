@@ -8,6 +8,8 @@ public class getColourFromParent : MonoBehaviour
 {
     public Color parentColor;
 
+    public bool useHighlighterColour = false;
+
     private GameObject point;
     private GameObject line;
 
@@ -26,6 +28,15 @@ public class getColourFromParent : MonoBehaviour
 
     void Update()
     {
+        if (useHighlighterColour)
+        {
+            parentColor = new Color(255, 255, 255, 255);
+        } else
+        {
+            parentColor = transform.parent.GetComponent<Renderer>().material.GetColor("_BaseColor");
+        }
+
+
         point.GetComponent<Renderer>().material.SetColor("_Color", parentColor);
         line.GetComponent<Renderer>().material.SetColor("_Color", parentColor);
         //darker colour for the text

@@ -22,7 +22,9 @@ public class amendOpacityFromSlider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        m_Alpha = thisSlider.value;
+        float mappedAlpha = helpers.Remap(thisSlider.value, 0.0f, 1.0f, 0.2f, 1.0f);
+
+        m_Alpha = mappedAlpha;
 
 
 
@@ -31,7 +33,7 @@ public class amendOpacityFromSlider : MonoBehaviour
         var OGColor = meshRenderer.material.GetColor("_BaseColor");
 
         meshRenderer.material.SetColor("_BaseColor", new Color(OGColor.r, OGColor.g, OGColor.b, m_Alpha));
-        print("slide being called)");
+        //print("slide being called)");
 
     }
 }
