@@ -1,0 +1,534 @@
+source,language,form,gloss,family,latitude,longitude,AustraliaPacific
+CLICS2,Gurindji,rawurru,the bamboo,Pama-Nyungan,-17.0329,130.379,Australia
+CLICS3,Hawaiian,ʔohe,bamboo,Austronesian,19.6297,-155.43,Pacific
+CLICS4,Marquesan,kohe,bamboo,Austronesian,-9.75663,-138.979,Pacific
+CLICS5,Rapa Nui,ʔohe,bamboo,Austronesian,-27.113,-109.342,Pacific
+CLICS6,Rotuman,vau,bamboo,Austronesian,-12.5008,177.066,Pacific
+CLICS7,Tongan,kofe,bamboo,Austronesian,-21.17,-175.25,Pacific
+CLICS8,Abui,mai,bamboo,Timor-Alor-Pantar,-8.31058,124.588,Pacific
+CLICS9,Adang,pitung,bamboo,Timor-Alor-Pantar,-8.18958,124.448,Pacific
+CLICS10,Blagar,petuŋ,bamboo,Timor-Alor-Pantar,-8.31787,124.251,Pacific
+CLICS11,Kamang,maai,bamboo,Timor-Alor-Pantar,-8.26897,124.792,Pacific
+CLICS12,Klon,dumar,bamboo,Timor-Alor-Pantar,-8.40688,124.429,Pacific
+CLICS13,Sawila,sibeang,bamboo,Timor-Alor-Pantar,-8.29105,125.078,Pacific
+CLICS14,Teiwa,goxol,bamboo,Timor-Alor-Pantar,-8.37662,124.174,Pacific
+CLICS15,Western Pantar,mali,bamboo,Timor-Alor-Pantar,-8.52787,124.057,Pacific
+CLICS16,Anuta,kope,bamboo,Austronesian,-11.61,169.85,Pacific
+CLICS17,Are'are (Ma'asupa village),tepe,bamboo,Austronesian,-9.20699,161.158,Pacific
+CLICS18,Are'are (Waiahaa village),!au,bamboo,Austronesian,-9.20699,161.158,Pacific
+CLICS19,Arosi (Oneibia village),!au,bamboo,Austronesian,-10.2441,161.432,Pacific
+CLICS20,Arosi (Tawatana village),!au,bamboo,Austronesian,-10.2441,161.432,Pacific
+CLICS21,Asumboa,ambɔyo,bamboo,Austronesian,-11.2969,166.499,Pacific
+CLICS22,Bauro (Pawa village),aɣau,bamboo,Austronesian,-10.5826,161.863,Pacific
+CLICS23,Bauro (Baroo village),ɣau,bamboo,Austronesian,-10.5826,161.863,Pacific
+CLICS24,Bellona,kohe,bamboo,Austronesian,-11.6237,160.265,Pacific
+CLICS25,Blablanga,na!esa,bamboo,Austronesian,-8.15058,159.419,Pacific
+CLICS26,Buma,nĵɔkɔrɔ,bamboo,Austronesian,-11.6752,166.868,Pacific
+CLICS27,Dhadhaje,ɣau,bamboo,Austronesian,-8.47948,159.802,Pacific
+CLICS28,Faghani,aɣau,bamboo,Austronesian,-10.4479,161.662,Pacific
+CLICS29,Fataleka,kaɔ,bamboo,Austronesian,-8.59041,160.861,Pacific
+CLICS30,Ghari,ɣau,bamboo,Austronesian,-9.4791,159.917,Pacific
+CLICS31,Ghove,phɔpɔsa,bamboo,Austronesian,-8.15058,159.419,Pacific
+CLICS32,Hoava,mbeti,bamboo,Austronesian,-8.19679,157.595,Pacific
+CLICS33,Kahua,ɣœ,bamboo,Austronesian,-10.6963,162.191,Pacific
+CLICS34,Kazukuru,hila,bamboo,Austronesian,-8.23886,157.687,Pacific
+CLICS35,Kia,namihi,bamboo,Austronesian,-7.74311,158.753,Pacific
+CLICS36,Kokota,naesa,bamboo,Austronesian,-8.16481,159.191,Pacific
+CLICS37,Kusaghe,mbɔlɔhɔ,bamboo,Austronesian,-8.04056,157.463,Pacific
+CLICS38,Kwai,kao,bamboo,Austronesian,-8.74742,161.023,Pacific
+CLICS39,Kwaio,!au,bamboo,Austronesian,-8.93744,160.965,Pacific
+CLICS40,Kwara'ae,kao!,bamboo,Austronesian,-8.75779,160.804,Pacific
+CLICS41,Langalanga,!au,bamboo,Austronesian,-8.81936,160.741,Pacific
+CLICS42,Lau North,kao,bamboo,Austronesian,-8.51018,160.872,Pacific
+CLICS43,Lavukaleve,lava,bamboo,Lavukaleve,-9.05569,159.119,Pacific
+CLICS44,Leleghia,phɔpɔsa,bamboo,Austronesian,-8.27055,159.625,Pacific
+CLICS45,Lengo,ɣau,bamboo,Austronesian,-9.56425,160.42,Pacific
+CLICS46,Lokuru,voŋge,bamboo,Touo,-8.58405,157.296,Pacific
+CLICS47,Longgu,!au,bamboo,Austronesian,-9.75258,160.663,Pacific
+CLICS48,Lungga,kikivi,bamboo,Austronesian,-8.17469,156.573,Pacific
+CLICS49,Lwepe,nomblei,bamboo,Austronesian,-10.6771,165.835,Pacific
+CLICS50,Malango,ema,bamboo,Austronesian,-9.61383,160.118,Pacific
+CLICS51,Malo,nomblei,bamboo,Austronesian,-10.6771,165.835,Pacific
+CLICS52,Mami,eafa,bamboo,Austronesian,-10.6963,162.191,Pacific
+CLICS53,Marovo,ndekendeke,bamboo,Austronesian,-8.37943,157.747,Pacific
+CLICS54,Mbaelelea,ŋ!,bamboo,Austronesian,-8.41627,160.721,Pacific
+CLICS55,Mbaengguu,kaɔ,bamboo,Austronesian,-8.49014,160.771,Pacific
+CLICS56,Mbambatana,lɔso,bamboo,Austronesian,-7.22281,157.149,Pacific
+CLICS57,Mbaniata,mbeisi,bamboo,Touo,-8.58405,157.296,Pacific
+CLICS58,Mbilua,kevu,bamboo,Bilua,-7.92388,156.663,Pacific
+CLICS59,Mbirao,hau,bamboo,Austronesian,-9.73716,160.52,Pacific
+CLICS60,Mono,kulukulu,bamboo,Austronesian,-7.05102,155.76,Pacific
+CLICS61,Nanggu,ŋanimbi,bamboo,Austronesian,-10.7441,165.887,Pacific
+CLICS62,Ndovele,kevu,bamboo,Bilua,-7.92388,156.663,Pacific
+CLICS63,Nduke,kevu,bamboo,Austronesian,-7.97768,157.064,Pacific
+CLICS64,Nembao,vavœtœ,bamboo,Austronesian,-11.2958,166.498,Pacific
+CLICS65,Nggela,ɣau,bamboo,Austronesian,-9.04587,160.186,Pacific
+CLICS66,Ontong Java,lopu,bamboo,Austronesian,-5.49029,159.701,Pacific
+CLICS67,Oroha,lau,bamboo,Austronesian,-9.7386,161.513,Pacific
+CLICS68,Pileni,mahila,bamboo,Austronesian,-10.173335,166.247188,Pacific
+CLICS69,Reefs,nembi,bamboo,Austronesian,-10.6771,165.835,Pacific
+CLICS70,Rennell,kohe,bamboo,Austronesian,-11.6237,160.265,Pacific
+CLICS71,Ririo,los,bamboo,Austronesian,-6.88927,156.92,Pacific
+CLICS72,Roviana,kevu,bamboo,Austronesian,-8.20493,157.408,Pacific
+CLICS73,Sa'a (Sa'a village),tepe,bamboo,Austronesian,-9.60258,161.467,Pacific
+CLICS74,Samasodu,namihi,bamboo,Austronesian,-8.00509,158.961,Pacific
+CLICS75,Savosavo,molo,bamboo,Savosavo,-9.12853,159.814,Pacific
+CLICS76,Sengga,nambi,bamboo,Austronesian,-7,156.83,Pacific
+CLICS77,Sikaiana,palonu,bamboo,Austronesian,-8.378194,162.72952,Pacific
+CLICS78,Simbo,kɛvu,bamboo,Austronesian,-8.26947,156.541,Pacific
+CLICS79,Talise,ɣau,bamboo,Austronesian,-9.76764,160.231,Pacific
+CLICS80,Tanema,tōki,bamboo,Austronesian,-11.68,166.97,Pacific
+CLICS81,Tanimbili,nomboko,bamboo,Austronesian,-11.2975,166.507,Pacific
+CLICS82,Tataba,phɔpɔsa,bamboo,Austronesian,-8.27055,159.625,Pacific
+CLICS83,Tikopia,kofe,bamboo,Austronesian,-12.2766,168.822,Pacific
+CLICS84,To'ambaita,ɔŋi,bamboo,Austronesian,-8.39233,160.619,Pacific
+CLICS85,Tunöe,loso,bamboo,Austronesian,-7.22281,157.149,Pacific
+CLICS86,Ughele,mbɛti,bamboo,Austronesian,-8.45725,157.341,Pacific
+CLICS87,Vaghua,lɔsɔ,bamboo,Austronesian,-6.68712,156.542,Pacific
+CLICS88,Vangunu,ndekendeke,bamboo,Austronesian,-8.66826,157.997,Pacific
+CLICS89,Vano,nĵewire,bamboo,Austronesian,-11.6107,166.7984,Pacific
+CLICS90,Varisi,lɔsɔ,bamboo,Austronesian,-6.83443,156.655,Pacific
+CLICS91,Walade (LauS),kao,bamboo,Austronesian,-8.51018,160.872,Pacific
+CLICS92,Indonesian,bambu,the bamboo,Austronesian,-7.33458,109.716,Pacific
+CLICS93,Takia,sduk,the bamboo,Austronesian,-4.69057,145.975,Pacific
+CLICS94,Hawaiian,`ohe,the bamboo,Austronesian,19.6297,-155.43,Pacific
+CLICS95,Amaimon,seŋi,BAMBOO,Nuclear Trans New Guinea,-5.18742,145.368,Pacific
+CLICS96,Amele,wadup,BAMBOO,Nuclear Trans New Guinea,-5.29126,145.687,Pacific
+CLICS97,Anam,wʉkʉ,BAMBOO,Nuclear Trans New Guinea,-4.68869,145.051,Pacific
+CLICS98,Anamuxra,wʉkʉ,BAMBOO,Nuclear Trans New Guinea,-4.63762,144.991,Pacific
+CLICS99,Anjam,yumba,BAMBOO,Nuclear Trans New Guinea,-5.45899,145.717,Pacific
+CLICS100,Apali,sɨɣai,BAMBOO,Nuclear Trans New Guinea,-5.1727,145.023,Pacific
+CLICS101,Arawum,komde,BAMBOO,Nuclear Trans New Guinea,-5.52787,145.903,Pacific
+CLICS102,Asas,bɛsɛ,BAMBOO,Nuclear Trans New Guinea,-5.69345,145.549,Pacific
+CLICS103,Mand,wukɨp,BAMBOO,Nuclear Trans New Guinea,-5.08137,144.806,Pacific
+CLICS104,Bagupi,ar,BAMBOO,Nuclear Trans New Guinea,-5.07778,145.632,Pacific
+CLICS105,Baimak,ɛf,BAMBOO,Nuclear Trans New Guinea,-5.18943,145.606,Pacific
+CLICS106,Bargam,kaduk,BAMBOO,Nuclear Trans New Guinea,-4.8723,145.756,Pacific
+CLICS107,Bau,ɛt,BAMBOO,Nuclear Trans New Guinea,-5.26465,145.611,Pacific
+CLICS108,Bepour,hate,BAMBOO,Nuclear Trans New Guinea,-4.5985,145.442,Pacific
+CLICS109,Bilakura,a:n,BAMBOO,Nuclear Trans New Guinea,-4.93116,145.559,Pacific
+CLICS110,Biyom,wasawu,BAMBOO,Nuclear Trans New Guinea,-5.79929,145.348,Pacific
+CLICS111,Bongu,nʌu,BAMBOO,Nuclear Trans New Guinea,-5.50519,145.806,Pacific
+CLICS112,Brem,bik,BAMBOO,Nuclear Trans New Guinea,-4.67372,145.562,Pacific
+CLICS113,Danaru,kaŋg,BAMBOO,Nuclear Trans New Guinea,-5.53634,145.457,Pacific
+CLICS114,Kulsab,ɛmɛ,BAMBOO,Nuclear Trans New Guinea,-5.59947,145.298,Pacific
+CLICS115,Gal,ʔɛh,BAMBOO,Nuclear Trans New Guinea,-5.16351,145.623,Pacific
+CLICS116,Ganglau,sʌl,BAMBOO,Nuclear Trans New Guinea,-5.57945,146.1305,Pacific
+CLICS117,Garus,aruk,BAMBOO,Nuclear Trans New Guinea,-4.9222,145.683,Pacific
+CLICS118,Dimir,bimbuŋ,BAMBOO,Nuclear Trans New Guinea,-4.8296,145.676,Pacific
+CLICS119,Girawa,or,BAMBOO,Nuclear Trans New Guinea,-5.35342,145.423,Pacific
+CLICS120,Gumalu,ɛt,BAMBOO,Nuclear Trans New Guinea,-5.22189,145.618,Pacific
+CLICS121,Isabi,ke,BAMBOO,Nuclear Trans New Guinea,-5.83809,145.462,Pacific
+CLICS122,Isebe,ɛd,BAMBOO,Nuclear Trans New Guinea,-5.20719,145.691,Pacific
+CLICS123,Jilim,kob,BAMBOO,Nuclear Trans New Guinea,-5.56611,145.706,Pacific
+CLICS124,Kare (Papua New Guinea),bʌːra,BAMBOO,Nuclear Trans New Guinea,-5.07674,145.499,Pacific
+CLICS125,Kein,ar,BAMBOO,Nuclear Trans New Guinea,-5.3373,145.483,Pacific
+CLICS126,Kesawai,ei,BAMBOO,Nuclear Trans New Guinea,-5.76797,145.58,Pacific
+CLICS127,Kobol,umi,BAMBOO,Nuclear Trans New Guinea,-4.79614,145.284,Pacific
+CLICS128,Korak,dab,BAMBOO,Nuclear Trans New Guinea,-4.5998,145.514,Pacific
+CLICS129,Kowaki,hereme,BAMBOO,Nuclear Trans New Guinea,-4.63032,145.412,Pacific
+CLICS130,Lemio,kʰomde,BAMBOO,Nuclear Trans New Guinea,-5.61407,146.441,Pacific
+CLICS131,Mala (Papua New Guinea),bu,BAMBOO,Nuclear Trans New Guinea,-4.35889,145.04,Pacific
+CLICS132,Malas,suap,BAMBOO,Nuclear Trans New Guinea,-4.76685,145.621,Pacific
+CLICS133,Male (Papua New Guinea),yumbʌr,BAMBOO,Nuclear Trans New Guinea,-5.49975,145.757,Pacific
+CLICS134,Matepi,ʌr̃,BAMBOO,Nuclear Trans New Guinea,-5.13857,145.617,Pacific
+CLICS135,Mauwake,pia,BAMBOO,Nuclear Trans New Guinea,-4.52416,145.394,Pacific
+CLICS136,Mawak,furu,BAMBOO,Nuclear Trans New Guinea,-4.61817,145.283,Pacific
+CLICS137,Mawan,ʔɛf,BAMBOO,Nuclear Trans New Guinea,-5.2219,145.589,Pacific
+CLICS138,Miani,yabui,BAMBOO,Nuclear Trans New Guinea,-4.42116,145.276,Pacific
+CLICS139,Kolom,biŋ,BAMBOO,Nuclear Trans New Guinea,-5.57832,146.212,Pacific
+CLICS140,Moere,pimer,BAMBOO,Nuclear Trans New Guinea,-4.62246,145.458,Pacific
+CLICS141,Moresada,wukʉpa,BAMBOO,Nuclear Trans New Guinea,-4.57497,144.988,Pacific
+CLICS142,Mosimo,ka:r,BAMBOO,Nuclear Trans New Guinea,-4.95226,145.605,Pacific
+CLICS143,Mum,pʉkʉ,BAMBOO,Nuclear Trans New Guinea,-4.83462,145.059,Pacific
+CLICS144,Munit,ɛndu,BAMBOO,Nuclear Trans New Guinea,-5.24329,145.548,Pacific
+CLICS145,Murupi,a:ru,BAMBOO,Nuclear Trans New Guinea,-5.0245,145.606,Pacific
+CLICS146,Aisi,ʌm,BAMBOO,Nuclear Trans New Guinea,-5.37407,145.197,Pacific
+CLICS147,Musar,maŋgia,BAMBOO,Nuclear Trans New Guinea,-4.70258,145.413,Pacific
+CLICS148,Nake,gor̃op,BAMBOO,Nuclear Trans New Guinea,-5.09087,145.655,Pacific
+CLICS149,Nend,aɣai,BAMBOO,Nuclear Trans New Guinea,-5.04271,144.886,Pacific
+CLICS150,Nobonob,din,BAMBOO,Nuclear Trans New Guinea,-5.06952,145.712,Pacific
+CLICS151,Ogea,borɛa,BAMBOO,Nuclear Trans New Guinea,-5.37766,145.71,Pacific
+CLICS152,Pal,ye,BAMBOO,Nuclear Trans New Guinea,-4.756,145.24,Pacific
+CLICS153,Pamosu,fulu,BAMBOO,Nuclear Trans New Guinea,-4.69874,145.288,Pacific
+CLICS154,Panim,æd,BAMBOO,Nuclear Trans New Guinea,-5.21388,145.752,Pacific
+CLICS155,Manat,buɣɨr,BAMBOO,Nuclear Trans New Guinea,-4.94303,144.879,Pacific
+CLICS156,Pulabu,ko,BAMBOO,Nuclear Trans New Guinea,-5.59558,145.738,Pacific
+CLICS157,Rapting,aruk,BAMBOO,Nuclear Trans New Guinea,-4.99351,145.671,Pacific
+CLICS158,Rempi,biːd,BAMBOO,Nuclear Trans New Guinea,-5.02487,145.782,Pacific
+CLICS159,Rerau,kumbu,BAMBOO,Nuclear Trans New Guinea,-5.51361,145.716,Pacific
+CLICS160,Saep,guih,BAMBOO,Nuclear Trans New Guinea,-5.64812,146.078,Pacific
+CLICS161,Sam,bʌr̃,BAMBOO,Nuclear Trans New Guinea,-5.55572,145.813,Pacific
+CLICS162,Samosa,ka:rɛ,BAMBOO,Nuclear Trans New Guinea,-5.01391,145.537,Pacific
+CLICS163,Saruga,a:ru,BAMBOO,Nuclear Trans New Guinea,-5.08824,145.578,Pacific
+CLICS164,Sausi,piza,BAMBOO,Nuclear Trans New Guinea,-5.6873,145.492,Pacific
+CLICS165,Sihan,ɛhun,BAMBOO,Nuclear Trans New Guinea,-5.28029,145.574,Pacific
+CLICS166,Sileibi,pɨkɨ,BAMBOO,Nuclear Trans New Guinea,-4.98243,145.225,Pacific
+CLICS167,Silopi,ʔa:r,BAMBOO,Nuclear Trans New Guinea,-5.12302,145.586,Pacific
+CLICS168,Sinsauru,pese,BAMBOO,Nuclear Trans New Guinea,-5.64336,145.599,Pacific
+CLICS169,Siroi,kem,BAMBOO,Nuclear Trans New Guinea,-5.52893,145.994,Pacific
+CLICS170,Sop,ko:b,BAMBOO,Nuclear Trans New Guinea,-5.49605,145.361,Pacific
+CLICS171,Sumau,obu,BAMBOO,Nuclear Trans New Guinea,-5.48556,145.474,Pacific
+CLICS172,Tauya,amo,BAMBOO,Nuclear Trans New Guinea,-5.74255,145.366,Pacific
+CLICS173,Ukuriguma,yakan,BAMBOO,Nuclear Trans New Guinea,-4.94407,145.514,Pacific
+CLICS174,Urigina,wɛm,BAMBOO,Nuclear Trans New Guinea,-5.58982,145.507,Pacific
+CLICS175,Usan,ain,BAMBOO,Nuclear Trans New Guinea,-4.84265,145.362,Pacific
+CLICS176,Utarmbung,wuku-,BAMBOO,Nuclear Trans New Guinea,-4.82756,144.924,Pacific
+CLICS177,Utu,ar,BAMBOO,Nuclear Trans New Guinea,-5.16422,145.544,Pacific
+CLICS178,Uya,bɔːl,BAMBOO,Nuclear Trans New Guinea,-5.32246,145.47,Pacific
+CLICS179,Duduela,bor̃ea,BAMBOO,Nuclear Trans New Guinea,-5.43119,145.642,Pacific
+CLICS180,Wadaginam,wukəp,BAMBOO,Nuclear Trans New Guinea,-4.52754,144.972,Pacific
+CLICS181,Wagi (Papua New Guinea),karu:g,BAMBOO,Nuclear Trans New Guinea,-5.17834,145.726,Pacific
+CLICS182,Wamas,ka:r,BAMBOO,Nuclear Trans New Guinea,-4.97757,145.541,Pacific
+CLICS183,Wanambre,ulu,BAMBOO,Nuclear Trans New Guinea,-4.78822,145.419,Pacific
+CLICS184,Waskia,birak,BAMBOO,Nuclear Trans New Guinea,-4.57978,145.979,Pacific
+CLICS185,Dumpu,kiː,BAMBOO,Nuclear Trans New Guinea,-5.82002,145.655,Pacific
+CLICS186,Kwato,kɛrio,BAMBOO,Nuclear Trans New Guinea,-5.53799,145.629,Pacific
+CLICS187,Yaben,kanu,BAMBOO,Nuclear Trans New Guinea,-4.90868,145.361,Pacific
+CLICS188,Yabong,sʌlo,BAMBOO,Nuclear Trans New Guinea,-5.61718,146.2065,Pacific
+CLICS189,Yangulam,kiem,BAMBOO,Nuclear Trans New Guinea,-5.52697,145.858,Pacific
+CLICS190,Yarawata,yakute,BAMBOO,Nuclear Trans New Guinea,-4.93943,145.454,Pacific
+CLICS191,Yoidik,aduk,BAMBOO,Nuclear Trans New Guinea,-4.94044,145.758,Pacific
+chirila,Proto-Gunwinyguan,marapːi,bamboo,Gunwinyguan,0,0,Australia
+chirila,Proto-Wik,marpi,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Barrow Point,ampar,native bamboo from swamp,Pama-Nyungan,0,0,Australia
+chirila,Urningangga,aɹampurm,bamboo,Giimbiyu,0,0,Australia
+chirila,Tiwi,aɭututa,bamboo,Tiwi,0,0,Australia
+chirila,Dhangu,buːlu,bamboo (introduced by Macassans),Pama-Nyungan,0,0,Australia
+chirila,Dhuwal,buːlu,bamboo (introduced by Macassans),Pama-Nyungan,0,0,Australia
+chirila,Djapu,buːlu,bamboo (introduced by Macassans),Pama-Nyungan,0,0,Australia
+chirila,Gumatj,buːlu,bamboo (introduced by Macassans),Pama-Nyungan,0,0,Australia
+chirila,Gumatj,buːlu,bamboo (introduced by Macassans),Pama-Nyungan,0,0,Australia
+chirila,Gupapuyngu,buːlu,bamboo (introduced by Macassans),Pama-Nyungan,0,0,Australia
+chirila,Gupapuyngu,buːlu,bamboo (introduced by Macassans),Pama-Nyungan,0,0,Australia
+chirila,Yan-nhangu,buːlu,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Djinang,ɟanabu,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Gagudju,goːlo,bamboo,Arnhem,0,0,Australia
+chirila,Arabana-Wangkangurru,ilanca,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Jabirr-Jabirr,jinal,bamboo,Nyulnyulan,0,0,Australia
+chirila,Yawuru,jinal,bamboo,Nyulnyulan,0,0,Australia
+chirila,Nimanburru,kabol,bamboo,Nyulnyulan,0,0,Australia
+chirila,Jabirr-Jabirr,kabul,bamboo,Nyulnyulan,0,0,Australia
+chirila,Warungu,kalpu,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Ngarinyin,kalumen,bamboo,Worrorran,0,0,Australia
+chirila,Miriwoong,kamaŋkerŋ,bamboo  used for fish spears and as part of shove spear  Phragmites karka,Jarrakan,0,0,Australia
+chirila,Nungali,kamaŋkiɹ,bamboo,Mirndi,0,0,Australia
+chirila,Gurindji,kamaŋkir,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Gurindji,kamaŋkir,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Jaru,kamaŋkir,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Walmajarri,kamaŋkir,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Marramaninyshi,kanpi,bamboo,Western Daly,0,0,Australia
+chirila,Nyulnyul,kapal,bamboo,Nyulnyulan,0,0,Australia
+chirila,Bardi,kapol,bamboo,Nyulnyulan,0,0,Australia
+chirila,Nyulnyul,kapol,bamboo,Nyulnyulan,0,0,Australia
+chirila,Bardi,kapul,bamboo,Nyulnyulan,0,0,Australia
+chirila,Bardi,kapul,bamboo,Nyulnyulan,0,0,Australia
+chirila,Nyulnyul,kapul,bamboo,Nyulnyulan,0,0,Australia
+chirila,Jaru,kaɳa,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Kamu,kaɳpi,bamboo,Eastern Daly,0,0,Australia
+chirila,Tiwi,kajaʈiri,bamboo,Tiwi,0,0,Australia
+chirila,Emmi,kenpi,bamboo,Western Daly,0,0,Australia
+chirila,Nyikina,kiluwal,bamboo,Nyulnyulan,0,0,Australia
+chirila,Nyikina,kiluwal,bamboo,Nyulnyulan,0,0,Australia
+chirila,Ngarinyin,kinku,bamboo (cf gil3gu  gula4  bamboo),Worrorran,0,0,Australia
+chirila,Ngarinyman,kinciwuɳu,Bamboo,Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,koːnt̪,bamboo tree  smaller than {yuk pukal},Pama-Nyungan,0,0,Australia
+chirila,Kurtjar,kochoɹɣ,&quot;bamboo&quot;,Pama-Nyungan,0,0,Australia
+chirila,Kurtjar,kochoɹɣ,&quot;bamboo&quot;,Pama-Nyungan,0,0,Australia
+chirila,Kurtjar,kochoɹɣ,“bamboo”,Pama-Nyungan,0,0,Australia
+chirila,Ngarinyin,kulaɭ,bamboo (cf gingu  bamboo),Worrorran,0,0,Australia
+chirila,Bandjalang,kulkiɹ,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Wunambal,kulumen,bamboo,Worrorran,0,0,Australia
+chirila,Mudburra,kulumput,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Umpithamu,maːrepi,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Djinang,mabaʈ,bamboo (yellow),Pama-Nyungan,0,0,Australia
+chirila,Yan-nhangu,mad̪awur,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Burarra,mangoli,bamboo,Maningrida,0,0,Australia
+chirila,Ngarinyin,mankowaɹan,bamboo,Worrorran,0,0,Australia
+chirila,Ngarinyin,maŋkaɹawun,bamboo,Worrorran,0,0,Australia
+chirila,Mpakwithi,maɹapi,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Uradhi,maɹapi,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Uradhi,maɹapi,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Meryam Mir,maɹep,bamboo,Trans-Fly,0,0,Australia
+chirila,Meryam Mir,maɹep,bamboo,Trans-Fly,0,0,Australia
+chirila,Angkamuthi,marapi,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Atampaya,marapi,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Injinoo,marapi,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Mpakwithi,marapi,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Yadhaykenu,marapi,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Wunambal,miːla,Bamboo,Worrorran,0,0,Australia
+chirila,Miriwoong,milincin,large bamboo from Daly River area,Jarrakan,0,0,Australia
+chirila,Ngarinyman,miliɲin,Bamboo,Pama-Nyungan,0,0,Australia
+chirila,Limilngan,mimalitc,bamboo,Darwin Region,0,0,Australia
+chirila,WTSWestern TorresMabuiag,mœɹap,bamboo,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,WTSWestern TorresMabuiag,mœɹapil,bamboo,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,WTSWestern TorresMabuiag,moɹap,bamboo,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Ngarinyin,ŋalumal (cliːiː,bamboo,Worrorran,0,0,Australia
+chirila,Ngarluma,ŋaɹipi,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Ngarluma,ŋaɹipi,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Ngarinyin,ŋaɭamaɭ (ti),bamboo,Worrorran,0,0,Australia
+chirila,Wulna,Owal,Bamboo,Darwin Region,0,0,Australia
+chirila,Wulna,Owal,Bamboo,Darwin Region,0,0,Australia
+chirila,Bardi,pampu,bamboo,Nyulnyulan,0,0,Australia
+chirila,Guugu-Yimidhirr,pampu,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Wagiman,parakaɭ,bamboo,Non-Pama-Nyungan Isolate,0,0,Australia
+chirila,Wik-Mungkan,piːn̪t̪,native bamboo,Pama-Nyungan,0,0,Australia
+chirila,Ngarla,pikaraŋu,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Ngarla,pikaraŋu,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Karajarri,puntulu,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Gurindji,ɹawuru,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Gurindji,ɹawuru,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Gurindji,ɹawuru,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Djinang,ɖamaran,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Karajarri,cinal,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Mangala,cinal,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Mangala,cinal,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Walmajarri,cinal,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Golpa,ERROR,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Thaynakwith,&apos;okapili,bamboo spear,Pama-Nyungan,0,0,Australia
+chirila,Ritharrngu,ɟaɳabu,spear--bamboo,Pama-Nyungan,0,0,Australia
+chirila,Meryam Mir,gelub,bamboo spear for catching birds,Trans-Fly,0,0,Australia
+chirila,Jaru,kaɳa,bamboo spear,Pama-Nyungan,0,0,Australia
+chirila,Nimanburru,kilawal,bamboo  spear shaft of bamboo,Nyulnyulan,0,0,Australia
+chirila,Nyulnyul,kilawel,bamboo  spear shaft of bamboo,Nyulnyulan,0,0,Australia
+chirila,Nyulnyul,kilawel,bamboo  spear shaft of bamboo,Nyulnyulan,0,0,Australia
+chirila,Nyikina,kilewal,bamboo  spear shaft of bamboo,Nyulnyulan,0,0,Australia
+chirila,Nyikina,kilewal,bamboo  spear shaft of bamboo,Nyulnyulan,0,0,Australia
+chirila,Yawuru,kilewal,bamboo  spear shaft of bamboo,Nyulnyulan,0,0,Australia
+chirila,Djinang,manguɭi,bamboo spear,Pama-Nyungan,0,0,Australia
+chirila,Mawng,mankole,bamboo spear,Iwaidjan,0,0,Australia
+chirila,Dhuwal,maŋuli,bamboo spear,Pama-Nyungan,0,0,Australia
+chirila,Gupapuyngu,maŋuli,bamboo spear,Pama-Nyungan,0,0,Australia
+chirila,Gupapuyngu,mawat̪,spear--bamboo,Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,piːnt̪,bamboo spear handle,Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,piːnt̪  kek piːnt̪,bamboo spear handle,Pama-Nyungan,0,0,Australia
+chirila,Mudburra,rawuru,bamboo spear,Pama-Nyungan,0,0,Australia
+chirila,Mudburra,rawuru,bamboo spear (initial flap),Pama-Nyungan,0,0,Australia
+chirila,Emmi,tiya,bamboo spear,Western Daly,0,0,Australia
+chirila,Dalabon,caŋoɭ,Bamboo spear.,Gunwinyguan,0,0,Australia
+chirila,Ngalakgan,caŋul,bamboo spear,Arnhem,0,0,Australia
+chirila,Rembarrnga,cokkolo,bamboo spear,Arnhem,0,0,Australia
+chirila,Ngarinyman,ɹawuru,Cane Grass  Little Bamboo,Pama-Nyungan,0,0,Australia
+chirila,Mudburra,kiɲcuwuɳa,didgeridoo  bamboo,Pama-Nyungan,0,0,Australia
+chirila,Mudburra,kiɲcuwuɳu; kincwuɳu,didgeridoo  bamboo,Pama-Nyungan,0,0,Australia
+chirila,Mudburra,kijincunaŋ,didgeridoo  bamboo,Pama-Nyungan,0,0,Australia
+chirila,Ngarluma,ŋaɹipi,1. wooden didgeridoo,Pama-Nyungan,0,0,Australia
+chirila,Rembarrnga,caɭuppu,didgeridoo  &apos;bamboo&apos;,Arnhem,0,0,Australia
+chirila,WTSWestern TorresMabuiag,dagulal,fish spear of bamboo  with several points,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Miriwoong,wilmurŋ,fish spear,Jarrakan,0,0,Australia
+chirila,Miriwoong,wancpalk kita,flick knife down bamboo to remove bumps,Jarrakan,0,0,Australia
+chirila,Ngumbarl,&lt;woːɳboː &gt;,grass (tall),Nyulnyulan,0,0,Australia
+chirila,Ngumbarl,&lt;koːrbaɭ&gt;,hole,Nyulnyulan,0,0,Australia
+chirila,Meryam Mir,daɹobeɹi,native Jew&apos;s harp of bamboo,Trans-Fly,0,0,Australia
+chirila,WTSWestern TorresMabuiag,daɹubiɹi,native jew&apos;s harp  made of bamboo,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,WTSWestern TorresMabuiag,upi,bamboo knife  and the bamboo from which it is made,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,juk keːlp,Leichhardt tree (Nauclea orientalis). A large tree with teak-like leaves and light-coloured bark  common up the Watson River and at Bamboo  and also at Big Lake and Munpun. The wood was used in old village houses.,Pama-Nyungan,0,0,Australia
+chirila,Meryam Mir,e maɹep epat,he... bamboo for the bed place,Trans-Fly,0,0,Australia
+chirila,Meryam Mir,sikem,he... bamboo for the bed place,Trans-Fly,0,0,Australia
+chirila,Garrwa,laruwa,pipe,Garrwan,0,0,Australia
+chirila,Miriwoong,mantuncme,place on Divers ion dam between pumping station and lily creek  bamboo grow there,Jarrakan,0,0,Australia
+chirila,Wik-Mungkan,pimp,bullrushes (at Bamboo  not at Aurukun),Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,pimp  wak pimp,bullrushes (at Bamboo  not at Aurukun),Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,piːj,wattle tree {(yakal)} shaft of spear with bamboo handle,Pama-Nyungan,0,0,Australia
+chirila,Jaru,kamaŋkiɹ,spear-shaft of bamboo,Pama-Nyungan,0,0,Australia
+chirila,Anindilyakwa,kwuɹuŋkwuɹuŋkwa,spear,Arnhem,0,0,Australia
+chirila,Djinang,manga manga,hook spear (bamboo),Pama-Nyungan,0,0,Australia
+chirila,Mangala,mulca,spear made from bamboo,Pama-Nyungan,0,0,Australia
+chirila,Mangala,mulca,spear made from bamboo,Pama-Nyungan,0,0,Australia
+chirila,Anindilyakwa,tinta,spear,Arnhem,0,0,Australia
+chirila,Mangala,cinaɭ,spear made from bamboo,Pama-Nyungan,0,0,Australia
+chirila,Mangala,cinaɭ,spear made from bamboo,Pama-Nyungan,0,0,Australia
+chirila,Karajarri,ciɳal,spear (light bamboo  imported),Pama-Nyungan,0,0,Australia
+chirila,Karajarri,ciɳal,spear (light bamboo  imported),Pama-Nyungan,0,0,Australia
+chirila,Gurindji,kuɭacara,spear type  from bamboo or wood,Pama-Nyungan,0,0,Australia
+chirila,Gurindji,munkuna,spear type  made from wood and bamboo,Pama-Nyungan,0,0,Australia
+chirila,Gurindji,piɳtac,spear type  made from wood and bamboo,Pama-Nyungan,0,0,Australia
+chirila,Rembarrnga,kuɭumpaŋala,spear head  wooden for bamboo spear,Arnhem,0,0,Australia
+chirila,ERROR,maɭiɲji,stick insect?,ERROR,0,0,Australia
+chirila,Miriwoong,wilmurŋ,tape-recording  wire  wire fence (hence paddock),Jarrakan,0,0,Australia
+chirila,Miriwoong,cuɹut,tight,Jarrakan,0,0,Australia
+chirila,WTSWestern TorresMabuiag,sukub-moɹap,bamboo tobacco-pipe,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,WTSWestern TorresMabuiag,zub,bamboo tobacco pipe,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Miriwoong,kanampuruŋ,tree  Acacia gonclada,Jarrakan,0,0,Australia
+chirila,Wik-Mungkan,wiːnt̪,A wattle (Acacia sp.). Moderate sized dark-barked tree with a long leaf  a little like a lancewood with a thin leaf. Found on sand ridges  the top of beach ridges  and coast ridges as far north as Bamboo  and inland. Good shade trees  and good for firewood.,Pama-Nyungan,0,0,Australia
+chirila,Ngarinyin,-eː,to join  to joggle  to fit into (eg to push a spear shaft into the bamboo),Worrorran,0,0,Australia
+chirila,Ngarinyin,-iŋina-,to join  to joggle  to fit into (eg to push a spear shaft into the bamboo),Worrorran,0,0,Australia
+chirila,Ngarinyin,-maː,to join  to joggle  to fit into (eg to push a spear shaft into the bamboo),Worrorran,0,0,Australia
+chirila,Proto-Pama-Nyungan,wAnki(ɹ),Spinifex  small bamboo/reed,Pama-Nyungan,0,0,Australia
+chirila,WTSWestern TorresMabuiag,adaka-saiːl,outer supports for the bamboo pole on canoe,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Yaygir,akarijal,bamboo vine,Pama-Nyungan,0,0,Australia
+chirila,Tiwi,alicuta,Bamboo  didgeridoo,Tiwi,0,0,Australia
+chirila,Ngarinyin,alŋuɹu,spear with a short piece of bamboo on a wooden shaft,Worrorran,0,0,Australia
+chirila,Amurdak,aɭawiɹ,bamboo  didjeridoo,Iwaidjan,0,0,Australia
+chirila,Tiwi,aɭicuta,Bamboo  didgeridoo.,Tiwi,0,0,Australia
+chirila,Tiwi,aɭucuta,Bamboo  didgeridoo,Tiwi,0,0,Australia
+chirila,Meryam Mir,buɹaɹ,bamboo whistle,Trans-Fly,0,0,Australia
+chirila,Meryam Mir,buɹaɹ,bamboo receptacle,Trans-Fly,0,0,Australia
+chirila,Meryam Mir,buɹaɹ,bamboo flute with two holes,Trans-Fly,0,0,Australia
+chirila,Burarra,gaɭpi,spearshaft,Maningrida,0,0,Australia
+chirila,Ngumbarl,goːɹangada,bamboora and man,Nyulnyulan,0,0,Australia
+chirila,Gupapuyngu,gubud̪u,spear--large  bamboo,Pama-Nyungan,0,0,Australia
+chirila,Dhuwal,gubuɖu,spear--large  bamboo,Pama-Nyungan,0,0,Australia
+chirila,Linngithigh,id̪aʔd̪iɣ,Four-pronged bird *spear (for ducks  brolga)  Bamboo,Pama-Nyungan,0,0,Australia
+chirila,Jabirr-Jabirr,jinal,spear  bamboo,Nyulnyulan,0,0,Australia
+chirila,Nimanburru,jinal,spear  bamboo,Nyulnyulan,0,0,Australia
+chirila,Nimanburru,jinal,spear  bamboo,Nyulnyulan,0,0,Australia
+chirila,Yawuru,jinal,spear  bamboo,Nyulnyulan,0,0,Australia
+chirila,Yawuru,jinal,spear  bamboo,Nyulnyulan,0,0,Australia
+chirila,ERROR,jinal,spear  bamboo,,0,0,Australia
+chirila,Yityingka,kaːya,&quot;spear type (bamboo handle  stingray barb)&quot;,Pama-Nyungan,0,0,Australia
+chirila,Gunin,kalampu,cane  bamboo  reed,Worrorran,0,0,Australia
+chirila,Wagiman,kalkaɹun,bamboo sp. | short bamboo spear,Non-Pama-Nyungan Isolate,0,0,Australia
+chirila,Wunambal,kaluːmaɳ,Small Bamboo,Worrorran,0,0,Australia
+chirila,Ngarinyman,kamankiri,river country type of bamboo for long spears,Pama-Nyungan,0,0,Australia
+chirila,Miriwoong,kamaŋkerp kilanta ni,join bamboo onto wood to make spear,Jarrakan,0,0,Australia
+chirila,Gurindji,kamaŋkir,bamboo  for making spears,Pama-Nyungan,0,0,Australia
+chirila,Gurindji,kamaŋkir,bamboo part of spear,Pama-Nyungan,0,0,Australia
+chirila,Gurindji,kamaŋkir,bamboo part of spear,Pama-Nyungan,0,0,Australia
+chirila,Jaminjung,kamaŋkir,bamboo.species,Mirndi,0,0,Australia
+chirila,Jaru,kamaŋkir,bamboo cane,Pama-Nyungan,0,0,Australia
+chirila,Gooniyandi,kamaŋkiti,river bamboo,Bunuban,0,0,Australia
+chirila,Emmi,kanpi,bamboo trumpet,Western Daly,0,0,Australia
+chirila,Wunambal,kaɹmaŋur,Small Bamboo,Worrorran,0,0,Australia
+chirila,WTSWestern TorresMabuiag,katam-dadakoɹa,leafspike of bamboo,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Tiwi,kayaʈiri,Bamboo  shaft of fishing spear.,Tiwi,0,0,Australia
+chirila,Tiwi,kayatiri,Bamboo  shaft of fishing spear,Tiwi,0,0,Australia
+chirila,Wik-Mungkan,kek piːnt̪,handle of spear made from bamboo from the swamp,Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,kek piːnt̪,handle of spear made from bamboo from the swamp,Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,kek wopan,bullet spear  with bamboo shaft. Smart men test one another with these spears.,Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,kek wopan,bullet spear  with bamboo shaft,Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,kek-piːn̪t̪,spear  bamboo wallaby,Pama-Nyungan,0,0,Australia
+chirila,Wunambal,kiːnku,reed  bamboo,Worrorran,0,0,Australia
+chirila,Ngarinyin,kilɳku,bamboo see gingu  bamboo,Worrorran,0,0,Australia
+chirila,Wunambal,kimku,Small Bamboo,Worrorran,0,0,Australia
+chirila,Meryam Mir,kiɹkiɹ kebeɹ,bamboo clapper,Trans-Fly,0,0,Australia
+chirila,Umbugarla,kiyaŋuɹ,bamboo  bamboo spear,Darwin Region,0,0,Australia
+chirila,Meryam Mir,koeɹ,bamboo knife,Trans-Fly,0,0,Australia
+chirila,Meryam Mir,komazeɹ,tongs of bamboo,Trans-Fly,0,0,Australia
+chirila,Wik-Mungkan,koːnt̪  yuk koːnt̪,bamboo tree  smaller than yuk pukal,Pama-Nyungan,0,0,Australia
+chirila,Kungarakany,koːrututuh,decorative arm-band woven from bamboo-like lawyer vine stems; some carry designs; this ornament worn by men and women.,Arnhem,0,0,Australia
+chirila,Jawoyn,koɹaj,bamboo.spear,Gunwinyguan,0,0,Australia
+chirila,Meryam Mir,koskeɹ teibuɹ,horizontal bars in wall of house  usually made of bamboo,Trans-Fly,0,0,Australia
+chirila,Ngarinyin,kulumaŋun,bamboo shaft see gulumajn  spear shaft (cf wuluj  spear shaft  hardwood),Worrorran,0,0,Australia
+chirila,Kungarakany,kunpuk,bamboo plant; bamboo didjeridoo; hollow stem of bamboo 1 to 1.5 m in length with narrow end as mouthpiece; moulded with bees-wax to required thick- ness to suit player; a kunbuk may be painted with designs  or left in its natural state; this versatile wind instrument  in the hands of an expert player  produces a variety of drones and imitative sounds; a difficult  circular breathing technique is necessary to maintain a continuous flow of air in the pipe; traditionally only males should use this artifact; women are prohibited from blowing one; any woman who broke this taboo would suffer the curse of barrenness.,Arnhem,0,0,Australia
+chirila,WTSWestern TorresMabuiag,kusu-moɹap,short bamboo,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Wik-Ngathan,kut̪,bamboo dronepipe,Pama-Nyungan,0,0,Australia
+chirila,Meryam Mir,kwoieɹ,bamboo knife,Trans-Fly,0,0,Australia
+chirila,Lardil,larwa,Pipe (for smoking) made of bamboo or hollow piece of wood | Didgeridoo,Tangkic,0,0,Australia
+chirila,Wagiman,larwa,bamboo pipe,Non-Pama-Nyungan Isolate,0,0,Australia
+chirila,Wubuy,laɹwad,bamboo-like cane grass sp.,Arnhem,0,0,Australia
+chirila,Kungarakany,liɹmi,lawyer or wait-a-while vine (Flagellaria indica) generally found in dense rainforests; leaf tips end in hook-like tendrils which catch in hair  flesh or clothing; resembles bamboo; yet unlike bamboo twines through undergrowth and up into trees; stems used to make decorative arm-bands; term used for a tame dingo or camp dog.,Arnhem,0,0,Australia
+chirila,WTSWestern TorresMabuiag,lolo,bamboo flick or whip (Miriam dialect),Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Burarra,maɟawar,spearshaft,Maningrida,0,0,Australia
+chirila,Djinang,maɟawur,small bamboo or wood spear without barbs,Pama-Nyungan,0,0,Australia
+chirila,Rembarrnga,man@kumaŋ,spear  bamboo,Arnhem,0,0,Australia
+chirila,Burarra,mangoli,bamboo spearshaft,Maningrida,0,0,Australia
+chirila,Djinang,manguɭi,yellow bamboo,Pama-Nyungan,0,0,Australia
+chirila,Mawng,mankole,Bamboo | bamboo.spear,Iwaidjan,0,0,Australia
+chirila,Mawng,mankole,Bamboo  bamboo spear,Iwaidjan,0,0,Australia
+chirila,Wik-Mungkan,mant̪alam,a small whitish tree with tough wood. The flowers are attractive to native bees. Grow near Bamboo Outstation. Used for making spears.,Pama-Nyungan,0,0,Australia
+chirila,Dhuwal,maŋuli,bamboo--used for spear],Pama-Nyungan,0,0,Australia
+chirila,Gupapuyngu,maŋuli,bamboo--used for spear],Pama-Nyungan,0,0,Australia
+chirila,WTSWestern TorresMabuiag,maɹap,bamboo  bamboo water vessel,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Uradhi,maɹapi,bamboo-pipe,Pama-Nyungan,0,0,Australia
+chirila,Uradhi,maɹapi,bamboo  pipe,Pama-Nyungan,0,0,Australia
+chirila,Uradhi,maɹapi,bamboo  pipe,Pama-Nyungan,0,0,Australia
+chirila,Uradhi,maɹapi,bamboo  pipe,Pama-Nyungan,0,0,Australia
+chirila,Gooniyandi,maɭmoːr,a small bamboo spear,Bunuban,0,0,Australia
+chirila,Limilngan,maɭuman,bamboo man,Darwin Region,0,0,Australia
+chirila,Murrinh-patha,maʈa,bamboo  large,Southern Daly,0,0,Australia
+chirila,Jaminjung,maʈpa,bamboo.species,Mirndi,0,0,Australia
+chirila,WTSWestern TorresMabuiag,maumau,split bamboos on the gunwale of canoe  covering the joint between gar and garbad,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Wik-Ngathan,miːnt̪,long grass species  small bamboo  a sedge,Pama-Nyungan,0,0,Australia
+chirila,Gooniyandi,miliɲin,type of bamboo,Bunuban,0,0,Australia
+chirila,Gurindji,miliɲin,bamboo  bamboo spear from the north,Pama-Nyungan,0,0,Australia
+chirila,Ngarinyman,miliɲin,bamboo sp. from saltwater side  from the north-east -- the really huge bamboo type as found in the Daly,Pama-Nyungan,0,0,Australia
+chirila,Jaminjung,miliɲiɲ,bamboo.species (nr-1),Mirndi,0,0,Australia
+chirila,Ngumbarl,minnadeː,bamboora and man,Nyulnyulan,0,0,Australia
+chirila,WTSWestern TorresMabuiag,mœɹapi,bamboo (sp.),Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,WTSWestern TorresMabuiag,moɹap,bamboo water vessel (Muralag dialect),Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,WTSWestern TorresMabuiag,mɹaːpi,bamboo (sp.),Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Kuku-Yalanji,nampar,stick of flexible bamboo used in nose piercing,Pama-Nyungan,0,0,Australia
+chirila,Ngarinyin,naɳ o,to join  to joggle  to fit into (eg to push a spear shaft into the bamboo),Worrorran,0,0,Australia
+chirila,Wunambal,nkalamaɭ,Small Bamboo,Worrorran,0,0,Australia
+chirila,Jawoyn,ŋan-puɲ-ŋaju,clump of bamboo  a bundle,Gunwinyguan,0,0,Australia
+chirila,Linngithigh,okpili,One-pronged bamboo *spear (for wallaby),Pama-Nyungan,0,0,Australia
+chirila,WTSWestern TorresMabuiag,padatɹoŋ,bamboo rattle used in Surlal season,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Yidiny,pakan,piece of bamboo  used to suck up water (or as a decorative pin put through a hole in the nose),Pama-Nyungan,0,0,Australia
+chirila,Kaytetye,pampewe,bamboo,Pama-Nyungan,0,0,Australia
+chirila,Bardi,paɭpaɭ,type of bamboo with red berries,Nyulnyulan,0,0,Australia
+chirila,Bardi,paɭpaɭ,a kind of bamboo with red berries,Nyulnyulan,0,0,Australia
+chirila,Gurindji,paɳkili,plant type  like bamboo  grows on plain country  used for spear,Pama-Nyungan,0,0,Australia
+chirila,Gurindji,parakaɭ,plant type  like bamboo  grows near water  used for spear,Pama-Nyungan,0,0,Australia
+chirila,Jawoyn,parakaɭ,bamboo.spear,Gunwinyguan,0,0,Australia
+chirila,Ngalakgan,parakaɭ,bamboo spear | spear shafts  tree species used for | spear  bamboo | tree species used for spear shafts,Arnhem,0,0,Australia
+chirila,Wardaman,parakaɭ,Sesbania cannabina,Yangmanic,0,0,Australia
+chirila,Dalabon,parakkaɭ,Tree sp. used for spears  light spears  bamboo spears.,Gunwinyguan,0,0,Australia
+chirila,WTSWestern TorresMabuiag,pepedu,bamboo flick or whip,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,piːnt̪,small-stemmed bamboo used for spear handles {(kek piinth)} and protective pouch for fire-stick {(thum pup)} and for pipes {(thook)},Pama-Nyungan,0,0,Australia
+chirila,Wik-Ngathan,piːnt̪,bamboo type (&apos;big bamboo&apos;  &apos;short-join&apos;),Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,piːnt̪  yuk piːnt̪,small-stemmed bamboo used for spear handles kek piinth and protective pouch for fire-stick thum pup and for pipes thook,Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,piːy  kek piːy  piːy yakal,wattle tree yakal shaft of spear with bamboo handle,Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,piːn̪t̪,bamboo  native,Pama-Nyungan,0,0,Australia
+chirila,Gurindji,piɳtac,wooden/bamboo part of a spear  not including the point,Pama-Nyungan,0,0,Australia
+chirila,Gurindji,piʈiwuŋ,the join of the wood and the bamboo on a spear,Pama-Nyungan,0,0,Australia
+chirila,Jawoyn,poko,bamboo.spear,Gunwinyguan,0,0,Australia
+chirila,Wik-Mungkan,pukal,a large bamboo with big leaves growing near the mangroves. Probably introduced by the mission or maybe from the Island. It was known and named previously from specimens washed up on the beaches. Used for light spears with four or five prongs  and for making pipes ({thook}).,Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,pukal,bamboo  introduced,Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,pukal  yuk pukal,a large bamboo with big leaves growing near the mangroves,Pama-Nyungan,0,0,Australia
+chirila,Kuuku-Ya&apos;u,pukali,tree  wild bamboo  Bambusa forbesii,Pama-Nyungan,0,0,Australia
+chirila,Gurindji,ɹawuru,bamboo part of spear,Pama-Nyungan,0,0,Australia
+chirila,Ngarinyman,ɹawuru,little one bamboo found in river country,Pama-Nyungan,0,0,Australia
+chirila,Wubuy,ɭarwaʈ,bamboo-like cane grass species found around brackish water on coast,Arnhem,0,0,Australia
+chirila,Mpakwithi,ɹwamat̪i,pipe  bamboo -,Pama-Nyungan,0,0,Australia
+chirila,WTSWestern TorresMabuiag,sukuɹi,bamboo point of an arrow,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Kuku-Yalanji,taɹa,bamboo spear stick,Pama-Nyungan,0,0,Australia
+chirila,Ngarinyin,taɹwaɭŋa,long grass (like bamboo) see darwa4  swamp grass,Worrorran,0,0,Australia
+chirila,Batjjamalh,tel,bamboo javelin,Daly,0,0,Australia
+chirila,Kamu,teɹ,short bamboo spear,Eastern Daly,0,0,Australia
+chirila,Ngiyambaa,t̪iriːl,cumbungi  &apos;bamboo&apos;,Pama-Nyungan,0,0,Australia
+chirila,Wik-Ngathan,t̪oːk,bamboo smoking pipe,Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,t̪uk,pipe. Long cylinder sealed at each end with wax {(wom)} and with two holes in the upper side for smoking (with cigarette or bush tobacco or European tobacco). Made of {pukal } big bamboo  or {yuk put} or {piinth.} To smoke it a cigarette or a wooden bush pipe {(malkacham)} is placed in one of the holes and the smoke is drawn from the other hole.,Pama-Nyungan,0,0,Australia
+chirila,WTSWestern TorresMabuiag,tuɹku,vowl of bamboo tobacco-pipe,Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Wagiman,caɳin,bamboo | prickle (on echidna) | saltwater crocodile | spear,Non-Pama-Nyungan Isolate,0,0,Australia
+chirila,Werkaya,carem,a small throwing spear made from reeds  bamboo spear,Pama-Nyungan,0,0,Australia
+chirila,Bardi,cinal,spear  bamboo,Nyulnyulan,0,0,Australia
+chirila,Bardi,cinal,spear  bamboo,Nyulnyulan,0,0,Australia
+chirila,Nyulnyul,cinal,spear  bamboo,Nyulnyulan,0,0,Australia
+chirila,Walmajarri,ciɳal,large spear usually made from bamboo with a steel point,Pama-Nyungan,0,0,Australia
+chirila,Gooniyandi,ciɳali,spear  made of bamboo,Bunuban,0,0,Australia
+chirila,Rembarrnga,cokːolo,bamboo type,Arnhem,0,0,Australia
+chirila,Alawa,uɭumpu,bamboo  didjeridu,Arnhem,0,0,Australia
+chirila,WTSWestern TorresMabuiag,us,quartz used for sharpening upi (bamboo knife),Pama-NyunganPama-NyunganPama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,wak t̪iːncan,long brown soft grass found in the Bamboo area. Used by geese who pull it out and gather it for their nests  so they can lay their eggs. Also eaten by bullocks  and results in rich  tender meat.,Pama-Nyungan,0,0,Australia
+chirila,Wik-Mungkan,wak t̪iːncan,long brown soft grass found in the Bamboo area,Pama-Nyungan,0,0,Australia
+chirila,Yidiny,wankaɹ,small bamboo/reed found in swamp,Pama-Nyungan,0,0,Australia
+chirila,Kukatja,waɭkaɹa,bamboo grass,Pama-Nyungan,0,0,Australia
+chirila,Dalabon,waɳarampal,Tree sp. used for bamboo pipes.,Gunwinyguan,0,0,Australia
+chirila,Wik-Ngathan,waɹpen̪,bamboo species (small bamboo  long-jointed),Pama-Nyungan,0,0,Australia
+chirila,Mawng,winti,bamboo.vine | wrist,Iwaidjan,0,0,Australia
+chirila,Mawng,winti,wrist  bamboo vine,Iwaidjan,0,0,Australia
+chirila,Mawng,winti,bamboo vine,Iwaidjan,0,0,Australia
+chirila,ERROR,Wogoːi,Bamboo vine,,0,0,Australia
+chirila,Kuku-Yalanji,wulpur,bamboo spear stick,Pama-Nyungan,0,0,Australia
+chirila,Ngarinyin,wuluŋkun,(of fitting a bamboo to the shaft)  to join,Worrorran,0,0,Australia
+chirila,Ngarinyin,wuluj,hardwood spear shaft (holds the head and flint in the bamboo),Worrorran,0,0,Australia
+chirila,Mawng,wutput1,Pheasant coucal (&apos;bamboo-tail&apos;). Centropus phasianinus.,Iwaidjan,0,0,Australia
+chirila,Dhangu,jaŋaɹa(ʔ),[Ext] stem (of plant  including bamboo),Pama-Nyungan,0,0,Australia
+chirila,Dhuwal,jaŋaɹa(ʔ),[Ext] stem (of plant  including bamboo),Pama-Nyungan,0,0,Australia
+chirila,Dhuwal,jaŋaɹa(ʔ),[Ext] stem (of plant  including bamboo),Pama-Nyungan,0,0,Australia
+chirila,Djapu,jaŋaɹa(ʔ),[Ext] stem (of plant  including bamboo),Pama-Nyungan,0,0,Australia
+chirila,Gumatj,jaŋaɹa(ʔ),[Ext] stem (of plant  including bamboo),Pama-Nyungan,0,0,Australia
+chirila,Gupapuyngu,jaŋaɹa(ʔ),[Ext] stem (of plant  including bamboo),Pama-Nyungan,0,0,Australia
+chirila,Gupapuyngu,jaŋaɹa(ʔ),[Ext] stem (of plant  including bamboo),Pama-Nyungan,0,0,Australia
+chirila,Mawng,yaɭawu1,fish trap in the shape of a long tube that was used in creeks. Anth: It was made from winti bamboo vine. Awaning awulangalingapa yarlawu mampakangung jaw mampakangung jaw. Ngulamngulam mampartpungkang aminang akut iwumangung ja kiyap. ‘They camped there and they put their nets in. Every morning they could take out their nets and bring in some fish.’ See: arnakuj ‘fish trap type’.,Iwaidjan,0,0,Australia
+chirila,Mawng,yaɳawu,bamboo | light.spear.type,Iwaidjan,0,0,Australia
+chirila,Mawng,yaɳawu,bamboo  light spear type,Iwaidjan,0,0,Australia
+chirila,Ngarinyin,jaɹjaɹun,reeds  bamboo,Worrorran,0,0,Australia
+chirila,Gurindji,jawaɭwaɭ,bird type  crested pigeon. This bird took the bamboo spear from this area. Dreaming for many Julama,Pama-Nyungan,0,0,Australia
+chirila,Kungarakany,yentcuruk,bamboo grass; stems and foliage like bamboo; grows by banks of streams and rivers.,Arnhem,0,0,Australia
+chirila,Wagiman,yiliyili,small bamboo spear,Non-Pama-Nyungan Isolate,0,0,Australia
+chirila,ERROR,jilli jilli,small white-hafted bamboo-nosed spear  sign of the yilli yilli caste,,0,0,Australia
+chirila,Miriwoong,jiɹek kilanta,join spear shaft to spear head  join two pieces of bamboo  join wood to bamboo,Jarrakan,0,0,Australia
+chirila,Yir-Yoront,jum,Cut bamboo (Notes (general)-See also YUM‑PAR &apos;bamboo spear&apos; ),Pama-Nyungan,0,0,Australia
+chirila,Mawng,yuɭir2,creeper type. See: winti ‘bamboo vine’; nganypakan ‘armband type’.,Iwaidjan,0,0,Australia

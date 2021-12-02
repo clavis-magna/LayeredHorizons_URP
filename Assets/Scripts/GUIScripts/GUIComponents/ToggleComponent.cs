@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class ToggleComponent : MonoBehaviour
 {
@@ -16,14 +18,30 @@ public class ToggleComponent : MonoBehaviour
     public string toggleOnString;
     public string toggleOffString;
 
+    Toggle thisToggle;
+
+    void Start()
+    {
+        thisToggle = transform.GetChild(0).GetComponent<Toggle>();
+    }
+
     void Update()
     {
         if (active)
         {
+            if (thisToggle != null)
+            {
+                thisToggle.isOn = true;
+            }
             currentString = toggleOnString;
+
         } else
         {
             currentString = toggleOffString;
+            if (thisToggle != null)
+            {
+                thisToggle.isOn = false;
+            }
         }
     }
 

@@ -109,7 +109,7 @@ public class movementToggle : MonoBehaviour
 
 
         //currently based on distance between the hands and the headset
-        if (leftHeadDistance < 0.5 && rightHeadDistance < 0.5)
+        if (leftHeadDistance < 0.8 && rightHeadDistance < 0.8)
         {
             GetComponent<ToggleComponent>().ToggleOn();
             Haptic1 = true;

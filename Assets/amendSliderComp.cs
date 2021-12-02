@@ -12,7 +12,6 @@ public class amendSliderComp : MonoBehaviour
     //get the text that displays.
     //Would put this in another script but I think it can help indicate things for different interaction types.
     TextMeshProUGUI sliderNameText;
-    TextMeshProUGUI sliderStatusText;
 
     //using an actionmap to reduce the number of references on this page
     private InputActionMap rightControllerMap;
@@ -42,8 +41,7 @@ public class amendSliderComp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sliderNameText = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-        sliderStatusText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        sliderNameText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
 
         //Find the action map so that we can reference each of the references inside
         //this one is for right controller only.
@@ -85,8 +83,8 @@ public class amendSliderComp : MonoBehaviour
 
         if (selectedSlider)
         {
-            sliderNameText.fontStyle = FontStyles.Underline;
-            sliderStatusText.fontStyle = FontStyles.Underline;
+            sliderNameText.color = new Color(1, 1, 1, 0.5f);
+
 
             if (clickDragActive)
             {
@@ -114,11 +112,10 @@ public class amendSliderComp : MonoBehaviour
 
             //text is indicated by what is on displayedValue
             //convert it to a string and move to 2 decible places
-            sliderStatusText.text = displayedValue.ToString("F2");
         } else
         {
-            sliderNameText.fontStyle ^= FontStyles.Underline;
-            sliderStatusText.fontStyle ^= FontStyles.Underline;
+            sliderNameText.color = new Color(0, 0, 0, 0.5f);
+
         }
 
 

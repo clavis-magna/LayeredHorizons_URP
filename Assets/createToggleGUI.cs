@@ -19,7 +19,7 @@ public class createToggleGUI : MonoBehaviour
     public void createToggleObject(GameObject meshObject, string meshName)
     {
         //Debug.Log("called to create Toggle");
-        var newToggle = Instantiate(toggleObject, new Vector3(transform.position.x, transform.position.y + (float)counter/10.0f, transform.position.z), transform.rotation, transform);
+        var newToggle = Instantiate(toggleObject, new Vector3(transform.position.x, transform.position.y + (float)counter/20.0f, transform.position.z), transform.rotation, transform);
         assignMeshObject toggleMeshScript = newToggle.GetComponent<assignMeshObject>();
         ToggleComponent toggleCompScript = newToggle.GetComponent<ToggleComponent>();
         Canvas textCanvas = newToggle.GetComponent<Canvas>();

@@ -13,7 +13,7 @@ public class amendToggleComp : MonoBehaviour
     //get the text that displays.
     //Would put this in another script but I think it can help indicate things for different interaction types.
     TextMeshProUGUI toggleNameText;
-    TextMeshProUGUI toggleStatusText;
+    //TextMeshProUGUI toggleStatusText;
 
 
     //using an actionmap to reduce the number of references on this page
@@ -28,7 +28,7 @@ public class amendToggleComp : MonoBehaviour
     private InputAction getLeftPosition;
 
     private Vector3 controllerPositionXYZ;
-
+     
     private float startControllerPosition;
     private float endControllerPosition;
 
@@ -44,8 +44,7 @@ public class amendToggleComp : MonoBehaviour
 
     void Start()
     {
-        toggleNameText = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-        toggleStatusText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        toggleNameText = transform.GetChild(0).transform.GetChild(1).GetComponent<TextMeshProUGUI>();
 
 
         //Find the action map so that we can reference each of the references inside
@@ -87,47 +86,12 @@ public class amendToggleComp : MonoBehaviour
         //If selected toggle allow visually show and allow amendment to toggle too.
         if (selectedToggle)
         {
-            toggleNameText.fontStyle = FontStyles.Underline;
-            toggleStatusText.fontStyle = FontStyles.Underline;
+            toggleNameText.color = new Color(1, 1, 1, 0.5f);
 
-            if (clickDragActive)
-            {
-                endControllerPosition = controllerPositionXYZ.y;
-
-                //get the distance that controller moved from press to release.
-                movementAmount = startControllerPosition - endControllerPosition;
-
-                //this value becomes the checker for if true or false.
-                displayedValue = sliderValue - movementAmount;
-
-                //Determine whether the displayed value is positive or negative
-                //add a slight amount so you can see the changing value
-                if (displayedValue > 0.05)
-                {
-                    toggleText = true;
-                }
-                if (displayedValue < -0.05)
-                {
-                    toggleText = false;
-                }
-            }
-
-            if (toggleText)
-            {
-                toggleStatusText.text = (thisToggle.toggleOnString);
-                thisToggle.ToggleOn();
-            }
-            else
-            {
-                toggleStatusText.text = (thisToggle.toggleOffString);
-                thisToggle.ToggleOff();
-
-            }
-        } else
+        }
+        else
         {
-            toggleNameText.fontStyle ^= FontStyles.Underline;
-            toggleStatusText.fontStyle ^= FontStyles.Underline;
-
+            toggleNameText.color = new Color(0, 0, 0, 0.5f);
         }
     }
 
@@ -135,6 +99,7 @@ public class amendToggleComp : MonoBehaviour
     {
         activateDragInputRef.action.performed -= activateChangeValue;
         activateDragInputRef.action.canceled -= deactivateChangeValue;
+
     }
 
 
@@ -143,14 +108,10 @@ public class amendToggleComp : MonoBehaviour
     //this is for the click drag
     private void activateChangeValue(InputAction.CallbackContext context)
     {
-        //when pressed have this active which will keep recording controller positions.
-        clickDragActive = true;
-
-        //slider value is what you receive back from the slider Component
-        //replaced each time pressed so that it can tell what is the starting value to change from.
-        //sliderValue = GetComponent<SliderComponent>().value;
-        sliderValue = 0;
-
+        if (selectedToggle)
+        {
+            thisToggle.ToggleAlternate();
+        }
 
         //get the conroller's position too from when first pressed.
         startControllerPosition = controllerPositionXYZ.y;
@@ -159,12 +120,7 @@ public class amendToggleComp : MonoBehaviour
 
     private void deactivateChangeValue(InputAction.CallbackContext context)
     {
-        clickDragActive = false;
-
-        //////define the slider by the movement when the controller position was moved.
-        ////float newSliderValue = Mathf.Abs(startControllerPosition.y - endControllerPosition.y);
-        GetComponent<SliderComponent>().DefineValue(displayedValue);
-
+        //GetComponent<SliderComponent>().DefineValue(displayedValue);
     }
 
     private void getControllerPosition(InputAction.CallbackContext context)

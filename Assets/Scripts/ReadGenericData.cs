@@ -26,30 +26,17 @@ public class ReadGenericData : MonoBehaviour
 
     public DataType dataType;
 
-    [Header("Header column needs to match the DataType (string for word, link for audio, etc)")]
-    public string headerColumn = "dog";
 
-    [Header("Increase delay period to reduce lag spike")]
-    public int delayPeriod = 10;
 
     [Header("Deform Mesh Settings (Important if bool is true)")]
     public bool deformMesh;
 
-    public Color meshColor = new Color(0.3f, 0.4f, 0.6f, 0.3f);
-
-    [HideInInspector]
-    public bool edgeSmoothing = true;
-
     public bool customiseColour = true;
     public bool customiseOpacity = true;
-    public bool highlighter = true;
 
 
-
-    public float depressionHeight = 0.3f;
-    public float depressionRadius = 2.0f;
-
-    List<Dictionary<string, object>> data;
+    [HideInInspector]
+    public List<Dictionary<string, object>> data;
 
 
     private int scaleX;
@@ -75,71 +62,6 @@ public class ReadGenericData : MonoBehaviour
         loadData();
     }
 
-    //needs to be IEnumerator to allow for a delay
-
-    void generateMesh()
-    {
-        //Lists to store positions of where the lat lon data sits.
-        List<float> XList = new List<float>();
-        List<float> ZList = new List<float>();
-
-        for (var i = 0; i < data.Count; i++)
-        {
-            //add the positions to this list to then find where the max min point is
-            float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
-            XList.Add(thisXY[0]);
-            ZList.Add(thisXY[1]);
-        }
-        float xMin = XList.Min();
-        float xMax = XList.Max();
-
-        float zMin = ZList.Min();
-        float zMax = ZList.Max();
-
-        //calculate the point at which this data centrepoint is to get position.
-        Vector2 centrePoint = new Vector2((xMin + xMax) / 2f , (zMin + zMax) / 2f);
-
-
-        //Create the GenerateQuad Object which creates the mesh at centrepoint.
-        meshObject = Instantiate(Resources.Load("GenerateQuad"), new Vector3(centrePoint.x, -0.5f, centrePoint.y), Quaternion.identity) as GameObject;
-
-        if (meshObject != null)
-        {
-            Debug.Log("Mesh Plane Generated");
-
-
-
-            //Set the size of the mesh leaving a buffer space for the mesh.
-            GeneratePlaneMesh meshGenerationScript = meshObject.GetComponent<GeneratePlaneMesh>();
-            meshGenerationScript.xSize = xMax - xMin + 10;
-            meshGenerationScript.zSize = zMax - zMin + 10;
-
-            //Change the size of the collider too.
-            BoxCollider colliderChild = meshObject.transform.GetChild(0).gameObject.GetComponent<BoxCollider>();
-            colliderChild.size = new Vector3(xMax - xMin + 10, 10, zMax - zMin + 10);
-
-
-            //Colour of the mesh
-            Renderer meshRenderer = meshObject.GetComponent<Renderer>();
-            meshRenderer.material.SetColor("_BaseColor", meshColor);
-            //meshRenderer.material.SetColor("_Emission", meshColor);
-
-
-
-        }
-        else
-        {
-            Debug.Log("Error: A Mesh Plane Object was not instantiated");
-        }
-
-        //Debug.Log(xMin);
-        //Debug.Log(xMax);
-        //Debug.Log(zMin);
-        //Debug.Log(zMax);
-
-    }
-
-
     async void loadData()
     {
 
@@ -152,87 +74,21 @@ public class ReadGenericData : MonoBehaviour
                 //send the csv string to the csv reader.
                 data = CSVReader.Read(csvContents);
 
-                generateMesh();
+                GenerateDataMesh dataMeshInstance = new GenerateDataMesh();
+                GameObject meshObject = dataMeshInstance.generateMesh(data);
 
 
-
+            
                 //Get the deformableMesh GO ready to place in the prefabs further down
                 DeformableMesh parentMesh = meshObject.GetComponent<DeformableMesh>();
 
-                meshObject.name = "Mesh-" + name;    
+                meshObject.name = "Mesh-" + name;
 
+                deformMeshScript createDeformMeshInstance = new deformMeshScript();
+                createDeformMeshInstance.createDeformMesh(data, parentMesh);
 
-                for (var i = 0; i < data.Count; i++)
-                {
-                      // convert from lat/long to world units
-                      // using the helper method in the 'helpers' script
-                      float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
-
-                      //WITH POOL
-                      if (deformMesh)
-                      {
-
-                            //get an instance from the mesh pool and apply the position and rotation
-                            var thisDeformer = MeshPool.Instance.Get();
-                            thisDeformer.transform.rotation = Quaternion.Euler(0, 0, 0);
-                            thisDeformer.transform.position = new Vector3(thisXY[0], -1.0f, thisXY[1]);
-
-                            //get the physics deformer script that is applied on the prefab and set the variables based on the public variables of this script.
-                            PhysicsDeformer script = thisDeformer.GetComponent<PhysicsDeformer>();
-                            if (parentMesh != null)
-                            {
-                              //edge smoothing bool and attach the deformable mesh as the thing to change.
-                              parentMesh.edgeSmoothing = edgeSmoothing;
-                              script.deformableMesh = parentMesh;
-                            } else {
-                              Debug.Log("No DeformableMesh found on parent GameObject!");
-                            }
-                            //height and radius of the deformed mesh collision point controlled here
-                            script.maximumDepression = depressionHeight;
-                            script.collisionRadius = depressionRadius;
-
-                            //the mesh pool instances are recieved as off so set them to true so they can be used.
-                            thisDeformer.gameObject.SetActive(true);
-                      }
-
-                      //creates a delay after each loop through to prevent lag spikes
-                      await new WaitForFrames(delayPeriod);
-                }
-
-
-                //The text creators are in async so this will perform once everything above is completed.
-                //Which is why I duplicated this.
-                for (var i = 0; i < data.Count; i++)
-                {
-                    // convert from lat/long to world units
-                    // using the helper method in the 'helpers' script
-                    float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
-
-                    // //needs a wait until the deformMesh = true before this is executed.
-                    // // //Creates a ball that will eventually create the text.
-                    if (dataType == DataType.Word)
-                    {
-                        var thisTextCreator = TextPool.Instance.Get();
-                        thisTextCreator.transform.rotation = Quaternion.Euler(0, 0, 0);
-                        thisTextCreator.transform.position = new Vector3(thisXY[0], -1.0f, thisXY[1]);
-
-                        createText textScript = thisTextCreator.GetComponent<createText>();
-                        if (parentMesh != null)
-                        {
-                            textScript.deformableMesh = parentMesh;
-                            textScript.textData = (string)data[i][headerColumn];
-
-                        }
-                        else
-                        {
-                            Debug.Log("No DeformableMesh found on parent GameObject!");
-                        }
-                        thisTextCreator.gameObject.SetActive(true);
-                    }
-
-                    //creates a delay after each loop through to prevent lag spikes
-                    await new WaitForFrames(delayPeriod);
-                }
+                textCreatorScript createTextCreatorInstance = new textCreatorScript();
+                createTextCreatorInstance.createTextCreator(data, parentMesh);
 
 
                 //tell the left hand GUI to create some toggles when a mesh is fully loaded.
@@ -243,7 +99,7 @@ public class ReadGenericData : MonoBehaviour
                 GameObject rightHand = GameObject.FindGameObjectWithTag("RightGUI");
                 createAdjustmentScript = rightHand.GetComponent<createAdjustmentGUI>();
                 //create the layer first and then within the script create the valid adjusters.
-                createAdjustmentScript.createAdjustmentLayer(meshObject, name, customiseColour, customiseOpacity, highlighter);
+                createAdjustmentScript.createAdjustmentLayer(meshObject, name, customiseColour, customiseOpacity);
 
 
         }
