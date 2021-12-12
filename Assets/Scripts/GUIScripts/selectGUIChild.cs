@@ -114,40 +114,14 @@ public class selectGUIChild : MonoBehaviour
 
     private void primaryPressed(InputAction.CallbackContext context)
     {
-        //print("Primary pressed");
-
         activeToggle--;
 
-        ////get the first child and send it to the back.
-        //GameObject child = transform.GetChild(0).gameObject;
-        //child.transform.SetSiblingIndex(transform.childCount-1);
-
-        ////reposition anytime that the order is changed
-        //for (int i = 0; i < transform.childCount; i++)
-        //{
-        //    GameObject thisChild = transform.GetChild(i).gameObject;
-        //    thisChild.GetComponent<positionFromChildCount>().RepositionChildren(i);
-        //    print("child" + i + "position: " + thisChild.transform.position);
-
-        //}
     }
 
     private void secondaryPressed(InputAction.CallbackContext context)
     {
-        //print("Secondary pressed");
-
         activeToggle++;
-        //GameObject child = transform.GetChild(transform.childCount-1).gameObject;
-        //child.transform.SetSiblingIndex(0);
 
-        ////reposition anytime that the order is changed
-        //for (int i = 0; i < transform.childCount; i++)
-        //{
-        //    GameObject thisChild = transform.GetChild(i).gameObject;
-        //    thisChild.GetComponent<positionFromChildCount>().RepositionChildren(i);
-        //    print("child" + i + "position: " + thisChild.transform.position);
-
-        //}
     }
 
 }

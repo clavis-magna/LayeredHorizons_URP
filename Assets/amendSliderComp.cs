@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.UI;
 
 public class amendSliderComp : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class amendSliderComp : MonoBehaviour
     public InputActionAsset actionAsset;
     //get the text that displays.
     //Would put this in another script but I think it can help indicate things for different interaction types.
-    TextMeshProUGUI sliderNameText;
+    //TextMeshProUGUI sliderNameText;
+    public GameObject selectionIndicator;
 
     //using an actionmap to reduce the number of references on this page
     private InputActionMap rightControllerMap;
@@ -20,6 +22,10 @@ public class amendSliderComp : MonoBehaviour
     [Header("Select Hand and Action to Activate")]
     public handSelect activeHand;
     public InputActionReference activateDragInputRef;
+
+    public Color activeColor = new Color(1.0f, 1.0f, 1.0f, 0.5f);
+    public Color inactiveColor = new Color(0.0f, 0.0f, 0.0f, 0.5f);
+
 
     private InputAction getRightPosition;
     private InputAction getLeftPosition;
@@ -41,7 +47,7 @@ public class amendSliderComp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sliderNameText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        //sliderNameText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
 
         //Find the action map so that we can reference each of the references inside
         //this one is for right controller only.
@@ -52,7 +58,7 @@ public class amendSliderComp : MonoBehaviour
         leftControllerMap.Enable();
 
         //this should read the toggle name instead of instructions
-        sliderNameText.text = "Grip and drag to change the slider";
+        //sliderNameText.text = "Grip and drag to change the slider";
 
         //tracking hand position depending on which hand you're on
         switch (activeHand)
@@ -79,12 +85,12 @@ public class amendSliderComp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sliderNameText.text = (thisSlider.sliderName);
+        //sliderNameText.text = (thisSlider.sliderName);
 
         if (selectedSlider)
         {
-            sliderNameText.color = new Color(1, 1, 1, 0.5f);
-
+            //sliderNameText.color = activeColor;
+            selectionIndicator.GetComponent<Image>().color = activeColor;
 
             if (clickDragActive)
             {
@@ -114,7 +120,8 @@ public class amendSliderComp : MonoBehaviour
             //convert it to a string and move to 2 decible places
         } else
         {
-            sliderNameText.color = new Color(0, 0, 0, 0.5f);
+            //sliderNameText.color = inactiveColor;
+            selectionIndicator.GetComponent<Image>().color = inactiveColor;
 
         }
 

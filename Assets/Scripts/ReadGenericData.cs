@@ -15,7 +15,7 @@ public class ReadGenericData : MonoBehaviour
     // csv filename
     // in streaming assets (include .csv extension)
     [Header("Name of data file here")]
-    public string CSVFileName = "dog.csv";
+    public string CSVFileName = ".csv";
 
     public enum DataType
     {
@@ -26,7 +26,8 @@ public class ReadGenericData : MonoBehaviour
 
     public DataType dataType;
 
-
+    [Header("Header column needs to match the DataType (string for word, link for audio, etc)")]
+    public string headerColumn;
 
     [Header("Deform Mesh Settings (Important if bool is true)")]
     public bool deformMesh;
@@ -68,11 +69,14 @@ public class ReadGenericData : MonoBehaviour
           //check if the file exists in the streaming assets folder
           if (BetterStreamingAssets.FileExists(CSVFileName))
           {
+
                 //convert the csv to a String
                 string csvContents = BetterStreamingAssets.ReadAllText(CSVFileName);
 
                 //send the csv string to the csv reader.
                 data = CSVReader.Read(csvContents);
+
+
 
                 GenerateDataMesh dataMeshInstance = new GenerateDataMesh();
                 GameObject meshObject = dataMeshInstance.generateMesh(data);
@@ -84,11 +88,13 @@ public class ReadGenericData : MonoBehaviour
 
                 meshObject.name = "Mesh-" + name;
 
+                //create the things that deform the mesh
                 deformMeshScript createDeformMeshInstance = new deformMeshScript();
                 createDeformMeshInstance.createDeformMesh(data, parentMesh);
 
+                //then create the labels that go on top of the mesh.
                 textCreatorScript createTextCreatorInstance = new textCreatorScript();
-                createTextCreatorInstance.createTextCreator(data, parentMesh);
+                createTextCreatorInstance.createTextCreator(data, parentMesh, headerColumn);
 
 
                 //tell the left hand GUI to create some toggles when a mesh is fully loaded.

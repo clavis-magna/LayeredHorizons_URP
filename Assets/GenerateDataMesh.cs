@@ -18,8 +18,12 @@ public class GenerateDataMesh : MonoBehaviour
 
     public Color meshColor = new Color(0.3f, 0.4f, 0.6f, 0.3f);
 
+    private int missingData;
+
     public GameObject generateMesh(List<Dictionary<string, object>> data)
     {
+
+
 
         // grab world scale
         scaleX = (int)InitiateWorldScale.mapScale.x;
@@ -30,14 +34,27 @@ public class GenerateDataMesh : MonoBehaviour
         List<float> XList = new List<float>();
         List<float> ZList = new List<float>();
 
+
+
         for (var i = 0; i < data.Count; i++) {
             if ((float)data[i]["latitude"] != null || (float)data[i]["longitude"] != null)
             {
-                //add the positions to this list to then find where the max min point is
-                float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
-
-                XList.Add(thisXY[0]);
-                ZList.Add(thisXY[1]);
+                //check if the lat lon is equal to zero in which it will equate to null
+                //all lat lon needs a float value in the csv or it will send error
+                if ((float)data[i]["latitude"] != 0.0 && (float)data[i]["longitude"] != 0.0)
+                {
+                    //add the positions to this list to then find where the max min point is
+                    float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
+                    XList.Add(thisXY[0]);
+                    ZList.Add(thisXY[1]);
+                }
+                else
+                {
+                    missingData++;
+                }
+            } else
+            {
+                Debug.Log("Lattitude and Longitude not found in data!");
             }
         }
         
@@ -80,6 +97,8 @@ public class GenerateDataMesh : MonoBehaviour
             Debug.Log("Error: A Mesh Plane Object was not instantiated");
 
         }
+        Debug.Log("There are " + missingData + " data entries with a 0.0, 0.0 lat/lon");
+
         return meshObject;
 
     }

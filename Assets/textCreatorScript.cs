@@ -12,9 +12,6 @@ public class textCreatorScript : MonoBehaviour
     private int scaleX;
     private int scaleY;
 
-    [Header("Header column needs to match the DataType (string for word, link for audio, etc)")]
-    public string headerColumn = "dog";
-
     [Header("Increase delay period to reduce lag spike")]
     public int delayPeriod = 10;
 
@@ -24,7 +21,7 @@ public class textCreatorScript : MonoBehaviour
     [HideInInspector]
     public bool edgeSmoothing = true;
 
-    public async void createTextCreator(List<Dictionary<string, object>> data, DeformableMesh parentMesh)
+    public async void createTextCreator(List<Dictionary<string, object>> data, DeformableMesh parentMesh, string m_headerColumn)
     {
         // grab world scale
         scaleX = (int)InitiateWorldScale.mapScale.x;
@@ -32,23 +29,34 @@ public class textCreatorScript : MonoBehaviour
 
         for (var i = 0; i < data.Count; i++)
         {
-            float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
 
-            var thisTextCreator = TextPool.Instance.Get();
-            thisTextCreator.transform.rotation = Quaternion.Euler(0, 0, 0);
-            thisTextCreator.transform.position = new Vector3(thisXY[0], -1.0f, thisXY[1]);
+            if ((float)data[i]["latitude"] != null || (float)data[i]["longitude"] != null)
+            {
+                //check if the lat lon is equal to zero in which it will equate to null
+                //all lat lon needs a float value in the csv or it will send error
+                if ((float)data[i]["latitude"] != 0.0 && (float)data[i]["longitude"] != 0.0)
+                {
+                    float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
 
-            createText textScript = thisTextCreator.GetComponent<createText>();
-            if (parentMesh != null)
-            {
-                textScript.deformableMesh = parentMesh;
-                textScript.textData = (string)data[i][headerColumn];
+                    var thisTextCreator = TextPool.Instance.Get();
+                    thisTextCreator.transform.rotation = Quaternion.Euler(0, 0, 0);
+                    thisTextCreator.transform.position = new Vector3(thisXY[0], -1.0f, thisXY[1]);
+
+                    createText textScript = thisTextCreator.GetComponent<createText>();
+                    if (parentMesh != null)
+                    {
+                        textScript.deformableMesh = parentMesh;
+                        textScript.textData = (string)data[i][m_headerColumn];
+                    }
+                    else
+                    {
+                        Debug.Log("No DeformableMesh found on parent GameObject!");
+                    }
+                    thisTextCreator.gameObject.SetActive(true);
+                }
             }
-            else
-            {
-                Debug.Log("No DeformableMesh found on parent GameObject!");
-            }
-            thisTextCreator.gameObject.SetActive(true);
+
+
 
             await new WaitForFrames(delayPeriod);
         }

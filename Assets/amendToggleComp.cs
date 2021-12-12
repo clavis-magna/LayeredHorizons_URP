@@ -16,6 +16,9 @@ public class amendToggleComp : MonoBehaviour
     //TextMeshProUGUI toggleStatusText;
 
 
+    public Color activeColor = new Color(1.0f, 1.0f, 1.0f, 0.5f);
+    public Color inactiveColor = new Color(0.0f, 0.0f, 0.0f, 0.5f);
+
     //using an actionmap to reduce the number of references on this page
     private InputActionMap rightControllerMap;
     private InputActionMap leftControllerMap;
@@ -86,12 +89,11 @@ public class amendToggleComp : MonoBehaviour
         //If selected toggle allow visually show and allow amendment to toggle too.
         if (selectedToggle)
         {
-            toggleNameText.color = new Color(1, 1, 1, 0.5f);
-
+            toggleNameText.color = activeColor;
         }
         else
         {
-            toggleNameText.color = new Color(0, 0, 0, 0.5f);
+            toggleNameText.color = inactiveColor;
         }
     }
 

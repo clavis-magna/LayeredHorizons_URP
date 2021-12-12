@@ -53,6 +53,9 @@ public class CSVReader
             }
             list.Add(entry);
         }
+
+
+
         return list;
     }
 }

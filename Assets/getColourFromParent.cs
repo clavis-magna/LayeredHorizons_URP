@@ -8,6 +8,9 @@ public class getColourFromParent : MonoBehaviour
 {
     public Color parentColor;
 
+    private Color activeColor = new Color(1.0f, 1.0f, 1.0f, 0.5f);
+    private Color inactiveColor = new Color(0.0f, 0.0f, 0.0f, 0.5f);
+
     public bool useHighlighterColour = false;
 
     private GameObject point;
@@ -30,7 +33,7 @@ public class getColourFromParent : MonoBehaviour
     {
         if (useHighlighterColour)
         {
-            parentColor = new Color(255, 255, 255, 255);
+            parentColor = activeColor;
         } else
         {
             parentColor = transform.parent.GetComponent<Renderer>().material.GetColor("_BaseColor");
@@ -40,7 +43,7 @@ public class getColourFromParent : MonoBehaviour
         point.GetComponent<Renderer>().material.SetColor("_Color", parentColor);
         line.GetComponent<Renderer>().material.SetColor("_Color", parentColor);
         //darker colour for the text
-        text.faceColor = new Color(parentColor.r / 2, parentColor.g / 2, parentColor.b / 2, 255);
+        text.faceColor = inactiveColor;
 
     }
 }

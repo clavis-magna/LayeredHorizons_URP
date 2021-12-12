@@ -28,7 +28,7 @@ public class SliderComponent : MonoBehaviour
         value += increment;
         if (value > 1)
         {
-            value = 1;
+            value = 0;
         }
     }
 
@@ -37,7 +37,7 @@ public class SliderComponent : MonoBehaviour
         value -= increment;
         if (value < 0)
         {
-            value = 0;
+            value = 1;
         }
     }
 
