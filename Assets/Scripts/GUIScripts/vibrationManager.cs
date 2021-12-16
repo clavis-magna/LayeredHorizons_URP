@@ -13,10 +13,7 @@ public class vibrationManager : MonoBehaviour
 
     //script pulled from here
     //https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/page-5#post-7046953
-    /// <summary>
-    /// Send a rumble command to a device
-    /// </summary>
-    /// <param name="device">Device to send rumble to</param>
+    //Send a rumble command to a device
     public void Rumble(InputDevice device)
     {
         // Setting channel to 1 will work in 1.1.1 but will be fixed in future versions such that 0 would be the correct channel.

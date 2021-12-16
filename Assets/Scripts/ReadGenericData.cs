@@ -90,11 +90,11 @@ public class ReadGenericData : MonoBehaviour
 
                 //create the things that deform the mesh
                 deformMeshScript createDeformMeshInstance = new deformMeshScript();
-                createDeformMeshInstance.createDeformMesh(data, parentMesh);
+                await createDeformMeshInstance.createDeformMesh(data, parentMesh);    
 
                 //then create the labels that go on top of the mesh.
-                textCreatorScript createTextCreatorInstance = new textCreatorScript();
-                createTextCreatorInstance.createTextCreator(data, parentMesh, headerColumn);
+               textCreatorScript createTextCreatorInstance = new textCreatorScript();
+                await createTextCreatorInstance.createTextCreator(data, parentMesh, headerColumn);
 
 
                 //tell the left hand GUI to create some toggles when a mesh is fully loaded.

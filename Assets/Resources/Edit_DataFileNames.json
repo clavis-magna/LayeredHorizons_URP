@@ -1,0 +1,16 @@
+{
+	"Items": [
+		{
+			"fileName": "dog.csv",
+			"headerColumnName": "dog"
+		},
+		{
+			"fileName": "languageData.csv",
+			"headerColumnName": "name"
+		},
+		{
+			"fileName": "bamboo.csv",
+			"headerColumnName": "form"
+		}
+	]
+}
