@@ -32,19 +32,20 @@ public class XRPlayerController : MonoBehaviour
     private float rightTriggerValue;
     private float leftTriggerValue;
 
+    private bool rightMoving;
+    private bool leftMoving;
+
 
     public float normalMoveSpeed = 1;
+    public float fastMoveSpeed = 1;
+    private float speed;
+
     float speedMultiplier;
     float fallbackSpeedMultiplier;
-
-    //public InputActionReference testReference = null;
-
-
     public bool desktopControls = false;
 
     PlayerInputActionsFallback playerInputActionsFallback;
     Vector2 rotation = Vector2.zero;
-    public float speed = 0.1f;
 
     private void Awake()
     {
@@ -71,31 +72,44 @@ public class XRPlayerController : MonoBehaviour
         rightTrigger.canceled += context => stopActionRight(context);
         leftTrigger.canceled += context => stopActionLeft(context);
 
+        rightMoving = false;
+        leftMoving = false;
     }
 
     public void Update()
     {
         // XR movement
 
+        //go faster when both buttons pressed
+        if (rightTriggerValue > 0 && leftTriggerValue > 0)
+        {
+            speed = fastMoveSpeed;
+
+        } else
+        {
+            speed = normalMoveSpeed;
+
+
+        }
+
         if (toggleInput.active)
         {
             // go in direction pointing
-            transform.position += rightHand.transform.forward * normalMoveSpeed * Time.deltaTime * rightTriggerValue;
-            transform.position += leftHand.transform.forward * normalMoveSpeed * Time.deltaTime * leftTriggerValue;
+            transform.position += rightHand.transform.forward * speed * Time.deltaTime * rightTriggerValue;
+            transform.position += leftHand.transform.forward * speed * Time.deltaTime * leftTriggerValue;
         }
         else
         {
             // go in direction looking
-            transform.position += Camera.main.transform.forward * normalMoveSpeed * Time.deltaTime * rightTriggerValue;
-            transform.position += Camera.main.transform.forward * normalMoveSpeed * Time.deltaTime * leftTriggerValue;
-
+            transform.position += Camera.main.transform.forward * speed * Time.deltaTime * rightTriggerValue;
+            transform.position += Camera.main.transform.forward * speed * Time.deltaTime * leftTriggerValue;
         }
 
 
         // Fallback movement
         if (desktopControls)
         {
-            transform.position += Camera.main.transform.forward * normalMoveSpeed * Time.deltaTime * fallbackSpeedMultiplier;
+            transform.position += Camera.main.transform.forward * speed * Time.deltaTime * fallbackSpeedMultiplier;
         }
     }
 
@@ -133,6 +147,7 @@ public class XRPlayerController : MonoBehaviour
         {
             print(rightTriggerValue);
         }
+        rightMoving = true;
     }
 
     private void moveForwardLeft(InputAction.CallbackContext context)
@@ -142,6 +157,7 @@ public class XRPlayerController : MonoBehaviour
         {
             print(leftTriggerValue);
         }
+        leftMoving = true;
     }
 
 

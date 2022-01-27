@@ -21,10 +21,10 @@ public class getColourFromParent : MonoBehaviour
 
     void Start()
     {
-        point = transform.FindChild("MarkerPoint").gameObject;
-        line = transform.FindChild("MarkerLine").gameObject;
+        point = transform.Find("MarkerPoint").gameObject;
+        line = transform.Find("MarkerLine").gameObject;
 
-        text = transform.FindChild("Text (TMP)").GetComponent<TextMeshPro>();
+        text = transform.Find("Text (TMP)").GetComponent<TextMeshPro>();
 
 
     }

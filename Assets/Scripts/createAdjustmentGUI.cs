@@ -26,7 +26,9 @@ public class createAdjustmentGUI : MonoBehaviour
             createOpacityAdjustmentChild(newLayer, meshObject);
         }
 
-        var newToggle = Instantiate(textToggle, new Vector3(transform.position.x + 0.2f, transform.position.y, transform.position.z), transform.rotation, transform);
+        var newToggle = Instantiate(textToggle, new Vector3(transform.position.x, transform.position.y, transform.position.z), transform.rotation, transform);
+        newToggle.transform.Translate(0.2f, 0, 0);
+
         newToggle.transform.parent = newLayer.transform;
 
 
@@ -45,7 +47,8 @@ public class createAdjustmentGUI : MonoBehaviour
     public void createColourAdjustmentChild(GameObject parentLayer, GameObject meshObject)
     {
         //print("created colour adjustment");
-        var newColourAdjust = Instantiate(colourAdjustment, new Vector3(transform.position.x - 0.06f, transform.position.y, transform.position.z), transform.rotation, parentLayer.transform);
+        var newColourAdjust = Instantiate(colourAdjustment, new Vector3(transform.position.x, transform.position.y, transform.position.z), transform.rotation, parentLayer.transform);
+        newColourAdjust.transform.Translate(-0.06f, 0, 0);
         var colourScript = newColourAdjust.GetComponent<amendMeshColourFromSlider>();
         colourScript.mesh = meshObject;
         //counter++;

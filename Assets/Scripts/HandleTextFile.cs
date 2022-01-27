@@ -19,10 +19,11 @@ public class HandleTextFile : MonoBehaviour
 
     void Start()
     {
+        //create a string based on the json file
         string text = textFile.text;
 
-
-        //string jsonString = "{\r\n    \"Items\": [\r\n        {\r\n            \"playerId\": \"8484239823\",\r\n            \"playerLoc\": \"Powai\",\r\n            \"playerNick\": \"Random Nick\"\r\n        },\r\n        {\r\n            \"playerId\": \"512343283\",\r\n            \"playerLoc\": \"User2\",\r\n            \"playerNick\": \"Rand Nick 2\"\r\n        }\r\n    ]\r\n}";
+        //custom dataFile class that contains all the variables for each of the items in the json
+        //populate the dataFile array with the items from the textFile
         dataFile[] dataFile = JsonHelper.FromJson<dataFile>(text);
 
         //create a GO prefab for each count of datafiles
@@ -35,7 +36,10 @@ public class HandleTextFile : MonoBehaviour
             //change the name of the GO
             dataReader.name = dataFile[i].fileName;
 
+            //attach a readGenData to the dataRead GO
             ReadGenericData RGDScript = dataReader.GetComponent<ReadGenericData>();
+
+            //set the fileName and headercolumn name in the readGenData Script
             RGDScript.CSVFileName = dataFile[i].fileName;
             RGDScript.headerColumn = dataFile[i].headerColumnName;
         }
