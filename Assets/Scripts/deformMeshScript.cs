@@ -7,6 +7,7 @@ using System;
 using System.Linq;
 using UnityAsync;
 using System.Threading.Tasks;
+using latlonPositions = ReadGenericData.latlonPositions;
 
 
 public class deformMeshScript : MonoBehaviour
@@ -25,7 +26,7 @@ public class deformMeshScript : MonoBehaviour
     [HideInInspector]
     public bool edgeSmoothing = true;
 
-    public async Task createDeformMesh(List<Dictionary<string, object>> data, DeformableMesh parentMesh)
+    public async Task createDeformMesh(List<latlonPositions> data, DeformableMesh parentMesh)
     {
         // grab world scale
         scaleX = (int)InitiateWorldScale.mapScale.x;
@@ -35,14 +36,14 @@ public class deformMeshScript : MonoBehaviour
 
         for (var i = 0; i < data.Count; i++)
         {
-            if ((float)data[i]["latitude"] != null || (float)data[i]["longitude"] != null)
-            {
-                //check if the lat lon is equal to zero in which it will equate to null
-                //all lat lon needs a float value in the csv or it will send error
-                if ((float)data[i]["latitude"] != 0.0 && (float)data[i]["longitude"] != 0.0)
-                {
+            //if ((float)data[i]["latitude"] != null || (float)data[i]["longitude"] != null)
+            //{
+            //    //check if the lat lon is equal to zero in which it will equate to null
+            //    //all lat lon needs a float value in the csv or it will send error
+            //    if ((float)data[i]["latitude"] != 0.0 && (float)data[i]["longitude"] != 0.0)
+            //    {
                     //add the positions to this list to then find where the max min point is
-                    float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
+                    float[] thisXY = helpers.getXYPos(data[i].position.x, data[i].position.y, scaleX, scaleY);
 
                     //get an instance from the mesh pool and apply the position and rotation
                     var thisDeformer = MeshPool.Instance.Get();
@@ -67,8 +68,8 @@ public class deformMeshScript : MonoBehaviour
 
                     //the mesh pool instances are recieved as off so set them to true so they can be used.
                     thisDeformer.gameObject.SetActive(true);
-                }
-            }
+            //    }
+            //}
             await new WaitForFrames(delayPeriod);
         }
     }

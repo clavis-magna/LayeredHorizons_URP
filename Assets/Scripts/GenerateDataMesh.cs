@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 using System;
 using System.Linq;
 using UnityAsync;
+using latlonPositions = ReadGenericData.latlonPositions;
 
 public class GenerateDataMesh : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class GenerateDataMesh : MonoBehaviour
 
     private int missingData;
 
-    public GameObject generateMesh(List<Dictionary<string, object>> data)
+    public GameObject generateMesh(List<latlonPositions> data)
     {
 
 
@@ -37,25 +38,31 @@ public class GenerateDataMesh : MonoBehaviour
 
 
         for (var i = 0; i < data.Count; i++) {
-            if ((float)data[i]["latitude"] != null || (float)data[i]["longitude"] != null)
-            {
-                //check if the lat lon is equal to zero in which it will equate to null
-                //all lat lon needs a float value in the csv or it will send error
-                if ((float)data[i]["latitude"] != 0.0 && (float)data[i]["longitude"] != 0.0)
-                {
-                    //add the positions to this list to then find where the max min point is
-                    float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
-                    XList.Add(thisXY[0]);
-                    ZList.Add(thisXY[1]);
-                }
-                else
-                {
-                    missingData++;
-                }
-            } else
-            {
-                Debug.Log("Lattitude and Longitude not found in data!");
-            }
+
+            //add the positions to this list to then find where the max min point is
+            float[] thisXY = helpers.getXYPos(data[i].position.x, data[i].position.y, scaleX, scaleY);
+            XList.Add(thisXY[0]);
+            ZList.Add(thisXY[1]);
+
+            //if ((float)data[i]["latitude"] != null || (float)data[i]["longitude"] != null)
+            //{
+            //    //check if the lat lon is equal to zero in which it will equate to null
+            //    //all lat lon needs a float value in the csv or it will send error
+            //    if ((float)data[i]["latitude"] != 0.0 && (float)data[i]["longitude"] != 0.0)
+            //    {
+            //        //add the positions to this list to then find where the max min point is
+            //        float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
+            //        XList.Add(thisXY[0]);
+            //        ZList.Add(thisXY[1]);
+            //    }
+            //    else
+            //    {
+            //        missingData++;
+            //    }
+            //} else
+            //{
+            //    Debug.Log("Lattitude and Longitude not found in data!");
+            //}
         }
         
 

@@ -7,6 +7,7 @@ using System;
 using System.Linq;
 using UnityAsync;
 using System.Threading.Tasks;
+using latlonPositions = ReadGenericData.latlonPositions;
 
 
 public class textCreatorScript : MonoBehaviour
@@ -20,7 +21,7 @@ public class textCreatorScript : MonoBehaviour
     [HideInInspector]
     public bool edgeSmoothing = true;
 
-    public async Task createTextCreator(List<Dictionary<string, object>> data, DeformableMesh parentMesh, string m_headerColumn)
+    public async Task createTextCreator(List<latlonPositions> data, DeformableMesh parentMesh)
     {
         // grab world scale
         scaleX = (int)InitiateWorldScale.mapScale.x;
@@ -29,13 +30,13 @@ public class textCreatorScript : MonoBehaviour
         for (var i = 0; i < data.Count; i++)
         {
 
-            if ((float)data[i]["latitude"] != null || (float)data[i]["longitude"] != null)
-            {
-                //check if the lat lon is equal to zero in which it will equate to null
-                //all lat lon needs a float value in the csv or it will send error
-                if ((float)data[i]["latitude"] != 0.0 && (float)data[i]["longitude"] != 0.0)
-                {
-                    float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
+            //if ((float)data[i]["latitude"] != null || (float)data[i]["longitude"] != null)
+            //{
+            //    //check if the lat lon is equal to zero in which it will equate to null
+            //    //all lat lon needs a float value in the csv or it will send error
+            //    if ((float)data[i]["latitude"] != 0.0 && (float)data[i]["longitude"] != 0.0)
+            //    {
+                    float[] thisXY = helpers.getXYPos(data[i].position.x, data[i].position.y, scaleX, scaleY);
 
                     var thisTextCreator = TextPool.Instance.Get();
                     thisTextCreator.transform.rotation = Quaternion.Euler(0, 0, 0);
@@ -45,15 +46,15 @@ public class textCreatorScript : MonoBehaviour
                     if (parentMesh != null)
                     {
                         textScript.deformableMesh = parentMesh;
-                        textScript.textData = (string)data[i][m_headerColumn];
+                        textScript.textData = data[i].headText;
                     }
                     else
                     {
                         Debug.Log("No DeformableMesh found on parent GameObject!");
                     }
                     thisTextCreator.gameObject.SetActive(true);
-                }
-            }
+            //    }
+            //}
 
 
 

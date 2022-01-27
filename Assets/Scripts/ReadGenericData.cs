@@ -53,8 +53,10 @@ public class ReadGenericData : MonoBehaviour
     {
         public bool clustered;
         public Vector2 position;
-        public latlonPositions (Vector2 _position)
+        public String headText;
+        public latlonPositions (Vector2 _position, String _headText)
         {
+            headText = _headText;
             position = _position;
             clustered = false;
         }
@@ -144,7 +146,9 @@ public class ReadGenericData : MonoBehaviour
                     //create a vec2 containing the lat long
                     Vector2 pos = new Vector2((float)data[i]["latitude"], (float)data[i]["longitude"]);
 
-                    latlonPositions latlon = new latlonPositions(pos);
+                    String headerText = (string)data[i][headerColumn];
+
+                    latlonPositions latlon = new latlonPositions(pos, headerText);
 
                     //add the lat and long to this list if there is one.
                     latlonList.Add(latlon);
@@ -179,37 +183,41 @@ public class ReadGenericData : MonoBehaviour
 
             Debug.Log(clusterGroup.Count);
 
+            //for each of the clusters
+            for(var i = 0; i < clusterGroup.Count; i++)
+            {
+                //the script that creates the mesh, create one containing the cluster
+                GenerateDataMesh dataMeshInstance = new GenerateDataMesh();
+                GameObject meshObject = dataMeshInstance.generateMesh(clusterGroup[i]);
 
-            GenerateDataMesh dataMeshInstance = new GenerateDataMesh();
-            GameObject meshObject = dataMeshInstance.generateMesh(formattedData);
+                //Get the deformableMesh GO ready to place in the prefabs further down
+                DeformableMesh parentMesh = meshObject.GetComponent<DeformableMesh>();
 
+                //rename mesh
+                meshObject.name = "Mesh-" + i + "-" + name;
 
+                //create the things that deform the mesh
+                deformMeshScript createDeformMeshInstance = new deformMeshScript();
+                await createDeformMeshInstance.createDeformMesh(clusterGroup[i], parentMesh);
 
-            //Get the deformableMesh GO ready to place in the prefabs further down
-            DeformableMesh parentMesh = meshObject.GetComponent<DeformableMesh>();
-
-            meshObject.name = "Mesh-" + name;
-
-            //create the things that deform the mesh
-            deformMeshScript createDeformMeshInstance = new deformMeshScript();
-            await createDeformMeshInstance.createDeformMesh(formattedData, parentMesh);
-
-            //then create the labels that go on top of the mesh.
-            textCreatorScript createTextCreatorInstance = new textCreatorScript();
-            await createTextCreatorInstance.createTextCreator(formattedData, parentMesh, headerColumn);
-
-
-            //tell the left hand GUI to create some toggles when a mesh is fully loaded.
-            GameObject leftHand = GameObject.FindGameObjectWithTag("LeftGUI");
-            createToggleScript = leftHand.GetComponent<createToggleGUI>();
-            createToggleScript.createToggleObject(meshObject, name);
-
-            GameObject rightHand = GameObject.FindGameObjectWithTag("RightGUI");
-            createAdjustmentScript = rightHand.GetComponent<createAdjustmentGUI>();
-            //create the layer first and then within the script create the valid adjusters.
-            createAdjustmentScript.createAdjustmentLayer(meshObject, name, customiseColour, customiseOpacity);
+                //then create the labels that go on top of the mesh.
+                textCreatorScript createTextCreatorInstance = new textCreatorScript();
+                await createTextCreatorInstance.createTextCreator(clusterGroup[i], parentMesh);
 
 
+                //currently this is making a GUI for each of the meshes.
+                //TODO make all the meshes a child and then assign these GUIS to affect all child objects that are under the parent
+
+                //tell the left hand GUI to create some toggles when a mesh is fully loaded.
+                GameObject leftHand = GameObject.FindGameObjectWithTag("LeftGUI");
+                createToggleScript = leftHand.GetComponent<createToggleGUI>();
+                createToggleScript.createToggleObject(meshObject, name);
+
+                GameObject rightHand = GameObject.FindGameObjectWithTag("RightGUI");
+                createAdjustmentScript = rightHand.GetComponent<createAdjustmentGUI>();
+                //create the layer first and then within the script create the valid adjusters.
+                createAdjustmentScript.createAdjustmentLayer(meshObject, name, customiseColour, customiseOpacity);
+            }
         }
         else
         {
