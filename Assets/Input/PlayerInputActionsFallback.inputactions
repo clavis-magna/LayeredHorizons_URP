@@ -1,0 +1,52 @@
+{
+    "name": "PlayerInputActionsFallback",
+    "maps": [
+        {
+            "name": "Movement",
+            "id": "73ae0fd0-f7fe-413c-9193-c79699b00ba9",
+            "actions": [
+                {
+                    "name": "Rotate",
+                    "type": "Value",
+                    "id": "9bf83b80-fa83-427d-819a-22a6f3902ef7",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Forward",
+                    "type": "Button",
+                    "id": "154c35f8-e4cf-44b6-9790-c2e7554d36e7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "eb4e2f90-180d-4a36-b5cf-74952723de33",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "599ee5ed-e46e-4a79-80aa-f3d567b5e2ee",
+                    "path": "<Keyboard>/w",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Forward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
