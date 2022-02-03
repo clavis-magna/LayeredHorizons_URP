@@ -5,7 +5,7 @@ using UnityEngine;
 public class assignMeshObject : MonoBehaviour
 {
     [HideInInspector]
-    public GameObject mesh;
+    public GameObject meshParent;
 
     ToggleComponent thisToggle;
 
@@ -16,15 +16,19 @@ public class assignMeshObject : MonoBehaviour
 
     void Update()
     {
-        //thisToggle.toggleName = mesh.name;
-        //name = mesh.name;
 
         if (thisToggle.active)
         {
-            mesh.SetActive(true);
+            foreach (Transform child in meshParent.transform)
+            {
+                child.gameObject.SetActive(true);
+            }
         } else
         {
-            mesh.SetActive(false);
+            foreach (Transform child in meshParent.transform)
+            {
+                child.gameObject.SetActive(false);
+            }
         }
     }
 }

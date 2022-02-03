@@ -45,7 +45,6 @@ public class GeneratePlaneMesh : MonoBehaviour
       var uvs = new List<Vector2>();
 
         //0.3906 comes from the ratio sizing of 100x100 size grid with 256x256 squares.
-
          xGridlines = (int)(xSize / 0.3906);
 
         //the grid runs down from the x axis, the z axis is calculated by row.
