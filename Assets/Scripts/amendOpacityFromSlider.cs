@@ -6,7 +6,7 @@ public class amendOpacityFromSlider : MonoBehaviour
 {
 
     [HideInInspector]
-    public GameObject mesh;
+    public GameObject meshParent;
 
     SliderComponent thisSlider;
 
@@ -26,14 +26,12 @@ public class amendOpacityFromSlider : MonoBehaviour
 
         m_Alpha = mappedAlpha;
 
-
-
-        Renderer meshRenderer = mesh.GetComponent<Renderer>();
-
-        var OGColor = meshRenderer.material.GetColor("_BaseColor");
-
-        meshRenderer.material.SetColor("_BaseColor", new Color(OGColor.r, OGColor.g, OGColor.b, m_Alpha));
-        //print("slide being called)");
+        foreach (Transform child in meshParent.transform)
+        {
+            Renderer meshRenderer = child.GetComponent<Renderer>();
+            var OGColor = meshRenderer.material.GetColor("_BaseColor");
+            meshRenderer.material.SetColor("_BaseColor", new Color(OGColor.r, OGColor.g, OGColor.b, m_Alpha));
+        }
 
     }
 }

@@ -13,23 +13,25 @@ public class createToggleGUI : MonoBehaviour
     public GameObject toggleObject;
     public Camera mainCam;
 
-    //count how many toggles get made 
-    public int counter = 0;
+    int counter = 0;
 
-    public void createToggleObject(GameObject meshObject, string meshName)
+    public void createToggleObject(GameObject meshParent, string meshName)
     {
-        //Debug.Log("called to create Toggle");
+        //Instantiate the GO and move it to your hand and not overlapping the last
         var newToggle = Instantiate(toggleObject, new Vector3(transform.position.x, transform.position.y, transform.position.z), transform.rotation, transform);
         newToggle.transform.Translate(0, (float)counter / 20.0f, 0);
 
+        //Assign stuff to the right script
         assignMeshObject toggleMeshScript = newToggle.GetComponent<assignMeshObject>();
+        toggleMeshScript.meshParent = meshParent;
+
         ToggleComponent toggleCompScript = newToggle.GetComponent<ToggleComponent>();
+        toggleCompScript.toggleName = meshName;
+
         Canvas textCanvas = newToggle.GetComponent<Canvas>();
         textCanvas.renderMode = RenderMode.WorldSpace;
         textCanvas.worldCamera = mainCam;
 
-        toggleMeshScript.mesh = meshObject;
-        toggleCompScript.toggleName = meshName;
         newToggle.name = meshName;
 
         counter++;

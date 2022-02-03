@@ -5,7 +5,7 @@ using UnityEngine;
 public class amendMeshColourFromSlider : MonoBehaviour
 {
     [HideInInspector]
-    public GameObject mesh;
+    public GameObject meshParent;
 
     SliderComponent thisSlider;
 
@@ -26,7 +26,10 @@ public class amendMeshColourFromSlider : MonoBehaviour
         m_Saturation = 0.3f;
         m_Value = 1.0f;
 
-        Renderer meshRenderer = mesh.GetComponent<Renderer>();
-        meshRenderer.material.SetColor("_BaseColor", Color.HSVToRGB(m_Hue, m_Saturation, m_Value));
+        foreach(Transform child in meshParent.transform)
+        {
+            Renderer meshRenderer = child.GetComponent<Renderer>();
+            meshRenderer.material.SetColor("_BaseColor", Color.HSVToRGB(m_Hue, m_Saturation, m_Value));
+        }
     }
 }

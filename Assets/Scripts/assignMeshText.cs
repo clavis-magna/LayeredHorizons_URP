@@ -6,7 +6,7 @@ public class assignMeshText : MonoBehaviour
 {
 
     [HideInInspector]
-    public GameObject mesh;
+    public GameObject meshParent;
 
     ToggleComponent thisToggle;
 
@@ -22,18 +22,23 @@ public class assignMeshText : MonoBehaviour
     {
         if (thisToggle.active)
         {
-            for (int i = 0; i < mesh.transform.childCount; i++)
+            foreach (Transform child in meshParent.transform)
             {
-                mesh.transform.GetChild(i).gameObject.SetActive(true);
-                //child.SetActive(true);
+                for (int i = 0; i < child.transform.childCount; i++)
+                {
+                    child.transform.GetChild(i).gameObject.SetActive(true);
+                }
             }
+
         }
         else
         {
-            for (int i = 0; i < mesh.transform.childCount; i++)
+            foreach (Transform child in meshParent.transform)
             {
-                mesh.transform.GetChild(i).gameObject.SetActive(false);
-                //child.SetActive(true);
+                for (int i = 0; i < child.transform.childCount; i++)
+                {
+                    child.transform.GetChild(i).gameObject.SetActive(false);
+                }
             }
         }
     }

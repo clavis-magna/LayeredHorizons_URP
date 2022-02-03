@@ -41,6 +41,9 @@ public class ReadGenericData : MonoBehaviour
     [HideInInspector] // Hides var below
     public Renderer meshRenderer;
 
+    //empty GO
+    GameObject meshParent;
+
     //this is the distance between two values in which to split up
     public static float maxClusterDistance = 0.5f;
 
@@ -127,8 +130,13 @@ public class ReadGenericData : MonoBehaviour
             List<latlonPositions> latlonList = new List<latlonPositions>();
 
 
+            //Create the empty gameobject that holds all of these layers
+            meshParent = new GameObject();
+            meshParent.name = "Parent-" + name;
+
+            //Instantiate(meshParent, transform.position, Quaternion.identity);
+
             //format and parse the data first
-            //TODO put this in its own separate script
             //loop through each data entry
             for (var i = 0; i < data.Count; i++)
             {
@@ -196,6 +204,9 @@ public class ReadGenericData : MonoBehaviour
                 //rename mesh
                 meshObject.name = "Mesh-" + i + "-" + name;
 
+                //set as child of the parent
+                meshObject.transform.parent = meshParent.transform;
+
                 //create the things that deform the mesh
                 deformMeshScript createDeformMeshInstance = new deformMeshScript();
                 await createDeformMeshInstance.createDeformMesh(clusterGroup[i], parentMesh);
@@ -203,21 +214,19 @@ public class ReadGenericData : MonoBehaviour
                 //then create the labels that go on top of the mesh.
                 textCreatorScript createTextCreatorInstance = new textCreatorScript();
                 await createTextCreatorInstance.createTextCreator(clusterGroup[i], parentMesh);
-
-
-                //currently this is making a GUI for each of the meshes.
-                //TODO make all the meshes a child and then assign these GUIS to affect all child objects that are under the parent
-
-                //tell the left hand GUI to create some toggles when a mesh is fully loaded.
-                GameObject leftHand = GameObject.FindGameObjectWithTag("LeftGUI");
-                createToggleScript = leftHand.GetComponent<createToggleGUI>();
-                createToggleScript.createToggleObject(meshObject, name);
-
-                GameObject rightHand = GameObject.FindGameObjectWithTag("RightGUI");
-                createAdjustmentScript = rightHand.GetComponent<createAdjustmentGUI>();
-                //create the layer first and then within the script create the valid adjusters.
-                createAdjustmentScript.createAdjustmentLayer(meshObject, name, customiseColour, customiseOpacity);
             }
+
+            //tell the left hand GUI to create some toggles when a mesh is fully loaded.
+            //This allows meshes to  be turned on and off on the left hand
+            GameObject leftHand = GameObject.FindGameObjectWithTag("LeftGUI");
+            createToggleScript = leftHand.GetComponent<createToggleGUI>();
+            createToggleScript.createToggleObject(meshParent, name);
+
+            //Tells the right hand to create sliders and toggles
+            //There are options to turn them on and off but I've left them on by default for now to reduce complexity
+            GameObject rightHand = GameObject.FindGameObjectWithTag("RightGUI");
+            createAdjustmentScript = rightHand.GetComponent<createAdjustmentGUI>();
+            createAdjustmentScript.createAdjustmentLayer(meshParent, name, customiseColour, customiseOpacity);
         }
         else
         {

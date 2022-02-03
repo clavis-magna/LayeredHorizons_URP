@@ -1,8 +1,16 @@
 {
 	"Items": [
 		{
-			"fileName": "dogFake.csv",
-			"headerColumnName": "dog"
-		}
+			"fileName": "bamboo.csv",
+			"headerColumnName": "language"
+		},
+        {
+            "fileName": "dog.csv",
+            "headerColumnName": "dog"
+        },
+        {
+            "fileName": "yams.csv",
+            "headerColumnName": "Variety"
+        }
 	]
 }

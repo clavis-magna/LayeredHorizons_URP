@@ -21,6 +21,9 @@ public class GenerateDataMesh : MonoBehaviour
 
     private int missingData;
 
+    //Gives the mesh some extra spacing to allow for the edge of mesh deformers to deform too.
+    private float bufferSize = 3.0f;
+
     public GameObject generateMesh(List<latlonPositions> data)
     {
 
@@ -43,26 +46,6 @@ public class GenerateDataMesh : MonoBehaviour
             float[] thisXY = helpers.getXYPos(data[i].position.x, data[i].position.y, scaleX, scaleY);
             XList.Add(thisXY[0]);
             ZList.Add(thisXY[1]);
-
-            //if ((float)data[i]["latitude"] != null || (float)data[i]["longitude"] != null)
-            //{
-            //    //check if the lat lon is equal to zero in which it will equate to null
-            //    //all lat lon needs a float value in the csv or it will send error
-            //    if ((float)data[i]["latitude"] != 0.0 && (float)data[i]["longitude"] != 0.0)
-            //    {
-            //        //add the positions to this list to then find where the max min point is
-            //        float[] thisXY = helpers.getXYPos((float)data[i]["latitude"], (float)data[i]["longitude"], scaleX, scaleY);
-            //        XList.Add(thisXY[0]);
-            //        ZList.Add(thisXY[1]);
-            //    }
-            //    else
-            //    {
-            //        missingData++;
-            //    }
-            //} else
-            //{
-            //    Debug.Log("Lattitude and Longitude not found in data!");
-            //}
         }
         
 
@@ -87,12 +70,12 @@ public class GenerateDataMesh : MonoBehaviour
 
             //Set the size of the mesh leaving a buffer space for the mesh.
             GeneratePlaneMesh meshGenerationScript = meshObject.GetComponent<GeneratePlaneMesh>();
-            meshGenerationScript.xSize = xMax - xMin + 10;
-            meshGenerationScript.zSize = zMax - zMin + 10;
+            meshGenerationScript.xSize = xMax - xMin + bufferSize;
+            meshGenerationScript.zSize = zMax - zMin + bufferSize;
 
             //Change the size of the collider too.
             BoxCollider colliderChild = meshObject.transform.GetChild(0).gameObject.GetComponent<BoxCollider>();
-            colliderChild.size = new Vector3(xMax - xMin + 10, 10, zMax - zMin + 10);
+            colliderChild.size = new Vector3(xMax - xMin + bufferSize, 10, zMax - zMin + bufferSize);
 
 
             //Colour of the mesh
