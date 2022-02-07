@@ -9,12 +9,15 @@ public class createText : MonoBehaviour
 
     void OnCollisionStay(Collision collision)
     {
+
+      //take the point of collision and send it to the deformable mesh
       foreach(var contact in collision.contacts)
       {
+
+        //tells the deformable mesh to add the label
         deformableMesh.AddTextLabel(contact.point, textData);
 
         //remove the gameobject when collision occurs
-        // Destroy(gameObject);
         TextPool.Instance.ReturnToPool(this);
 
       }

@@ -44,7 +44,7 @@ public class DeformableMesh : MonoBehaviour
         convertedVectors.Add(modifiedVec2[i]);
       }
 
-      Debug.Log("Mesh Regenerated");
+      //Debug.Log("Mesh Regenerated");
     }
 
 
@@ -52,74 +52,72 @@ public class DeformableMesh : MonoBehaviour
     //It then references this add depression which refreshes the values in the mesh.
     public void AddDepression(Vector3 depressionPoint, float radius, float maximumDepression)
     {
-      //translate the depression relative to the worldspace and to the point of contact
-      //creating a vector3 out of contact point that is relative to worldspace
-      var worldPos3 = this.transform.InverseTransformPoint(depressionPoint);
+          //translate the depression relative to the worldspace and to the point of contact
+          //creating a vector3 out of contact point that is relative to worldspace
+          var worldPos3 = this.transform.InverseTransformPoint(depressionPoint);
 
-      //removal of the y position of impact
-      var worldPos2 = new Vector2(worldPos3.x, worldPos3.z);
+          //removal of the y position of impact
+          var worldPos2 = new Vector2(worldPos3.x, worldPos3.z);
 
-      for (int i = 0; i < modifiedVertices.Count; ++i)
-      {
-
-        //distance is detecting which pixels in the x and z and y that need to be impacted
-        var distance = (worldPos2 - (convertedVectors[i])).sqrMagnitude;
-
-        //Detecting the impact radius in which the vertices of the mesh in that radius will be remade.
-        if (distance < radius)
-        {
-          //newVert is by how much do these vertices change
-          var newVert = modifiedVertices[i] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression;
-          modifiedVertices.RemoveAt(i);
-          modifiedVertices.Insert(i, newVert);
-
-          //TODO: Edge smoothing is detroyed from gridsize being different so it will need to be reworked to make it work with the generated plane based on the size of data.
-
-          //vertices to the side of the depression point are also shifted but less. The position number is +1 -1 +MeshSize+1 -MeshSize-1
-          //helps to remove particularly spiky vertices to make smoother terrain.
-          //edge smoothing creates shorter vertices around the collision points for "softer edges".
-          //the result is smoother terrain
-          //must adjust the depression height to be shorter if on.
-          if (edgeSmoothing)
+          for (int i = 0; i < modifiedVertices.Count; ++i)
           {
-                //remove the old and bring in the newVert coord
-                //numbered in a clockwise direction 1 being the top
+                //distance is detecting which pixels in the x and z and y that need to be impacted
+                var distance = (worldPos2 - (convertedVectors[i])).sqrMagnitude;
 
-                var newVert1 = modifiedVertices[i - 1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 2;
-                modifiedVertices.RemoveAt(i - 1);
-                modifiedVertices.Insert(i - 1, newVert1);
+                //Detecting the impact radius in which the vertices of the mesh in that radius will be remade.
+                if (distance < radius)
+                {
+                      //newVert is by how much do these vertices change
+                      var newVert = modifiedVertices[i] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression;
+                      modifiedVertices.RemoveAt(i);
+                      modifiedVertices.Insert(i, newVert);
 
-                var newVert2 = modifiedVertices[i - plane.zGridlines - 2] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 3;
-                modifiedVertices.RemoveAt(i - plane.zGridlines - 2);
-                modifiedVertices.Insert(i - plane.zGridlines - 2, newVert2);
 
-                var newVert3 = modifiedVertices[i - plane.zGridlines - 1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 2;
-                modifiedVertices.RemoveAt(i - plane.zGridlines - 1);
-                modifiedVertices.Insert(i - plane.zGridlines - 1, newVert3);
+                      //vertices to the side of the depression point are also shifted but less. The position number is +1 -1 +MeshSize+1 -MeshSize-1
+                      //helps to remove particularly spiky vertices to make smoother terrain.
+                      //edge smoothing creates shorter vertices around the collision points for "softer edges".
+                      //the result is smoother terrain
+                      //must adjust the depression height to be shorter if on.
+                      if (edgeSmoothing)
+                      {
+                            //remove the old and bring in the newVert coord
+                            //numbered in a clockwise direction 1 being the top
 
-                var newVert4 = modifiedVertices[i - plane.zGridlines] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 3;
-                modifiedVertices.RemoveAt(i - plane.zGridlines);
-                modifiedVertices.Insert(i - plane.zGridlines, newVert4);
+                            var newVert1 = modifiedVertices[i - 1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 2;
+                            modifiedVertices.RemoveAt(i - 1);
+                            modifiedVertices.Insert(i - 1, newVert1);
 
-                var newVert5 = modifiedVertices[i + 1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 2;
-                modifiedVertices.RemoveAt(i + 1);
-                modifiedVertices.Insert(i + 1, newVert5);
+                            var newVert2 = modifiedVertices[i - plane.zGridlines - 2] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 3;
+                            modifiedVertices.RemoveAt(i - plane.zGridlines - 2);
+                            modifiedVertices.Insert(i - plane.zGridlines - 2, newVert2);
 
-                var newVert6 = modifiedVertices[i + plane.zGridlines + 2] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 3;
-                modifiedVertices.RemoveAt(i + plane.zGridlines + 2);
-                modifiedVertices.Insert(i + plane.zGridlines + 2, newVert6);
+                            var newVert3 = modifiedVertices[i - plane.zGridlines - 1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 2;
+                            modifiedVertices.RemoveAt(i - plane.zGridlines - 1);
+                            modifiedVertices.Insert(i - plane.zGridlines - 1, newVert3);
 
-                var newVert7 = modifiedVertices[i + plane.zGridlines + 1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 2;
-                modifiedVertices.RemoveAt(i + plane.zGridlines + 1);
-                modifiedVertices.Insert(i + plane.zGridlines + 1, newVert7);
+                            var newVert4 = modifiedVertices[i - plane.zGridlines] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 3;
+                            modifiedVertices.RemoveAt(i - plane.zGridlines);
+                            modifiedVertices.Insert(i - plane.zGridlines, newVert4);
 
-                var newVert8 = modifiedVertices[i + plane.zGridlines] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 3;
-                modifiedVertices.RemoveAt(i + plane.zGridlines);
-                modifiedVertices.Insert(i + plane.zGridlines, newVert8);
-            }
-        }
-      }
-      plane.mesh.SetVertices(modifiedVertices);
+                            var newVert5 = modifiedVertices[i + 1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 2;
+                            modifiedVertices.RemoveAt(i + 1);
+                            modifiedVertices.Insert(i + 1, newVert5);
+
+                            var newVert6 = modifiedVertices[i + plane.zGridlines + 2] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 3;
+                            modifiedVertices.RemoveAt(i + plane.zGridlines + 2);
+                            modifiedVertices.Insert(i + plane.zGridlines + 2, newVert6);
+
+                            var newVert7 = modifiedVertices[i + plane.zGridlines + 1] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 2;
+                            modifiedVertices.RemoveAt(i + plane.zGridlines + 1);
+                            modifiedVertices.Insert(i + plane.zGridlines + 1, newVert7);
+
+                            var newVert8 = modifiedVertices[i + plane.zGridlines] + new Vector3(0.0f, 1.0f, 0.0f) * maximumDepression / 3;
+                            modifiedVertices.RemoveAt(i + plane.zGridlines);
+                            modifiedVertices.Insert(i + plane.zGridlines, newVert8);
+                      }
+                }
+          }
+          plane.mesh.SetVertices(modifiedVertices);
     }
 
     //Creates a text label at the point of impact above the mesh instead of a mesh deformation
@@ -131,16 +129,16 @@ public class DeformableMesh : MonoBehaviour
         //removal of the y position of impact
         var worldPos2 = new Vector2(worldPos3.x, worldPos3.z);
 
-        var meshHeight = 5.0f;
+        float meshHeight = new float();
 
         //get the y position of where the contact was. This sets the height of text label
         for (int i = 0; i < modifiedVertices.Count; ++i)
         {
-        var distance = (worldPos2 - (convertedVectors[i])).sqrMagnitude;
-        if (distance < 0.5)
-        {
-            meshHeight = modifiedVertices[i].y;
-        }
+            var distance = (worldPos2 - (convertedVectors[i])).sqrMagnitude;
+            if (distance < 0.5)
+            {
+                meshHeight = modifiedVertices[i].y;
+            }
         }
 
         GameObject thisMarker = Instantiate(Resources.Load("TextParent"), new Vector3(pointOfContact.x, meshHeight - 0.5f, pointOfContact.z), Quaternion.Euler(0, 0, 0)) as GameObject;

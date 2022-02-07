@@ -47,7 +47,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CSVFileName: .csv
-  dataType: 0
   headerColumn: 
   deformMesh: 1
   customiseColour: 1
@@ -80,9 +79,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2beff28c3b57412aac0111a8f8650d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayPeriod: 10
+  delayPeriod: 2
   depressionHeight: 0.3
-  depressionRadius: 2
+  depressionRadius: 1
   edgeSmoothing: 1
 --- !u!114 &1848168268970798269
 MonoBehaviour:
@@ -96,7 +95,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b457d7b593a4a83b23160f69767f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayPeriod: 10
-  depressionHeight: 0.3
-  depressionRadius: 2
+  delayPeriod: 1
   edgeSmoothing: 1

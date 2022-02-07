@@ -66,7 +66,7 @@ public class GenerateDataMesh : MonoBehaviour
 
         if (meshObject != null)
         {
-            Debug.Log("Mesh Plane Generated");
+            //Debug.Log("Mesh Plane Generated");
 
             //Set the size of the mesh leaving a buffer space for the mesh.
             GeneratePlaneMesh meshGenerationScript = meshObject.GetComponent<GeneratePlaneMesh>();
@@ -87,7 +87,7 @@ public class GenerateDataMesh : MonoBehaviour
             Debug.Log("Error: A Mesh Plane Object was not instantiated");
 
         }
-        Debug.Log("There are " + missingData + " data entries with a 0.0, 0.0 lat/lon");
+        //Debug.Log("There are " + missingData + " data entries with a 0.0, 0.0 lat/lon");
 
         return meshObject;
 

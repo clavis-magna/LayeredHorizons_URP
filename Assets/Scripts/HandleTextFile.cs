@@ -14,6 +14,7 @@ public class HandleTextFile : MonoBehaviour
     {
         public string fileName;
         public string headerColumnName;
+        public string deformationScaleColumnName;
 
     }
 
@@ -42,6 +43,11 @@ public class HandleTextFile : MonoBehaviour
             //set the fileName and headercolumn name in the readGenData Script
             RGDScript.CSVFileName = dataFile[i].fileName;
             RGDScript.headerColumn = dataFile[i].headerColumnName;
+            //check if this exists or if its empty in the JSON
+            if(dataFile[i].deformationScaleColumnName != null || dataFile[i].deformationScaleColumnName.Equals(""))
+            {
+                RGDScript.deformationScaleColumn = dataFile[i].deformationScaleColumnName;
+            }
         }
     }
 }

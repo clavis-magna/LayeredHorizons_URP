@@ -1,44 +1,44 @@
-CLICS Form,Variety,ISO CODE,Family,Form in source,Gloss in source,Dataset,latitude,longitude
+CLICS Form,Variety,ISO CODE,Family,Form in source,Gloss in source,Dataset,lat,long
 uvi,Manggarai,mqy,Austronesian,uvi,YAM,Diachronic Atlas of Comparative Linguistics,-8.55748,120.329
 mangat,Buru,bqw,Austronesian,maŋa-t,YAM,Diachronic Atlas of Comparative Linguistics,7.01091,10.8617
-ubi,Eastern Fijian,,Austronesian,uβi,YAM,Diachronic Atlas of Comparative Linguistics,,
+ubi,Eastern Fijian,#N/A,Austronesian,uβi,YAM,Diachronic Atlas of Comparative Linguistics,#N/A,#N/A
 uhi,Hawaiian,haw,Austronesian,uhi,YAM,Diachronic Atlas of Comparative Linguistics,19.6297,-155.43
 ngangarangi,Maori,mri,Austronesian,ngangarangi,YAM,Diachronic Atlas of Comparative Linguistics,-38.2881,176.541
-uhi,Rapanui,,Austronesian,ʔuhi,YAM,Diachronic Atlas of Comparative Linguistics,,
+uhi,Rapanui,#N/A,Austronesian,ʔuhi,YAM,Diachronic Atlas of Comparative Linguistics,#N/A,#N/A
 uhi,Rotuman,rtm,Austronesian,ʔuhi,YAM,Diachronic Atlas of Comparative Linguistics,-12.5008,177.066
 ufi,Samoan,smo,Austronesian,ufi,YAM,Diachronic Atlas of Comparative Linguistics,-13.92,-171.83
 ufi,Tahitian,tah,Austronesian,ufi,YAM,Diachronic Atlas of Comparative Linguistics,-17.6485,-149.45
 ufi,Tongan,ton,Austronesian,ʔufi,YAM,Diachronic Atlas of Comparative Linguistics,-21.17,-175.25
-ampun,Trukese,,Austronesian,ampun,YAM,Diachronic Atlas of Comparative Linguistics,,
+ampun,Trukese,#N/A,Austronesian,ampun,YAM,Diachronic Atlas of Comparative Linguistics,#N/A,#N/A
 iamm,Marshallese,mah,Austronesian,[iāmᵚ],YAM,Diachronic Atlas of Comparative Linguistics,3.12965,170.463
-kep,Ponapean,,Austronesian,kēp,YAM,Diachronic Atlas of Comparative Linguistics,,
+kep,Ponapean,#N/A,Austronesian,kēp,YAM,Diachronic Atlas of Comparative Linguistics,#N/A,#N/A
 u,Cemuhî,cam,Austronesian,u,YAM,Diachronic Atlas of Comparative Linguistics,-20.8489,165.13
 auh,Paama,pma,Austronesian,auh,YAM,Diachronic Atlas of Comparative Linguistics,-16.4755,168.237
 sesul,Sawai,szw,Austronesian,sɛsul,YAM,Diachronic Atlas of Comparative Linguistics,0.51111,128.086
-mu,A'jië,,Austronesian,mʌu,YAM,Diachronic Atlas of Comparative Linguistics,,
+mu,A'jië,#N/A,Austronesian,mʌu,YAM,Diachronic Atlas of Comparative Linguistics,#N/A,#N/A
 tetu,Kilivila,kij,Austronesian,tetu,YAM,Diachronic Atlas of Comparative Linguistics,-8.72574,151.072
 maho,Motu,meu,Austronesian,maho,YAM,Diachronic Atlas of Comparative Linguistics,-9.67492,147.424
 kai,Lau,llu,Austronesian,kai,YAM,Diachronic Atlas of Comparative Linguistics,-8.51018,160.872
 dago,Chamorro,cha,Austronesian,dago,YAM,Diachronic Atlas of Comparative Linguistics,14.3307,145.276
-uvi,Malagasy (Merina),,Austronesian,uvi,YAM,Diachronic Atlas of Comparative Linguistics,,
+uvi,Malagasy (Merina),#N/A,Austronesian,uvi,YAM,Diachronic Atlas of Comparative Linguistics,#N/A,#N/A
 uwi,Javanese,jav,Austronesian,uwi,YAM,Diachronic Atlas of Comparative Linguistics,-0.572307,110.885
-tila,Madurese,,Austronesian,tila,YAM,Diachronic Atlas of Comparative Linguistics,,
-gadong,Acehnese,,Austronesian,gadông,YAM,Diachronic Atlas of Comparative Linguistics,,
-phaj21,Cham (Hainan),,Austronesian,pʰaj²¹,YAM,Diachronic Atlas of Comparative Linguistics,,
+tila,Madurese,#N/A,Austronesian,tila,YAM,Diachronic Atlas of Comparative Linguistics,#N/A,#N/A
+gadong,Acehnese,#N/A,Austronesian,gadông,YAM,Diachronic Atlas of Comparative Linguistics,#N/A,#N/A
+phaj21,Cham (Hainan),#N/A,Austronesian,pʰaj²¹,YAM,Diachronic Atlas of Comparative Linguistics,#N/A,#N/A
 ubi,Indonesian,ind,Austronesian,ubi,YAM,Diachronic Atlas of Comparative Linguistics,-7.33458,109.716
-sakut,Timugon,,Austronesian,sakut,YAM,Diachronic Atlas of Comparative Linguistics,,
+sakut,Timugon,#N/A,Austronesian,sakut,YAM,Diachronic Atlas of Comparative Linguistics,#N/A,#N/A
 suhat,Batak Toba,bbc,Austronesian,suhat,YAM,Diachronic Atlas of Comparative Linguistics,2.35498,99.1761
-ubih,Aklanon,,Austronesian,ūbih,YAM,Diachronic Atlas of Comparative Linguistics,,
-pulugan,Palawan,,Austronesian,pulugan,YAM,Diachronic Atlas of Comparative Linguistics,,
+ubih,Aklanon,#N/A,Austronesian,ūbih,YAM,Diachronic Atlas of Comparative Linguistics,#N/A,#N/A
+pulugan,Palawan,#N/A,Austronesian,pulugan,YAM,Diachronic Atlas of Comparative Linguistics,#N/A,#N/A
 qubi,Cebuano,ceb,Austronesian,qu:bi,YAM,Diachronic Atlas of Comparative Linguistics,8.38799,124.367
 wiwi,Gorontalo,gor,Austronesian,wiwi,YAM,Diachronic Atlas of Comparative Linguistics,0.62689,122.288
-qubi,lokano,,Austronesian,qu:bi,YAM,Diachronic Atlas of Comparative Linguistics,,
+qubi,lokano,#N/A,Austronesian,qu:bi,YAM,Diachronic Atlas of Comparative Linguistics,#N/A,#N/A
 ubi,Isnag,isd,Austronesian,ūbi,YAM,Diachronic Atlas of Comparative Linguistics,18.2139,121.16
 leteng,Maranao,mrw,Austronesian,leteng,YAM,Diachronic Atlas of Comparative Linguistics,7.79414,124.175
 kamote,Tagalog,tgl,Austronesian,kamote,YAM,Diachronic Atlas of Comparative Linguistics,14.06,121.747
 ovi,Yami,tao,Austronesian,ovi,YAM,Diachronic Atlas of Comparative Linguistics,22.055,121.544
 lamekalolo,Bugis,bug,Austronesian,lame kaloloʔ,YAM,Diachronic Atlas of Comparative Linguistics,-0.251495,119.251
-hui,Sundanese,,Austronesian,hui,YAM,Diachronic Atlas of Comparative Linguistics,,
+hui,Sundanese,#N/A,Austronesian,hui,YAM,Diachronic Atlas of Comparative Linguistics,#N/A,#N/A
 tanuban,Puyuma,pyu,Austronesian,tanuban,YAM,Diachronic Atlas of Comparative Linguistics,22.643,120.996
 baliloko,Rukai,dru,Austronesian,baḷiloko,YAM,Diachronic Atlas of Comparative Linguistics,22.7738,120.844
 tarucowildyam,Tsou,tsu,Austronesian,taʔruȼo (wild yam),YAM,Diachronic Atlas of Comparative Linguistics,23.216,120.787
@@ -46,39 +46,39 @@ sipu,Thao,ssf,Austronesian,sipu,YAM,Diachronic Atlas of Comparative Linguistics,
 tai,Bunun,bnn,Austronesian,tai,YAM,Diachronic Atlas of Comparative Linguistics,23.4116,121.025
 ubi,Bali,ban,Austronesian,ubi,YAM,Diachronic Atlas of Comparative Linguistics,-8.35714,115.075
 ukrai,Khasi,kha,Austroasiatic,u krái,yam,Intercontinental Dictionary Series,24.977,91.9998
-hona,Wa,,Austroasiatic,hon.A,yam,Intercontinental Dictionary Series,,
+hona,Wa,#N/A,Austroasiatic,hon.A,yam,Intercontinental Dictionary Series,#N/A,#N/A
 phlatcwak,Prai,prt,Austroasiatic,phläʔ tčwa:k,yam,Intercontinental Dictionary Series,19.0383,101.218
 phletswak,Prai,prt,Austroasiatic,phlɛʔ tswa:k,yam,Intercontinental Dictionary Series,19.0383,101.218
-kuaisiraro,Pusing,,Austroasiatic,kuai sɨ ra rɔ,yam,Intercontinental Dictionary Series,,
+kuaisiraro,Pusing,#N/A,Austroasiatic,kuai sɨ ra rɔ,yam,Intercontinental Dictionary Series,#N/A,#N/A
 em,Mlabri,mra,Austroasiatic,ʔe mʌ,yam,Intercontinental Dictionary Series,18.5533,101.163
-k@w31d@w33,Cuoi,,Austroasiatic,kəw.31 dəw.33,yam,Intercontinental Dictionary Series,,
-khwaj33ti243,Cuoi,,Austroasiatic,khwa:j.33 tɨ.243ʔ,yam,Intercontinental Dictionary Series,,
-kwaj24,Cuoi,,Austroasiatic,kwa:j.24,yam,Intercontinental Dictionary Series,,
+k@w31d@w33,Cuoi,#N/A,Austroasiatic,kəw.31 dəw.33,yam,Intercontinental Dictionary Series,#N/A,#N/A
+khwaj33ti243,Cuoi,#N/A,Austroasiatic,khwa:j.33 tɨ.243ʔ,yam,Intercontinental Dictionary Series,#N/A,#N/A
+kwaj24,Cuoi,#N/A,Austroasiatic,kwa:j.24,yam,Intercontinental Dictionary Series,#N/A,#N/A
 cumai,Vietnamese,vie,Austroasiatic,cuʔ mài,yam,Intercontinental Dictionary Series,18.3887,106.757
 cunau,Vietnamese,vie,Austroasiatic,cuʔ nâu,yam,Intercontinental Dictionary Series,18.3887,106.757
-kou24phlu33,LiHa,,Austroasiatic,kou.24 phlu.33,yam,Intercontinental Dictionary Series,,
-kwaj33phl@j33,LiHa,,Austroasiatic,kwa:j.33 phləj.33,yam,Intercontinental Dictionary Series,,
-kwaj33t@i43,LiHa,,Austroasiatic,kwa:j.33 təɨ.43,yam,Intercontinental Dictionary Series,,
-kwaj24,Phong,,Austroasiatic,kwa:j.24,yam,Intercontinental Dictionary Series,,
-phlw33,Tum,,Austroasiatic,phlw.33,yam,Intercontinental Dictionary Series,,
-kapw33,Kha Poong,,Austroasiatic,kapw.33,yam,Intercontinental Dictionary Series,,
-madw33,Kha Poong,,Austroasiatic,madw.33,yam,Intercontinental Dictionary Series,,
-teng33,Kha Poong,,Austroasiatic,tɛ:ŋ.33ʔ,yam,Intercontinental Dictionary Series,,
-kw434ti22,Malieng,,Austroasiatic,kw.434 tɨ.22,yam,Intercontinental Dictionary Series,,
-khuaimanonb,Ahlao Th,,Austroasiatic,khu̯ai̯ măn ʔɔnʔ.B,yam,Intercontinental Dictionary Series,,
-fajthettn,Nyakur,,Austroasiatic,fâ:j the:t T+N,yam,Intercontinental Dictionary Series,,
-mankew,Nyakur,,Austroasiatic,mankɛ:w,yam,Intercontinental Dictionary Series,,
-olatehc,Kasong,,Austroasiatic,ʔo:l.A te:h.C,yam,Intercontinental Dictionary Series,,
+kou24phlu33,LiHa,#N/A,Austroasiatic,kou.24 phlu.33,yam,Intercontinental Dictionary Series,#N/A,#N/A
+kwaj33phl@j33,LiHa,#N/A,Austroasiatic,kwa:j.33 phləj.33,yam,Intercontinental Dictionary Series,#N/A,#N/A
+kwaj33t@i43,LiHa,#N/A,Austroasiatic,kwa:j.33 təɨ.43,yam,Intercontinental Dictionary Series,#N/A,#N/A
+kwaj24,Phong,#N/A,Austroasiatic,kwa:j.24,yam,Intercontinental Dictionary Series,#N/A,#N/A
+phlw33,Tum,#N/A,Austroasiatic,phlw.33,yam,Intercontinental Dictionary Series,#N/A,#N/A
+kapw33,Kha Poong,#N/A,Austroasiatic,kapw.33,yam,Intercontinental Dictionary Series,#N/A,#N/A
+madw33,Kha Poong,#N/A,Austroasiatic,madw.33,yam,Intercontinental Dictionary Series,#N/A,#N/A
+teng33,Kha Poong,#N/A,Austroasiatic,tɛ:ŋ.33ʔ,yam,Intercontinental Dictionary Series,#N/A,#N/A
+kw434ti22,Malieng,#N/A,Austroasiatic,kw.434 tɨ.22,yam,Intercontinental Dictionary Series,#N/A,#N/A
+khuaimanonb,Ahlao Th,#N/A,Austroasiatic,khu̯ai̯ măn ʔɔnʔ.B,yam,Intercontinental Dictionary Series,#N/A,#N/A
+fajthettn,Nyakur,#N/A,Austroasiatic,fâ:j the:t T+N,yam,Intercontinental Dictionary Series,#N/A,#N/A
+mankew,Nyakur,#N/A,Austroasiatic,mankɛ:w,yam,Intercontinental Dictionary Series,#N/A,#N/A
+olatehc,Kasong,#N/A,Austroasiatic,ʔo:l.A te:h.C,yam,Intercontinental Dictionary Series,#N/A,#N/A
 urakewa,Samre,sxm,Austroasiatic,ʔu:r.A kɛ:w.A,yam,Intercontinental Dictionary Series,13.479,103.978
 tungathetc,Chong,cog,Austroasiatic,tuŋ.A the:t.C,yam,Intercontinental Dictionary Series,12.5218,102.514
-tlongchwi@,KNB (a Pearic variety),,Austroasiatic,tlo:ŋ chwi:ə,yam,Intercontinental Dictionary Series,,
-plaphaw,Iduh,,Austroasiatic,plâ: phâw,yam,Intercontinental Dictionary Series,,
-jia31tong35,Mang Ch,,Austroasiatic,jɨa.31 toŋ.35,yam,Intercontinental Dictionary Series,,
-ppnufi,Proto Polynesian,,Austronesian,PPN *ʔufi,yam,Intercontinental Dictionary Series,,
-qufi,Proto Polynesian,,Austronesian,*qufi,yam,Intercontinental Dictionary Series,,
+tlongchwi@,KNB (a Pearic variety),#N/A,Austroasiatic,tlo:ŋ chwi:ə,yam,Intercontinental Dictionary Series,#N/A,#N/A
+plaphaw,Iduh,#N/A,Austroasiatic,plâ: phâw,yam,Intercontinental Dictionary Series,#N/A,#N/A
+jia31tong35,Mang Ch,#N/A,Austroasiatic,jɨa.31 toŋ.35,yam,Intercontinental Dictionary Series,#N/A,#N/A
+ppnufi,Proto Polynesian,#N/A,Austronesian,PPN *ʔufi,yam,Intercontinental Dictionary Series,#N/A,#N/A
+qufi,Proto Polynesian,#N/A,Austronesian,*qufi,yam,Intercontinental Dictionary Series,#N/A,#N/A
 uhi,Hawaiian,haw,Austronesian,uhi,yam,Intercontinental Dictionary Series,19.6297,-155.43
 uwhi,Maori,mri,Austronesian,uwhi,yam,Intercontinental Dictionary Series,-38.2881,176.541
-puauhi,Marquesan,,Austronesian,puauhi,yam,Intercontinental Dictionary Series,,
+puauhi,Marquesan,#N/A,Austronesian,puauhi,yam,Intercontinental Dictionary Series,#N/A,#N/A
 uhi,Rapa Nui,rap,Austronesian,ʔuhi,yam,Intercontinental Dictionary Series,-27.113,-109.342
 uhi,Rotuman,rtm,Austronesian,ʔuhi,yam,Intercontinental Dictionary Series,-12.5008,177.066
 ufi,Tongan,ton,Austronesian,ʔufi,yam,Intercontinental Dictionary Series,-21.17,-175.25
@@ -128,8 +128,8 @@ kung,ganglau,ggl,Nuclear Trans New Guinea,kuŋ,yam,Madang Comparative Wordlists,
 mleg,ganglau,ggl,Nuclear Trans New Guinea,mleg,yam,Madang Comparative Wordlists,-5.57945,146.13
 davel,garus,gyb,Nuclear Trans New Guinea,davɛl,yam,Madang Comparative Wordlists,-4.9222,145.683
 igon,garus,gyb,Nuclear Trans New Guinea,igon,yam,Madang Comparative Wordlists,-4.9222,145.683
-dibil,gavak,,Nuclear Trans New Guinea,dibil,yam,Madang Comparative Wordlists,,
-kia,gavak,,Nuclear Trans New Guinea,kia,yam,Madang Comparative Wordlists,,
+dibil,gavak,#N/A,Nuclear Trans New Guinea,dibil,yam,Madang Comparative Wordlists,#N/A,#N/A
+kia,gavak,#N/A,Nuclear Trans New Guinea,kia,yam,Madang Comparative Wordlists,#N/A,#N/A
 bor,girawa,bbr,Nuclear Trans New Guinea,bɔːr,yam,Madang Comparative Wordlists,-5.35342,145.423
 mura,girawa,bbr,Nuclear Trans New Guinea,mura,yam,Madang Comparative Wordlists,-5.35342,145.423
 malk,gumalu,gmu,Nuclear Trans New Guinea,malʌk,yam,Madang Comparative Wordlists,-5.22189,145.618
@@ -154,8 +154,8 @@ mreb,kowaki,xow,Nuclear Trans New Guinea,mʌrɛb,yam,Madang Comparative Wordlist
 neizab,kowaki,xow,Nuclear Trans New Guinea,neizab,yam,Madang Comparative Wordlists,-4.63032,145.412
 kou,lemio,lei,Nuclear Trans New Guinea,kou,yam,Madang Comparative Wordlists,-5.61407,146.441
 kuep,lemio,lei,Nuclear Trans New Guinea,kuep,yam,Madang Comparative Wordlists,-5.61407,146.441
-kayab,maia-pila,,Nuclear Trans New Guinea,kayab,yam,Madang Comparative Wordlists,,
-wangay,maia-pila,,Nuclear Trans New Guinea,waŋay,yam,Madang Comparative Wordlists,,
+kayab,maia-pila,#N/A,Nuclear Trans New Guinea,kayab,yam,Madang Comparative Wordlists,#N/A,#N/A
+wangay,maia-pila,#N/A,Nuclear Trans New Guinea,waŋay,yam,Madang Comparative Wordlists,#N/A,#N/A
 r,mala,ped,Nuclear Trans New Guinea,ʌr̃ʌ,yam,Madang Comparative Wordlists,-4.35889,145.04
 susogi,mala,ped,Nuclear Trans New Guinea,susogi,yam,Madang Comparative Wordlists,-4.35889,145.04
 kibinem,malas,mkr,Nuclear Trans New Guinea,kibinɛm,yam,Madang Comparative Wordlists,-4.76685,145.621
@@ -256,10 +256,10 @@ kakr,utu,utu,Nuclear Trans New Guinea,kakʌr,yam,Madang Comparative Wordlists,-5
 o,utu,utu,Nuclear Trans New Guinea,ʔo,yam,Madang Comparative Wordlists,-5.16422,145.544
 murk,uya,usu,Nuclear Trans New Guinea,murʌk,yam,Madang Comparative Wordlists,-5.32246,145.47
 muru,uya,usu,Nuclear Trans New Guinea,muru,yam,Madang Comparative Wordlists,-5.32246,145.47
-sabi,uyajitaya,,Nuclear Trans New Guinea,sa:bi,yam,Madang Comparative Wordlists,,
-simbo,uyajitaya,,Nuclear Trans New Guinea,simbo,yam,Madang Comparative Wordlists,,
-wta,uyajitaya,,Nuclear Trans New Guinea,wʌta,yam,Madang Comparative Wordlists,,
-yagiya,uyajitaya,,Nuclear Trans New Guinea,yagiya,yam,Madang Comparative Wordlists,,
+sabi,uyajitaya,#N/A,Nuclear Trans New Guinea,sa:bi,yam,Madang Comparative Wordlists,#N/A,#N/A
+simbo,uyajitaya,#N/A,Nuclear Trans New Guinea,simbo,yam,Madang Comparative Wordlists,#N/A,#N/A
+wta,uyajitaya,#N/A,Nuclear Trans New Guinea,wʌta,yam,Madang Comparative Wordlists,#N/A,#N/A
+yagiya,uyajitaya,#N/A,Nuclear Trans New Guinea,yagiya,yam,Madang Comparative Wordlists,#N/A,#N/A
 nangnggpimp,wadaginam,wdg,Nuclear Trans New Guinea,naŋʌːŋgᵊpɨmp,yam,Madang Comparative Wordlists,-4.52754,144.972
 wagminip,wadaginam,wdg,Nuclear Trans New Guinea,waɣᵊmɨnɨp,yam,Madang Comparative Wordlists,-4.52754,144.972
 dawaer,wagi,fad,Nuclear Trans New Guinea,dawær,yam,Madang Comparative Wordlists,-5.17834,145.726
@@ -270,10 +270,10 @@ kaut,wanambre,wnb,Nuclear Trans New Guinea,kaut,yam,Madang Comparative Wordlists
 kiya,wanambre,wnb,Nuclear Trans New Guinea,kiya,yam,Madang Comparative Wordlists,-4.78822,145.419
 kirang,waskia,wsk,Nuclear Trans New Guinea,ki:raŋ,yam,Madang Comparative Wordlists,-4.57978,145.979
 ulang,waskia,wsk,Nuclear Trans New Guinea,u:laŋ,yam,Madang Comparative Wordlists,-4.57978,145.979
-ku,watiwa,,Nuclear Trans New Guinea,ku,yam,Madang Comparative Wordlists,,
-kweie,watiwa,,Nuclear Trans New Guinea,kwɛie,yam,Madang Comparative Wordlists,,
-soira,waube,,Nuclear Trans New Guinea,soira,yam,Madang Comparative Wordlists,,
-yakia,waube,,Nuclear Trans New Guinea,yakia,yam,Madang Comparative Wordlists,,
+ku,watiwa,#N/A,Nuclear Trans New Guinea,ku,yam,Madang Comparative Wordlists,#N/A,#N/A
+kweie,watiwa,#N/A,Nuclear Trans New Guinea,kwɛie,yam,Madang Comparative Wordlists,#N/A,#N/A
+soira,waube,#N/A,Nuclear Trans New Guinea,soira,yam,Madang Comparative Wordlists,#N/A,#N/A
+yakia,waube,#N/A,Nuclear Trans New Guinea,yakia,yam,Madang Comparative Wordlists,#N/A,#N/A
 mi,yaben,ybm,Nuclear Trans New Guinea,mi,yam,Madang Comparative Wordlists,-4.90868,145.361
 zabulamu,yaben,ybm,Nuclear Trans New Guinea,zabula:mu,yam,Madang Comparative Wordlists,-4.90868,145.361
 kung,yabong,ybo,Nuclear Trans New Guinea,kuŋ,yam,Madang Comparative Wordlists,-5.61718,146.206
@@ -283,160 +283,160 @@ oo,yangulam,ynl,Nuclear Trans New Guinea,oo,yam,Madang Comparative Wordlists,-5.
 ki,yarawata,yrw,Nuclear Trans New Guinea,kiʌ,yam,Madang Comparative Wordlists,-4.93943,145.454
 di,yoidik,ydk,Nuclear Trans New Guinea,di,yam,Madang Comparative Wordlists,-4.94044,145.758
 igon,yoidik,ydk,Nuclear Trans New Guinea,igon,yam,Madang Comparative Wordlists,-4.94044,145.758
-afi,Agufi,,Austronesian,afi,yam,Solomon Islands Languages,,
-alapa,Alu,,Austronesian,alapa,yam,Solomon Islands Languages,,
+afi,Agufi,#N/A,Austronesian,afi,yam,Solomon Islands Languages,#N/A,#N/A
+alapa,Alu,#N/A,Austronesian,alapa,yam,Solomon Islands Languages,#N/A,#N/A
 upi,Anuta,aud,Austronesian,upi,yam,Solomon Islands Languages,-11.75,169.75
-uhi,Are'are (1),,Austronesian,ūhi,yam,Solomon Islands Languages,,
-uhi,Are'are (2),,Austronesian,ūhi,yam,Solomon Islands Languages,,
-uhi,Arosi (1),,Austronesian,uhi,yam,Solomon Islands Languages,,
-uhi,Arosi (2),,Austronesian,uhi,yam,Solomon Islands Languages,,
+uhi,Are'are (1),#N/A,Austronesian,ūhi,yam,Solomon Islands Languages,#N/A,#N/A
+uhi,Are'are (2),#N/A,Austronesian,ūhi,yam,Solomon Islands Languages,#N/A,#N/A
+uhi,Arosi (1),#N/A,Austronesian,uhi,yam,Solomon Islands Languages,#N/A,#N/A
+uhi,Arosi (2),#N/A,Austronesian,uhi,yam,Solomon Islands Languages,#N/A,#N/A
 ndungguwo,Asumboa,aua,Austronesian,nduŋguwɔ,yam,Solomon Islands Languages,-11.2969,166.499
-puli,Avasö,,Austronesian,puli,yam,Solomon Islands Languages,,
-auhi,Bauro (1),,Austronesian,āuhi,yam,Solomon Islands Languages,,
-auhi,Bauro (2),,Austronesian,auhi,yam,Solomon Islands Languages,,
-uhi,Bellona,,Austronesian,!uhi,yam,Solomon Islands Languages,,
+puli,Avasö,#N/A,Austronesian,puli,yam,Solomon Islands Languages,#N/A,#N/A
+auhi,Bauro (1),#N/A,Austronesian,āuhi,yam,Solomon Islands Languages,#N/A,#N/A
+auhi,Bauro (2),#N/A,Austronesian,auhi,yam,Solomon Islands Languages,#N/A,#N/A
+uhi,Bellona,#N/A,Austronesian,!uhi,yam,Solomon Islands Languages,#N/A,#N/A
 hnufi,Blablanga,blp,Austronesian,hnufi,yam,Solomon Islands Languages,-8.15058,159.419
-uwo,Buma,,Austronesian,uwɔ,yam,Solomon Islands Languages,,
-uvi,Dhadhaje,,Austronesian,uvi,yam,Solomon Islands Languages,,
+uwo,Buma,#N/A,Austronesian,uwɔ,yam,Solomon Islands Languages,#N/A,#N/A
+uvi,Dhadhaje,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
 ifi,Dori'o,dor,Austronesian,īfi,yam,Solomon Islands Languages,-9.11536,160.897
-auhi,Faghani,,Austronesian,auhi,yam,Solomon Islands Languages,,
+auhi,Faghani,#N/A,Austronesian,auhi,yam,Solomon Islands Languages,#N/A,#N/A
 kai,Fataleka,far,Austronesian,kai,yam,Solomon Islands Languages,-8.59041,160.861
-alapa,Fauro,,Austronesian,ālapa,yam,Solomon Islands Languages,,
-uvi,Ghaimuta,,Austronesian,uvi,yam,Solomon Islands Languages,,
+alapa,Fauro,#N/A,Austronesian,ālapa,yam,Solomon Islands Languages,#N/A,#N/A
+uvi,Ghaimuta,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
 nindi,Ghanongga,ghn,Austronesian,nindi,yam,Solomon Islands Languages,-8.02035,156.552
 uvi,Ghari,gri,Austronesian,uvi,yam,Solomon Islands Languages,-9.4791,159.917
-sapu,Ghone,,Austronesian,sapu,yam,Solomon Islands Languages,,
-bopa,Ghove,,Austronesian,bɔpa,yam,Solomon Islands Languages,,
-auhi,Haununu,,Austronesian,auhi,yam,Solomon Islands Languages,,
+sapu,Ghone,#N/A,Austronesian,sapu,yam,Solomon Islands Languages,#N/A,#N/A
+bopa,Ghove,#N/A,Austronesian,bɔpa,yam,Solomon Islands Languages,#N/A,#N/A
+auhi,Haununu,#N/A,Austronesian,auhi,yam,Solomon Islands Languages,#N/A,#N/A
 kane,Hoava,hoa,Austronesian,kane,yam,Solomon Islands Languages,-8.19679,157.595
 oehi,Kahua,agw,Austronesian,œhi,yam,Solomon Islands Languages,-10.6963,162.191
-nomba,Katazi,,Austronesian,nomba,yam,Solomon Islands Languages,,
+nomba,Katazi,#N/A,Austronesian,nomba,yam,Solomon Islands Languages,#N/A,#N/A
 mingono,Kazukuru,kzk,Austronesian,miŋono,yam,Solomon Islands Languages,-8.23886,157.687
-kumagi,Kia,,Austronesian,kumagi,yam,Solomon Islands Languages,,
-soni,Kia,,Austronesian,sɔni,yam,Solomon Islands Languages,,
-nufihnavi,Kilokaka,,Austronesian,nufi hnavi,yam,Solomon Islands Languages,,
-nufi,Kmagha,,Austronesian,nufi,yam,Solomon Islands Languages,,
+kumagi,Kia,#N/A,Austronesian,kumagi,yam,Solomon Islands Languages,#N/A,#N/A
+soni,Kia,#N/A,Austronesian,sɔni,yam,Solomon Islands Languages,#N/A,#N/A
+nufihnavi,Kilokaka,#N/A,Austronesian,nufi hnavi,yam,Solomon Islands Languages,#N/A,#N/A
+nufi,Kmagha,#N/A,Austronesian,nufi,yam,Solomon Islands Languages,#N/A,#N/A
 nufi,Kokota,kkk,Austronesian,nufi,yam,Solomon Islands Languages,-8.16481,159.191
-uvi,Koo,,Austronesian,uvi,yam,Solomon Islands Languages,,
+uvi,Koo,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
 kane,Kusaghe,ksg,Austronesian,kane,yam,Solomon Islands Languages,-8.04056,157.463
-kai,Kwai,,Austronesian,kai,yam,Solomon Islands Languages,,
+kai,Kwai,#N/A,Austronesian,kai,yam,Solomon Islands Languages,#N/A,#N/A
 laisi,Kwaio,kwd,Austronesian,laisi,yam,Solomon Islands Languages,-8.93744,160.965
 ufi,Kwaio,kwd,Austronesian,ūfi,yam,Solomon Islands Languages,-8.93744,160.965
 kai,Kwara'ae,kwf,Austronesian,kai,yam,Solomon Islands Languages,-8.75779,160.804
-ufi,Langalanga,,Austronesian,ūfi,yam,Solomon Islands Languages,,
-kai,Lau North,,Austronesian,kai,yam,Solomon Islands Languages,,
-nufi,Leleghia,,Austronesian,nufi,yam,Solomon Islands Languages,,
+ufi,Langalanga,#N/A,Austronesian,ūfi,yam,Solomon Islands Languages,#N/A,#N/A
+kai,Lau North,#N/A,Austronesian,kai,yam,Solomon Islands Languages,#N/A,#N/A
+nufi,Leleghia,#N/A,Austronesian,nufi,yam,Solomon Islands Languages,#N/A,#N/A
 uvi,Lengo,lgr,Austronesian,uvi,yam,Solomon Islands Languages,-9.56425,160.42
-puli,Lömaumbi,,Austronesian,puli,yam,Solomon Islands Languages,,
+puli,Lömaumbi,#N/A,Austronesian,puli,yam,Solomon Islands Languages,#N/A,#N/A
 uvi,Longgu,lgu,Austronesian,uvi,yam,Solomon Islands Languages,-9.75258,160.663
 indi,Lungga,lga,Austronesian,indi,yam,Solomon Islands Languages,-8.17469,156.573
-leku,Lwepe,,Austronesian,lekü,yam,Solomon Islands Languages,,
-uvi,Malagheti,,Austronesian,uvi,yam,Solomon Islands Languages,,
+leku,Lwepe,#N/A,Austronesian,lekü,yam,Solomon Islands Languages,#N/A,#N/A
+uvi,Malagheti,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
 uvi,Malango,mln,Austronesian,uvi,yam,Solomon Islands Languages,-9.61383,160.118
 leku,Malo,mla,Austronesian,lekü,yam,Solomon Islands Languages,-15.6835,167.16
-@fi,Mami,,Austronesian,əfi,yam,Solomon Islands Languages,,
+@fi,Mami,#N/A,Austronesian,əfi,yam,Solomon Islands Languages,#N/A,#N/A
 uhi,Marau,mvr,Austronesian,uhi,yam,Solomon Islands Languages,-1.66738,135.797
 uvi,Marovo,mvo,Austronesian,uvi,yam,Solomon Islands Languages,-8.37943,157.747
-kai,Mbaelelea,,Austronesian,kai,yam,Solomon Islands Languages,,
-kai,Mbaengguu,,Austronesian,kai,yam,Solomon Islands Languages,,
-nomba,Mbambatana,,Austronesian,nomba,yam,Solomon Islands Languages,,
-uvi,Mbareke,,Austronesian,uvi,yam,Solomon Islands Languages,,
-uvi,Mbirao,,Austronesian,uvi,yam,Solomon Islands Languages,,
-uvi,Moli,,Austronesian,uvi,yam,Solomon Islands Languages,,
+kai,Mbaelelea,#N/A,Austronesian,kai,yam,Solomon Islands Languages,#N/A,#N/A
+kai,Mbaengguu,#N/A,Austronesian,kai,yam,Solomon Islands Languages,#N/A,#N/A
+nomba,Mbambatana,#N/A,Austronesian,nomba,yam,Solomon Islands Languages,#N/A,#N/A
+uvi,Mbareke,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
+uvi,Mbirao,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
+uvi,Moli,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
 alapa,Mono,mnh,Austronesian,alapa,yam,Solomon Islands Languages,4.57915,19.8264
-ndaleku,Nanggu,,Austronesian,ndalekü,yam,Solomon Islands Languages,,
-uvi,Ndi,,Austronesian,uvi,yam,Solomon Islands Languages,,
-mahiri,Nduke,,Austronesian,mahiri,yam,Solomon Islands Languages,,
-laiegi,Nembao,,Austronesian,laiɛγi,yam,Solomon Islands Languages,,
-uvi,Nggae,,Austronesian,uvi,yam,Solomon Islands Languages,,
-uvi,Nggela,,Austronesian,uvi,yam,Solomon Islands Languages,,
-uvi,Nggeri,,Austronesian,uvi,yam,Solomon Islands Languages,,
-uvi,Nginia,,Austronesian,uvi,yam,Solomon Islands Languages,,
+ndaleku,Nanggu,#N/A,Austronesian,ndalekü,yam,Solomon Islands Languages,#N/A,#N/A
+uvi,Ndi,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
+mahiri,Nduke,#N/A,Austronesian,mahiri,yam,Solomon Islands Languages,#N/A,#N/A
+laiegi,Nembao,#N/A,Austronesian,laiɛγi,yam,Solomon Islands Languages,#N/A,#N/A
+uvi,Nggae,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
+uvi,Nggela,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
+uvi,Nggeri,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
+uvi,Nginia,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
 usi,Ontong Java,ojv,Austronesian,ūsi,yam,Solomon Islands Languages,-5.49029,159.701
 uhi,Oroha,ora,Austronesian,ūhi,yam,Solomon Islands Languages,-9.7386,161.513
-uvi,Paripao,,Austronesian,uvi,yam,Solomon Islands Languages,,
-omomaiu,Pileni,,Austronesian,omomaiū,yam,Solomon Islands Languages,,
-uvi,Poleo,,Austronesian,uvi,yam,Solomon Islands Languages,,
-nufi,Poro,,Austronesian,nufi,yam,Solomon Islands Languages,,
+uvi,Paripao,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
+omomaiu,Pileni,#N/A,Austronesian,omomaiū,yam,Solomon Islands Languages,#N/A,#N/A
+uvi,Poleo,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
+nufi,Poro,#N/A,Austronesian,nufi,yam,Solomon Islands Languages,#N/A,#N/A
 auhi,Rawo,rwa,Austronesian,auhi,yam,Solomon Islands Languages,-2.84201,141.603
-uponji,Reefs,,Austronesian,uponĵi,yam,Solomon Islands Languages,,
-uhi,Rennell,,Austronesian,!uhi,yam,Solomon Islands Languages,,
-auhi,Rihu'a,,Austronesian,auhi,yam,Solomon Islands Languages,,
+uponji,Reefs,#N/A,Austronesian,uponĵi,yam,Solomon Islands Languages,#N/A,#N/A
+uhi,Rennell,#N/A,Austronesian,!uhi,yam,Solomon Islands Languages,#N/A,#N/A
+auhi,Rihu'a,#N/A,Austronesian,auhi,yam,Solomon Islands Languages,#N/A,#N/A
 vuru,Ririo,rri,Austronesian,vuru,yam,Solomon Islands Languages,-6.88927,156.92
 zuand,Ririo,rri,Austronesian,zuand,yam,Solomon Islands Languages,-6.88927,156.92
 marihi,Roviana,rug,Austronesian,marihi,yam,Solomon Islands Languages,-8.20493,157.408
-uhi,Sa'a (1),,Austronesian,ūhi,yam,Solomon Islands Languages,,
-uhi,Sa'a (2),,Austronesian,ūhi,yam,Solomon Islands Languages,,
-kumagi,Samasodu,,Austronesian,kumagi,yam,Solomon Islands Languages,,
-aufi,Santa Ana,,Austronesian,aufi,yam,Solomon Islands Languages,,
-afu,Santa Catalina,,Austronesian,afu,yam,Solomon Islands Languages,,
-numba,Sengga,,Austronesian,numba,yam,Solomon Islands Languages,,
+uhi,Sa'a (1),#N/A,Austronesian,ūhi,yam,Solomon Islands Languages,#N/A,#N/A
+uhi,Sa'a (2),#N/A,Austronesian,ūhi,yam,Solomon Islands Languages,#N/A,#N/A
+kumagi,Samasodu,#N/A,Austronesian,kumagi,yam,Solomon Islands Languages,#N/A,#N/A
+aufi,Santa Ana,#N/A,Austronesian,aufi,yam,Solomon Islands Languages,#N/A,#N/A
+afu,Santa Catalina,#N/A,Austronesian,afu,yam,Solomon Islands Languages,#N/A,#N/A
+numba,Sengga,#N/A,Austronesian,numba,yam,Solomon Islands Languages,#N/A,#N/A
 uhi,Sikaiana,sky,Austronesian,uhi,yam,Solomon Islands Languages,-8.38182,162.733
 uvi,Simbo,sbb,Austronesian,uvi,yam,Solomon Islands Languages,-8.26947,156.541
 uvi,Talise,tlr,Austronesian,uvi,yam,Solomon Islands Languages,-9.76764,160.231
-uvi,Tandai,,Austronesian,uvi,yam,Solomon Islands Languages,,
+uvi,Tandai,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
 uva,Tanema,tnx,Austronesian,uva,yam,Solomon Islands Languages,-11.68,166.97
-noupio,Tanimbili,,Austronesian,noupio,yam,Solomon Islands Languages,,
-nufi,Tataba,,Austronesian,nufi,yam,Solomon Islands Languages,,
-oehi,Tawaroga,,Austronesian,œhi,yam,Solomon Islands Languages,,
+noupio,Tanimbili,#N/A,Austronesian,noupio,yam,Solomon Islands Languages,#N/A,#N/A
+nufi,Tataba,#N/A,Austronesian,nufi,yam,Solomon Islands Languages,#N/A,#N/A
+oehi,Tawaroga,#N/A,Austronesian,œhi,yam,Solomon Islands Languages,#N/A,#N/A
 ufi,Tikopia,tkp,Austronesian,ufi,yam,Solomon Islands Languages,-12.2766,168.822
-kai,To'ambaita,,Austronesian,kai,yam,Solomon Islands Languages,,
-uvi,Tolo,,Austronesian,uvi,yam,Solomon Islands Languages,,
-nomba,Tunöe,,Austronesian,nomba,yam,Solomon Islands Languages,,
+kai,To'ambaita,#N/A,Austronesian,kai,yam,Solomon Islands Languages,#N/A,#N/A
+uvi,Tolo,#N/A,Austronesian,uvi,yam,Solomon Islands Languages,#N/A,#N/A
+nomba,Tunöe,#N/A,Austronesian,nomba,yam,Solomon Islands Languages,#N/A,#N/A
 mbazu,Ughele,uge,Austronesian,mbazu,yam,Solomon Islands Languages,-8.45725,157.341
-uhi,Uki Ni Masi,,Austronesian,uhi,yam,Solomon Islands Languages,,
-uhi,Ulawa,,Austronesian,ūhi,yam,Solomon Islands Languages,,
+uhi,Uki Ni Masi,#N/A,Austronesian,uhi,yam,Solomon Islands Languages,#N/A,#N/A
+uhi,Ulawa,#N/A,Austronesian,ūhi,yam,Solomon Islands Languages,#N/A,#N/A
 sape,Vaghua,tva,Austronesian,sape,yam,Solomon Islands Languages,-6.68712,156.542
 uvi,Vangunu,mpr,Austronesian,uvi,yam,Solomon Islands Languages,-8.66826,157.997
-upie,Vano,,Austronesian,upie,yam,Solomon Islands Languages,,
+upie,Vano,#N/A,Austronesian,upie,yam,Solomon Islands Languages,#N/A,#N/A
 inggama,Varisi,vrs,Austronesian,iŋgama,yam,Solomon Islands Languages,-6.83443,156.655
-kai,Walade (LauS),,Austronesian,kai,yam,Solomon Islands Languages,,
-mari,Mbilua,,Bilua,mari,yam,Solomon Islands Languages,,
-mari,Ndovele,,Bilua,mari,yam,Solomon Islands Languages,,
+kai,Walade (LauS),#N/A,Austronesian,kai,yam,Solomon Islands Languages,#N/A,#N/A
+mari,Mbilua,#N/A,Bilua,mari,yam,Solomon Islands Languages,#N/A,#N/A
+mari,Ndovele,#N/A,Bilua,mari,yam,Solomon Islands Languages,#N/A,#N/A
 uvi,Lavukaleve,lvk,Lavukaleve,uvi,yam,Solomon Islands Languages,-9.05569,159.119
 uvi,Savosavo,svs,Savosavo,uvi,yam,Solomon Islands Languages,-9.12853,159.814
-mboe,Lokuru,,Touo,mbōe,yam,Solomon Islands Languages,,
-mboe,Mbaniata,,Touo,mbo*e,yam,Solomon Islands Languages,,
-tal@s,Ceq Wong,,Austroasiatic,taləs,the yam,The World Loanword Database,,
+mboe,Lokuru,#N/A,Touo,mbōe,yam,Solomon Islands Languages,#N/A,#N/A
+mboe,Mbaniata,#N/A,Touo,mbo*e,yam,Solomon Islands Languages,#N/A,#N/A
+tal@s,Ceq Wong,#N/A,Austroasiatic,taləs,the yam,The World Loanword Database,#N/A,#N/A
 khoailang,Vietnamese,vie,Austroasiatic,khoai lang,the yam,The World Loanword Database,18.3887,106.757
 uhi2,Hawaiian,haw,Austronesian,uhi (2),the yam,The World Loanword Database,19.6297,-155.43
 ubimadu,Indonesian,ind,Austronesian,ubi madu,the yam,The World Loanword Database,-7.33458,109.716
 ovy,Malagasy,plt,Austronesian,òvy,the yam,The World Loanword Database,-19.5907,47.1211
 annganang,Takia,tbc,Austronesian,anŋ-anaŋ,the yam,The World Loanword Database,-4.69057,145.975
 dabel,Takia,tbc,Austronesian,dabel,the yam,The World Loanword Database,-4.69057,145.975
-pikurta,Gurindji,,Pama-Nyungan,pikurta,the yam,The World Loanword Database,,
-dzu,Ambakich (Agurant Dialect),,Ambakich,džuʌ,yam,TransNewGuinea.org,,
-dzw@,Ambakich (Agurant Dialect),,Ambakich,dʒwə,yam,TransNewGuinea.org,,
-dzo,Ambakich (Arango Dialect),,Ambakich,dʒo,yam,TransNewGuinea.org,,
-dz@,Ambakich (Ombos Dialect),,Ambakich,dʒə,yam,TransNewGuinea.org,,
-dzo,Ambakich (Pangin Dialect),,Ambakich,dʒo,yam,TransNewGuinea.org,,
-dzo,Ambakich (Yaut Dialect),,Ambakich,dʒo,yam,TransNewGuinea.org,,
+pikurta,Gurindji,#N/A,Pama-Nyungan,pikurta,the yam,The World Loanword Database,#N/A,#N/A
+dzu,Ambakich (Agurant Dialect),#N/A,Ambakich,džuʌ,yam,TransNewGuinea.org,#N/A,#N/A
+dzw@,Ambakich (Agurant Dialect),#N/A,Ambakich,dʒwə,yam,TransNewGuinea.org,#N/A,#N/A
+dzo,Ambakich (Arango Dialect),#N/A,Ambakich,dʒo,yam,TransNewGuinea.org,#N/A,#N/A
+dz@,Ambakich (Ombos Dialect),#N/A,Ambakich,dʒə,yam,TransNewGuinea.org,#N/A,#N/A
+dzo,Ambakich (Pangin Dialect),#N/A,Ambakich,dʒo,yam,TransNewGuinea.org,#N/A,#N/A
+dzo,Ambakich (Yaut Dialect),#N/A,Ambakich,dʒo,yam,TransNewGuinea.org,#N/A,#N/A
 ere,Amto,amt,Amto-Musan,eře,yam,TransNewGuinea.org,-4.12165,141.339
 re,Amto,amt,Amto-Musan,ʌře,yam,TransNewGuinea.org,-4.12165,141.339
 yare,Siawi,mmp,Amto-Musan,yařɛ,yam,TransNewGuinea.org,-4.05312,141.42
 wain,Ap Ma,kbx,Ap Ma,wa̠i̠n,yam,TransNewGuinea.org,-4.35147,144.085
-lgask,Qaget,,Baining,ʌ lʌg̶askʌ̠,yam,TransNewGuinea.org,,
+lgask,Qaget,#N/A,Baining,ʌ lʌg̶askʌ̠,yam,TransNewGuinea.org,#N/A,#N/A
 norgi,Ura,uro,Baining,Nořʌɣi,yam,TransNewGuinea.org,-4.64226,151.953
 nr@k,Ura,uro,Baining,ʌ nʌřək,yam,TransNewGuinea.org,-4.64226,151.953
 nr@k,Ura,uro,Baining,nʌřək,yam,TransNewGuinea.org,-4.64226,151.953
 pam,Daga,dgz,Dagan,pam,yam,TransNewGuinea.org,-9.9747,149.263
 wagoro,Dima,jma,Dagan,wagoro,yam,TransNewGuinea.org,-9.70322,149.605
 iyao,Maiwa,mti,Dagan,i'yaᵒ,yam,TransNewGuinea.org,-9.69836,149.274
-vapole,Proto-Eleman,,Eleman,*vapole,yam,TransNewGuinea.org,,
+vapole,Proto-Eleman,#N/A,Eleman,*vapole,yam,TransNewGuinea.org,#N/A,#N/A
 asi,Fuyug,fuy,Goilalan,asi,yam,TransNewGuinea.org,-8.6371,147.312
 kamarava,Tauade,ttd,Goilalan,kamara'va,yam,TransNewGuinea.org,-8.3486,147.094
 vajaka,Ese,mcq,Koiarian,vaja|k-a,yam,TransNewGuinea.org,-9.09451,148.376
-vaea,Grass Koiari,,Koiarian,vaea,yam,TransNewGuinea.org,,
+vaea,Grass Koiari,#N/A,Koiarian,vaea,yam,TransNewGuinea.org,#N/A,#N/A
 vaia,Koitabu,kqi,Koiarian,vaia,yam,TransNewGuinea.org,-9.36877,147.079
 vadzi,Ömie,aom,Koiarian,vadzi,yam,TransNewGuinea.org,-9.03136,148.107
-vaia,Proto-Koiarian,,Koiarian,*vaia,yam,TransNewGuinea.org,,
+vaia,Proto-Koiarian,#N/A,Koiarian,*vaia,yam,TransNewGuinea.org,#N/A,#N/A
 natongo,Kol,biw,Kol (Papua New Guinea),na'toŋo,yam,TransNewGuinea.org,3.65994,12.8574
 maho,Uare,ksj,Kwalean,mahɔ,yam,TransNewGuinea.org,-9.69571,147.687
 weiwo,Ama,amm,Left May,we:iwɔ,yam,TransNewGuinea.org,-4.20192,141.658
 wiwo,Ama,amm,Left May,wiwoʔ,yam,TransNewGuinea.org,-4.20192,141.658
 kwo,Bo,bgl,Left May,kwo,yam,TransNewGuinea.org,18.1866,104.953
 wo,Iteri,itr,Left May,woʔ,yam,TransNewGuinea.org,-4.11998,141.585
-wo,Iteri (Rocky Peak Dialect),,Left May,wo,yam,TransNewGuinea.org,,
+wo,Iteri (Rocky Peak Dialect),#N/A,Left May,wo,yam,TransNewGuinea.org,#N/A,#N/A
 ubeise,Nimo,niw,Left May,ubeise,yam,TransNewGuinea.org,-4.3582,141.578
 moko,Owiniga,owi,Left May,moko,yam,TransNewGuinea.org,-4.47476,141.697
 moko,Owiniga,owi,Left May,moko,yam,TransNewGuinea.org,-4.47476,141.697
@@ -446,41 +446,41 @@ moaleao,Murik,mtf,Lower Sepik-Ramu,moaleao,yam,TransNewGuinea.org,-3.86959,144.1
 wawiao,Murik,mtf,Lower Sepik-Ramu,wawiao,yam,TransNewGuinea.org,-3.86959,144.166
 akuy,Tabriak,tzx,Lower Sepik-Ramu,akuʌy,yam,TransNewGuinea.org,-4.49162,143.593
 iu,Bauwaki,bwk,Mailuan,i'u,yam,TransNewGuinea.org,-9.82577,148.815
-obili,Mailu (Asiaoro Dialect),,Mailuan,obili,yam,TransNewGuinea.org,,
-obili,Mailu (Baibara Dialect),,Mailuan,obili,yam,TransNewGuinea.org,,
-obili,Mailu (Borebo Dialect),,Mailuan,obili,yam,TransNewGuinea.org,,
-obili,Mailu (Darava Dialect),,Mailuan,obili,yam,TransNewGuinea.org,,
-obili,Mailu (Delebai Dialect),,Mailuan,obili,yam,TransNewGuinea.org,,
-obili,Mailu (Domara Dialect),,Mailuan,obili,yam,TransNewGuinea.org,,
-obili,Mailu (Geagea Dialect),,Mailuan,obili,yam,TransNewGuinea.org,,
-obili,Mailu (Ilai Dialect),,Mailuan,obili,yam,TransNewGuinea.org,,
-obili,Mailu (Island Dialect),,Mailuan,obili,yam,TransNewGuinea.org,,
-kiroma,Proto-Doromu,,Manubaran,*kiroma,yam,TransNewGuinea.org,,
-saisu,Proto-Doromu,,Manubaran,*saisu,yam,TransNewGuinea.org,,
-kiroma,Proto-Manubaran,,Manubaran,*kiroma,yam,TransNewGuinea.org,,
-saisu,Proto-Manubaran,,Manubaran,*saisu,yam,TransNewGuinea.org,,
-haihu,Proto-Maria,,Manubaran,*haihu,yam,TransNewGuinea.org,,
-iroma,Proto-Maria,,Manubaran,*iroma,yam,TransNewGuinea.org,,
+obili,Mailu (Asiaoro Dialect),#N/A,Mailuan,obili,yam,TransNewGuinea.org,#N/A,#N/A
+obili,Mailu (Baibara Dialect),#N/A,Mailuan,obili,yam,TransNewGuinea.org,#N/A,#N/A
+obili,Mailu (Borebo Dialect),#N/A,Mailuan,obili,yam,TransNewGuinea.org,#N/A,#N/A
+obili,Mailu (Darava Dialect),#N/A,Mailuan,obili,yam,TransNewGuinea.org,#N/A,#N/A
+obili,Mailu (Delebai Dialect),#N/A,Mailuan,obili,yam,TransNewGuinea.org,#N/A,#N/A
+obili,Mailu (Domara Dialect),#N/A,Mailuan,obili,yam,TransNewGuinea.org,#N/A,#N/A
+obili,Mailu (Geagea Dialect),#N/A,Mailuan,obili,yam,TransNewGuinea.org,#N/A,#N/A
+obili,Mailu (Ilai Dialect),#N/A,Mailuan,obili,yam,TransNewGuinea.org,#N/A,#N/A
+obili,Mailu (Island Dialect),#N/A,Mailuan,obili,yam,TransNewGuinea.org,#N/A,#N/A
+kiroma,Proto-Doromu,#N/A,Manubaran,*kiroma,yam,TransNewGuinea.org,#N/A,#N/A
+saisu,Proto-Doromu,#N/A,Manubaran,*saisu,yam,TransNewGuinea.org,#N/A,#N/A
+kiroma,Proto-Manubaran,#N/A,Manubaran,*kiroma,yam,TransNewGuinea.org,#N/A,#N/A
+saisu,Proto-Manubaran,#N/A,Manubaran,*saisu,yam,TransNewGuinea.org,#N/A,#N/A
+haihu,Proto-Maria,#N/A,Manubaran,*haihu,yam,TransNewGuinea.org,#N/A,#N/A
+iroma,Proto-Maria,#N/A,Manubaran,*iroma,yam,TransNewGuinea.org,#N/A,#N/A
 kaumami,Gaikundi,gbf,Ndu,kaú mami,yam,TransNewGuinea.org,-4.01718,143.139
 nan,Gaikundi,gbf,Ndu,ñañ,yam,TransNewGuinea.org,-4.01718,143.139
-naeng,Iatmul (Brugnowi Dialect),,Ndu,ñaʔeŋ,yam,TransNewGuinea.org,,
-naen,Iatmul (Kanganaman Dialect),,Ndu,ñaʔen,yam,TransNewGuinea.org,,
-naeng,Iatmul (Korogo Dialect),,Ndu,ñaʔeŋ,yam,TransNewGuinea.org,,
-nain,Iatmul (Tambanam Dialect),,Ndu,ñain,yam,TransNewGuinea.org,,
-wuin,Abu' Arapesh,,Nuclear Torricelli,wʌʔuin,yam,TransNewGuinea.org,,
+naeng,Iatmul (Brugnowi Dialect),#N/A,Ndu,ñaʔeŋ,yam,TransNewGuinea.org,#N/A,#N/A
+naen,Iatmul (Kanganaman Dialect),#N/A,Ndu,ñaʔen,yam,TransNewGuinea.org,#N/A,#N/A
+naeng,Iatmul (Korogo Dialect),#N/A,Ndu,ñaʔeŋ,yam,TransNewGuinea.org,#N/A,#N/A
+nain,Iatmul (Tambanam Dialect),#N/A,Ndu,ñain,yam,TransNewGuinea.org,#N/A,#N/A
+wuin,Abu' Arapesh,#N/A,Nuclear Torricelli,wʌʔuin,yam,TransNewGuinea.org,#N/A,#N/A
 pinai,Abaga,abg,Nuclear Trans New Guinea,pi nai,yam,TransNewGuinea.org,-6.12028,145.665
 abi,Alekano,gah,Nuclear Trans New Guinea,aƀi,yam,TransNewGuinea.org,-6.03901,145.387
 asi,Alekano,gah,Nuclear Trans New Guinea,a-si,yam,TransNewGuinea.org,-6.03901,145.387
 gasi,Alekano,gah,Nuclear Trans New Guinea,gasí,yam,TransNewGuinea.org,-6.03901,145.387
-gasi,Alekano (Wanima Dialect),,Nuclear Trans New Guinea,gasí,yam,TransNewGuinea.org,,
-gasi,Alekano (Wanima Dialect),,Nuclear Trans New Guinea,gasí,yam,TransNewGuinea.org,,
+gasi,Alekano (Wanima Dialect),#N/A,Nuclear Trans New Guinea,gasí,yam,TransNewGuinea.org,#N/A,#N/A
+gasi,Alekano (Wanima Dialect),#N/A,Nuclear Trans New Guinea,gasí,yam,TransNewGuinea.org,#N/A,#N/A
 kwarangas,Amaimon,ali,Nuclear Trans New Guinea,kwaraŋas,yam,TransNewGuinea.org,-5.18742,145.368
 m,Amaimon,ali,Nuclear Trans New Guinea,mʌ,yam,TransNewGuinea.org,-5.18742,145.368
 malak,Amele,aey,Nuclear Trans New Guinea,malak,yam,TransNewGuinea.org,-5.29126,145.687
 o,Amele,aey,Nuclear Trans New Guinea,ʔo,yam,TransNewGuinea.org,-5.29126,145.687
-sabi,Amowe (Bere Dialect),,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,,
-sabi,Amowe (Gomu Dialect),,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,,
-sabi,Amowe (Tagoe Dialect),,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,,
+sabi,Amowe (Bere Dialect),#N/A,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,#N/A,#N/A
+sabi,Amowe (Gomu Dialect),#N/A,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,#N/A,#N/A
+sabi,Amowe (Tagoe Dialect),#N/A,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,#N/A,#N/A
 nambang,Anam,pda,Nuclear Trans New Guinea,nambaŋ,yam,TransNewGuinea.org,-4.68869,145.051
 nuza,Anam,pda,Nuclear Trans New Guinea,nuza,yam,TransNewGuinea.org,-4.68869,145.051
 mumba,Anamgura,imi,Nuclear Trans New Guinea,mumba,yam,TransNewGuinea.org,-4.63762,144.991
@@ -514,9 +514,9 @@ oro,Bepour,bie,Nuclear Trans New Guinea,ɔrɔʔ,yam,TransNewGuinea.org,-4.5985,1
 m,Bilakura,bql,Nuclear Trans New Guinea,mʌː,yam,TransNewGuinea.org,-4.93116,145.559
 sabulam,Bilakura,bql,Nuclear Trans New Guinea,sabulam,yam,TransNewGuinea.org,-4.93116,145.559
 wan,Bimin,bhl,Nuclear Trans New Guinea,wan,yam,TransNewGuinea.org,-5.38732,142.04
-wan,Bimin (Fagobiw Dialect),,Nuclear Trans New Guinea,wan,yam,TransNewGuinea.org,,
-wan,Bimin (Sengen Dialect),,Nuclear Trans New Guinea,wan,yam,TransNewGuinea.org,,
-kawi,Bisorio (Iniai Dialect),,Nuclear Trans New Guinea,kawi,yam,TransNewGuinea.org,,
+wan,Bimin (Fagobiw Dialect),#N/A,Nuclear Trans New Guinea,wan,yam,TransNewGuinea.org,#N/A,#N/A
+wan,Bimin (Sengen Dialect),#N/A,Nuclear Trans New Guinea,wan,yam,TransNewGuinea.org,#N/A,#N/A
+kawi,Bisorio (Iniai Dialect),#N/A,Nuclear Trans New Guinea,kawi,yam,TransNewGuinea.org,#N/A,#N/A
 manggri,Biyom,bpm,Nuclear Trans New Guinea,maŋgrʌi,yam,TransNewGuinea.org,-5.79929,145.348
 yanu,Biyom,bpm,Nuclear Trans New Guinea,yanu,yam,TransNewGuinea.org,-5.79929,145.348
 alam,Bongu,bpu,Nuclear Trans New Guinea,alam,yam,TransNewGuinea.org,-5.50519,145.806
@@ -527,17 +527,17 @@ oran,Brem,buq,Nuclear Trans New Guinea,oran,yam,TransNewGuinea.org,-4.67372,145.
 singgua,Brem,buq,Nuclear Trans New Guinea,siŋgua,yam,TransNewGuinea.org,-4.67372,145.562
 dabr,Danaru,dnr,Nuclear Trans New Guinea,dabr,yam,TransNewGuinea.org,-5.53634,145.457
 gou,Danaru,dnr,Nuclear Trans New Guinea,gou,yam,TransNewGuinea.org,-5.53634,145.457
-gasa,Dano (Asaro Dialect),,Nuclear Trans New Guinea,gása,yam,TransNewGuinea.org,,
-gvsa,Dano (Asaro Dialect),,Nuclear Trans New Guinea,ǥʌᵛsa,yam,TransNewGuinea.org,,
-amu,Enga (Lapalama Dialect),,Nuclear Trans New Guinea,amu,yam,TransNewGuinea.org,,
-amu,Enga (Lapalama Dialect),,Nuclear Trans New Guinea,amu,yam,TransNewGuinea.org,,
-amu,Enga (Sari Dialect),,Nuclear Trans New Guinea,amu,yam,TransNewGuinea.org,,
-amu,Enga (Wapi Dialect),,Nuclear Trans New Guinea,amu,yam,TransNewGuinea.org,,
+gasa,Dano (Asaro Dialect),#N/A,Nuclear Trans New Guinea,gása,yam,TransNewGuinea.org,#N/A,#N/A
+gvsa,Dano (Asaro Dialect),#N/A,Nuclear Trans New Guinea,ǥʌᵛsa,yam,TransNewGuinea.org,#N/A,#N/A
+amu,Enga (Lapalama Dialect),#N/A,Nuclear Trans New Guinea,amu,yam,TransNewGuinea.org,#N/A,#N/A
+amu,Enga (Lapalama Dialect),#N/A,Nuclear Trans New Guinea,amu,yam,TransNewGuinea.org,#N/A,#N/A
+amu,Enga (Sari Dialect),#N/A,Nuclear Trans New Guinea,amu,yam,TransNewGuinea.org,#N/A,#N/A
+amu,Enga (Wapi Dialect),#N/A,Nuclear Trans New Guinea,amu,yam,TransNewGuinea.org,#N/A,#N/A
 imba,Faita,faj,Nuclear Trans New Guinea,imba,yam,TransNewGuinea.org,-5.59947,145.298
 wem,Faita,faj,Nuclear Trans New Guinea,wem,yam,TransNewGuinea.org,-5.59947,145.298
-wan,Faiwol (Dimtikin Dialect),,Nuclear Trans New Guinea,wɑn,yam,TransNewGuinea.org,,
-thbi,Faiwol (Lowbip Dialect),,Nuclear Trans New Guinea,tʰʌbi,yam,TransNewGuinea.org,,
-wandum,Faiwol (Selbang Dialect),,Nuclear Trans New Guinea,wɑndum,yam,TransNewGuinea.org,,
+wan,Faiwol (Dimtikin Dialect),#N/A,Nuclear Trans New Guinea,wɑn,yam,TransNewGuinea.org,#N/A,#N/A
+thbi,Faiwol (Lowbip Dialect),#N/A,Nuclear Trans New Guinea,tʰʌbi,yam,TransNewGuinea.org,#N/A,#N/A
+wandum,Faiwol (Selbang Dialect),#N/A,Nuclear Trans New Guinea,wɑndum,yam,TransNewGuinea.org,#N/A,#N/A
 ago,Fore,for,Nuclear Trans New Guinea,ágo,yam,TransNewGuinea.org,-6.64473,145.507
 araba,Fore,for,Nuclear Trans New Guinea,a:raba:,yam,TransNewGuinea.org,-6.64473,145.507
 obai,Gadsup,gaj,Nuclear Trans New Guinea,obai,yam,TransNewGuinea.org,-6.31631,145.997
@@ -547,8 +547,8 @@ kung,Ganglau,ggl,Nuclear Trans New Guinea,kuŋ,yam,TransNewGuinea.org,-5.57945,1
 mleg,Ganglau,ggl,Nuclear Trans New Guinea,mleg,yam,TransNewGuinea.org,-5.57945,146.13
 davel,Garus,gyb,Nuclear Trans New Guinea,davɛl,yam,TransNewGuinea.org,-4.9222,145.683
 igon,Garus,gyb,Nuclear Trans New Guinea,igon,yam,TransNewGuinea.org,-4.9222,145.683
-dibil,Gavak,,Nuclear Trans New Guinea,dibil,yam,TransNewGuinea.org,,
-kia,Gavak,,Nuclear Trans New Guinea,kia,yam,TransNewGuinea.org,,
+dibil,Gavak,#N/A,Nuclear Trans New Guinea,dibil,yam,TransNewGuinea.org,#N/A,#N/A
+kia,Gavak,#N/A,Nuclear Trans New Guinea,kia,yam,TransNewGuinea.org,#N/A,#N/A
 kambai,Gende,gaf,Nuclear Trans New Guinea,kambai,yam,TransNewGuinea.org,-5.67528,145.177
 kambai,Gende,gaf,Nuclear Trans New Guinea,kambai,yam,TransNewGuinea.org,-5.67528,145.177
 ago,Gimi,gim,Nuclear Trans New Guinea,ago,yam,TransNewGuinea.org,-6.42097,145.214
@@ -556,7 +556,7 @@ bor,Girawa,bbr,Nuclear Trans New Guinea,bɔːr,yam,TransNewGuinea.org,-5.35342,1
 mura,Girawa,bbr,Nuclear Trans New Guinea,mura,yam,TransNewGuinea.org,-5.35342,145.423
 malk,Gumalu,gmu,Nuclear Trans New Guinea,malʌk,yam,TransNewGuinea.org,-5.22189,145.618
 o,Gumalu,gmu,Nuclear Trans New Guinea,o,yam,TransNewGuinea.org,-5.22189,145.618
-hagu,Yagaria (Hua Dialect),,Nuclear Trans New Guinea,ha'gu,yam,TransNewGuinea.org,,
+hagu,Yagaria (Hua Dialect),#N/A,Nuclear Trans New Guinea,ha'gu,yam,TransNewGuinea.org,#N/A,#N/A
 avi,Inoke-Yate,ino,Nuclear Trans New Guinea,avi,yam,TransNewGuinea.org,-6.32311,145.539
 k,Isabi,isa,Nuclear Trans New Guinea,kʌ,yam,TransNewGuinea.org,-5.83809,145.462
 nmo,Isabi,isa,Nuclear Trans New Guinea,nʌːmo,yam,TransNewGuinea.org,-5.83809,145.462
@@ -576,10 +576,10 @@ mena,Kobol,kgu,Nuclear Trans New Guinea,mɛna,yam,TransNewGuinea.org,-4.79614,14
 soborom,Kobol,kgu,Nuclear Trans New Guinea,sobor̃om,yam,TransNewGuinea.org,-4.79614,145.284
 fonth,Kobon,kpw,Nuclear Trans New Guinea,ɸontʰ,yam,TransNewGuinea.org,-5.16446,144.46
 pod,Kobon,kpw,Nuclear Trans New Guinea,pöd,yam,TransNewGuinea.org,-5.16446,144.46
-nabo,Komba (Ândâ River Dialect),,Nuclear Trans New Guinea,nabo,yam,TransNewGuinea.org,,
-aako,Komba (Gwama River (North) Dialect),,Nuclear Trans New Guinea,aako,yam,TransNewGuinea.org,,
-nabo,Komba (Gwama River (South) Dialect),,Nuclear Trans New Guinea,nabo,yam,TransNewGuinea.org,,
-tambai,Komba (Puleng River Dialect),,Nuclear Trans New Guinea,tâmbâi,yam,TransNewGuinea.org,,
+nabo,Komba (Ândâ River Dialect),#N/A,Nuclear Trans New Guinea,nabo,yam,TransNewGuinea.org,#N/A,#N/A
+aako,Komba (Gwama River (North) Dialect),#N/A,Nuclear Trans New Guinea,aako,yam,TransNewGuinea.org,#N/A,#N/A
+nabo,Komba (Gwama River (South) Dialect),#N/A,Nuclear Trans New Guinea,nabo,yam,TransNewGuinea.org,#N/A,#N/A
+tambai,Komba (Puleng River Dialect),#N/A,Nuclear Trans New Guinea,tâmbâi,yam,TransNewGuinea.org,#N/A,#N/A
 sosonga,Korak,koz,Nuclear Trans New Guinea,sosoŋa,yam,TransNewGuinea.org,-4.5998,145.514
 wl,Korak,koz,Nuclear Trans New Guinea,wʌl,yam,TransNewGuinea.org,-4.5998,145.514
 mreb,Kowaki,xow,Nuclear Trans New Guinea,mʌrɛb,yam,TransNewGuinea.org,-4.63032,145.412
@@ -587,14 +587,14 @@ neizab,Kowaki,xow,Nuclear Trans New Guinea,neizab,yam,TransNewGuinea.org,-4.6303
 kom,Kuman,kue,Nuclear Trans New Guinea,kom,yam,TransNewGuinea.org,-5.90586,144.977
 amu,Kyaka,kyc,Nuclear Trans New Guinea,amu,yam,TransNewGuinea.org,-5.52462,144.119
 inapo,Lembena,leq,Nuclear Trans New Guinea,inapo,yam,TransNewGuinea.org,-4.99504,143.891
-inabo,Lembena (Maibi Dialect),,Nuclear Trans New Guinea,i'naβo,yam,TransNewGuinea.org,,
-jebera,Lembena (Yariba Dialect),,Nuclear Trans New Guinea,jɛ'βɛɽa,yam,TransNewGuinea.org,,
+inabo,Lembena (Maibi Dialect),#N/A,Nuclear Trans New Guinea,i'naβo,yam,TransNewGuinea.org,#N/A,#N/A
+jebera,Lembena (Yariba Dialect),#N/A,Nuclear Trans New Guinea,jɛ'βɛɽa,yam,TransNewGuinea.org,#N/A,#N/A
 kou,Lemio,lei,Nuclear Trans New Guinea,kou,yam,TransNewGuinea.org,-5.61407,146.441
 kuep,Lemio,lei,Nuclear Trans New Guinea,kuep,yam,TransNewGuinea.org,-5.61407,146.441
-kayab,Maia (Pila Dialect),,Nuclear Trans New Guinea,kayab,yam,TransNewGuinea.org,,
-wangay,Maia (Pila Dialect),,Nuclear Trans New Guinea,waŋay,yam,TransNewGuinea.org,,
-kayab,Maia (Saki Dialect),,Nuclear Trans New Guinea,kayab,yam,TransNewGuinea.org,,
-wanga,Maia (Saki Dialect),,Nuclear Trans New Guinea,waŋa,yam,TransNewGuinea.org,,
+kayab,Maia (Pila Dialect),#N/A,Nuclear Trans New Guinea,kayab,yam,TransNewGuinea.org,#N/A,#N/A
+wangay,Maia (Pila Dialect),#N/A,Nuclear Trans New Guinea,waŋay,yam,TransNewGuinea.org,#N/A,#N/A
+kayab,Maia (Saki Dialect),#N/A,Nuclear Trans New Guinea,kayab,yam,TransNewGuinea.org,#N/A,#N/A
+wanga,Maia (Saki Dialect),#N/A,Nuclear Trans New Guinea,waŋa,yam,TransNewGuinea.org,#N/A,#N/A
 r,Mala,ped,Nuclear Trans New Guinea,ʌr̃ʌ,yam,TransNewGuinea.org,-4.35889,145.04
 susogi,Mala,ped,Nuclear Trans New Guinea,susogi,yam,TransNewGuinea.org,-4.35889,145.04
 kibinem,Malas,mkr,Nuclear Trans New Guinea,kibinɛm,yam,TransNewGuinea.org,-4.76685,145.621
@@ -634,22 +634,22 @@ ibu,Musak,mmq,Nuclear Trans New Guinea,iːbʉ,yam,TransNewGuinea.org,-5.37407,14
 sabr,Musak,mmq,Nuclear Trans New Guinea,sabʌr,yam,TransNewGuinea.org,-5.37407,145.197
 hep,Musar,mmi,Nuclear Trans New Guinea,heʌp,yam,TransNewGuinea.org,-4.70258,145.413
 saneng,Musar,mmi,Nuclear Trans New Guinea,sa:neŋ,yam,TransNewGuinea.org,-4.70258,145.413
-mohoq,Nakame (Dzenzen Dialect),,Nuclear Trans New Guinea,mohoq,yam,TransNewGuinea.org,,
-tute,Nakame (Munguleng Dialect),,Nuclear Trans New Guinea,tu·te,yam,TransNewGuinea.org,,
-tute,Nakame (Popof Dialect),,Nuclear Trans New Guinea,tute,yam,TransNewGuinea.org,,
-miseak,Nakame (Sikalan Dialect),,Nuclear Trans New Guinea,mɨsɛak,yam,TransNewGuinea.org,,
-mohoq,Nakame (Sokan Dialect),,Nuclear Trans New Guinea,mohoq,yam,TransNewGuinea.org,,
-mohoq,Nakame (Wasin Dialect),,Nuclear Trans New Guinea,mohoq,yam,TransNewGuinea.org,,
+mohoq,Nakame (Dzenzen Dialect),#N/A,Nuclear Trans New Guinea,mohoq,yam,TransNewGuinea.org,#N/A,#N/A
+tute,Nakame (Munguleng Dialect),#N/A,Nuclear Trans New Guinea,tu·te,yam,TransNewGuinea.org,#N/A,#N/A
+tute,Nakame (Popof Dialect),#N/A,Nuclear Trans New Guinea,tute,yam,TransNewGuinea.org,#N/A,#N/A
+miseak,Nakame (Sikalan Dialect),#N/A,Nuclear Trans New Guinea,mɨsɛak,yam,TransNewGuinea.org,#N/A,#N/A
+mohoq,Nakame (Sokan Dialect),#N/A,Nuclear Trans New Guinea,mohoq,yam,TransNewGuinea.org,#N/A,#N/A
+mohoq,Nakame (Wasin Dialect),#N/A,Nuclear Trans New Guinea,mohoq,yam,TransNewGuinea.org,#N/A,#N/A
 o,Nake,nbk,Nuclear Trans New Guinea,ʔo,yam,TransNewGuinea.org,-5.09087,145.655
 savel,Nake,nbk,Nuclear Trans New Guinea,savɛl,yam,TransNewGuinea.org,-5.09087,145.655
-tot,Nek (Goambot Dialect),,Nuclear Trans New Guinea,tot,yam,TransNewGuinea.org,,
+tot,Nek (Goambot Dialect),#N/A,Nuclear Trans New Guinea,tot,yam,TransNewGuinea.org,#N/A,#N/A
 awije,Nend,anh,Nuclear Trans New Guinea,awije,yam,TransNewGuinea.org,-5.04271,144.886
 unsa,Nend,anh,Nuclear Trans New Guinea,unsa,yam,TransNewGuinea.org,-5.04271,144.886
 unza,Nend,anh,Nuclear Trans New Guinea,unʑa,yam,TransNewGuinea.org,-5.04271,144.886
 au,Nobonob,gaw,Nuclear Trans New Guinea,au,yam,TransNewGuinea.org,-5.06952,145.712
 daber,Nobonob,gaw,Nuclear Trans New Guinea,dabɛr̃,yam,TransNewGuinea.org,-5.06952,145.712
-namb@t,Nuk (Tamben Dialect),,Nuclear Trans New Guinea,nɑmbət,yam,TransNewGuinea.org,,
-n@mbet,Nuk (Tunam Dialect),,Nuclear Trans New Guinea,nəmbɛt,yam,TransNewGuinea.org,,
+namb@t,Nuk (Tamben Dialect),#N/A,Nuclear Trans New Guinea,nɑmbət,yam,TransNewGuinea.org,#N/A,#N/A
+n@mbet,Nuk (Tunam Dialect),#N/A,Nuclear Trans New Guinea,nəmbɛt,yam,TransNewGuinea.org,#N/A,#N/A
 hambi,Ogea,eri,Nuclear Trans New Guinea,ha:mbi,yam,TransNewGuinea.org,-5.37766,145.71
 mona,Ogea,eri,Nuclear Trans New Guinea,moña,yam,TransNewGuinea.org,-5.37766,145.71
 me,Pal,abw,Nuclear Trans New Guinea,mɛ,yam,TransNewGuinea.org,-4.756,145.24
@@ -663,17 +663,17 @@ koutu,Parawen,prw,Nuclear Trans New Guinea,koutu,yam,TransNewGuinea.org,-5.0112,
 saburama,Parawen,prw,Nuclear Trans New Guinea,sabura:ma,yam,TransNewGuinea.org,-5.0112,145.418
 agati,Paynamar,pmr,Nuclear Trans New Guinea,agati,yam,TransNewGuinea.org,-4.94303,144.879
 unza,Paynamar,pmr,Nuclear Trans New Guinea,unza,yam,TransNewGuinea.org,-4.94303,144.879
-kunza,Proto-Central-Sogeram,,Nuclear Trans New Guinea,*kunza,yam,TransNewGuinea.org,,
-kou,Proto-Croisilles,,Nuclear Trans New Guinea,*kou,yam,TransNewGuinea.org,,
-sambi,Proto-Croisilles,,Nuclear Trans New Guinea,*sambi,yam,TransNewGuinea.org,,
-kau,Proto-Mabuso,,Nuclear Trans New Guinea,*kau,yam,TransNewGuinea.org,,
-kou,Proto-Rai-Coast,,Nuclear Trans New Guinea,*kou,yam,TransNewGuinea.org,,
-sabi,Proto-Rai-Coast,,Nuclear Trans New Guinea,*sabi,yam,TransNewGuinea.org,,
-sambi,Proto-Rai-Coast,,Nuclear Trans New Guinea,*sambi,yam,TransNewGuinea.org,,
-kunsa,Proto-Sogeram,,Nuclear Trans New Guinea,*kunsa,yam,TransNewGuinea.org,,
-nambara,Proto-South-Adelbert,,Nuclear Trans New Guinea,*ñambara,yam,TransNewGuinea.org,,
-isiab,Proto-Tibor-Omosa,,Nuclear Trans New Guinea,*isiab,yam,TransNewGuinea.org,,
-unsa,Proto-Western-Sogeram,,Nuclear Trans New Guinea,*unsa,yam,TransNewGuinea.org,,
+kunza,Proto-Central-Sogeram,#N/A,Nuclear Trans New Guinea,*kunza,yam,TransNewGuinea.org,#N/A,#N/A
+kou,Proto-Croisilles,#N/A,Nuclear Trans New Guinea,*kou,yam,TransNewGuinea.org,#N/A,#N/A
+sambi,Proto-Croisilles,#N/A,Nuclear Trans New Guinea,*sambi,yam,TransNewGuinea.org,#N/A,#N/A
+kau,Proto-Mabuso,#N/A,Nuclear Trans New Guinea,*kau,yam,TransNewGuinea.org,#N/A,#N/A
+kou,Proto-Rai-Coast,#N/A,Nuclear Trans New Guinea,*kou,yam,TransNewGuinea.org,#N/A,#N/A
+sabi,Proto-Rai-Coast,#N/A,Nuclear Trans New Guinea,*sabi,yam,TransNewGuinea.org,#N/A,#N/A
+sambi,Proto-Rai-Coast,#N/A,Nuclear Trans New Guinea,*sambi,yam,TransNewGuinea.org,#N/A,#N/A
+kunsa,Proto-Sogeram,#N/A,Nuclear Trans New Guinea,*kunsa,yam,TransNewGuinea.org,#N/A,#N/A
+nambara,Proto-South-Adelbert,#N/A,Nuclear Trans New Guinea,*ñambara,yam,TransNewGuinea.org,#N/A,#N/A
+isiab,Proto-Tibor-Omosa,#N/A,Nuclear Trans New Guinea,*isiab,yam,TransNewGuinea.org,#N/A,#N/A
+unsa,Proto-Western-Sogeram,#N/A,Nuclear Trans New Guinea,*unsa,yam,TransNewGuinea.org,#N/A,#N/A
 kamu,Pulabu,pup,Nuclear Trans New Guinea,ka:mu,yam,TransNewGuinea.org,-5.59558,145.738
 munggli,Pulabu,pup,Nuclear Trans New Guinea,muŋgʌli,yam,TransNewGuinea.org,-5.59558,145.738
 igon,Rapting,rpt,Nuclear Trans New Guinea,igon,yam,TransNewGuinea.org,-4.99351,145.671
@@ -686,21 +686,21 @@ kung,Saep,spd,Nuclear Trans New Guinea,kuŋ,yam,TransNewGuinea.org,-5.64812,146.
 maleg,Saep,spd,Nuclear Trans New Guinea,malɛg,yam,TransNewGuinea.org,-5.64812,146.078
 alam,Sam,snx,Nuclear Trans New Guinea,alam,yam,TransNewGuinea.org,-5.55572,145.813
 sambi,Sam,snx,Nuclear Trans New Guinea,sambi,yam,TransNewGuinea.org,-5.55572,145.813
-sambi,Sam (Buan Dialect),,Nuclear Trans New Guinea,sambi,yam,TransNewGuinea.org,,
-sambi,Sam (Songum Dialect),,Nuclear Trans New Guinea,sambi,yam,TransNewGuinea.org,,
-sambi,Sam (Wongbe Dialect),,Nuclear Trans New Guinea,sambi,yam,TransNewGuinea.org,,
+sambi,Sam (Buan Dialect),#N/A,Nuclear Trans New Guinea,sambi,yam,TransNewGuinea.org,#N/A,#N/A
+sambi,Sam (Songum Dialect),#N/A,Nuclear Trans New Guinea,sambi,yam,TransNewGuinea.org,#N/A,#N/A
+sambi,Sam (Wongbe Dialect),#N/A,Nuclear Trans New Guinea,sambi,yam,TransNewGuinea.org,#N/A,#N/A
 ara,Samosa,swm,Nuclear Trans New Guinea,ara,yam,TransNewGuinea.org,-5.01391,145.537
 gere,Samosa,swm,Nuclear Trans New Guinea,gere,yam,TransNewGuinea.org,-5.01391,145.537
 o,Saruga,sra,Nuclear Trans New Guinea,o,yam,TransNewGuinea.org,-5.08824,145.578
 savela,Saruga,sra,Nuclear Trans New Guinea,savela,yam,TransNewGuinea.org,-5.08824,145.578
 nbo,Sausi,ssj,Nuclear Trans New Guinea,nʌːbo,yam,TransNewGuinea.org,-5.6873,145.492
 ou,Sausi,ssj,Nuclear Trans New Guinea,ou,yam,TransNewGuinea.org,-5.6873,145.492
-wan,Setaman (Baktamin Dialect),,Nuclear Trans New Guinea,wɑn,yam,TransNewGuinea.org,,
-dakas,Setaman (Ngisokabip Dialect),,Nuclear Trans New Guinea,dɑkɑs,yam,TransNewGuinea.org,,
-dakas,Setaman (Seltamin Dialect),,Nuclear Trans New Guinea,dɑkɑs,yam,TransNewGuinea.org,,
+wan,Setaman (Baktamin Dialect),#N/A,Nuclear Trans New Guinea,wɑn,yam,TransNewGuinea.org,#N/A,#N/A
+dakas,Setaman (Ngisokabip Dialect),#N/A,Nuclear Trans New Guinea,dɑkɑs,yam,TransNewGuinea.org,#N/A,#N/A
+dakas,Setaman (Seltamin Dialect),#N/A,Nuclear Trans New Guinea,dɑkɑs,yam,TransNewGuinea.org,#N/A,#N/A
 ka,Siane,snp,Nuclear Trans New Guinea,ka,yam,TransNewGuinea.org,-6.13188,145.247
 ka,Siane,snp,Nuclear Trans New Guinea,ká,yam,TransNewGuinea.org,-6.13188,145.247
-gasa,Siane (Kovena Dialect),,Nuclear Trans New Guinea,gasa,yam,TransNewGuinea.org,,
+gasa,Siane (Kovena Dialect),#N/A,Nuclear Trans New Guinea,gasa,yam,TransNewGuinea.org,#N/A,#N/A
 mark,Sihan,snr,Nuclear Trans New Guinea,marʌk,yam,TransNewGuinea.org,-5.28029,145.574
 o,Sihan,snr,Nuclear Trans New Guinea,ʔo,yam,TransNewGuinea.org,-5.28029,145.574
 siwr,Sihan,snr,Nuclear Trans New Guinea,siwʌr,yam,TransNewGuinea.org,-5.28029,145.574
@@ -725,8 +725,8 @@ onamo,Tauya,tya,Nuclear Trans New Guinea,onamo,yam,TransNewGuinea.org,-5.74255,1
 gasa,Tokano,zuh,Nuclear Trans New Guinea,ǥasa,yam,TransNewGuinea.org,-6.05047,145.298
 kea,Ukuriguma,ukg,Nuclear Trans New Guinea,kea,yam,TransNewGuinea.org,-4.94407,145.514
 zaberam,Ukuriguma,ukg,Nuclear Trans New Guinea,zaberam,yam,TransNewGuinea.org,-4.94407,145.514
-dang,Uri (Siara Dialect),,Nuclear Trans New Guinea,dɑŋ,yam,TransNewGuinea.org,,
-dang,Uri (Sintogoro Dialect),,Nuclear Trans New Guinea,dɑŋ,yam,TransNewGuinea.org,,
+dang,Uri (Siara Dialect),#N/A,Nuclear Trans New Guinea,dɑŋ,yam,TransNewGuinea.org,#N/A,#N/A
+dang,Uri (Sintogoro Dialect),#N/A,Nuclear Trans New Guinea,dɑŋ,yam,TransNewGuinea.org,#N/A,#N/A
 dembere,Urigina,urg,Nuclear Trans New Guinea,dɛːmbɛrɛ,yam,TransNewGuinea.org,-5.58982,145.507
 kome,Urigina,urg,Nuclear Trans New Guinea,ko:me,yam,TransNewGuinea.org,-5.58982,145.507
 mni,Usan,wnu,Nuclear Trans New Guinea,mʌni,yam,TransNewGuinea.org,-4.84265,145.362
@@ -737,42 +737,42 @@ kakr,Utu,utu,Nuclear Trans New Guinea,kakʌr,yam,TransNewGuinea.org,-5.16422,145
 o,Utu,utu,Nuclear Trans New Guinea,ʔo,yam,TransNewGuinea.org,-5.16422,145.544
 murk,Uya,usu,Nuclear Trans New Guinea,murʌk,yam,TransNewGuinea.org,-5.32246,145.47
 muru,Uya,usu,Nuclear Trans New Guinea,muru,yam,TransNewGuinea.org,-5.32246,145.47
-sabi,Uyajitaya,,Nuclear Trans New Guinea,sa:bi,yam,TransNewGuinea.org,,
-simbo,Uyajitaya,,Nuclear Trans New Guinea,simbo,yam,TransNewGuinea.org,,
-wta,Uyajitaya,,Nuclear Trans New Guinea,wʌta,yam,TransNewGuinea.org,,
-yagiya,Uyajitaya,,Nuclear Trans New Guinea,yagiya,yam,TransNewGuinea.org,,
-sabi,Uyajitaya (Didiwala Dialect),,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,,
-sabi,Uyajitaya (Gisi Dialect),,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,,
-sabi,Uyajitaya (Palipa Dialect),,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,,
-sabi,Uyajitaya (Subalulu Dialect),,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,,
-sabi,Uyajitaya (Udibai Dialect),,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,,
-sabi,Uyajitaya (Uya Dialect),,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,,
+sabi,Uyajitaya,#N/A,Nuclear Trans New Guinea,sa:bi,yam,TransNewGuinea.org,#N/A,#N/A
+simbo,Uyajitaya,#N/A,Nuclear Trans New Guinea,simbo,yam,TransNewGuinea.org,#N/A,#N/A
+wta,Uyajitaya,#N/A,Nuclear Trans New Guinea,wʌta,yam,TransNewGuinea.org,#N/A,#N/A
+yagiya,Uyajitaya,#N/A,Nuclear Trans New Guinea,yagiya,yam,TransNewGuinea.org,#N/A,#N/A
+sabi,Uyajitaya (Didiwala Dialect),#N/A,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,#N/A,#N/A
+sabi,Uyajitaya (Gisi Dialect),#N/A,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,#N/A,#N/A
+sabi,Uyajitaya (Palipa Dialect),#N/A,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,#N/A,#N/A
+sabi,Uyajitaya (Subalulu Dialect),#N/A,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,#N/A,#N/A
+sabi,Uyajitaya (Udibai Dialect),#N/A,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,#N/A,#N/A
+sabi,Uyajitaya (Uya Dialect),#N/A,Nuclear Trans New Guinea,sɑbi,yam,TransNewGuinea.org,#N/A,#N/A
 nangnggpimp,Wadaginam,wdg,Nuclear Trans New Guinea,naŋʌːŋgᵊpɨmp,yam,TransNewGuinea.org,-4.52754,144.972
 wagminip,Wadaginam,wdg,Nuclear Trans New Guinea,waɣᵊmɨnɨp,yam,TransNewGuinea.org,-4.52754,144.972
 dawaer,Wagi,fad,Nuclear Trans New Guinea,dawær,yam,TransNewGuinea.org,-5.17834,145.726
 ka,Wagi,fad,Nuclear Trans New Guinea,ka,yam,TransNewGuinea.org,-5.17834,145.726
-daver,Wagi (Foran Dialect),,Nuclear Trans New Guinea,davɛr,yam,TransNewGuinea.org,,
-daver,Wagi (Kamba Dialect),,Nuclear Trans New Guinea,davɛr,yam,TransNewGuinea.org,,
-daver,Wagi (Kauris Dialect),,Nuclear Trans New Guinea,davɛr,yam,TransNewGuinea.org,,
-daver,Wagi (Mis Dialect),,Nuclear Trans New Guinea,davɛr,yam,TransNewGuinea.org,,
-daver,Wagi (Silibob Dialect),,Nuclear Trans New Guinea,davɛr,yam,TransNewGuinea.org,,
+daver,Wagi (Foran Dialect),#N/A,Nuclear Trans New Guinea,davɛr,yam,TransNewGuinea.org,#N/A,#N/A
+daver,Wagi (Kamba Dialect),#N/A,Nuclear Trans New Guinea,davɛr,yam,TransNewGuinea.org,#N/A,#N/A
+daver,Wagi (Kauris Dialect),#N/A,Nuclear Trans New Guinea,davɛr,yam,TransNewGuinea.org,#N/A,#N/A
+daver,Wagi (Mis Dialect),#N/A,Nuclear Trans New Guinea,davɛr,yam,TransNewGuinea.org,#N/A,#N/A
+daver,Wagi (Silibob Dialect),#N/A,Nuclear Trans New Guinea,davɛr,yam,TransNewGuinea.org,#N/A,#N/A
 pr,Wamas,wmc,Nuclear Trans New Guinea,pʌrʌ,yam,TransNewGuinea.org,-4.97757,145.541
 sabir,Wamas,wmc,Nuclear Trans New Guinea,sabir,yam,TransNewGuinea.org,-4.97757,145.541
 kaut,Wanambre,wnb,Nuclear Trans New Guinea,kaut,yam,TransNewGuinea.org,-4.78822,145.419
 kiya,Wanambre,wnb,Nuclear Trans New Guinea,kiya,yam,TransNewGuinea.org,-4.78822,145.419
 kirang,Waskia,wsk,Nuclear Trans New Guinea,ki:raŋ,yam,TransNewGuinea.org,-4.57978,145.979
 ulang,Waskia,wsk,Nuclear Trans New Guinea,u:laŋ,yam,TransNewGuinea.org,-4.57978,145.979
-ku,Watiwa,,Nuclear Trans New Guinea,ku,yam,TransNewGuinea.org,,
-kweie,Watiwa,,Nuclear Trans New Guinea,kwɛie,yam,TransNewGuinea.org,,
-soira,Waube,,Nuclear Trans New Guinea,soira,yam,TransNewGuinea.org,,
-yakia,Waube,,Nuclear Trans New Guinea,yakia,yam,TransNewGuinea.org,,
+ku,Watiwa,#N/A,Nuclear Trans New Guinea,ku,yam,TransNewGuinea.org,#N/A,#N/A
+kweie,Watiwa,#N/A,Nuclear Trans New Guinea,kwɛie,yam,TransNewGuinea.org,#N/A,#N/A
+soira,Waube,#N/A,Nuclear Trans New Guinea,soira,yam,TransNewGuinea.org,#N/A,#N/A
+yakia,Waube,#N/A,Nuclear Trans New Guinea,yakia,yam,TransNewGuinea.org,#N/A,#N/A
 mi,Yaben,ybm,Nuclear Trans New Guinea,mi,yam,TransNewGuinea.org,-4.90868,145.361
 zabulamu,Yaben,ybm,Nuclear Trans New Guinea,zabula:mu,yam,TransNewGuinea.org,-4.90868,145.361
 kung,Yabong,ybo,Nuclear Trans New Guinea,kuŋ,yam,TransNewGuinea.org,-5.61718,146.206
 muleg,Yabong,ybo,Nuclear Trans New Guinea,muleg,yam,TransNewGuinea.org,-5.61718,146.206
 hago,Yagaria,ygr,Nuclear Trans New Guinea,hagó,yam,TransNewGuinea.org,-6.32432,145.388
-hgo,Yagaria (Hira Dialect),,Nuclear Trans New Guinea,hᵊǥo,yam,TransNewGuinea.org,,
-hgo,Yagaria (Hira Dialect),,Nuclear Trans New Guinea,hᵊǥo,yam,TransNewGuinea.org,,
+hgo,Yagaria (Hira Dialect),#N/A,Nuclear Trans New Guinea,hᵊǥo,yam,TransNewGuinea.org,#N/A,#N/A
+hgo,Yagaria (Hira Dialect),#N/A,Nuclear Trans New Guinea,hᵊǥo,yam,TransNewGuinea.org,#N/A,#N/A
 berang,Yangulam,ynl,Nuclear Trans New Guinea,bẽraŋ,yam,TransNewGuinea.org,-5.52697,145.858
 oo,Yangulam,ynl,Nuclear Trans New Guinea,oo,yam,TransNewGuinea.org,-5.52697,145.858
 ki,Yarawata,yrw,Nuclear Trans New Guinea,kiʌ,yam,TransNewGuinea.org,-4.93943,145.454
@@ -782,12 +782,12 @@ di,Yoidik,ydk,Nuclear Trans New Guinea,di,yam,TransNewGuinea.org,-4.94044,145.75
 igon,Yoidik,ydk,Nuclear Trans New Guinea,igon,yam,TransNewGuinea.org,-4.94044,145.758
 baei,Odiai,bhf,Odiai,bæi,yam,TransNewGuinea.org,-3.82276,141.336
 upuru,Papi,ppe,Papi,upuřu,yam,TransNewGuinea.org,-4.4725,142.011
-hesi,Pinai-Hagahai (Aramo Dialect),,Piawi,hɛ'si,yam,TransNewGuinea.org,,
+hesi,Pinai-Hagahai (Aramo Dialect),#N/A,Piawi,hɛ'si,yam,TransNewGuinea.org,#N/A,#N/A
 hb@l,Haruai,tmd,Piawi,hʌb̶əľ,yam,TransNewGuinea.org,-5.09522,144.337
-esi,Pinai-Hagahai (Nangenuwetan Dialect),,Piawi,ɛ'si,yam,TransNewGuinea.org,,
-dzua,Pinai-Hagahai (Wakadadap Dialect),,Piawi,d̮ʑu'a,yam,TransNewGuinea.org,,
-hawil,Haruai (Wiyaw Dialect),,Piawi,ha'wɨɬ,yam,TransNewGuinea.org,,
-titu,Hiri Motu,,Pidgin,tʌɩtu,yam,TransNewGuinea.org,,
+esi,Pinai-Hagahai (Nangenuwetan Dialect),#N/A,Piawi,ɛ'si,yam,TransNewGuinea.org,#N/A,#N/A
+dzua,Pinai-Hagahai (Wakadadap Dialect),#N/A,Piawi,d̮ʑu'a,yam,TransNewGuinea.org,#N/A,#N/A
+hawil,Haruai (Wiyaw Dialect),#N/A,Piawi,ha'wɨɬ,yam,TransNewGuinea.org,#N/A,#N/A
+titu,Hiri Motu,#N/A,Pidgin,tʌɩtu,yam,TransNewGuinea.org,#N/A,#N/A
 wapi,Pyu,pby,Pyu,waᵽi,yam,TransNewGuinea.org,-4.45003,141.018
 maspath,Alamblak,amp,Sepik,mašpatʰ,yam,TransNewGuinea.org,-4.66307,143.316
 pap,Berinomo,bit,Sepik,pap,yam,TransNewGuinea.org,-4.41689,142.463
@@ -799,16 +799,16 @@ ngai,Yetfa,yet,Yetfa,ngai,yam,TransNewGuinea.org,-4.05884,140.653
 fguin,Biwat,bwm,Yuat,fguin,yam,TransNewGuinea.org,-4.39429,143.873
 fuin,Biwat,bwm,Yuat,fuin,yam,TransNewGuinea.org,-4.39429,143.873
 vrak,Biwat,bwm,Yuat,vrak,yam,TransNewGuinea.org,-4.39429,143.873
-bin,Kyenele (Kyaimbarang Dialect),,Yuat,βɨɲ,yam,TransNewGuinea.org,,
-waiak,Kyenele (Miyak Dialect),,Yuat,waǏak,yam,TransNewGuinea.org,,
+bin,Kyenele (Kyaimbarang Dialect),#N/A,Yuat,βɨɲ,yam,TransNewGuinea.org,#N/A,#N/A
+waiak,Kyenele (Miyak Dialect),#N/A,Yuat,waǏak,yam,TransNewGuinea.org,#N/A,#N/A
 ,Anmatyerre,amx,Pama-Nyungan,anac,yam,Chirila,-22.2853,133.286
 ,Alyawarr,aly,Pama-Nyungan,anac,yam,Chirila,-21.0427,136.835
-,Western Arrarnte,,Pama-Nyungan,lacia,yam,Chirila,,
+,Western Arrarnte,#N/A,Pama-Nyungan,lacia,yam,Chirila,#N/A,#N/A
 ,Warumungu,wrm,Pama-Nyungan,manaci,yam,Chirila,-20.6479,134.375
 ,Walmajarri,wmt,Pama-Nyungan,ciriʎpaca,yam,Chirila,-19.7229,126.113
 ,Ngaanyatjarra,ntj,Pama-Nyungan,puʎku,yam,Chirila,-25.7514,127.602
 ,Gamilaraay,kld,Pama-Nyungan,n̪aːl,yam,Chirila,-29.9037,149.543
-,Yuwaalaraay,,Pama-Nyungan,kutukaː,yam,Chirila,,
+,Yuwaalaraay,#N/A,Pama-Nyungan,kutukaː,yam,Chirila,#N/A,#N/A
 ,Anmatyerre,amx,Pama-Nyungan,anac,yam,Chirila,-22.2853,133.286
 ,Alyawarr,aly,Pama-Nyungan,anac,yam,Chirila,-21.0427,136.835
 ,Warumungu,wrm,Pama-Nyungan,manaci,yam,Chirila,-20.6479,134.375
@@ -825,65 +825,65 @@ waiak,Kyenele (Miyak Dialect),,Yuat,waǏak,yam,TransNewGuinea.org,,
 ,Ngaanyatjarra,ntj,Pama-Nyungan,paʎamunuriŋku,yam,Chirila,-25.7514,127.602
 ,Ngaanyatjarra,ntj,Pama-Nyungan,wiŋaɳjiri,yam,Chirila,-25.7514,127.602
 ,Ngaanyatjarra,ntj,Pama-Nyungan,waʎkumunu,yam,Chirila,-25.7514,127.602
-,Yuwaaliyaay,,Pama-Nyungan,kukumat̪araː,yam,Chirila,,
-,Mithaka,,Pama-Nyungan,muciɹi,yam,Chirila,,
-,Kuuk Thaayorre,,Pama-Nyungan,wanc,yam,Chirila,,
-,Yirrk-Thangalkl,,Pama-Nyungan,waɲcəpə,yam,Chirila,,
-,Koko-Bera,,Pama-Nyungan,waɲcəpəŋ,yam,Chirila,,
-,Yir-Yoront,,Pama-Nyungan,waɲcəw,yam,Chirila,,
+,Yuwaaliyaay,#N/A,Pama-Nyungan,kukumat̪araː,yam,Chirila,#N/A,#N/A
+,Mithaka,#N/A,Pama-Nyungan,muciɹi,yam,Chirila,#N/A,#N/A
+,Kuuk Thaayorre,#N/A,Pama-Nyungan,wanc,yam,Chirila,#N/A,#N/A
+,Yirrk-Thangalkl,#N/A,Pama-Nyungan,waɲcəpə,yam,Chirila,#N/A,#N/A
+,Koko-Bera,#N/A,Pama-Nyungan,waɲcəpəŋ,yam,Chirila,#N/A,#N/A
+,Yir-Yoront,#N/A,Pama-Nyungan,waɲcəw,yam,Chirila,#N/A,#N/A
 ,Bardi,bcj,Nyulnyulan,aːɲcu,yam,Chirila,-16.6274,122.906
 ,Yanyuwa,jao,Pama-Nyungan,waɲcija,yam,Chirila,-15.7621,136.055
-,Proto-WesternCYP,,Pama-Nyungan,waɲcV,yam,Chirila,,
-,Kalkatungu,,Pama-Nyungan,ŋkaː,yam,Chirila,,
+,Proto-WesternCYP,#N/A,Pama-Nyungan,waɲcV,yam,Chirila,#N/A,#N/A
+,Kalkatungu,#N/A,Pama-Nyungan,ŋkaː,yam,Chirila,#N/A,#N/A
 ,Yalarnnga,ylr,Pama-Nyungan,jaŋkata,yam,Chirila,-21.731,139.511
-,Warluwarra,,Pama-Nyungan,ŋuɳma,yam,Chirila,,
-,Nhirrpi,hrp,Pama-Nyungan,kadɹa,yam,Chirila,,
-,Malyangapa,yga,Pama-Nyungan,ŋampiɾu,yam,Chirila,,
-,Kalkatungu,,Pama-Nyungan,makura,yam,Chirila,,
-,Kalkatungu,,Pama-Nyungan,ŋat̪a,yam,Chirila,,
-,Kalkatungu,,Pama-Nyungan,ŋkaː,yam,Chirila,,
+,Warluwarra,#N/A,Pama-Nyungan,ŋuɳma,yam,Chirila,#N/A,#N/A
+,Nhirrpi,hrp,Pama-Nyungan,kadɹa,yam,Chirila,#N/A,#N/A
+,Malyangapa,yga,Pama-Nyungan,ŋampiɾu,yam,Chirila,#N/A,#N/A
+,Kalkatungu,#N/A,Pama-Nyungan,makura,yam,Chirila,#N/A,#N/A
+,Kalkatungu,#N/A,Pama-Nyungan,ŋat̪a,yam,Chirila,#N/A,#N/A
+,Kalkatungu,#N/A,Pama-Nyungan,ŋkaː,yam,Chirila,#N/A,#N/A
 ,Yalarnnga,ylr,Pama-Nyungan,ŋkaː,yam,Chirila,-21.731,139.511
 ,Yalarnnga,ylr,Pama-Nyungan,ŋkara,yam,Chirila,-21.731,139.511
 ,Yalarnnga,ylr,Pama-Nyungan,jaŋkata,yam,Chirila,-21.731,139.511
-,Kungardutyi,gdt,Pama-Nyungan,n̪undri,yam,Chirila,,
-,Pitta-Pitta,,Pama-Nyungan,t̪intama,yam,Chirila,,
-,Pirriya,xpa,Pama-Nyungan,macadi,yam,Chirila,,
-,Kungkari,lku,Pama-Nyungan,macipiRi,yam,Chirila,,
-,Malyangapa,yga,Pama-Nyungan,n̪ant̪uru,yam,Chirila,,
+,Kungardutyi,gdt,Pama-Nyungan,n̪undri,yam,Chirila,#N/A,#N/A
+,Pitta-Pitta,#N/A,Pama-Nyungan,t̪intama,yam,Chirila,#N/A,#N/A
+,Pirriya,xpa,Pama-Nyungan,macadi,yam,Chirila,#N/A,#N/A
+,Kungkari,lku,Pama-Nyungan,macipiRi,yam,Chirila,#N/A,#N/A
+,Malyangapa,yga,Pama-Nyungan,n̪ant̪uru,yam,Chirila,#N/A,#N/A
 ,Yandruwandha,ynd,Pama-Nyungan,kaɖɹa,yam,Chirila,-28.4744,140.583
 ,Yandruwandha,ynd,Pama-Nyungan,t̪imbilci,yam,Chirila,-28.4744,140.583
-,Wangkumara,xwk,Pama-Nyungan,d̪awu,yam,Chirila,,
-,Wangkumara,xwk,Pama-Nyungan,n̪undɹi,yam,Chirila,,
-,Wangkayutyuru,wky,Pama-Nyungan,pitapadi,yam,Chirila,,
-,Wangkayutyuru,wky,Pama-Nyungan,t̪int̪ama,yam,Chirila,,
-,Wadjalang,,Pama-Nyungan,gua,yam,Chirila,,
-,Kungkari,lku,Pama-Nyungan,uwa,yam,Chirila,,
-,Pirriya,xpa,Pama-Nyungan,wagila,yam,Chirila,,
-,Wadjabangayi,wdy,Pama-Nyungan,kawu,yam,Chirila,,
+,Wangkumara,xwk,Pama-Nyungan,d̪awu,yam,Chirila,#N/A,#N/A
+,Wangkumara,xwk,Pama-Nyungan,n̪undɹi,yam,Chirila,#N/A,#N/A
+,Wangkayutyuru,wky,Pama-Nyungan,pitapadi,yam,Chirila,#N/A,#N/A
+,Wangkayutyuru,wky,Pama-Nyungan,t̪int̪ama,yam,Chirila,#N/A,#N/A
+,Wadjalang,#N/A,Pama-Nyungan,gua,yam,Chirila,#N/A,#N/A
+,Kungkari,lku,Pama-Nyungan,uwa,yam,Chirila,#N/A,#N/A
+,Pirriya,xpa,Pama-Nyungan,wagila,yam,Chirila,#N/A,#N/A
+,Wadjabangayi,wdy,Pama-Nyungan,kawu,yam,Chirila,#N/A,#N/A
 ,Yorta Yorta,xyy,Pama-Nyungan,majila,yam,Chirila,-35.9,145.01
-,Mithaka,,Pama-Nyungan,muciɹi,yam,Chirila,,
-,Punthamara,xpt,Pama-Nyungan,nundɹi,yam,Chirila,,
-,WTSWestern TorresMabuiag,,Pama-NyunganPama-NyunganPama-Nyungan,boa,yam,Chirila,,
-,Wangkumara,xwk,Pama-Nyungan,nundɹi,yam,Chirila,,
+,Mithaka,#N/A,Pama-Nyungan,muciɹi,yam,Chirila,#N/A,#N/A
+,Punthamara,xpt,Pama-Nyungan,nundɹi,yam,Chirila,#N/A,#N/A
+,WTSWestern TorresMabuiag,#N/A,Pama-NyunganPama-NyunganPama-Nyungan,boa,yam,Chirila,#N/A,#N/A
+,Wangkumara,xwk,Pama-Nyungan,nundɹi,yam,Chirila,#N/A,#N/A
 ,Ngamini,nmv,Pama-Nyungan,mucaɾi,yam,Chirila,-27.1797,138.701
-,Dharawala,,Pama-Nyungan,kuwa,yam,Chirila,,
-,Wadjabangayi,wdy,Pama-Nyungan,kawu,yam,Chirila,,
-,WTSWestern TorresMabuiag,,Pama-NyunganPama-NyunganPama-Nyungan,ketai,yam,Chirila,,
-,WTSWestern TorresMabuiag,,Pama-NyunganPama-NyunganPama-Nyungan,bud,yam,Chirila,,
-,WTSWestern TorresMabuiag,,Pama-NyunganPama-NyunganPama-Nyungan,deabu,yam,Chirila,,
-,WTSWestern TorresMabuiag,,Pama-NyunganPama-NyunganPama-Nyungan,naguai,yam,Chirila,,
-,WTSWestern TorresMabuiag,,Pama-NyunganPama-NyunganPama-Nyungan,nagu-utui,yam,Chirila,,
-,Karajarri,,Pama-Nyungan,pilicinataɲ,yam,Chirila,,
-,Karajarri,,Pama-Nyungan,pilicunataɲ,yam,Chirila,,
+,Dharawala,#N/A,Pama-Nyungan,kuwa,yam,Chirila,#N/A,#N/A
+,Wadjabangayi,wdy,Pama-Nyungan,kawu,yam,Chirila,#N/A,#N/A
+,WTSWestern TorresMabuiag,#N/A,Pama-NyunganPama-NyunganPama-Nyungan,ketai,yam,Chirila,#N/A,#N/A
+,WTSWestern TorresMabuiag,#N/A,Pama-NyunganPama-NyunganPama-Nyungan,bud,yam,Chirila,#N/A,#N/A
+,WTSWestern TorresMabuiag,#N/A,Pama-NyunganPama-NyunganPama-Nyungan,deabu,yam,Chirila,#N/A,#N/A
+,WTSWestern TorresMabuiag,#N/A,Pama-NyunganPama-NyunganPama-Nyungan,naguai,yam,Chirila,#N/A,#N/A
+,WTSWestern TorresMabuiag,#N/A,Pama-NyunganPama-NyunganPama-Nyungan,nagu-utui,yam,Chirila,#N/A,#N/A
+,Karajarri,#N/A,Pama-Nyungan,pilicinataɲ,yam,Chirila,#N/A,#N/A
+,Karajarri,#N/A,Pama-Nyungan,pilicunataɲ,yam,Chirila,#N/A,#N/A
 ,Walmajarri,wmt,Pama-Nyungan,kanti,yam,Chirila,-19.7229,126.113
 ,Gupapuyngu,guf,Pama-Nyungan,man̪muŋa,yam,Chirila,-12.2868,135.337
 ,Gupapuyngu,guf,Pama-Nyungan,ɟitama,yam,Chirila,-12.2868,135.337
-,unknown[imported from language list; to check],,Pama-Nyungan,ɟitama,yam,Chirila,,
+,unknown[imported from language list; to check],#N/A,Pama-Nyungan,ɟitama,yam,Chirila,#N/A,#N/A
 ,Gumatj,gnn,Pama-Nyungan,band̪amara,yam,Chirila,-12.2525,136.83
 ,Gumatj,gnn,Pama-Nyungan,baːrwic,yam,Chirila,-12.2525,136.83
-,Ritharrngu,,Pama-Nyungan,mawunuʔ,yam,Chirila,,
-,Ritharrngu,,Pama-Nyungan,mabaɭpi,yam,Chirila,,
-,Ritharrngu,,Pama-Nyungan,ɟiriʔ,yam,Chirila,,
+,Ritharrngu,#N/A,Pama-Nyungan,mawunuʔ,yam,Chirila,#N/A,#N/A
+,Ritharrngu,#N/A,Pama-Nyungan,mabaɭpi,yam,Chirila,#N/A,#N/A
+,Ritharrngu,#N/A,Pama-Nyungan,ɟiriʔ,yam,Chirila,#N/A,#N/A
 ,Gupapuyngu,guf,Pama-Nyungan,ɟitama,yam,Chirila,-12.2868,135.337
 ,Gumatj,gnn,Pama-Nyungan,ɟitama,yam,Chirila,-12.2525,136.83
 ,Gumatj,gnn,Pama-Nyungan,d̪aŋunija,yam,Chirila,-12.2525,136.83
@@ -916,92 +916,92 @@ waiak,Kyenele (Miyak Dialect),,Yuat,waǏak,yam,TransNewGuinea.org,,
 ,Yan-nhangu,jay,Pama-Nyungan,gaŋuri,yam,Chirila,-12.0853,134.877
 ,Yan-nhangu,jay,Pama-Nyungan,manmuŋa,yam,Chirila,-12.0853,134.877
 ,Yan-nhangu,jay,Pama-Nyungan,jikiwit,yam,Chirila,-12.0853,134.877
-,Western Arrarnte,,Pama-Nyungan,laceje,yam,Chirila,,
-,Western Arrarnte,,Pama-Nyungan,nace,yam,Chirila,,
-,Western Arrarnte,,Pama-Nyungan,jaɭe,yam,Chirila,,
+,Western Arrarnte,#N/A,Pama-Nyungan,laceje,yam,Chirila,#N/A,#N/A
+,Western Arrarnte,#N/A,Pama-Nyungan,nace,yam,Chirila,#N/A,#N/A
+,Western Arrarnte,#N/A,Pama-Nyungan,jaɭe,yam,Chirila,#N/A,#N/A
 ,Warlpiri,wbp,Pama-Nyungan,jaɭa,yam,Chirila,-20.1008,131.05
 ,Warlpiri,wbp,Pama-Nyungan,puʈa,yam,Chirila,-20.1008,131.05
 ,Ngarluma,nrl,Pama-Nyungan,maʈira,yam,Chirila,-20.9235,117.203
 ,Kariyarra,vka,Pama-Nyungan,maʈira,yam,Chirila,-20.445,118.613
 ,Kariyarra,vka,Pama-Nyungan,maʈa,yam,Chirila,-20.445,118.613
-,Badjiri,jbi,Pama-Nyungan,nant̪uɹu,yam,Chirila,,
+,Badjiri,jbi,Pama-Nyungan,nant̪uɹu,yam,Chirila,#N/A,#N/A
 ,Nyangumarta,nna,Pama-Nyungan,mata,yam,Chirila,-20.6271,121.391
 ,Djinang,dji,Pama-Nyungan,burŋunɖa,yam,Chirila,-12.462,134.82
-,Bularnu,,Pama-Nyungan,ŋuɳma,yam,Chirila,,
-,Bularnu,,Pama-Nyungan,cikaɲi,yam,Chirila,,
-,Antekerrepenh,,Pama-Nyungan,ɭacej,yam,Chirila,,
+,Bularnu,#N/A,Pama-Nyungan,ŋuɳma,yam,Chirila,#N/A,#N/A
+,Bularnu,#N/A,Pama-Nyungan,cikaɲi,yam,Chirila,#N/A,#N/A
+,Antekerrepenh,#N/A,Pama-Nyungan,ɭacej,yam,Chirila,#N/A,#N/A
 ,Alyawarr,aly,Pama-Nyungan,anaic,yam,Chirila,-21.0427,136.835
 ,Warlmanpa,wrl,Pama-Nyungan,papiʈa,yam,Chirila,-18.949,133.862
-,Gurindji,,Pama-Nyungan,kamaɹa,yam,Chirila,,
-,Malngin,,Pama-Nyungan,piːkuʈa,yam,Chirila,,
-,Wakaya,,Pama-Nyungan,parɹula,yam,Chirila,,
+,Gurindji,#N/A,Pama-Nyungan,kamaɹa,yam,Chirila,#N/A,#N/A
+,Malngin,#N/A,Pama-Nyungan,piːkuʈa,yam,Chirila,#N/A,#N/A
+,Wakaya,#N/A,Pama-Nyungan,parɹula,yam,Chirila,#N/A,#N/A
 ,Walmajarri,wmt,Pama-Nyungan,kaɳti,yam,Chirila,-19.7229,126.113
-,Gunggari,,Pama-Nyungan,kuar,yam,Chirila,,
-,Kukatj,,Pama-Nyungan,puːketeŋ,yam,Chirila,,
-,Wakaya,,Pama-Nyungan,kilewulu,yam,Chirila,,
-,Wakaya,,Pama-Nyungan,cikʔa,yam,Chirila,,
-,Wakaya,,Pama-Nyungan,parula,yam,Chirila,,
-,Yinhawangka,ywg,Pama-Nyungan,cita,yam,Chirila,,
-,Woiwurrung,wyi,Pama-Nyungan,parm,yam,Chirila,,
-,Woiwurrung,wyi,Pama-Nyungan,muwijul,yam,Chirila,,
-,Dharuk,xdk,Pama-Nyungan,mitiɲ,yam,Chirila,,
-,Dharumbal,,Pama-Nyungan,piŋi,yam,Chirila,,
+,Gunggari,#N/A,Pama-Nyungan,kuar,yam,Chirila,#N/A,#N/A
+,Kukatj,#N/A,Pama-Nyungan,puːketeŋ,yam,Chirila,#N/A,#N/A
+,Wakaya,#N/A,Pama-Nyungan,kilewulu,yam,Chirila,#N/A,#N/A
+,Wakaya,#N/A,Pama-Nyungan,cikʔa,yam,Chirila,#N/A,#N/A
+,Wakaya,#N/A,Pama-Nyungan,parula,yam,Chirila,#N/A,#N/A
+,Yinhawangka,ywg,Pama-Nyungan,cita,yam,Chirila,#N/A,#N/A
+,Woiwurrung,wyi,Pama-Nyungan,parm,yam,Chirila,#N/A,#N/A
+,Woiwurrung,wyi,Pama-Nyungan,muwijul,yam,Chirila,#N/A,#N/A
+,Dharuk,xdk,Pama-Nyungan,mitiɲ,yam,Chirila,#N/A,#N/A
+,Dharumbal,#N/A,Pama-Nyungan,piŋi,yam,Chirila,#N/A,#N/A
 ,Garrwa,wrk,Garrwan,tuʈulaɲi,yam,Chirila,-17.4504,137.72014
-,Coobenpil,,Pama-Nyungan,tambɹin,yam,Chirila,,
+,Coobenpil,#N/A,Pama-Nyungan,tambɹin,yam,Chirila,#N/A,#N/A
 ,Garrwa,wrk,Garrwan,cuwajuwa,yam,Chirila,-17.4504,137.72014
 ,Garrwa,wrk,Garrwan,kapala,yam,Chirila,-17.4504,137.72014
 ,Garrwa,wrk,Garrwan,waɳmir,yam,Chirila,-17.4504,137.72014
 ,Garrwa,wrk,Garrwan,walapu,yam,Chirila,-17.4504,137.72014
 ,Garrwa,wrk,Garrwan,jilipuɹu,yam,Chirila,-17.4504,137.72014
 ,Garrwa,wrk,Garrwan,ŋanaku,yam,Chirila,-17.4504,137.72014
-,Mudburra,dmw,Pama-Nyungan,kamaɹa,yam,Chirila,,
-,Mudburra,dmw,Pama-Nyungan,kawucin,yam,Chirila,,
-,Mudburra,dmw,Pama-Nyungan,mu(ɹ)ntu(a)paɭi,yam,Chirila,,
-,Garlali,gll,Pama-Nyungan,kabari,yam,Chirila,,
-,Yugambeh,,Pama-Nyungan,dum,yam,Chirila,,
-,Nukunu,,Pama-Nyungan,jampa,yam,Chirila,,
-,Proto-Pama-Nyungan,,Pama-Nyungan,kAlmpa,yam,Chirila,,
+,Mudburra,dmw,Pama-Nyungan,kamaɹa,yam,Chirila,#N/A,#N/A
+,Mudburra,dmw,Pama-Nyungan,kawucin,yam,Chirila,#N/A,#N/A
+,Mudburra,dmw,Pama-Nyungan,mu(ɹ)ntu(a)paɭi,yam,Chirila,#N/A,#N/A
+,Garlali,gll,Pama-Nyungan,kabari,yam,Chirila,#N/A,#N/A
+,Yugambeh,#N/A,Pama-Nyungan,dum,yam,Chirila,#N/A,#N/A
+,Nukunu,#N/A,Pama-Nyungan,jampa,yam,Chirila,#N/A,#N/A
+,Proto-Pama-Nyungan,#N/A,Pama-Nyungan,kAlmpa,yam,Chirila,#N/A,#N/A
 ,Warungu,wrg,Pama-Nyungan,kuɲaŋara,yam,Chirila,-18.2496,144.37
 ,Biri,bzr,Pama-Nyungan,munila,yam,Chirila,-20.1494,146.67
 ,Gangulu,gnl,Pama-Nyungan,kuwa,yam,Chirila,-22.7637,149.416
 ,Biri,bzr,Pama-Nyungan,kuwa,yam,Chirila,-20.1494,146.67
-,Ngarrindjeri,,Pama-Nyungan,wiloki,yam,Chirila,,
-,Ngarrindjeri,,Pama-Nyungan,wiloki,yam,Chirila,,
-,Ngarrindjeri,,Pama-Nyungan,kandja,yam,Chirila,,
-,Ngarrindjeri,,Pama-Nyungan,kandjeɹan,yam,Chirila,,
-,Ngarrindjeri,,Pama-Nyungan,kandjeɹuŋa,yam,Chirila,,
-,Ngarrindjeri,,Pama-Nyungan,kanca,yam,Chirila,,
-,Ngarrindjeri,,Pama-Nyungan,kanceɹi,yam,Chirila,,
-,Ngarrindjeri,,Pama-Nyungan,koncaɹa,yam,Chirila,,
-,Darkinyung,xda,Pama-Nyungan,wajaŋ,yam,Chirila,,
+,Ngarrindjeri,#N/A,Pama-Nyungan,wiloki,yam,Chirila,#N/A,#N/A
+,Ngarrindjeri,#N/A,Pama-Nyungan,wiloki,yam,Chirila,#N/A,#N/A
+,Ngarrindjeri,#N/A,Pama-Nyungan,kandja,yam,Chirila,#N/A,#N/A
+,Ngarrindjeri,#N/A,Pama-Nyungan,kandjeɹan,yam,Chirila,#N/A,#N/A
+,Ngarrindjeri,#N/A,Pama-Nyungan,kandjeɹuŋa,yam,Chirila,#N/A,#N/A
+,Ngarrindjeri,#N/A,Pama-Nyungan,kanca,yam,Chirila,#N/A,#N/A
+,Ngarrindjeri,#N/A,Pama-Nyungan,kanceɹi,yam,Chirila,#N/A,#N/A
+,Ngarrindjeri,#N/A,Pama-Nyungan,koncaɹa,yam,Chirila,#N/A,#N/A
+,Darkinyung,xda,Pama-Nyungan,wajaŋ,yam,Chirila,#N/A,#N/A
 ,Jaru,ddj,Pama-Nyungan,cuwantara ɲinawucuwa,yam,Chirila,-18.3288,128.262
 ,Jaru,ddj,Pama-Nyungan,mulaɲ,yam,Chirila,-18.3288,128.262
 ,Jaru,ddj,Pama-Nyungan,pawuwuʈa,yam,Chirila,-18.3288,128.262
-,Gurindji,,Pama-Nyungan,kamaɹa,yam,Chirila,,
-,Gurindji,,Pama-Nyungan,kuɹuɭ,yam,Chirila,,
-,Gurindji,,Pama-Nyungan,waɲca,yam,Chirila,,
-,Gurindji,,Pama-Nyungan,wiɳcirki,yam,Chirila,,
-,Mudburra,dmw,Pama-Nyungan,papiʈa,yam,Chirila,,
-,Mudburra,dmw,Pama-Nyungan,cikarampini,yam,Chirila,,
-,Mudburra,dmw,Pama-Nyungan,waɳmiri,yam,Chirila,,
-,Mudburra,dmw,Pama-Nyungan,wajita,yam,Chirila,,
+,Gurindji,#N/A,Pama-Nyungan,kamaɹa,yam,Chirila,#N/A,#N/A
+,Gurindji,#N/A,Pama-Nyungan,kuɹuɭ,yam,Chirila,#N/A,#N/A
+,Gurindji,#N/A,Pama-Nyungan,waɲca,yam,Chirila,#N/A,#N/A
+,Gurindji,#N/A,Pama-Nyungan,wiɳcirki,yam,Chirila,#N/A,#N/A
+,Mudburra,dmw,Pama-Nyungan,papiʈa,yam,Chirila,#N/A,#N/A
+,Mudburra,dmw,Pama-Nyungan,cikarampini,yam,Chirila,#N/A,#N/A
+,Mudburra,dmw,Pama-Nyungan,waɳmiri,yam,Chirila,#N/A,#N/A
+,Mudburra,dmw,Pama-Nyungan,wajita,yam,Chirila,#N/A,#N/A
 ,Warlpiri,wbp,Pama-Nyungan,kacutaɹi,yam,Chirila,-20.1008,131.05
 ,Warlpiri,wbp,Pama-Nyungan,kucuɳtu,yam,Chirila,-20.1008,131.05
 ,Warlpiri,wbp,Pama-Nyungan,ŋamaɹi,yam,Chirila,-20.1008,131.05
 ,Warlpiri,wbp,Pama-Nyungan,ŋamaɳa,yam,Chirila,-20.1008,131.05
 ,Warlpiri,wbp,Pama-Nyungan,wuncu,yam,Chirila,-20.1008,131.05
 ,Warlpiri,wbp,Pama-Nyungan,jincaʎkiɲi,yam,Chirila,-20.1008,131.05
-,Turubul,,Pama-Nyungan,tam,yam,Chirila,,
-,Turubul,,Pama-Nyungan,mutaɹa,yam,Chirila,,
-,Marra,,Arnhem,jeki,yam,Chirila,,
+,Turubul,#N/A,Pama-Nyungan,tam,yam,Chirila,#N/A,#N/A
+,Turubul,#N/A,Pama-Nyungan,mutaɹa,yam,Chirila,#N/A,#N/A
+,Marra,#N/A,Arnhem,jeki,yam,Chirila,#N/A,#N/A
 ,Anmatyerre,amx,Pama-Nyungan,anac,yam,Chirila,-22.2853,133.286
 ,Alyawarr,aly,Pama-Nyungan,anac,yam,Chirila,-21.0427,136.835
-,Western Arrarnte,,Pama-Nyungan,lacia,yam,Chirila,,
+,Western Arrarnte,#N/A,Pama-Nyungan,lacia,yam,Chirila,#N/A,#N/A
 ,Warumungu,wrm,Pama-Nyungan,manaci,yam,Chirila,-20.6479,134.375
 ,Walmajarri,wmt,Pama-Nyungan,ciriʎpaca,yam,Chirila,-19.7229,126.113
 ,Ngaanyatjarra,ntj,Pama-Nyungan,puʎku,yam,Chirila,-25.7514,127.602
 ,Gamilaraay,kld,Pama-Nyungan,n̪aːl,yam,Chirila,-29.9037,149.543
-,Yuwaalaraay,,Pama-Nyungan,kutukaː,yam,Chirila,,
+,Yuwaalaraay,#N/A,Pama-Nyungan,kutukaː,yam,Chirila,#N/A,#N/A
 ,Anmatyerre,amx,Pama-Nyungan,anac,yam,Chirila,-22.2853,133.286
 ,Alyawarr,aly,Pama-Nyungan,anac,yam,Chirila,-21.0427,136.835
 ,Warumungu,wrm,Pama-Nyungan,manaci,yam,Chirila,-20.6479,134.375
@@ -1018,12 +1018,12 @@ waiak,Kyenele (Miyak Dialect),,Yuat,waǏak,yam,TransNewGuinea.org,,
 ,Ngaanyatjarra,ntj,Pama-Nyungan,paʎamunuriŋku,yam,Chirila,-25.7514,127.602
 ,Ngaanyatjarra,ntj,Pama-Nyungan,wiŋaɳjiri,yam,Chirila,-25.7514,127.602
 ,Ngaanyatjarra,ntj,Pama-Nyungan,waʎkumunu,yam,Chirila,-25.7514,127.602
-,Yuwaaliyaay,,Pama-Nyungan,kukumat̪araː,yam,Chirila,,
-,Mithaka,,Pama-Nyungan,muciɹi,yam,Chirila,,
-,Kuuk Thaayorre,,Pama-Nyungan,wanc,yam,Chirila,,
-,Yirrk-Thangalkl,,Pama-Nyungan,waɲcəpə,yam,Chirila,,
-,Koko-Bera,,Pama-Nyungan,waɲcəpəŋ,yam,Chirila,,
-,Yir-Yoront,,Pama-Nyungan,waɲcəw,yam,Chirila,,
+,Yuwaaliyaay,#N/A,Pama-Nyungan,kukumat̪araː,yam,Chirila,#N/A,#N/A
+,Mithaka,#N/A,Pama-Nyungan,muciɹi,yam,Chirila,#N/A,#N/A
+,Kuuk Thaayorre,#N/A,Pama-Nyungan,wanc,yam,Chirila,#N/A,#N/A
+,Yirrk-Thangalkl,#N/A,Pama-Nyungan,waɲcəpə,yam,Chirila,#N/A,#N/A
+,Koko-Bera,#N/A,Pama-Nyungan,waɲcəpəŋ,yam,Chirila,#N/A,#N/A
+,Yir-Yoront,#N/A,Pama-Nyungan,waɲcəw,yam,Chirila,#N/A,#N/A
 ,Bardi,bcj,Nyulnyulan,aːɲcu,yam,Chirila,-16.6274,122.906
 ,Yanyuwa,jao,Pama-Nyungan,waɲcija,yam,Chirila,-15.7621,136.055
-,Proto-WesternCYP,,Pama-Nyungan,waɲcV,yam,Chirila,,
+,Proto-WesternCYP,#N/A,Pama-Nyungan,waɲcV,yam,Chirila,#N/A,#N/A

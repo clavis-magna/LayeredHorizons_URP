@@ -7,6 +7,12 @@ using System;
 using System.Linq;
 using UnityAsync;
 
+//0. This script is assigned a single csv. It will read the data and make sure that there is a latitude and longitude
+//1. remove all entries that don't have a latitude or longitude
+//2. take those lats and longs and create meshes based on the gaps between the data
+//3. create the gameobjects which will deform the mesh
+//4. create the text to mark where each of the data points are
+//5. tell the handGUIs to create toggles and sliders for each of the files
 
 public class ReadGenericData : MonoBehaviour
 {
@@ -20,6 +26,11 @@ public class ReadGenericData : MonoBehaviour
     [Header("Title of Header Column")]
     public string headerColumn;
 
+
+    [Header("Title of Column with Numbers indicating by what scale to deform the mesh")]
+    public string deformationScaleColumn;
+
+
     //bools for deforming the mesh and being able to customise colour and opacity all set to true for now to limit options
     //[Header("Deform Mesh Settings (Important if bool is true)")]
     [HideInInspector] public bool deformMesh;
@@ -31,7 +42,6 @@ public class ReadGenericData : MonoBehaviour
     public List<Dictionary<string, object>> data;
 
     public List<Dictionary<string, object>> formattedData;
-
 
     private int scaleX;
     private int scaleY;
@@ -57,10 +67,15 @@ public class ReadGenericData : MonoBehaviour
         public bool clustered;
         public Vector2 position;
         public String headText;
-        public latlonPositions (Vector2 _position, String _headText)
+        //deform scale is by how much the mesh changes by
+        //This isn't essential if empty it will just use a default deform scale
+        public float deformScale;
+
+        public latlonPositions(Vector2 _position, String _headText, float _deformScale)
         {
             headText = _headText;
             position = _position;
+            deformScale = _deformScale;
             clustered = false;
         }
 
@@ -78,16 +93,12 @@ public class ReadGenericData : MonoBehaviour
                 {
                     //check if the distance is within the clusterDistance and that it's not itself
                     float distance = Vector2.Distance(position, _latlonList[i].position);
-                    //Debug.Log(distance);
-
                     if (distance <= maxClusterDistance && distance != 0)
                     {
 
                         //add it to cluster and find neighbours again which will call this same function again.
                         _cluster.Add(_latlonList[i]);
                         _latlonList[i].clustered = true;
-                        //Debug.Log("added cluster");
-
                         _latlonList[i].findNeighbours(_latlonList, _cluster);
                     }
                 }
@@ -134,8 +145,6 @@ public class ReadGenericData : MonoBehaviour
             meshParent = new GameObject();
             meshParent.name = "Parent-" + name;
 
-            //Instantiate(meshParent, transform.position, Quaternion.identity);
-
             //format and parse the data first
             //loop through each data entry
             for (var i = 0; i < data.Count; i++)
@@ -150,13 +159,32 @@ public class ReadGenericData : MonoBehaviour
                     //add the data that does not have missing lattitude and longitude to the new list
                     formattedData.Add(data[i]);
 
-
                     //create a vec2 containing the lat long
                     Vector2 pos = new Vector2((float)data[i]["latitude"], (float)data[i]["longitude"]);
 
                     String headerText = (string)data[i][headerColumn];
+                    float deformationScale = new float();
+                    //if this column is empty then just set a default scale for all.
+                    //You can either just have the column say nothing or not put a scale at all and it will default to 0.5
+                    if (deformationScaleColumn.Equals(""))
+                    {
+                        Debug.Log("The deformation scale column is empty. A default 0.5 will be applied to each deformation.");
+                        deformationScale = 0.5f;
+                    } else
+                    {
+                        if (data[i][deformationScaleColumn].Equals(""))
+                        {
+                            Debug.Log("A deformation scale value is empty. A default 0.5 will be applied to this entry.");
+                            deformationScale = 0.5f;
+                        }
+                        else
+                        {
+                            deformationScale = (float)data[i][deformationScaleColumn];
+                        }
+                    }
 
-                    latlonPositions latlon = new latlonPositions(pos, headerText);
+
+                    latlonPositions latlon = new latlonPositions(pos, headerText, deformationScale);
 
                     //add the lat and long to this list if there is one.
                     latlonList.Add(latlon);
@@ -169,8 +197,6 @@ public class ReadGenericData : MonoBehaviour
             //Loop through each value in the list to check against each value in the list again.
             for (var i = 0; i < latlonList.Count; i++)
             {
-
-
                 //check to see if this point has already been clustered
                 if (latlonList[i].clustered != true)
                 {
@@ -188,8 +214,6 @@ public class ReadGenericData : MonoBehaviour
                     clusterGroup.Add(cluster);
                 }
             }
-
-            Debug.Log(clusterGroup.Count);
 
             //for each of the clusters
             for(var i = 0; i < clusterGroup.Count; i++)
