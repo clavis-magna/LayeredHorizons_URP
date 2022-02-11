@@ -3,7 +3,8 @@
 		{
 			"fileName": "dogTESTONLY.csv",
 			"headerColumnName": "dog",
-            "deformationScaleColumnName": "Importance"
+            "deformationScaleColumnName": "Importance",
+            "additiveMesh": "false"
 		}
 	]
 }

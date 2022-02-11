@@ -30,6 +30,8 @@ public class ReadGenericData : MonoBehaviour
     [Header("Title of Column with Numbers indicating by what scale to deform the mesh")]
     public string deformationScaleColumn;
 
+    public bool additiveMesh;
+
 
     //bools for deforming the mesh and being able to customise colour and opacity all set to true for now to limit options
     //[Header("Deform Mesh Settings (Important if bool is true)")]
@@ -123,7 +125,6 @@ public class ReadGenericData : MonoBehaviour
     //Also to complete the steps in the right order
     async void loadData()
     {
-
           //check if the file exists in the streaming assets folder
           if (BetterStreamingAssets.FileExists(CSVFileName))
           {
@@ -224,6 +225,7 @@ public class ReadGenericData : MonoBehaviour
 
                 //Get the deformableMesh GO ready to place in the prefabs further down
                 DeformableMesh parentMesh = meshObject.GetComponent<DeformableMesh>();
+                parentMesh.additive = additiveMesh;
 
                 //rename mesh
                 meshObject.name = "Mesh-" + i + "-" + name;

@@ -6,6 +6,8 @@ public class createText : MonoBehaviour
 {
     public string textData;
     public DeformableMesh deformableMesh;
+    public float maximumDepression;
+
 
     void OnCollisionStay(Collision collision)
     {
@@ -15,7 +17,7 @@ public class createText : MonoBehaviour
       {
 
         //tells the deformable mesh to add the label
-        deformableMesh.AddTextLabel(contact.point, textData);
+        deformableMesh.AddTextLabel(contact.point, textData, maximumDepression);
 
         //remove the gameobject when collision occurs
         TextPool.Instance.ReturnToPool(this);

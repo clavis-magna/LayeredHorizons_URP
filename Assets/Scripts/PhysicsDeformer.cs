@@ -10,16 +10,6 @@ public class PhysicsDeformer : MonoBehaviour
     public DeformableMesh deformableMesh;
     public float maximumDepression;
 
-
-    // void Update()
-    // {
-    //   if (this.transform.position.y < -1) {
-    //     Destroy(gameObject);
-    //
-    //   }
-    // }
-
-
     void OnCollisionStay(Collision collision)
     {
       // Debug.Log("Contact");

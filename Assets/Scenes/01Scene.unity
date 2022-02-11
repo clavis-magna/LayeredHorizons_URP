@@ -1269,7 +1269,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toggleObject: {fileID: 6258004353636216708, guid: 2bf59337ba5c44bfbbdc4816915f0e24, type: 3}
   mainCam: {fileID: 1426652931}
-  counter: 0
 --- !u!1001 &1103784891
 PrefabInstance:
   m_ObjectHideFlags: 0

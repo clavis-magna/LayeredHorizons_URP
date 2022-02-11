@@ -24,7 +24,7 @@ public class deformMeshScript : MonoBehaviour
     int delayPeriod = 5;
 
     //The width of each deformation
-    float depressionRadius = 2.0f;
+    float depressionRadius = 1.0f;
 
     [HideInInspector]
     public bool edgeSmoothing = true;
@@ -39,8 +39,6 @@ public class deformMeshScript : MonoBehaviour
 
         for (var i = 0; i < data.Count; i++)
         {
-            print(data[i].deformScale);
-
             //add the positions to this list to then find where the max min point is
             float[] thisXY = helpers.getXYPos(data[i].position.x, data[i].position.y, scaleX, scaleY);
 

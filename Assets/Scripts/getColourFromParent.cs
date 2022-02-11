@@ -10,10 +10,10 @@ public class getColourFromParent : MonoBehaviour
     public Color parentColor;
 
     //For what the colour is when highlighted
-    private Color activeColor = new Color(1.0f, 1.0f, 1.0f, 0.5f);
+    private Color activeColor = new Color(1.0f, 1.0f, 1.0f);
 
     //Only for text when not highlighted at all
-    private Color inactiveColor = new Color(0.0f, 0.0f, 0.0f, 0.5f);
+    private Color inactiveColor = new Color(0.1f, 0.1f, 0.1f);
 
     public bool useHighlighterColour = false;
 
@@ -36,7 +36,7 @@ public class getColourFromParent : MonoBehaviour
 
 
 
-        text = transform.Find("Text (TMP)").GetComponent<TextMeshPro>();
+        text = transform.Find("textMesh").GetComponent<TextMeshPro>();
 
 
     }
@@ -51,7 +51,7 @@ public class getColourFromParent : MonoBehaviour
             parentColor = transform.parent.GetComponent<Renderer>().material.GetColor("_BaseColor");
         }
         //point.GetComponent<Renderer>().material.SetColor("_Color", parentColor);
-        line.GetComponent<Renderer>().material.SetColor("_Color", parentColor);
+        line.GetComponent<Renderer>().material.SetColor("_Color", inactiveColor);
 
         //darker colour for the text
         text.faceColor = inactiveColor;
