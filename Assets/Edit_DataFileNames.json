@@ -1,0 +1,23 @@
+{
+	"Items": [
+		{
+			"fileName": "dogTESTONLY.csv",
+			"headerColumnName": "dog",
+            "deformationScaleColumnName": "Importance",
+            "additiveMesh": "false"
+		},
+        {
+            "fileName": "YamsTESTONLY.csv",
+            "headerColumnName": "Variety",
+            "deformationScaleColumnName": "Number",
+            "additiveMesh": "false"
+        },
+        {
+            "fileName": "bambooTESTONLY.csv",
+            "headerColumnName": "language",
+            "deformationScaleColumnName": "Number",
+            "additiveMesh": "false"
+        }
+        
+	]
+}

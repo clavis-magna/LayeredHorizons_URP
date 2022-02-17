@@ -165,17 +165,23 @@ public class DeformableMesh : MonoBehaviour
                     meshHeight = modifiedVertices[i].y;
                 }
             }
-            thisMarker.transform.position = new Vector3(pointOfContact.x, meshHeight - 0.5f, pointOfContact.z);
+            thisMarker.transform.position = new Vector3(pointOfContact.x, meshHeight, pointOfContact.z);
         } else if (additive == false)
         {
-            thisMarker.transform.position = new Vector3(pointOfContact.x, 10.0f * maximumDepression - 0.5f, pointOfContact.z);
+            thisMarker.transform.position = new Vector3(pointOfContact.x, 10.0f * maximumDepression, pointOfContact.z);
         }
         //Get the created textmeshpro and change the work it is displaying to match the data.
         TextMeshPro nameText = thisMarker.transform.Find("textMesh").GetComponent<TMPro.TextMeshPro>();
         TextMeshPro textBG = thisMarker.transform.Find("textBG").GetComponent<TMPro.TextMeshPro>();
 
+        ////Get the colour of the mesh
+
+        //Color meshColour = GetComponent<Renderer>().material.GetColor("_BaseColor");
+        //< mark =#ff800080 padding="2,2,2,2">
         nameText.text = text;
-        textBG.text = $"<mark=#ffffff>{text}</mark>";
+        textBG.text = $"<mark=#ffffff padding='130,40,20,20'>{text}</mark>";
+        //textBG.text = $"<mark=#{ColorUtility.ToHtmlStringRGBA(meshColour)}>{text}</mark>";
+
 
         //put the textMarker as a child of the quad mesh
         thisMarker.transform.parent = gameObject.transform;
