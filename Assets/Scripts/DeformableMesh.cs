@@ -8,19 +8,14 @@ using TMPro;
 [RequireComponent(typeof(GeneratePlaneMesh))]
 public class DeformableMesh : MonoBehaviour
 {
-    //moving this variable to be controlled by the deformer script
-    //eventually to be controlled by the data script
-    // public float maximumDepression;
-
-
-    // public List<Vector3> originalVertices;
+    //This is the list of all the changed vertices in the mesh
     public List<Vector3> modifiedVertices;
 
     //converted vertices is just the XZ modified vertices, used to get distance without regards to the y pos.
     public List<Vector2> convertedVectors;
 
+    //This is on by default now and only used when the mesh is additive.
     public bool edgeSmoothing = true;
-
 
     private GeneratePlaneMesh plane;
 
@@ -32,20 +27,17 @@ public class DeformableMesh : MonoBehaviour
     {
       plane = GetComponent<GeneratePlaneMesh>();
       plane.mesh.MarkDynamic();
-      // //references to the mesh, mark as dynamic so that they can change and affect all lists of vertices
-      // originalVertices = plane.mesh.vertices.ToList();
+
+      //references to the mesh, mark as dynamic so that they can change and affect all lists of vertices
       modifiedVertices = plane.mesh.vertices.ToList();
 
       //extension that converts the vec3 to a vec2 for use in the depression.
       //Gets the x and z of the modified mesh
-      //sorry very hacked together
       Vector2[] modifiedVec2 = modifiedVertices.toVector2();
       for (int i = 0; i < modifiedVec2.Length; i++)
       {
         convertedVectors.Add(modifiedVec2[i]);
       }
-
-      //Debug.Log("Mesh Regenerated");
     }
 
 
@@ -128,13 +120,14 @@ public class DeformableMesh : MonoBehaviour
                 else if (additive == false)
                 {
                     newVert = new Vector3(modifiedVertices[i].x, 10.0f * maximumDepression, modifiedVertices[i].z);
-
                 }
 
                 modifiedVertices.RemoveAt(i);
                 modifiedVertices.Insert(i, newVert);
             }
         }
+
+        //Set the plane to the new vertices that were changed
         plane.mesh.SetVertices(modifiedVertices);
     }
 
@@ -175,13 +168,10 @@ public class DeformableMesh : MonoBehaviour
         TextMeshPro textBG = thisMarker.transform.Find("textBG").GetComponent<TMPro.TextMeshPro>();
 
         ////Get the colour of the mesh
-
-        //Color meshColour = GetComponent<Renderer>().material.GetColor("_BaseColor");
-        //< mark =#ff800080 padding="2,2,2,2">
         nameText.text = text;
-        textBG.text = $"<mark=#ffffff padding='130,40,20,20'>{text}</mark>";
-        //textBG.text = $"<mark=#{ColorUtility.ToHtmlStringRGBA(meshColour)}>{text}</mark>";
-
+        ////This is the background that is behind the text labels
+        ////It uses a markup and then the same text behind it so that the length is dynamic with the length of the text
+        //textBG.text = $"<mark=#ffffff padding='130,40,20,20'>{text}</mark>";
 
         //put the textMarker as a child of the quad mesh
         thisMarker.transform.parent = gameObject.transform;

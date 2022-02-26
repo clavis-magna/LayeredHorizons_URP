@@ -26,10 +26,10 @@ public class ReadGenericData : MonoBehaviour
     [Header("Title of Header Column")]
     public string headerColumn;
 
-
     [Header("Title of Column with Numbers indicating by what scale to deform the mesh")]
     public string deformationScaleColumn;
 
+    [Header("Do the deformations compound?")]
     public bool additiveMesh;
 
 
@@ -53,7 +53,7 @@ public class ReadGenericData : MonoBehaviour
     [HideInInspector] // Hides var below
     public Renderer meshRenderer;
 
-    //empty GO
+    //empty GO to hold all of the individual meshes within one csv
     GameObject meshParent;
 
     //this is the distance between two values in which to split up
@@ -63,12 +63,14 @@ public class ReadGenericData : MonoBehaviour
     createToggleGUI createToggleScript;
     createAdjustmentGUI createAdjustmentScript;
 
-    //create a class for each of the lat long positions add in variables to check if clustered
+    //create a class for each of the lat long positions
+	//This is used to check if there are gaps in the lat lon positions 
     public class latlonPositions
     {
         public bool clustered;
         public Vector2 position;
         public String headText;
+
         //deform scale is by how much the mesh changes by
         //This isn't essential if empty it will just use a default deform scale
         public float deformScale;
@@ -82,11 +84,9 @@ public class ReadGenericData : MonoBehaviour
         }
 
         //function to find it's neighbours and add them to the cluster
-        //This is a recursive function so complex bullshit here
+        //This is a recursive function so be careful when changing anything here
         public void findNeighbours(List<latlonPositions> _latlonList, List<latlonPositions> _cluster)
         {
-
-
             //if not clustered yet loop through all points and look for neighbours
             for (var i = 0; i < _latlonList.Count; i++)
             {

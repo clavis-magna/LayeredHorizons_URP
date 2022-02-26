@@ -17,6 +17,12 @@
             "headerColumnName": "language",
             "deformationScaleColumnName": "Number",
             "additiveMesh": "false"
+        },
+        {
+            "fileName": "languageDataTESTONLY.csv",
+            "headerColumnName": "title",
+            "deformationScaleColumnName": "numSpeakers",
+            "additiveMesh": "false"
         }
         
 	]

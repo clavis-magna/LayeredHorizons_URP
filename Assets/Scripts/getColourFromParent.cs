@@ -9,72 +9,60 @@ public class getColourFromParent : MonoBehaviour
 
     public Color parentColor;
 
-    //For what the colour is when highlighted
     //White Colour
-    private Color activeColor = new Color(1.0f, 1.0f, 1.0f);
+    private Color whiteCol = new Color(1.0f, 1.0f, 1.0f);
 
-    //Only for text when not highlighted at all
     //Almost black colour
-    private Color inactiveColor = new Color(0.1f, 0.1f, 0.1f);
+    private Color blackCol = new Color(0.1f, 0.1f, 0.1f);
 
+    //Highlighter is used to touch the text labels and change the colour to highlight important data points.
+    //I've turned off the use for this for now but this is a feature that can be added for future versions
     public bool useHighlighterColour = false;
 
-    private GameObject point;
-    private GameObject line;
+    //line is the line next to the text label helps to guide the eyes to where the label sits.
+    public GameObject line;
 
-    private GameObject Can;
+    //This is used to set the colour of the text. Currently used to just set the text black but can be used later on for highlighter feature.
+    public TextMeshPro text;
+
+    public TextMeshPro textBG;
 
 
-    private TextMeshPro text;
-
-    //Graphic m_Graphic;
-
+    //This indicator helps to see which mesh the text label belongs to by setting the colour the same.
     public Image Indicator;
 
 
 
     void Start()
     {
-        //Fetch the Graphic from the GameObject
-        //m_Graphic = GetComponent<Graphic>();
-        //Indicator = GetComponent<Image>();
-
-        point = transform.Find("Point").gameObject;
-        line = point.transform.Find("MarkerLine").gameObject;
-
-
-        //adding the changing markerline length because I can't be bothered to make another script yet for a UI I don't know if I like or not.
-        //This changed the line to be longer at the bottom and not increase at the top
-        float lineLength = transform.position.y;
-        line.transform.Translate(0, -lineLength, 0);
-        line.transform.localScale = line.transform.localScale + new Vector3(0, lineLength, 0);
-
-        text = transform.Find("textMesh").GetComponent<TextMeshPro>();
+        line.GetComponent<Renderer>().material.SetColor("_Color", blackCol);
     }
 
     void Update()
     {
-        //if (useHighlighterColour)
-        //{
-        //    parentColor = activeColor;
-        //} else
-        //{
-        //    parentColor = transform.parent.GetComponent<Renderer>().material.GetColor("_BaseColor");
-        //}
-        //point.GetComponent<Renderer>().material.SetColor("_Color", parentColor);
+        if (useHighlighterColour)
+        {
+            textBG.text = $"<mark=#000000 padding='130,40,20,20'>{text.text}</mark>";
+            useHighlighterColour = false;
+        }
+        else
+        {
+            //darker colour for the text
+            text.faceColor = blackCol;
+
+            //NOTE: The textBG colour is set from the markup inside the text so this is set by a hex value inside the DeformableMesh script
+            //This is the background that is behind the text labels
+            //It uses a markup and then the same text behind it so that the length is dynamic with the length of the text
+            textBG.text = $"<mark=#ffffff padding='130,40,20,20'>{text.text}</mark>";
+        }
+
         parentColor = transform.parent.GetComponent<Renderer>().material.GetColor("_BaseColor");
-        //Indicator.GetComponent<Image>().color = parentColor;
 
-        //m_Graphic.color = parentColor;
+        //Using the hue for the indicator because the opacity of the parentcolor could change.
         Color parentHue = new Color(parentColor.r, parentColor.g, parentColor.b);
-
         Indicator.color = parentHue;
 
-        line.GetComponent<Renderer>().material.SetColor("_Color", inactiveColor);
 
-
-        //darker colour for the text
-        text.faceColor = inactiveColor;
 
     }
 }

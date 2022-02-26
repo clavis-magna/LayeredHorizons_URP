@@ -5,23 +5,22 @@ using UnityEngine;
 public class highlighterCollision : MonoBehaviour
 {
     //make sure that when changed you have a bit of time before it can be changed again.
-    float m_LastPressTime;
-    float m_PressDelay = 0.5f;
+    //float m_LastPressTime;
+    //float m_PressDelay = 0.5f;
 
-    // Update is called once per frame
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionStay(Collision collision)
     {
         if (collision.collider.tag == "GameController")
         {
+            transform.GetComponent<getColourFromParent>().useHighlighterColour = true;
 
-            if (m_LastPressTime + m_PressDelay < Time.unscaledTime)
-            {
-                transform.GetComponent<getColourFromParent>().useHighlighterColour = !transform.GetComponent<getColourFromParent>().useHighlighterColour;
-                m_LastPressTime = Time.unscaledTime;
-            }
+            //if (m_LastPressTime + m_PressDelay < Time.unscaledTime)
+            //{
+            //    m_LastPressTime = Time.unscaledTime;
+            //}
 
 
-            Debug.Log("GameController Collided");
+            //Debug.Log("GameController Collided");
 
         }
     }

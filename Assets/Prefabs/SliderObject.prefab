@@ -218,7 +218,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &2056060525834445742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,6 +262,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c243f9eaf1cb401cb8688db3bc56f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedSlider: 0
   actionAsset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  selectionIndicator: {fileID: 0}
   activeHand: 1
   activateDragInputRef: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  activeColor: {r: 1, g: 1, b: 1, a: 0.5}
+  inactiveColor: {r: 0, g: 0, b: 0, a: 0.5}

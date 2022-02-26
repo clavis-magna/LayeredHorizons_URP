@@ -98,7 +98,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 785341816410156518}
-  - component: {fileID: 615416041573306929}
   m_Layer: 0
   m_Name: Point
   m_TagString: Untagged
@@ -121,19 +120,6 @@ Transform:
   m_Father: {fileID: 4405567024773395478}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &615416041573306929
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2661973699642051259}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.1, z: 0.1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3639729303035450097
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +134,7 @@ GameObject:
   - component: {fileID: 7858140122774514892}
   - component: {fileID: 2986912522345276444}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Indicator Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -445,6 +431,7 @@ GameObject:
   - component: {fileID: 7510957292104446730}
   - component: {fileID: 2723365136566354466}
   - component: {fileID: 943740643260633066}
+  - component: {fileID: 1393580150598071746}
   m_Layer: 0
   m_Name: TextParent
   m_TagString: Untagged
@@ -483,6 +470,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentColor: {r: 1, g: 0.9009434, b: 0.9009434, a: 0}
   useHighlighterColour: 0
+  line: {fileID: 7793743806319089020}
+  text: {fileID: 9031193234445050871}
+  textBG: {fileID: 6057455658155036697}
   Indicator: {fileID: 5895570250985602177}
 --- !u!65 &2723365136566354466
 BoxCollider:
@@ -492,11 +482,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6702471200078413792}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.91, y: 0.1, z: 0.1}
-  m_Center: {x: 0.54, y: 0.55, z: 0}
+  m_Size: {x: 1.9, y: 0.76, z: 0.9}
+  m_Center: {x: 0.72, y: 0.34, z: 0}
 --- !u!114 &943740643260633066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,6 +499,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663a59ec94e0340dcb919d14421c5a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1393580150598071746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6702471200078413792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0261963e395874da497af5bc89e74174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  line: {fileID: 7793743806319089020}
 --- !u!1 &7793743806319089020
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,7 +523,6 @@ GameObject:
   - component: {fileID: 8268152071997500407}
   - component: {fileID: 7734085941869109516}
   - component: {fileID: 7658554244610667951}
-  - component: {fileID: 8610057186069345670}
   m_Layer: 0
   m_Name: MarkerLine
   m_TagString: Untagged
@@ -591,20 +593,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8610057186069345670
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7793743806319089020}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &9118065509532874837
 GameObject:
   m_ObjectHideFlags: 0
