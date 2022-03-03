@@ -17,11 +17,14 @@ public class textCreatorScript : MonoBehaviour
 
     //I would make these variables public but because it's instantiated it ends up being overwritten
     //Make this bigger if experiencing lag spikes
-    int delayPeriod = 5;
+    int delayPeriod = 1;
 
     //I've just made this true by default to make things easier
     [HideInInspector]
     public bool edgeSmoothing = true;
+
+    //public GameObject TextPool;
+
 
     public async Task createTextCreator(List<latlonPositions> data, DeformableMesh parentMesh)
     {

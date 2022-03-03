@@ -13,6 +13,10 @@ public abstract class GenericObjectPool<T> : MonoBehaviour where T : Component
   public static GenericObjectPool<T> Instance { get; private set; }
   private Queue<T> objects = new Queue<T>();
 
+  //Increase the size of the object pool here
+  //The pool will automatically increase if not enough available
+  public int amountToPool = 5;
+
   private void Awake()
   {
     Instance = this;
@@ -21,7 +25,7 @@ public abstract class GenericObjectPool<T> : MonoBehaviour where T : Component
   //Precreates a pool of instantiated objects which can be accessed through the get.
   private void OnEnable()
   {
-    AddObjects(5);
+    AddObjects(amountToPool);
   }
 
   //This function is used instead of instantiate.

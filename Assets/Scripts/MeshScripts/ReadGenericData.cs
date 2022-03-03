@@ -6,6 +6,8 @@ using UnityEngine.Networking;
 using System;
 using System.Linq;
 using UnityAsync;
+using System.Threading.Tasks;
+
 
 //0. This script is assigned a single csv. It will read the data and make sure that there is a latitude and longitude
 //1. remove all entries that don't have a latitude or longitude
@@ -17,19 +19,18 @@ using UnityAsync;
 public class ReadGenericData : MonoBehaviour
 {
 
-
     // csv filename
     // in streaming assets (include .csv extension)
-    [Header("Name of Data File")]
+    [Header("Name of Data File (edit in JSON)")]
     public string CSVFileName = ".csv";
 
-    [Header("Title of Header Column")]
+    [Header("Title of Header Column (edit in JSON)")]
     public string headerColumn;
 
-    [Header("Title of Column with Numbers indicating by what scale to deform the mesh")]
+    [Header("Title of Column with Numbers indicating by what scale to deform the mesh (edit in JSON)")]
     public string deformationScaleColumn;
 
-    [Header("Do the deformations compound?")]
+    [Header("Do the deformations compound? (edit in JSON)")]
     public bool additiveMesh;
 
 
@@ -47,6 +48,7 @@ public class ReadGenericData : MonoBehaviour
 
     private int scaleX;
     private int scaleY;
+
 
     [HideInInspector] // Hides var below
     public GameObject meshObject;
@@ -110,7 +112,7 @@ public class ReadGenericData : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    async void Start()
     {
         //BetterStreamingAssets plugin for reading files on android devices
         BetterStreamingAssets.Initialize();
@@ -118,12 +120,13 @@ public class ReadGenericData : MonoBehaviour
         // set in the inspector
         scaleX = (int)InitiateWorldScale.mapScale.x;
         scaleY = (int)InitiateWorldScale.mapScale.y;
-        loadData();
+        string result = await loadData();
+        Debug.Log(result!);
     }
 
     //called in async to allow for data to load better and avoid lag spikes.
     //Also to complete the steps in the right order
-    async void loadData()
+    async Task<string> loadData()
     {
           //check if the file exists in the streaming assets folder
           if (BetterStreamingAssets.FileExists(CSVFileName))
@@ -216,15 +219,18 @@ public class ReadGenericData : MonoBehaviour
                 }
             }
 
+            DeformableMesh parentMesh = new DeformableMesh();
             //for each of the clusters
-            for(var i = 0; i < clusterGroup.Count; i++)
+            for (var i = 0; i < clusterGroup.Count; i++)
             {
                 //the script that creates the mesh, create one containing the cluster
                 GenerateDataMesh dataMeshInstance = new GenerateDataMesh();
+
+                //generate a mesh for the each of the clustergroups
                 GameObject meshObject = dataMeshInstance.generateMesh(clusterGroup[i]);
 
                 //Get the deformableMesh GO ready to place in the prefabs further down
-                DeformableMesh parentMesh = meshObject.GetComponent<DeformableMesh>();
+                parentMesh = meshObject.GetComponent<DeformableMesh>();
                 parentMesh.additive = additiveMesh;
 
                 //rename mesh
@@ -237,10 +243,24 @@ public class ReadGenericData : MonoBehaviour
                 deformMeshScript createDeformMeshInstance = new deformMeshScript();
                 await createDeformMeshInstance.createDeformMesh(clusterGroup[i], parentMesh);
 
+
+
+            }
+
+
+            //Create a new loop to do this so that the async can perform in the right order
+            for (var i = 0; i < clusterGroup.Count; i++)
+            {
                 //then create the labels that go on top of the mesh.
                 textCreatorScript createTextCreatorInstance = new textCreatorScript();
                 await createTextCreatorInstance.createTextCreator(clusterGroup[i], parentMesh);
             }
+
+            //Create a new loop to do this so that the async can perform in the right order
+            //for (var i = 0; i < clusterGroup.Count; i++)
+            //{
+
+            //}
 
             //tell the left hand GUI to create some toggles when a mesh is fully loaded.
             //This allows meshes to  be turned on and off on the left hand
@@ -253,10 +273,14 @@ public class ReadGenericData : MonoBehaviour
             GameObject rightHand = GameObject.FindGameObjectWithTag("RightGUI");
             createAdjustmentScript = rightHand.GetComponent<createAdjustmentGUI>();
             createAdjustmentScript.createAdjustmentLayer(meshParent, name, customiseColour, customiseOpacity);
+
         }
         else
         {
                 Debug.LogErrorFormat("Streaming asset not found: {0}", CSVFileName);
+
         }
+        return ("loaded");
+
     }
 }

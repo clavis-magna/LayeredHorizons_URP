@@ -12,7 +12,7 @@ using latlonPositions = ReadGenericData.latlonPositions;
 
 public class deformMeshScript : MonoBehaviour
 {
-
+    bool check = false;
 
     private int scaleX;
     private int scaleY;
@@ -21,7 +21,7 @@ public class deformMeshScript : MonoBehaviour
 
     //I would make these variables public but because it's instantiated it ends up being overwritten
     //Make this bigger if experiencing lag spikes
-    int delayPeriod = 5;
+    int delayPeriod = 1;
 
     //The width of each deformation
     float depressionRadius = 1.0f;
@@ -31,11 +31,10 @@ public class deformMeshScript : MonoBehaviour
 
     public async Task createDeformMesh(List<latlonPositions> data, DeformableMesh parentMesh)
     {
+
         // grab world scale
         scaleX = (int)InitiateWorldScale.mapScale.x;
         scaleY = (int)InitiateWorldScale.mapScale.y;
-
-
 
         for (var i = 0; i < data.Count; i++)
         {

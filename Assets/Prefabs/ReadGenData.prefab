@@ -46,8 +46,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30dac14398087f34f91efb232b4fcf28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meshPool: {fileID: 6043718654659884821, guid: c4b786e7717fe4017a5d9aeef20b761f, type: 3}
+  textPool: {fileID: 4408340876138541461, guid: 7e41e70ef59a14c1ba25992af2bfe988, type: 3}
   CSVFileName: .csv
   headerColumn: 
+  deformationScaleColumn: 
+  additiveMesh: 0
   deformMesh: 1
   customiseColour: 1
   customiseOpacity: 1
@@ -79,9 +83,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2beff28c3b57412aac0111a8f8650d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayPeriod: 2
-  depressionHeight: 0.3
-  depressionRadius: 1
   edgeSmoothing: 1
 --- !u!114 &1848168268970798269
 MonoBehaviour:
@@ -95,5 +96,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b457d7b593a4a83b23160f69767f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayPeriod: 1
   edgeSmoothing: 1

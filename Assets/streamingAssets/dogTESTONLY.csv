@@ -1,7 +1,7 @@
 iso,latitude,longitude,name,language,dog,loan,Cognacy,Glottocode,Author,url,Importance
-ahb,,166.970215,Axamb,Axamb,lipax,FALSE,29,axam1237,Tryon (1976),https://abvd.shh.mpg.de/bantu/austronesian/language.php?id=1176,0.925762296479877
+ahb,-15.543668,166.970215,Axamb,Axamb,lipax,FALSE,29,axam1237,Tryon (1976),https://abvd.shh.mpg.de/bantu/austronesian/language.php?id=1176,0.925762296479877
 akr,-15.543668,166.970215,Araki,Araki (Southwest Santo),viri,FALSE,"7, 75, 80",arak1252,Francois (2002),https://abvd.shh.mpg.de/bantu/austronesian/language.php?id=465,0.441748291614014
-alm,-15.543668,166.970215,Varavara,Amblong,βiriu,FALSE,"7, 75, 77, 80",ambl1237,Tryon (1976),https://abvd.shh.mpg.de/bantu/austronesian/language.php?id=1042,
+alm,-15.543668,166.970215,Varavara,Amblong,βiriu,FALSE,"7, 75, 77, 80",ambl1237,Tryon (1976),https://abvd.shh.mpg.de/bantu/austronesian/language.php?id=1042,0.441748291614014
 aor,-15.587325,167.183075,Aore,Aore,βiriu,FALSE,"7, 75, 77, 80",aore1237,Tryon (1976),https://abvd.shh.mpg.de/bantu/austronesian/language.php?id=1068,0.98398046801815
 app,-15.677254,168.173218,Apma,Apma (Suru Mwerani),kuli,TRUE,7,apma1240,Andrew Gray,https://abvd.shh.mpg.de/bantu/austronesian/language.php?id=641,0.923431356709625
 aul,-16.343861,167.692566,Aulua,Aulua,na-kulih,TRUE,7,aulu1238,Tryon (1976),https://abvd.shh.mpg.de/bantu/austronesian/language.php?id=1093,0.225544536002248
