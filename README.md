@@ -35,19 +35,20 @@
         "additiveMesh": "false"                   
         (Boolean to determine if the deformations are additive and will result in each entry being added on top of each other)
         
-        //TYPES OF DATASETS//
-        Use this as a guide to determine which settings suit your dataset the best.
-        
+//TYPES OF DATASETS//
+
+Use this as a guide to determine which settings suit your dataset the best.
+                
         "deformationScaleColumnName": "Number", + "additiveMesh": "false"
-        ![alt text](https://github.com/jakemu6/LayeredHorizons_URP/blob/main/ImpFalse.png?raw=true)
+   ![alt text](https://github.com/jakemu6/LayeredHorizons_URP/blob/main/ImpFalse.png?raw=true)
         
         "deformationScaleColumnName": "Number", + "additiveMesh": "true"
-        ![alt text](https://github.com/jakemu6/LayeredHorizons_URP/blob/main/ImpTrue.png?raw=true)
+   ![alt text](https://github.com/jakemu6/LayeredHorizons_URP/blob/main/ImpTrue.png?raw=true)
         
         "deformationScaleColumnName": "", + "additiveMesh": "false"
-        ![alt text](https://github.com/jakemu6/LayeredHorizons_URP/blob/main/NONFalse.png?raw=true)
+   ![alt text](https://github.com/jakemu6/LayeredHorizons_URP/blob/main/NONFalse.png?raw=true)
         
         "deformationScaleColumnName": "", + "additiveMesh": "true"
-        ![alt text](https://github.com/jakemu6/LayeredHorizons_URP/blob/main/NONTrue.png?raw=true)
+   ![alt text](https://github.com/jakemu6/LayeredHorizons_URP/blob/main/NONTrue.png?raw=true)
         
 4. Check the JSON to make sure that the commas are in the right place. They should be after every element except the last one.
