@@ -1,3 +1,4 @@
+
 # LayeredHorizons_URP
 
 //DATA PREREQUISITES//
@@ -52,3 +53,4 @@ Use this as a guide to determine which settings suit your dataset the best.
    ![alt text](https://github.com/jakemu6/LayeredHorizons_URP/blob/main/NONTrue.png?raw=true)
         
 4. Check the JSON to make sure that the commas are in the right place. They should be after every element except the last one.
+
